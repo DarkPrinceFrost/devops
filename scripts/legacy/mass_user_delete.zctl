@@ -1,0 +1,64 @@
+# Setup Zope security and REQUEST
+
+from AccessControl.SecurityManagement import newSecurityManager
+from Testing.makerequest import makerequest
+from Products.CMFCore.tests.base.security import AnonymousUser, OmnipotentUser
+from Products.AdvancedQuery import Eq, MatchGlob, Or, And
+import sys
+import transaction
+import DateTime
+
+user = OmnipotentUser().__of__(app)
+newSecurityManager(None, user)
+app=makerequest(app)
+app.REQUEST.set('PARENTS',[app])
+app.REQUEST.set('REQUEST_METHOD','POST')
+portal = app.plone
+context = app.plone
+
+mtool = context.portal_membership
+gtool = context.portal_groups
+pwt = context.portal_password_reset
+
+pcat = context.portal_catalog
+mcat = context.member_catalog
+ccat = context.content.catalog
+lcat = context.lens_catalog
+
+mfolder = mtool.getMembersFolder()
+
+cfname = sys.argv[1]
+print cfname
+
+delete = open (cfname)
+numdel = len(delete.readlines())
+delete.seek(0)
+
+print "To delete: %d" % numdel
+
+deleted=[]
+if delete:
+    starttime = DateTime.now()
+    for c,u in enumerate(delete):
+        u = u[:-1]
+        try:
+            mcat.uncatalog_object(mcat(getUserName=u)[0].getPath())
+        except:
+            print "failure to uncatalog: userid %s" % (u,)
+            continue
+        deleted.append(u)
+        if not((c+1)%100):
+            mtool.deleteMembers(deleted, delete_memberareas=1, delete_localroles=1, REQUEST=context.REQUEST)
+            print "deleted: %d / %d" % (c+1,numdel),
+            deleted=[]
+            transaction.commit()
+            committime = DateTime.now()
+            commitdelta = committime - starttime
+            starttime = committime
+            etc = (numdel - c)/100 * commitdelta + committime
+            print "(%s)" % etc
+            
+    mtool.deleteMembers(deleted, delete_memberareas=1, delete_localroles=1, REQUEST=context.REQUEST)
+    print "deleted: %d / %d" % (c+1,numdel)
+    deleted=[]
+    transaction.commit()

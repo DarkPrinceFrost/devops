@@ -1,0 +1,73 @@
+# Setup Zope security and REQUEST
+
+from Products.RhaptosSite.utils import kill_other_threads_and_exit as exit
+from transaction import commit
+
+from AccessControl.SecurityManagement import newSecurityManager
+from Testing.makerequest import makerequest
+from Products.CMFCore.tests.base.security import AnonymousUser, OmnipotentUser
+
+portal = app.plone
+user = OmnipotentUser().__of__(app)
+newSecurityManager(None, user)
+app=makerequest(app)
+app.REQUEST.set('PARENTS',[app])
+
+def use_user(userid='reedstrm'):
+    user = portal.acl_users.getUserById(userid)
+    if not user:
+        user = app.acl_users.getUserById(userid)
+    user = user.__of__(portal.acl_users)
+    newSecurityManager(None, user)
+    return userid
+
+use_user()
+
+
+workgroups = portal.GroupWorkspaces.objectValues()
+personalspaces = portal.Members.objectValues()
+
+workspaces = workgroups + personalspaces
+
+print "All Workspaces	%s" % len(workspaces)
+print "Workgroups	%s" % len(workgroups)
+print "Personal Workspaces	%s" % len(personalspaces)
+
+# Possible modules states:
+states =['pending', 'published', 'checkedout', 'created', 'modified']
+
+mods = {}
+cols = {}
+other = {}
+for s in states:
+    mods[s] = []
+    cols[s] = []
+
+for wg in workspaces:
+    for obj in wg.objectValues():
+        if obj.meta_type == 'Module Editor':
+            mods[obj.state].append(obj) 
+        elif obj.meta_type == 'Collection':
+            cols[obj.state].append(obj) 
+        else:
+            other.setdefault(obj.meta_type,[]).append(obj)
+
+for s in states:
+    print 'Modules %s: %s' % (s,len(mods[s]))
+    print 'Collections %s: %s' % (s,len(cols[s]))
+#print 'Others:'
+for type in other:
+    print '%s: %s' % (type,len(other[type]))
+
+vi_script = portal.portal_skins.rhaptos_module_editor.rmeVersionInfo
+blocked_script = app.plone.portal_skins.rhaptos_module_editor.publishBlocked
+
+modblocked = {}
+for draft in mods['modified']:
+    blocked = blocked_script.__of__(draft)(vi_script.__of__(draft)())
+    if blocked:
+        modblocked[blocked['failtype']] = modblocked.get(blocked['failtype'],0) + 1
+
+print 'Blocked publication:'
+for type in modblocked:
+    print '%s: %s' % (type,modblocked[type])

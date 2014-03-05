@@ -1,0 +1,28 @@
+cobs = app.plone.content.objectValues('Version Folder')
+
+cs = [c[c.latest.version] for c in cobs]
+print 'Collections:',len(cs)
+
+fieldnames = [ 'institution', 'code', 'instructor', 'homepage', 'collectionType', 'orderable', 'harvestable']
+
+fields=dict((field, []) for field in fieldnames)
+fieldcounts=dict((field, {}) for field in fieldnames)
+totals=dict((field, 0) for field in fieldnames)
+
+for c in cs:
+    for f in fieldnames:
+        fields[f].append(getattr(c,f,None))
+
+for fname,flist in fields.items():
+    totals[fname] = 0
+    for v in flist:
+        if type(v) == unicode:
+           v = v.encode('utf-8')
+        if v:
+            totals[fname] += 1
+        fieldcounts[fname][v] = fieldcounts[fname].get(v,0) + 1
+
+import pprint
+pp = pprint.PrettyPrinter(indent=4)
+pp.pprint(totals)
+pp.pprint(fieldcounts)

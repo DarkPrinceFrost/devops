@@ -1,0 +1,4 @@
+for wg in app.plone.Members.objectValues() + app.plone.GroupWorkspaces.objectValues('WorkgroupAT'):
+    for c in wg.objectValues(['Collection','Module Editor']):
+        if c.state == 'created':
+            print c.actor.replace(' ','_'), c.portal_type, c.getParentId() or '-', c.created.strftime('%s'), c.modified() - c.created

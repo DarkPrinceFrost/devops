@@ -1,0 +1,3 @@
+ups = app.plone.acl_users.source_users._user_passwords
+for id in ups:
+    print id,ups[id]

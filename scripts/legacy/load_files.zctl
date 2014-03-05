@@ -1,0 +1,70 @@
+from Testing.ZopeTestCase.utils import makerequest
+from AccessControl.SecurityManagement import newSecurityManager
+from Products.CMFCore.tests.base.security import OmnipotentUser
+user = OmnipotentUser().__of__(app)
+newSecurityManager(None, user)
+
+app = makerequest(app)
+app.REQUEST.set('PARENTS',[app])
+app.REQUEST.traverse('/VirtualHostBase/http/cnx.org/plone/VirtualHostRoot/')
+from Products.CMFPlone import utils
+import os, sys
+from transaction import commit
+from ZODB.POSException import ConflictError
+from time import sleep
+
+last_ditch = 0
+
+def my_commit(retries=3):
+#    import pdb; pdb.set_trace()
+    global last_ditch
+    while retries:
+        try:
+            commit()
+            return
+        except ConflictError:
+            print "Retrying: %s" % retries
+            app._p_jar.sync()
+            last_ditch += 1
+            retries -= 1
+    
+if len(sys.argv) < 2:
+    print "usage: %s <dirname>" % sys.argv[0]
+    exit(1)
+fdir = sys.argv[1]
+fnames = os.listdir(fdir)
+fnum = len(fnames)
+folder = app.plone.pdfs
+
+objectType = app.plone.rhaptos_print.objectType
+copied = 0 
+
+for idx, fname in enumerate(fnames):
+    if not hasattr(folder,fname):
+        copied += 1
+        try:
+            pFile = utils._createObjectByType(objectType, folder, id=fname)
+        except KeyError:
+            pass
+        f = open(os.path.join(fdir, fname),'rb')
+        data = f.read()
+        f.close()
+        try:
+            pFile.getPrimaryField().getMutator(pFile)(data)
+        except (ConflictError):
+            app._p_jar.sync()
+            pFile.getPrimaryField().getMutator(pFile)(data)
+        print fname
+        # sleep(1)
+        if not copied % 20:
+            my_commit()
+            print idx, idx*100.0/fnum
+        #    sleep(10)
+    else:
+        print fname," present"
+
+my_commit()
+if copied % 20:
+    print idx, idx*100.0/fnum
+
+print "Number of last_ditch retries: %s" % last_ditch

@@ -1,0 +1,22 @@
+context=app.plone
+authids = {}.fromkeys(context.content.catalog.Indexes['authors'].uniqueValues() + context.content.catalog.Indexes['maintainers'].uniqueValues()).keys()
+mtool=context.portal_membership
+susers=set(mtool.listMemberIds())
+sauthids=set(authids)
+nonauth=susers-sauthids
+print "users: %s\nauthors: %s\nNon-authors: %s" % (len(susers),len(sauthids),len(nonauth))
+getMemberById = mtool.getMemberById
+acl_users = context.acl_users
+removed=0
+for user in nonauth:
+            member = getMemberById(user)
+            roles = member.getRoles()
+            if 'Publisher' in roles:
+                roles.remove('Publisher')
+                acl_users.userFolderEditUser(user, None, roles, member.getDomains())
+                removed += 1
+                if not (removed % 100):
+                    print removed
+print "removed: %s" % removed
+import transaction
+transaction.commit()

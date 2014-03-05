@@ -1,0 +1,63 @@
+def main(authorid=None):
+    rep = app.plone.content
+    cat = rep.catalog
+    auth_cols = cat(authors=authorid,portal_type='Collection')
+    auth_modules = cat(authors=authorid,portal_type='Module')
+
+    cols_w_mods = {}
+
+    for mod in auth_modules:
+      cols = cat(containedModuleIds=mod.objectId)
+      for c in cols:
+        for y in auth_cols:
+          if c.objectId == y.objectId:
+            pass
+        m,ver = find_contained_ver(c.getObject(),mod.objectId)
+        cols_w_mods.setdefault(c.objectId,[]).append((m,ver))
+
+    for c in auth_cols:
+      cols_w_mods[c.objectId] = contained_ver(c.getObject())
+
+    urls=[]
+
+    for c in auth_cols:
+      urls.append('http://cnx.org/content/%s/latest' % c.objectId)
+      for cv in rep.getHistory(c.objectId):
+        urls.append('http://cnx.org/content/%s/%s' % (c.objectId,cv.version))
+
+    for m in auth_modules:
+      urls.append('http://cnx.org/content/%s/latest' % m.objectId)
+      for mv in rep.getHistory(m.objectId):
+        urls.append('http://cnx.org/content/%s/%s' % (m.objectId,mv.version))
+
+    for c,mods in cols_w_mods.iteritems():
+      for m,v in mods:
+        urls.append('http://cnx.org/content/%s/%s/?collection=%s/latest' % (m,v,c))
+
+    return urls
+
+def contained_ver(col,ret=None):
+  if ret is None:
+    ret = []
+  for sub in col.objectValues():
+    if sub.portal_type == 'SubCollection':
+      contained_ver(sub,ret)
+    if sub.portal_type == 'PublishedContentPointer':
+      ret.append((sub.moduleId,sub.version))
+  return ret
+
+def find_contained_ver(col,modid):
+  for sub in col.objectValues():
+    if sub.portal_type == 'SubCollection':
+          subvals = find_contained_ver(sub,modid)
+          if subvals:
+            return subvals
+    if sub.portal_type == 'PublishedContentPointer':
+      if sub.moduleId == modid:
+          return sub.moduleId,sub.version
+
+
+urls = main('Catherine')
+
+print '\n'.join(urls)
+
