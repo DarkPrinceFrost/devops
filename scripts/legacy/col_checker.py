@@ -23,9 +23,16 @@ def check_col(c):
         r=requests.get('http://archive.cnx.org/contents/%s' % u)
         l=r.url.split('@')[1]
         if l != v:
-            print '    ',u,v,l
+            yield u,v,l
 
 for cid in colids:
     r = requests.get('http://archive.cnx.org/contents/%s' % cid[:-1])
-    print r.url
-    check_col(r.json())
+    if r:
+        try:
+            c=r.json()
+        except:
+            print r.url,'bad_json'
+            continue
+        bad_mods = list(check_col(c))
+        if bad_mods:
+            print r.url,bad_mods
