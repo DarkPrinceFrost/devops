@@ -1,0 +1,48 @@
+#!/usr/bin/python
+
+import os
+import shutil
+import sys
+
+FROMDIR=sys.argv[1]
+TODIR=sys.argv[2]
+files = {}
+latest = {}
+inode2name = {}
+
+for f in os.listdir(FROMDIR):
+    inode = os.stat('/'.join((FROMDIR,f))).st_ino
+    inode2name.setdefault(inode,[]).append(f)
+    if  '@' not in f and '-' in f:
+        id, rest = f.split('-')
+        vmaj,vmin = rest.split('.')[0:2] # behaves better if there's more than 2
+        ver = '.'.join([vmaj,vmin])
+
+        files.setdefault(id,{}).setdefault(ver,[]).append((f,inode))
+
+        if latest.has_key(id):
+            if int(latest[id][0]) < int(vmin):
+                latest[id] = (vmin,ver)
+        else:
+            latest[id] = (vmin,ver)
+
+to_mv=[]
+all=[]
+for id,vers in files.iteritems():
+    for v,fnames in vers.iteritems():
+        all.extend(fnames)
+        if latest[id][1] != v:
+            to_mv.extend(fnames)
+    
+print len(to_mv)
+for fname,i in to_mv:
+    fnames = inode2name[i]
+#    print '\n    '.join(inode2name[i])
+    if fname in fnames:
+        fnames.remove(fname)
+        print fname
+        shutil.move('%s/%s' % (FROMDIR,fname),'%s/%s' % (TODIR,fname))
+        for f in fnames:
+            print '   ',f
+            os.link('%s/%s' % (TODIR,fname), '%s/%s' % (TODIR,f))
+            os.remove('%s/%s' % (FROMDIR,f))

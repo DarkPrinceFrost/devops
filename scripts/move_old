@@ -1,0 +1,44 @@
+#!/usr/bin/python
+
+import os
+import shutil
+import sys
+
+FROMDIR=sys.argv[1]
+TODIR=sys.argv[2]
+files={}
+latest={}
+
+for f in os.listdir(FROMDIR):
+    if '-' in f:
+        id, rest = f.split('-')
+        vmaj,vmin = rest.split('.')[0:2] # behaves better if there's more than 2
+        ver = '.'.join([vmaj,vmin])
+
+    if files.has_key(id):
+        if files[id].has_key(ver):
+            files[id][ver].append(f)
+        else:
+            files[id][ver]=[f]
+    else:
+        files[id] = {ver:[f]}
+
+    if latest.has_key(id):
+        if int(latest[id][0]) < int(vmin):
+            latest[id] = (vmin,ver)
+    else:
+        latest[id] = (vmin,ver)
+
+todel=[]
+all=[]
+for f,vers in files.iteritems():
+    for v,fnames in vers.iteritems():
+        all.extend(fnames)
+        if latest[f][1] != v:
+            todel.extend(fnames)
+    
+print len(todel)
+for f in todel:
+    print f
+    shutil.move('%s/%s' % (FROMDIR,f),'%s/%s' % (TODIR,f))
+
