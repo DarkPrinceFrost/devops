@@ -1,4 +1,4 @@
-# ./bin/zopectl run extract_users_to_csv.py csv_filename
+# ./bin/instance run extract_users_to_csv.py csv_filename
 
 import csv
 import optparse
@@ -16,8 +16,8 @@ def extract_users(plone_site):
                 'email_address': member.getProperty('email'),
                 'password_digest': password_digest,
                 'title': member.getProperty('title'),
-                'first_name': '',
-                'last_name': '',
+                'first_name': member.getProperty('firstname'),
+                'last_name': member.getProperty('surname'),
                 }
 
 def to_csv(users, csv_filename):
@@ -49,14 +49,15 @@ def extract_users_to_csv(plone_site, csv_filename):
     print 'Extracted %s users to %s' % (number_of_users, csv_filename)
 
 def main():
-    usage = 'Usage: ./bin/zopectl run %prog csv_filename'
+    usage = 'Usage: ./bin/instance run %prog csv_filename'
     parser = optparse.OptionParser(usage)
     options, args = parser.parse_args()
     if len(args) != 1:
         parser.error('csv_filename required\n')
-    if 'app' not in dir():
-        parser.error('This script needs to be run with zopectl.')
-    extract_users_to_csv(app.objectValues('Plone Site')[0], sys.argv[1])
+    try:
+        extract_users_to_csv(app.objectValues(['Plone Site','CMF Site'])[0], sys.argv[1])
+    except:
+        parser.error('This script needs to be run with zopectl/instance.')
 
 if __name__ == '__main__':
     main()
