@@ -17,6 +17,8 @@ def walk(tree):
 with open('col.uuids') as f:
    colids=f.readlines()
 
+print len(colids)
+
 def check_col(c):
     for uid in walk(c['tree']):
         u,v = uid.split('@');
