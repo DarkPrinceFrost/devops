@@ -1,0 +1,24 @@
+install base Ubuntu 14.04 LTS
+make canonical administrator account w/ usual password
+(be sure to change uid and gid to 999 not 1000 /etc/passwd /etc/group)
+
+install additional packages:
+ldap-auth-config
+edit /etc/ldap/ldap.conf
+
+copy in lda-server.cert
+
+run: auth-client-config -t nss -p lac_ldap
+
+install:
+autofs
+autofs-ldap
+
+create /net/auto.master.d
+
+auto.master.d/home.autofs
+/home   ldaps:ou=new.auto.homes,dc=connexions
+auto.master.d/net.autofs
+/net    /etc/auto.net
+
+
