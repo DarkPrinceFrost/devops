@@ -1,0 +1,54 @@
+dn: uid=hedley,ou=People,dc=connexions
+uid: hedley
+cn: Hedley Roos
+objectClass: person
+objectClass: inetorgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+userPassword: {CRYPT}$1$fqPNpEVP$hjPDdf28dJ884Lz3Wutxa0
+loginShell: /bin/bash
+uidNumber: 9012
+gidNumber: 100
+homeDirectory: /home/hedley
+gecos: Hedley Roos
+givenName: Hedley
+sn: Roos
+
+
+dn: cn=hedley,ou=auto.homes,dc=connexions
+cn: hedley
+objectClass: automount
+automountInformation: -rw,intr,soft wakizashi.cnx.rice.edu:/homes/hedley
+
+dn: cn=audio,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: hedley
+
+dn: cn=staff,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: hedley
+
+dn: cn=cdrom,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: hedley
+
+dn: cn=users,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: hedley
+
+dn: cn=floppy,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: hedley
+
+dn: cn=www-data,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: hedley
+

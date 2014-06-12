@@ -1,0 +1,54 @@
+dn: uid=josh,ou=People,dc=connexions
+uid: josh
+cn: Josh LaPlace
+objectClass: person
+objectClass: inetorgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+userPassword: {CRYPT}$1$B6VG8L1I$fndkLafhtQJfU2n7humrp/
+loginShell: /bin/bash
+uidNumber: 9027
+gidNumber: 100
+homeDirectory: /home/josh
+gecos: Josh LaPlace
+givenName: Josh
+sn: LaPlace
+
+
+dn: cn=josh,ou=auto.homes,dc=connexions
+cn: josh
+objectClass: automount
+automountInformation: -rw,intr,soft cleaver.cnx.rice.edu:/homes/josh
+
+dn: cn=audio,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: josh
+
+dn: cn=staff,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: josh
+
+dn: cn=cdrom,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: josh
+
+dn: cn=users,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: josh
+
+dn: cn=floppy,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: josh
+
+dn: cn=www-data,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: josh
+

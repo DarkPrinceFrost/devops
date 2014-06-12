@@ -1,0 +1,4 @@
+dn: cn=crouton,ou=auto.homes,dc=connexions
+cn: crouton
+objectClass: automount
+automountInformation: -rw,intr,soft bunker.cnx.rice.edu:/homes/crouton

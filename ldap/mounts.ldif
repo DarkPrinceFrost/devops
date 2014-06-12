@@ -1,0 +1,8 @@
+dn: cn=homedir:/homes/reedstrm,ou=mounts,dc=connexions
+cn: wallace:/homes/reedstrm
+mountOption: resvport
+mountOption: rw
+mountType: nfs
+objectClass: mount
+mountDirectory: /home/reedstrm
+

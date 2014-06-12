@@ -1,0 +1,29 @@
+dn: cn=audio,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: jenn
+
+dn: cn=staff,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: jenn
+
+dn: cn=cdrom,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: jenn
+
+dn: cn=users,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: jenn
+
+dn: cn=floppy,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: jenn
+
+dn: cn=www-data,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: jenn

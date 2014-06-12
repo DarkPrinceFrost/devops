@@ -1,0 +1,49 @@
+dn: uid=ilsai,ou=People,dc=connexions
+uid: ilsai
+cn: Harika Basana
+objectClass: person
+objectClass: inetorgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+userPassword: {crypt}Ms4TUXucwOdgI
+loginShell: /bin/csh
+uidNumber: 1028
+gidNumber: 100
+homeDirectory: /home/ilsai
+gecos: Harika Basana
+givenName: Harika
+sn: Basana
+
+
+dn: cn=ilsai,ou=auto.homes,dc=connexions
+cn: ilsai
+objectClass: automount
+automountInformation: -rw,intr,soft bunker.cnx.rice.edu:/homes/ilsai
+
+dn: cn=audio,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: ilsai
+
+dn: cn=staff,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: ilsai
+
+dn: cn=cdrom,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: ilsai
+
+dn: cn=users,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: ilsai
+
+dn: cn=floppy,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: ilsai
+

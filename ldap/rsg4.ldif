@@ -1,0 +1,54 @@
+dn: uid=rsg4,ou=People,dc=connexions
+uid: rsg4
+cn: Raven Grant
+objectClass: person
+objectClass: inetorgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+userPassword: {CRYPT}$1$jyFC/oM6$QYCQBTP1c1I0jRLQC8n.y0
+loginShell: /bin/bash
+uidNumber: 9040
+gidNumber: 100
+homeDirectory: /home/rsg4
+gecos: Raven Grant
+givenName: Raven
+sn: Grant
+
+
+dn: cn=rsg4,ou=auto.homes,dc=connexions
+cn: rsg4
+objectClass: automount
+automountInformation: -rw,intr,soft wakizashi.cnx.rice.edu:/homes/rsg4
+
+dn: cn=audio,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: rsg4
+
+dn: cn=staff,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: rsg4
+
+dn: cn=cdrom,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: rsg4
+
+dn: cn=users,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: rsg4
+
+dn: cn=floppy,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: rsg4
+
+dn: cn=www-data,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: rsg4
+

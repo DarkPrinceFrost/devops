@@ -1,0 +1,5 @@
+dn: ou=new.auto.homes,dc=connexions
+ou: new.auto.homes
+objectClass: top
+objectClass: automountMap
+

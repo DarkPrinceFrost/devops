@@ -1,0 +1,54 @@
+dn: uid=foobar,ou=People,dc=connexions
+uid: foobar
+cn: Foo Bar
+objectClass: person
+objectClass: inetorgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+userPassword: {CRYPT}$1$WfzKIrMM$wVKn2wmvGQab5ghnSzanC/
+loginShell: /bin/bash
+uidNumber: 8997
+gidNumber: 100
+homeDirectory: /home/foobar
+gecos: Foo Bar
+givenName: Foo
+sn: Bar
+
+
+dn: cn=foobar,ou=auto.homes,dc=connexions
+cn: foobar
+objectClass: automount
+automountInformation: -rw,intr,soft dijkstra.cnx.rice.edu:/homes/foobar
+
+dn: cn=audio,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: foobar
+
+dn: cn=staff,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: foobar
+
+dn: cn=cdrom,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: foobar
+
+dn: cn=users,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: foobar
+
+dn: cn=floppy,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: foobar
+
+dn: cn=www-data,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: foobar
+

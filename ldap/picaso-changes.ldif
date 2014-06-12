@@ -1,0 +1,4 @@
+dn: cn=swi,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: picazo

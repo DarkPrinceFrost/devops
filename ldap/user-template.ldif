@@ -1,0 +1,18 @@
+dn: uid=#USERNAME#,ou=People,dc=connexions
+uid: #USERNAME#
+cn: #GIVENNAME# #LASTNAME#
+objectClass: person
+objectClass: inetorgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+userPassword: #PASSWORD#
+loginShell: /bin/bash
+uidNumber: #UID#
+gidNumber: 100
+homeDirectory: /home/#USERNAME#
+gecos: #GIVENNAME# #LASTNAME#
+givenName: #GIVENNAME#
+sn: #LASTNAME#
+

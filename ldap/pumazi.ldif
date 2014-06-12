@@ -1,0 +1,54 @@
+dn: uid=pumazi,ou=People,dc=connexions
+uid: pumazi
+cn: Michael Mulich
+objectClass: person
+objectClass: inetorgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+userPassword: {CRYPT}$1$.mMsMwFL$74unPatDYHrFUSqBX6WE30
+loginShell: /bin/bash
+uidNumber: 9037
+gidNumber: 100
+homeDirectory: /home/pumazi
+gecos: Michael Mulich
+givenName: Michael
+sn: Mulich
+
+
+dn: cn=pumazi,ou=auto.homes,dc=connexions
+cn: pumazi
+objectClass: automount
+automountInformation: -rw,intr,soft wakizashi.cnx.rice.edu:/homes/pumazi
+
+dn: cn=audio,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: pumazi
+
+dn: cn=staff,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: pumazi
+
+dn: cn=cdrom,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: pumazi
+
+dn: cn=users,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: pumazi
+
+dn: cn=floppy,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: pumazi
+
+dn: cn=www-data,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: pumazi
+

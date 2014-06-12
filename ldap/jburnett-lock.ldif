@@ -1,0 +1,4 @@
+dn: uid=jburnett,ou=People,dc=connexions
+changetype: modify
+replace: userPassword
+userPassword: e2NyeXB0fSo=

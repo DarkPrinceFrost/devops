@@ -1,0 +1,13 @@
+dn: uid=mhusband,ou=People,dc=connexions
+uid: mhusband
+cn: Mark S. Husband
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+loginShell: /bin/csh
+uidNumber: 1022
+gidNumber: 100
+homeDirectory: /home/mhusband
+gecos: Mark S. Husband
+userPassword:: e0NSWVBUfSQxJEUyanZUOEwzJE9TelphOEdkejZlem9TZGVHQUdqMi8=
+

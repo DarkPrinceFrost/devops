@@ -1,0 +1,54 @@
+dn: uid=michaelrog,ou=People,dc=connexions
+uid: michaelrog
+cn: Michael Rog
+objectClass: person
+objectClass: inetorgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+userPassword: {CRYPT}$1$PSap1Qc5$nJzUlV9uPLDu7uUvxOqSB0
+loginShell: /bin/bash
+uidNumber: 9023
+gidNumber: 100
+homeDirectory: /home/michaelrog
+gecos: Michael Rog
+givenName: Michael
+sn: Rog
+
+
+dn: cn=michaelrog,ou=auto.homes,dc=connexions
+cn: michaelrog
+objectClass: automount
+automountInformation: -rw,intr,soft obiwan.cnx.rice.edu:/homes/michaelrog
+
+dn: cn=audio,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: michaelrog
+
+dn: cn=staff,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: michaelrog
+
+dn: cn=cdrom,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: michaelrog
+
+dn: cn=users,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: michaelrog
+
+dn: cn=floppy,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: michaelrog
+
+dn: cn=www-data,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: michaelrog
+

@@ -1,0 +1,54 @@
+dn: uid=izak,ou=People,dc=connexions
+uid: izak
+cn: Izak Burger
+objectClass: person
+objectClass: inetorgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+userPassword: {CRYPT}$1$JuI7JYKN$c7IR8UNbUUdC1Ja3ApKSd1
+loginShell: /bin/bash
+uidNumber: 9018
+gidNumber: 100
+homeDirectory: /home/izak
+gecos: Izak Burger
+givenName: Izak
+sn: Burger
+
+
+dn: cn=izak,ou=auto.homes,dc=connexions
+cn: izak
+objectClass: automount
+automountInformation: -rw,intr,soft wakizashi.cnx.rice.edu:/homes/izak
+
+dn: cn=audio,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: izak
+
+dn: cn=staff,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: izak
+
+dn: cn=cdrom,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: izak
+
+dn: cn=users,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: izak
+
+dn: cn=floppy,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: izak
+
+dn: cn=www-data,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: izak
+

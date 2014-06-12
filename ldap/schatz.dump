@@ -1,0 +1,37 @@
+dn: uid=schatz,ou=People,dc=connexions
+uid: schatz
+cn: Philip Schatz
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+loginShell: /bin/bash
+uidNumber: 9011
+gidNumber: 100
+homeDirectory: /home/schatz
+gecos: Philip Schatz
+givenName: Philip
+sn: Schatz
+structuralObjectClass: inetOrgPerson
+entryUUID: a967f9e2-073d-102d-95b1-e101f530092c
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080825220524Z
+userPassword:: e2NyeXB0fWljbjZUT0M1M25UYTI=
+shadowLastChange: 14116
+entryCSN: 20080825220848Z#000001#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080825220848Z
+
+dn: cn=schatz,ou=auto.homes,dc=connexions
+cn: schatz
+objectClass: automount
+automountInformation: -rw,intr,soft wakizashi.cnx.rice.edu:/homes/schatz
+structuralObjectClass: automount
+entryUUID: a96f24f6-073d-102d-95b2-e101f530092c
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080825220524Z
+entryCSN: 20080825220524Z#000001#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080825220524Z

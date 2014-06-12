@@ -1,0 +1,54 @@
+dn: uid=dford,ou=People,dc=connexions
+uid: dford
+cn: Derek Ford
+objectClass: person
+objectClass: inetorgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+userPassword: {CRYPT}$1$u4P0olHQ$iO8CRtiT.gTqzAA8b9kAQ/
+loginShell: /bin/bash
+uidNumber: 9048
+gidNumber: 100
+homeDirectory: /home/dford
+gecos: Derek Ford
+givenName: Derek
+sn: Ford
+
+
+dn: cn=dford,ou=auto.homes,dc=connexions
+cn: dford
+objectClass: automount
+automountInformation: -rw,intr,soft tachi.cnx.rice.edu:/homes/dford
+
+dn: cn=audio,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: dford
+
+dn: cn=staff,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: dford
+
+dn: cn=cdrom,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: dford
+
+dn: cn=users,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: dford
+
+dn: cn=floppy,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: dford
+
+dn: cn=www-data,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: dford
+

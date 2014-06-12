@@ -1,0 +1,43 @@
+dn: uid=jago,ou=People,dc=connexions
+uid: jago
+cn::QWRhbiBHYWx2YW4=
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+userPassword: {crypt}L1YiCvZsbqKH2
+loginShell: /bin/csh
+uidNumber: 4342
+gidNumber: 100
+homeDirectory: /home/jago
+gecos: Adan Galvan
+
+
+dn: cn=jago,ou=auto.homes,dc=connexions
+cn: jago
+objectClass: automount
+automountInformation: -rw,intr,soft cnx-246-80.ece.rice.edu:/homes/jago
+
+dn: cn=audio,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: jago
+
+dn: cn=staff,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: jago
+
+dn: cn=cdrom,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: jago
+
+dn: cn=users,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: jago
+
+dn: cn=floppy,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: jago

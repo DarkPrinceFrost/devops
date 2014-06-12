@@ -1,0 +1,5 @@
+# reedstrm, new.auto.homes, connexions
+dn: cn=reedstrm,ou=new.auto.homes,dc=connexions
+cn: reedstrm
+objectClass: automount
+automountInformation: -rw,intr,soft cooker.cnx.rice.edu:/homes/reedstrm

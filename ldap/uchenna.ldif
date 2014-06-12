@@ -1,0 +1,54 @@
+dn: uid=uchenna,ou=People,dc=connexions
+uid: uchenna
+cn: Uchenna Anyikam
+objectClass: person
+objectClass: inetorgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+userPassword: {CRYPT}$1$jWcuZQgc$v8o0fBSW5k300Og8sLju61
+loginShell: /bin/bash
+uidNumber: 1
+gidNumber: 100
+homeDirectory: /home/uchenna
+gecos: Uchenna Anyikam
+givenName: Uchenna
+sn: Anyikam
+
+
+dn: cn=uchenna,ou=auto.homes,dc=connexions
+cn: uchenna
+objectClass: automount
+automountInformation: -rw,intr,soft barracks.cnx.rice.edu:/homes/uchenna
+
+dn: cn=audio,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: uchenna
+
+dn: cn=staff,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: uchenna
+
+dn: cn=cdrom,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: uchenna
+
+dn: cn=users,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: uchenna
+
+dn: cn=floppy,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: uchenna
+
+dn: cn=www-data,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: uchenna
+

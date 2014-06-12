@@ -1,0 +1,53 @@
+dn: uid=kylejb,ou=People,dc=connexions
+uid: kylejb
+cn: Kyle Barnhart
+objectClass: person
+objectClass: inetorgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+userPassword: 
+loginShell: /bin/bash
+uidNumber: 9014
+gidNumber: 100
+homeDirectory: /home/kylejb
+gecos: Kyle Barnhart
+givenName: Kyle
+sn: Barnhart
+
+
+dn: cn=kylejb,ou=auto.homes,dc=connexions
+cn: kylejb
+objectClass: automount
+automountInformation: -rw,intr,soft wakizashi.cnx.rice.edu:/homes/kylejb
+
+dn: cn=audio,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: kylejb
+
+dn: cn=staff,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: kylejb
+
+dn: cn=cdrom,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: kylejb
+
+dn: cn=users,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: kylejb
+
+dn: cn=floppy,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: kylejb
+
+dn: cn=www-data,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: kylejb

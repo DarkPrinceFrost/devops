@@ -1,0 +1,10 @@
+dn: cn=karen,ou=new.auto.homes,dc=connexions
+cn: karen
+objectClass: automount
+automountInformation: -rw,intr,soft wakizashi.cnx.rice.edu:/homes/karen
+
+dn: cn=dford,ou=new.auto.homes,dc=connexions
+cn: dford
+objectClass: automount
+automountInformation: -rw,intr,soft tachi.cnx.rice.edu:/homes/dford
+

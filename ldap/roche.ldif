@@ -1,0 +1,54 @@
+dn: uid=roche,ou=People,dc=connexions
+uid: roche
+cn:: Um9jaMOpIENvbXBhYW4=
+objectClass: person
+objectClass: inetorgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+userPassword: {CRYPT}$1$RWX4R78C$BExfwI.S3FeUqS066Fm20/
+loginShell: /bin/bash
+uidNumber: 9015
+gidNumber: 100
+homeDirectory: /home/roche
+gecos: Roche Compaan
+givenName:: Um9jaMOp
+sn: Compaan
+
+
+dn: cn=roche,ou=auto.homes,dc=connexions
+cn: roche
+objectClass: automount
+automountInformation: -rw,intr,soft wakizashi.cnx.rice.edu:/homes/roche
+
+dn: cn=audio,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: roche
+
+dn: cn=staff,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: roche
+
+dn: cn=cdrom,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: roche
+
+dn: cn=users,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: roche
+
+dn: cn=floppy,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: roche
+
+dn: cn=www-data,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: roche
+

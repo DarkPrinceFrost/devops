@@ -1,0 +1,49 @@
+dn: uid=hungtrv,ou=People,dc=connexions
+uid: hungtrv
+cn: Hung Tran
+objectClass: person
+objectClass: inetorgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+userPassword: {CRYPT}$1$MdKoHjIT$VuwVRoiIg41m0fOZlhz0Y/
+loginShell: /bin/bash
+uidNumber: 8986
+gidNumber: 100
+homeDirectory: /home/hungtrv
+gecos: Hung Tran
+givenName: Hung
+sn: Tran
+
+
+dn: cn=hungtrv,ou=auto.homes,dc=connexions
+cn: hungtrv
+objectClass: automount
+automountInformation: -rw,intr,soft,nfsvers=3 wakizashi.cnx.rice.edu:/homes/hungtrv
+
+dn: cn=audio,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: hungtrv
+
+dn: cn=staff,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: hungtrv
+
+dn: cn=cdrom,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: hungtrv
+
+dn: cn=users,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: hungtrv
+
+dn: cn=floppy,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: hungtrv
+

@@ -1,0 +1,10 @@
+# devel, Group, connexions
+dn: cn=devel,ou=Group,dc=connexions
+cn: devel
+gidNumber: 997
+objectClass: top
+objectClass: posixGroup
+memberUid: schatz
+memberUid: reedstrm
+memberUid: bnwest
+memberUid: ew2

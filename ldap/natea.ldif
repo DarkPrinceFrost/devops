@@ -1,0 +1,54 @@
+dn: uid=natea,ou=People,dc=connexions
+uid: natea
+cn: Nate Aune
+objectClass: person
+objectClass: inetorgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+userPassword: {CRYPT}$1$NhKgW2cB$ftOfprQbgMvzhFQtPG8nt.
+loginShell: /bin/bash
+uidNumber: 9030
+gidNumber: 100
+homeDirectory: /home/natea
+gecos: Nate Aune
+givenName: Nate
+sn: Aune
+
+
+dn: cn=natea,ou=auto.homes,dc=connexions
+cn: natea
+objectClass: automount
+automountInformation: -rw,intr,soft cleaver.cnx.rice.edu:/homes/natea
+
+dn: cn=audio,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: natea
+
+dn: cn=staff,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: natea
+
+dn: cn=cdrom,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: natea
+
+dn: cn=users,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: natea
+
+dn: cn=floppy,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: natea
+
+dn: cn=www-data,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: natea
+

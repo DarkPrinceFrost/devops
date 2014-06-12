@@ -1,0 +1,54 @@
+dn: uid=schatz,ou=People,dc=connexions
+uid: schatz
+cn: Philip Schatz
+objectClass: person
+objectClass: inetorgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+userPassword: {CRYPT}$1$dkSHi08r$Iphg01jufLC0SHg8yMKtz.
+loginShell: /bin/bash
+uidNumber: 9011
+gidNumber: 100
+homeDirectory: /home/schatz
+gecos: Philip Schatz
+givenName: Philip
+sn: Schatz
+
+
+dn: cn=schatz,ou=auto.homes,dc=connexions
+cn: schatz
+objectClass: automount
+automountInformation: -rw,intr,soft wakizashi.cnx.rice.edu:/homes/schatz
+
+dn: cn=audio,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: schatz
+
+dn: cn=staff,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: schatz
+
+dn: cn=cdrom,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: schatz
+
+dn: cn=users,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: schatz
+
+dn: cn=floppy,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: schatz
+
+dn: cn=www-data,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: schatz
+

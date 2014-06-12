@@ -1,0 +1,4 @@
+dn: uid=skursar,ou=People,dc=connexions
+changetype: modify
+replace: uidNumber
+uidNumber: 1025

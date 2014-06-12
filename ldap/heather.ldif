@@ -1,0 +1,54 @@
+dn: uid=ham1,ou=People,dc=connexions
+uid: ham1
+cn: Heather Miner
+objectClass: person
+objectClass: inetorgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+userPassword: {crypt}JHLCV6ZgimloI
+loginShell: /bin/bash
+uidNumber: 9001
+gidNumber: 100
+homeDirectory: /home/ham1
+gecos: Heather Miner
+givenName: Heather
+sn: Miner
+
+
+dn: cn=ham1,ou=auto.homes,dc=connexions
+cn: ham1
+objectClass: automount
+automountInformation: -rw,intr,soft dijkstra.cnx.rice.edu:/homes/ham1
+
+dn: cn=audio,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: ham1
+
+dn: cn=staff,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: ham1
+
+dn: cn=cdrom,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: ham1
+
+dn: cn=users,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: ham1
+
+dn: cn=floppy,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: ham1
+
+dn: cn=www-data,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: ham1
+

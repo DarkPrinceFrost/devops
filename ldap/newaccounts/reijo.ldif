@@ -1,0 +1,43 @@
+dn: uid=reijo,ou=People,dc=connexions
+uid: reijo
+cn::UmVpam8gQW50dGlsYQ==
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+userPassword: {crypt}Q4ABpjdUb6g8I
+loginShell: /usr/bin/tcsh
+uidNumber: 1015
+gidNumber: 100
+homeDirectory: /home/reijo
+gecos: Reijo Anttila
+
+
+dn: cn=reijo,ou=auto.homes,dc=connexions
+cn: reijo
+objectClass: automount
+automountInformation: -rw,intr,soft cnx-246-67.ece.rice.edu:/homes/reijo
+
+dn: cn=audio,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: reijo
+
+dn: cn=staff,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: reijo
+
+dn: cn=cdrom,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: reijo
+
+dn: cn=users,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: reijo
+
+dn: cn=floppy,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: reijo

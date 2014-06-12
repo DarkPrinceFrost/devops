@@ -1,0 +1,44 @@
+dn: uid=mhusband,ou=People,dc=connexions
+uid: mhusband
+cn: Mark S. Husband
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+userPassword: {CRYPT}$1$WGZvaYGu$XEw.TVWXtO4/gWFX6dADj.
+loginShell: /bin/csh
+uidNumber: 1022
+gidNumber: 100
+homeDirectory: /home/mhusband
+gecos: Mark S. Husband
+
+
+dn: cn=mhusband,ou=auto.homes,dc=connexions
+cn: mhusband
+objectClass: automount
+automountInformation: -rw,intr,soft bunker.cnx.rice.edu:/homes/mhusband
+
+dn: cn=audio,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: mhusband
+
+dn: cn=staff,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: mhusband
+
+dn: cn=cdrom,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: mhusband
+
+dn: cn=users,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: mhusband
+
+dn: cn=floppy,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: mhusband
+

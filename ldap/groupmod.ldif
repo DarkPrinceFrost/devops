@@ -1,0 +1,39 @@
+dn: cn=audio,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: brentmh
+memberUid: reedstrm
+memberUid: crouton
+memberUid: jccooper
+
+dn: cn=staff,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: brentmh
+memberUid: reedstrm
+memberUid: crouton
+memberUid: jccooper
+
+dn: cn=cdrom,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: brentmh
+memberUid: reedstrm
+memberUid: crouton
+memberUid: jccooper
+
+dn: cn=users,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: brentmh
+memberUid: reedstrm
+memberUid: crouton
+memberUid: jccooper
+
+dn: cn=floppy,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: brentmh
+memberUid: reedstrm
+memberUid: crouton
+memberUid: jccooper

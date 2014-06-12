@@ -1,0 +1,54 @@
+dn: uid=mhorner,ou=People,dc=connexions
+uid: mhorner
+cn: Mark Horner
+objectClass: person
+objectClass: inetorgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+userPassword: {CRYPT}$1$wDVQcHtZ$lHeL.vIAh7vaC.r5m1Yko0
+loginShell: /bin/bash
+uidNumber: 9021
+gidNumber: 100
+homeDirectory: /home/mhorner
+gecos: Mark Horner
+givenName: Mark
+sn: Horner
+
+
+dn: cn=mhorner,ou=auto.homes,dc=connexions
+cn: mhorner
+objectClass: automount
+automountInformation: -rw,intr,soft wakizashi.cnx.rice.edu:/homes/mhorner
+
+dn: cn=audio,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: mhorner
+
+dn: cn=staff,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: mhorner
+
+dn: cn=cdrom,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: mhorner
+
+dn: cn=users,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: mhorner
+
+dn: cn=floppy,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: mhorner
+
+dn: cn=www-data,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: mhorner
+

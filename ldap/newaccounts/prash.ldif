@@ -1,0 +1,44 @@
+dn: uid=prash,ou=People,dc=connexions
+uid: prash
+cn: Prashant Singh
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+userPassword: {CRYPT}57U2Mvrl3DUiA
+loginShell: /bin/csh
+uidNumber: 1021
+gidNumber: 100
+homeDirectory: /home/prash
+gecos: Prashant Singh
+
+
+dn: cn=prash,ou=auto.homes,dc=connexions
+cn: prash
+objectClass: automount
+automountInformation: -rw,intr,soft cnx-246-67.ece.rice.edu:/homes/prash
+
+dn: cn=audio,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: prash
+
+dn: cn=staff,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: prash
+
+dn: cn=cdrom,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: prash
+
+dn: cn=users,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: prash
+
+dn: cn=floppy,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: prash
+

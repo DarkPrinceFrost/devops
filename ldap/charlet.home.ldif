@@ -1,0 +1,4 @@
+dn: cn=charlet,ou=auto.homes,dc=connexions
+cn: charlet
+objectClass: automount
+automountInformation: -rw,intr,soft gandhi.cnx.rice.edu:/homes/charlet

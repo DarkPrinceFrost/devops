@@ -1,0 +1,5 @@
+# reedstrm, People, connexions
+dn: uid=reedstrm,ou=People,dc=connexions
+changetype: modify
+delete: sn
+sn: Reedstrom

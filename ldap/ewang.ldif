@@ -1,0 +1,49 @@
+dn: uid=ewang,ou=People,dc=connexions
+uid: ewang
+cn: Eric Wang
+objectClass: person
+objectClass: inetorgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+userPassword: {CRYPT}$1$A/wg4eEB$7BuNZM8fphSLX4glncKdy/
+loginShell: /bin/csh
+uidNumber: 8975
+gidNumber: 100
+homeDirectory: /home/ewang
+gecos: Eric Wang
+givenName: Eric
+sn: Wang
+
+
+dn: cn=ewang,ou=auto.homes,dc=connexions
+cn: ewang
+objectClass: automount
+automountInformation: -rw,intr,soft barracks.cnx.rice.edu:/homes/ewang
+
+dn: cn=audio,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: ewang
+
+dn: cn=staff,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: ewang
+
+dn: cn=cdrom,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: ewang
+
+dn: cn=users,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: ewang
+
+dn: cn=floppy,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: ewang
+

@@ -1,0 +1,4 @@
+dn: cn=jenn,ou=auto.homes,dc=connexions
+cn: jenn
+objectClass: automount
+automountInformation: -rw,intr,soft cnx-246-67.ece.rice.edu:/homes/jenn

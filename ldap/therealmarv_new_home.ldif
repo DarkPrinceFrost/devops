@@ -1,0 +1,5 @@
+dn: cn=therealmarv,ou=new.auto.homes,dc=connexions
+cn: therealmarv
+objectClass: automount
+automountInformation: -rw,intr,soft tachi.cnx.rice.edu:/homes/therealmarv
+

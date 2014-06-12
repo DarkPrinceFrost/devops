@@ -1,0 +1,3 @@
+dn: uid=crouton,ou=People,dc=connexions
+changetype: modify
+gidNumber: 100

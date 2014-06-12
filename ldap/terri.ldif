@@ -1,0 +1,54 @@
+dn: uid=terri,ou=People,dc=connexions
+uid: terri
+cn: Terri Arellano
+objectClass: person
+objectClass: inetorgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+userPassword: {CRYPT}$1$2553oflz$hA1mYCoQXq8QpRx2EzeMl0
+loginShell: /bin/bash
+uidNumber: 9020
+gidNumber: 100
+homeDirectory: /home/terri
+gecos: Terri Arellano
+givenName: Terri
+sn: Arellano
+
+
+dn: cn=terri,ou=auto.homes,dc=connexions
+cn: terri
+objectClass: automount
+automountInformation: -rw,intr,soft wakizashi.cnx.rice.edu:/homes/terri
+
+dn: cn=audio,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: terri
+
+dn: cn=staff,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: terri
+
+dn: cn=cdrom,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: terri
+
+dn: cn=users,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: terri
+
+dn: cn=floppy,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: terri
+
+dn: cn=www-data,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: terri
+

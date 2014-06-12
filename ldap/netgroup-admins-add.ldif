@@ -1,0 +1,20 @@
+# extended LDIF
+#
+# LDAPv3
+# base <> with scope sub
+# filter: cn=admins
+# requesting: ALL
+#
+
+# admins, netgroup, connexions
+dn: cn=admins,ou=netgroup,dc=connexions
+cn: admins
+nisNetgroupTriple: (,reedstrm,)
+nisNetgroupTriple: (,brentmh,)
+nisNetgroupTriple: (,jenn,)
+nisNetgroupTriple: (,jccooper,)
+nisNetgroupTriple: (,cbearden,)
+nisNetgroupTriple: (,kclarks,)
+objectClass: top
+objectClass: nisNetGroup
+

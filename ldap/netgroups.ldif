@@ -1,0 +1,35 @@
+dn: cn=admins,ou=netgroup,dc=connexions
+cn: admins
+nisnetgrouptriple: (,reedstrm,)
+nisnetgrouptriple: (,brentmh,)
+nisnetgrouptriple: (,jenn,)
+nisnetgrouptriple: (,jccooper,)
+objectclass: top
+objectclass: nisNetGroup
+
+dn: cn=admin-netgroup,ou=netgroup,dc=connexions
+cn: admin-netgroup
+nisnetgrouptriple: (,admins,connexions)
+membernisnetgroup: admins
+objectclass: top
+objectclass: nisNetGroup
+
+dn: cn=devels,ou=netgroup,dc=connexions
+cn: devels
+nisnetgrouptriple: (,reedstrm,)
+nisnetgrouptriple: (,brentmh,)
+nisnetgrouptriple: (,jenn,)
+nisnetgrouptriple: (,jccooper,)
+nisnetgrouptriple: (,jago,)
+nisnetgrouptriple: (,maxwell,)
+nisnetgrouptriple: (,bnwest,)
+nisnetgrouptriple: (,crouton,)
+objectclass: top
+objectclass: nisNetGroup
+
+dn: cn=devel-netgroup,ou=netgroup,dc=connexions
+cn: devel-netgroup
+nisnetgrouptriple: (,devels,connexions)
+membernisnetgroup: devels
+objectclass: top
+objectclass: nisNetGroup

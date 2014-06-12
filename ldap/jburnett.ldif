@@ -1,0 +1,54 @@
+dn: uid=jburnett,ou=People,dc=connexions
+uid: jburnett
+cn: Jess Burnett
+objectClass: person
+objectClass: inetorgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+userPassword: {CRYPT}$1$ZlXC7IBV$di7VIF28hTHaVCIVnRF931
+loginShell: /bin/bash
+uidNumber: 9041
+gidNumber: 100
+homeDirectory: /home/jburnett
+gecos: Jess Burnett
+givenName: Jess
+sn: Burnett
+
+
+dn: cn=jburnett,ou=auto.homes,dc=connexions
+cn: jburnett
+objectClass: automount
+automountInformation: -rw,intr,soft wakizashi.cnx.rice.edu:/homes/jburnett
+
+dn: cn=audio,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: jburnett
+
+dn: cn=staff,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: jburnett
+
+dn: cn=cdrom,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: jburnett
+
+dn: cn=users,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: jburnett
+
+dn: cn=floppy,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: jburnett
+
+dn: cn=www-data,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: jburnett
+

@@ -1,0 +1,43 @@
+dn: uid=kevinduh,ou=People,dc=connexions
+uid: kevinduh
+cn::S2V2aW4gS2FpcGluZyBEdWg=
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+userPassword: {crypt}UpqKQosl3AvSg
+loginShell: /bin/bash
+uidNumber: 8968
+gidNumber: 100
+homeDirectory: /home/kevinduh
+gecos: Kevin Kaiping Duh
+
+
+dn: cn=kevinduh,ou=auto.homes,dc=connexions
+cn: kevinduh
+objectClass: automount
+automountInformation: -rw,intr,soft cnx-246-67.ece.rice.edu:/homes/kevinduh
+
+dn: cn=audio,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: kevinduh
+
+dn: cn=staff,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: kevinduh
+
+dn: cn=cdrom,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: kevinduh
+
+dn: cn=users,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: kevinduh
+
+dn: cn=floppy,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: kevinduh

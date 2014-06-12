@@ -1,0 +1,54 @@
+dn: uid=dcwill,ou=People,dc=connexions
+uid: dcwill
+cn: Daniel Williamson
+objectClass: person
+objectClass: inetorgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+userPassword: {CRYPT}$1$odRgcJLs$W/vxV7mFMvg1BU28/.0WQ1
+loginShell: /bin/bash
+uidNumber: 9009
+gidNumber: 100
+homeDirectory: /home/dcwill
+gecos: Daniel Williamson
+givenName: Daniel
+sn: Williamson
+
+
+dn: cn=dcwill,ou=auto.homes,dc=connexions
+cn: dcwill
+objectClass: automount
+automountInformation: -rw,intr,soft wakizashi.cnx.rice.edu:/homes/dcwill
+
+dn: cn=audio,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: dcwill
+
+dn: cn=staff,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: dcwill
+
+dn: cn=cdrom,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: dcwill
+
+dn: cn=users,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: dcwill
+
+dn: cn=floppy,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: dcwill
+
+dn: cn=www-data,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: dcwill
+

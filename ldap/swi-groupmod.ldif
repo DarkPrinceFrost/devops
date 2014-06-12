@@ -1,0 +1,10 @@
+dn: cn=www-data,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: reedstrm
+memberUid: brentmh
+memberUid: jccooper
+memberUid: jago
+memberUid: maxwell
+memberUid: jenn
+memberUid: bnwest

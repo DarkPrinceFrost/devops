@@ -1,0 +1,54 @@
+dn: uid=ch8,ou=People,dc=connexions
+uid: ch8
+cn: Chinwei Hu
+objectClass: person
+objectClass: inetorgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+userPassword: {CRYPT}$1$BevE8NNn$NwO3VBa/DA82VRRjojPmy.
+loginShell: /bin/bash
+uidNumber: 9007
+gidNumber: 100
+homeDirectory: /home/ch8
+gecos: Chinwei Hu
+givenName: Chinwei
+sn: Hu
+
+
+dn: cn=ch8,ou=auto.homes,dc=connexions
+cn: ch8
+objectClass: automount
+automountInformation: -rw,intr,soft wakizashi.cnx.rice.edu:/homes/ch8
+
+dn: cn=audio,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: ch8
+
+dn: cn=staff,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: ch8
+
+dn: cn=cdrom,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: ch8
+
+dn: cn=users,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: ch8
+
+dn: cn=floppy,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: ch8
+
+dn: cn=www-data,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: ch8
+

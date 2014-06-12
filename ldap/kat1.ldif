@@ -1,0 +1,54 @@
+dn: uid=kat1,ou=People,dc=connexions
+uid: kat1
+cn: Katherine Threlkeld
+objectClass: person
+objectClass: inetorgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+userPassword: {CRYPT}$1$uX2Qnkjb$IN8tjeGYkXmwia2Ry6VMr1
+loginShell: /bin/bash
+uidNumber: 9024
+gidNumber: 100
+homeDirectory: /home/kat1
+gecos: Katherine Threlkeld
+givenName: Katherine
+sn: Threlkeld
+
+
+dn: cn=kat1,ou=auto.homes,dc=connexions
+cn: kat1
+objectClass: automount
+automountInformation: -rw,intr,soft stevens.cnx.rice.edu:/homes/kat1
+
+dn: cn=audio,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: kat1
+
+dn: cn=staff,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: kat1
+
+dn: cn=cdrom,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: kat1
+
+dn: cn=users,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: kat1
+
+dn: cn=floppy,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: kat1
+
+dn: cn=www-data,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: kat1
+

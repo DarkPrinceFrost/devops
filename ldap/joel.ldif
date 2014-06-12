@@ -1,0 +1,49 @@
+dn: uid=joel,ou=People,dc=connexions
+uid: joel
+cn: Joel Thierstein
+objectClass: person
+objectClass: inetorgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+userPassword: {CRYPT}$1$YB4SUbVK$wN86j/Wk.0Me9tibT2WwU.
+loginShell: /bin/csh
+uidNumber: 8988
+gidNumber: 100
+homeDirectory: /home/joel
+gecos: Joel Thierstein
+givenName: Joel
+sn: Thierstein
+
+
+dn: cn=joel,ou=auto.homes,dc=connexions
+cn: joel
+objectClass: automount
+automountInformation: -rw,intr,soft,nfsvers=3 wakizashi.cnx.rice.edu:/homes/joel
+
+dn: cn=audio,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: joel
+
+dn: cn=staff,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: joel
+
+dn: cn=cdrom,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: joel
+
+dn: cn=users,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: joel
+
+dn: cn=floppy,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: joel
+

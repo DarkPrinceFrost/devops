@@ -1,0 +1,41 @@
+
+dn: cn=#USERNAME#,ou=auto.homes,dc=connexions
+cn: #USERNAME#
+objectClass: automount
+automountInformation: -rw,intr,soft tachi.cnx.rice.edu:/homes/#USERNAME#
+
+dn: cn=#USERNAME#,ou=new.auto.homes,dc=connexions
+cn: #USERNAME#
+objectClass: automount
+automountInformation: -rw,intr,soft tachi.cnx.rice.edu:/homes/#USERNAME#
+
+dn: cn=audio,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: #USERNAME#
+
+dn: cn=staff,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: #USERNAME#
+
+dn: cn=cdrom,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: #USERNAME#
+
+dn: cn=users,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: #USERNAME#
+
+dn: cn=floppy,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: #USERNAME#
+
+dn: cn=www-data,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: #USERNAME#
+

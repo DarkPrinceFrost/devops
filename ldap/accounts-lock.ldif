@@ -1,0 +1,60 @@
+dn: uid=guest1,ou=People,dc=connexions
+changetype: modify
+replace: userPassword
+userPassword: e2NyeXB0fSo=
+
+dn: uid=guest2,ou=People,dc=connexions
+changetype: modify
+replace: userPassword
+userPassword: e2NyeXB0fSo=
+
+dn: uid=guest3,ou=People,dc=connexions
+changetype: modify
+replace: userPassword
+userPassword: e2NyeXB0fSo=
+
+dn: uid=crouton,ou=People,dc=connexions
+changetype: modify
+replace: userPassword
+userPassword: e2NyeXB0fSo=
+
+dn: uid=jago,ou=People,dc=connexions
+changetype: modify
+replace: userPassword
+userPassword: e2NyeXB0fSo=
+
+dn: uid=ilsai,ou=People,dc=connexions
+changetype: modify
+replace: userPassword
+userPassword: e2NyeXB0fSo=
+
+dn: uid=ahlfing,ou=People,dc=connexions
+changetype: modify
+replace: userPassword
+userPassword: e2NyeXB0fSo=
+
+dn: uid=picazo,ou=People,dc=connexions
+changetype: modify
+replace: userPassword
+userPassword: e2NyeXB0fSo=
+
+dn: uid=s001552,ou=People,dc=connexions
+changetype: modify
+replace: userPassword
+userPassword: e2NyeXB0fSo=
+
+dn: uid=mshiralkar05,ou=People,dc=connexions
+changetype: modify
+replace: userPassword
+userPassword: e2NyeXB0fSo=
+
+dn: uid=ghenry,ou=People,dc=connexions
+changetype: modify
+replace: userPassword
+userPassword: e2NyeXB0fSo=
+
+dn: uid=yingmm,ou=People,dc=connexions
+changetype: modify
+replace: userPassword
+userPassword: e2NyeXB0fSo=
+

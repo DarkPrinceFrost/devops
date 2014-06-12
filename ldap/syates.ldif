@@ -1,0 +1,54 @@
+dn: uid=syates,ou=People,dc=connexions
+uid: syates
+cn: Stacey Yates
+objectClass: person
+objectClass: inetorgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+userPassword: {CRYPT}$1$fV.E2X.9$r1RXhSK7W/JC/4MGNSxg..
+loginShell: /bin/bash
+uidNumber: 9043
+gidNumber: 100
+homeDirectory: /home/syates
+gecos: Stacey Yates
+givenName: Stacey
+sn: Yates
+
+
+dn: cn=syates,ou=auto.homes,dc=connexions
+cn: syates
+objectClass: automount
+automountInformation: -rw,intr,soft wakizashi.cnx.rice.edu:/homes/syates
+
+dn: cn=audio,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: syates
+
+dn: cn=staff,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: syates
+
+dn: cn=cdrom,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: syates
+
+dn: cn=users,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: syates
+
+dn: cn=floppy,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: syates
+
+dn: cn=www-data,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: syates
+

@@ -1,0 +1,30 @@
+
+dn: cn=mariyah,ou=auto.homes,dc=connexions
+cn: mariyah
+objectClass: automount
+automountInformation: -rw,intr,soft cnx-246-67.ece.rice.edu:/homes/mariyah
+
+dn: cn=audio,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: mariyah
+
+dn: cn=staff,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: mariyah
+
+dn: cn=cdrom,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: mariyah
+
+dn: cn=users,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: mariyah
+
+dn: cn=floppy,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: mariyah

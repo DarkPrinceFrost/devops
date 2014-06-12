@@ -1,0 +1,49 @@
+dn: uid=dglazman,ou=People,dc=connexions
+uid: dglazman
+cn: Daniel Glazman
+objectClass: person
+objectClass: inetorgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+userPassword: {CRYPT}$1$suUYQNZ4$VO99jeW2fQm/kXAM75L6b1
+loginShell: /bin/csh
+uidNumber: 8973
+gidNumber: 100
+homeDirectory: /home/dglazman
+gecos: Daniel Glazman
+givenName: Daniel
+sn: Glazman
+
+
+dn: cn=dglazman,ou=auto.homes,dc=connexions
+cn: dglazman
+objectClass: automount
+automountInformation: -rw,intr,soft barracks.cnx.rice.edu:/homes/dglazman
+
+dn: cn=audio,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: dglazman
+
+dn: cn=staff,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: dglazman
+
+dn: cn=cdrom,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: dglazman
+
+dn: cn=users,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: dglazman
+
+dn: cn=floppy,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: dglazman
+

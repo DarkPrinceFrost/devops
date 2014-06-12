@@ -1,0 +1,49 @@
+dn: uid=ljouanneau,ou=People,dc=connexions
+uid: ljouanneau
+cn: Laurent Jouanneau
+objectClass: person
+objectClass: inetorgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+userPassword: {CRYPT}$1$L2g8J79.$qyIIYL7ScgkDKrjveX1g61
+loginShell: /bin/csh
+uidNumber: 8973
+gidNumber: 100
+homeDirectory: /home/ljouanneau
+gecos: Laurent Jouanneau
+givenName: Laurent
+sn: Jouanneau
+
+
+dn: cn=ljouanneau,ou=auto.homes,dc=connexions
+cn: ljouanneau
+objectClass: automount
+automountInformation: -rw,intr,soft barracks.cnx.rice.edu:/homes/ljouanneau
+
+dn: cn=audio,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: ljouanneau
+
+dn: cn=staff,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: ljouanneau
+
+dn: cn=cdrom,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: ljouanneau
+
+dn: cn=users,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: ljouanneau
+
+dn: cn=floppy,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: ljouanneau
+

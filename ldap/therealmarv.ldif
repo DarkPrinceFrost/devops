@@ -1,0 +1,54 @@
+dn: uid=therealmarv,ou=People,dc=connexions
+uid: therealmarv
+cn: Marvin Reimer
+objectClass: person
+objectClass: inetorgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+userPassword: {CRYPT}$1$PXHbwBkJ$SHebc8tAmL44v6C8QNPoW0
+loginShell: /bin/bash
+uidNumber: 9050
+gidNumber: 100
+homeDirectory: /home/therealmarv
+gecos: Marvin Reimer
+givenName: Marvin
+sn: Reimer
+
+
+dn: cn=therealmarv,ou=auto.homes,dc=connexions
+cn: therealmarv
+objectClass: automount
+automountInformation: -rw,intr,soft tachi.cnx.rice.edu:/homes/therealmarv
+
+dn: cn=audio,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: therealmarv
+
+dn: cn=staff,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: therealmarv
+
+dn: cn=cdrom,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: therealmarv
+
+dn: cn=users,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: therealmarv
+
+dn: cn=floppy,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: therealmarv
+
+dn: cn=www-data,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: therealmarv
+

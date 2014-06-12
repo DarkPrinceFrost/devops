@@ -1,0 +1,5307 @@
+# extended LDIF
+#
+# LDAPv3
+# base <> with scope sub
+# filter: (objectclass=*)
+# requesting: ALL
+#
+
+# connexions
+dn: dc=connexions
+objectClass: top
+objectClass: dcObject
+objectClass: organization
+o: connexions
+dc: connexions
+
+# admin, connexions
+dn: cn=admin,dc=connexions
+objectClass: simpleSecurityObject
+objectClass: organizationalRole
+cn: admin
+description: LDAP administrator
+userPassword:: e0NSWVBUfVYxQ2swNTYvMnh3MS4=
+
+# People, connexions
+dn: ou=People,dc=connexions
+objectClass: organizationalUnit
+ou: People
+
+# Roaming, connexions
+dn: ou=Roaming,dc=connexions
+objectClass: organizationalUnit
+ou: Roaming
+
+# Rpc, connexions
+dn: ou=Rpc,dc=connexions
+ou: Rpc
+objectClass: top
+objectClass: organizationalUnit
+
+# Group, connexions
+dn: ou=Group,dc=connexions
+ou: Group
+objectClass: top
+objectClass: organizationalUnit
+
+# Networks, connexions
+dn: ou=Networks,dc=connexions
+ou: Networks
+objectClass: top
+objectClass: organizationalUnit
+
+# netgroup.byhost, connexions
+dn: nisMapName=netgroup.byhost,dc=connexions
+nisMapName: netgroup.byhost
+objectClass: top
+objectClass: nisMap
+
+# netgroup.byuser, connexions
+dn: nisMapName=netgroup.byuser,dc=connexions
+nisMapName: netgroup.byuser
+objectClass: top
+objectClass: nisMap
+
+# Netgroup, connexions
+dn: ou=Netgroup,dc=connexions
+ou: Netgroup
+objectClass: top
+objectClass: organizationalUnit
+
+# Hosts, connexions
+dn: ou=Hosts,dc=connexions
+ou: Hosts
+objectClass: top
+objectClass: organizationalUnit
+
+# Services, connexions
+dn: ou=Services,dc=connexions
+ou: Services
+objectClass: top
+objectClass: organizationalUnit
+
+# Mounts, connexions
+dn: ou=Mounts,dc=connexions
+ou: Mounts
+objectClass: top
+objectClass: organizationalUnit
+
+# Aliases, connexions
+dn: ou=Aliases,dc=connexions
+ou: Aliases
+objectClass: top
+objectClass: organizationalUnit
+
+# Protocols, connexions
+dn: ou=Protocols,dc=connexions
+ou: Protocols
+objectClass: top
+objectClass: organizationalUnit
+
+# citadel, Hosts, connexions
+dn: cn=citadel,ou=Hosts,dc=connexions
+objectClass: top
+objectClass: ipHost
+objectClass: device
+ipHostNumber: 127.0.0.1
+cn: citadel
+
+# localnet, Networks, connexions
+dn: cn=localnet,ou=Networks,dc=connexions
+objectClass: ipNetwork
+objectClass: top
+ipNetworkNumber: 128.42.246.64
+cn: localnet
+
+# reedstrm, People, connexions
+dn: uid=reedstrm,ou=People,dc=connexions
+cn: Ross J. Reedstrom
+objectClass: posixAccount
+objectClass: top
+objectClass: shadowAccount
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+shadowMax: 99999
+shadowWarning: 7
+loginShell: /bin/bash
+gidNumber: 1000
+homeDirectory: /home/reedstrm
+uid: reedstrm
+uidNumber: 1000
+givenName: Ross
+initials: J.
+sn: Reedstrom
+gecos: Ross J. Reedstrom
+shadowLastChange: 12503
+telephoneNumber: 713-348-6166
+physicalDeliveryOfficeName: Connexions MS375, Rice University
+postalCode: 77005
+st: TX
+l: Houston
+mobile: 713-203-2468
+mail: reedstrm@rice.edu
+ou: Rice University
+postOfficeBox: Connexions MS375
+postalAddress: 6100 Main St.
+street: 6100 Main St.
+userPassword:: e0NSWVBUfSQxJDE0dHc0Yi96JGdYeDFUS0JUcXNZTnBRLzhXdjBVaS4=
+
+# ip, Protocols, connexions
+dn: cn=ip,ou=Protocols,dc=connexions
+objectClass: ipProtocol
+objectClass: top
+description: Protocol ip
+ipProtocolNumber: 0
+cn: ip
+
+# icmp, Protocols, connexions
+dn: cn=icmp,ou=Protocols,dc=connexions
+objectClass: ipProtocol
+objectClass: top
+description: Protocol icmp
+ipProtocolNumber: 1
+cn: icmp
+
+# igmp, Protocols, connexions
+dn: cn=igmp,ou=Protocols,dc=connexions
+objectClass: ipProtocol
+objectClass: top
+description: Protocol igmp
+ipProtocolNumber: 2
+cn: igmp
+
+# ggp, Protocols, connexions
+dn: cn=ggp,ou=Protocols,dc=connexions
+objectClass: ipProtocol
+objectClass: top
+description: Protocol ggp
+ipProtocolNumber: 3
+cn: ggp
+
+# ipencap, Protocols, connexions
+dn: cn=ipencap,ou=Protocols,dc=connexions
+objectClass: ipProtocol
+objectClass: top
+description: Protocol ipencap
+ipProtocolNumber: 4
+cn: ipencap
+cn: IP-ENCAP
+
+# st, Protocols, connexions
+dn: cn=st,ou=Protocols,dc=connexions
+objectClass: ipProtocol
+objectClass: top
+description: Protocol st
+ipProtocolNumber: 5
+cn: st
+
+# tcp, Protocols, connexions
+dn: cn=tcp,ou=Protocols,dc=connexions
+objectClass: ipProtocol
+objectClass: top
+description: Protocol tcp
+ipProtocolNumber: 6
+cn: tcp
+
+# egp, Protocols, connexions
+dn: cn=egp,ou=Protocols,dc=connexions
+objectClass: ipProtocol
+objectClass: top
+description: Protocol egp
+ipProtocolNumber: 8
+cn: egp
+
+# pup, Protocols, connexions
+dn: cn=pup,ou=Protocols,dc=connexions
+objectClass: ipProtocol
+objectClass: top
+description: Protocol pup
+ipProtocolNumber: 12
+cn: pup
+
+# udp, Protocols, connexions
+dn: cn=udp,ou=Protocols,dc=connexions
+objectClass: ipProtocol
+objectClass: top
+description: Protocol udp
+ipProtocolNumber: 17
+cn: udp
+
+# hmp, Protocols, connexions
+dn: cn=hmp,ou=Protocols,dc=connexions
+objectClass: ipProtocol
+objectClass: top
+description: Protocol hmp
+ipProtocolNumber: 20
+cn: hmp
+
+# xns-idp, Protocols, connexions
+dn: cn=xns-idp,ou=Protocols,dc=connexions
+objectClass: ipProtocol
+objectClass: top
+description: Protocol xns-idp
+ipProtocolNumber: 22
+cn: xns-idp
+
+# rdp, Protocols, connexions
+dn: cn=rdp,ou=Protocols,dc=connexions
+objectClass: ipProtocol
+objectClass: top
+description: Protocol rdp
+ipProtocolNumber: 27
+cn: rdp
+
+# iso-tp4, Protocols, connexions
+dn: cn=iso-tp4,ou=Protocols,dc=connexions
+objectClass: ipProtocol
+objectClass: top
+description: Protocol iso-tp4
+ipProtocolNumber: 29
+cn: iso-tp4
+
+# xtp, Protocols, connexions
+dn: cn=xtp,ou=Protocols,dc=connexions
+objectClass: ipProtocol
+objectClass: top
+description: Protocol xtp
+ipProtocolNumber: 36
+cn: xtp
+
+# ddp, Protocols, connexions
+dn: cn=ddp,ou=Protocols,dc=connexions
+objectClass: ipProtocol
+objectClass: top
+description: Protocol ddp
+ipProtocolNumber: 37
+cn: ddp
+
+# idpr-cmtp, Protocols, connexions
+dn: cn=idpr-cmtp,ou=Protocols,dc=connexions
+objectClass: ipProtocol
+objectClass: top
+description: Protocol idpr-cmtp
+ipProtocolNumber: 38
+cn: idpr-cmtp
+
+# ipv6, Protocols, connexions
+dn: cn=ipv6,ou=Protocols,dc=connexions
+objectClass: ipProtocol
+objectClass: top
+description: Protocol ipv6
+ipProtocolNumber: 41
+cn: ipv6
+
+# ipv6-route, Protocols, connexions
+dn: cn=ipv6-route,ou=Protocols,dc=connexions
+objectClass: ipProtocol
+objectClass: top
+description: Protocol ipv6-route
+ipProtocolNumber: 43
+cn: ipv6-route
+
+# ipv6-frag, Protocols, connexions
+dn: cn=ipv6-frag,ou=Protocols,dc=connexions
+objectClass: ipProtocol
+objectClass: top
+description: Protocol ipv6-frag
+ipProtocolNumber: 44
+cn: ipv6-frag
+
+# idrp, Protocols, connexions
+dn: cn=idrp,ou=Protocols,dc=connexions
+objectClass: ipProtocol
+objectClass: top
+description: Protocol idrp
+ipProtocolNumber: 45
+cn: idrp
+
+# rsvp, Protocols, connexions
+dn: cn=rsvp,ou=Protocols,dc=connexions
+objectClass: ipProtocol
+objectClass: top
+description: Protocol rsvp
+ipProtocolNumber: 46
+cn: rsvp
+
+# gre, Protocols, connexions
+dn: cn=gre,ou=Protocols,dc=connexions
+objectClass: ipProtocol
+objectClass: top
+description: Protocol gre
+ipProtocolNumber: 47
+cn: gre
+
+# esp, Protocols, connexions
+dn: cn=esp,ou=Protocols,dc=connexions
+objectClass: ipProtocol
+objectClass: top
+description: Protocol esp
+ipProtocolNumber: 50
+cn: esp
+
+# ah, Protocols, connexions
+dn: cn=ah,ou=Protocols,dc=connexions
+objectClass: ipProtocol
+objectClass: top
+description: Protocol ah
+ipProtocolNumber: 51
+cn: ah
+
+# skip, Protocols, connexions
+dn: cn=skip,ou=Protocols,dc=connexions
+objectClass: ipProtocol
+objectClass: top
+description: Protocol skip
+ipProtocolNumber: 57
+cn: skip
+
+# ipv6-icmp, Protocols, connexions
+dn: cn=ipv6-icmp,ou=Protocols,dc=connexions
+objectClass: ipProtocol
+objectClass: top
+description: Protocol ipv6-icmp
+ipProtocolNumber: 58
+cn: ipv6-icmp
+
+# ipv6-nonxt, Protocols, connexions
+dn: cn=ipv6-nonxt,ou=Protocols,dc=connexions
+objectClass: ipProtocol
+objectClass: top
+description: Protocol ipv6-nonxt
+ipProtocolNumber: 59
+cn: ipv6-nonxt
+
+# ipv6-opts, Protocols, connexions
+dn: cn=ipv6-opts,ou=Protocols,dc=connexions
+objectClass: ipProtocol
+objectClass: top
+description: Protocol ipv6-opts
+ipProtocolNumber: 60
+cn: ipv6-opts
+
+# rspf, Protocols, connexions
+dn: cn=rspf,ou=Protocols,dc=connexions
+objectClass: ipProtocol
+objectClass: top
+description: Protocol rspf
+ipProtocolNumber: 73
+cn: rspf
+
+# vmtp, Protocols, connexions
+dn: cn=vmtp,ou=Protocols,dc=connexions
+objectClass: ipProtocol
+objectClass: top
+description: Protocol vmtp
+ipProtocolNumber: 81
+cn: vmtp
+
+# ospf, Protocols, connexions
+dn: cn=ospf,ou=Protocols,dc=connexions
+objectClass: ipProtocol
+objectClass: top
+description: Protocol ospf
+ipProtocolNumber: 89
+cn: ospf
+cn: OSPFIGP
+
+# ipip, Protocols, connexions
+dn: cn=ipip,ou=Protocols,dc=connexions
+objectClass: ipProtocol
+objectClass: top
+description: Protocol ipip
+ipProtocolNumber: 94
+cn: ipip
+
+# encap, Protocols, connexions
+dn: cn=encap,ou=Protocols,dc=connexions
+objectClass: ipProtocol
+objectClass: top
+description: Protocol encap
+ipProtocolNumber: 98
+cn: encap
+
+# pim, Protocols, connexions
+dn: cn=pim,ou=Protocols,dc=connexions
+objectClass: ipProtocol
+objectClass: top
+description: Protocol pim
+ipProtocolNumber: 103
+cn: pim
+
+# portmapper, Rpc, connexions
+dn: cn=portmapper,ou=Rpc,dc=connexions
+objectClass: oncRpc
+objectClass: top
+description: RPC portmapper
+oncRpcNumber: 100000
+cn: portmapper
+cn: portmap
+cn: sunrpc
+
+# rstatd, Rpc, connexions
+dn: cn=rstatd,ou=Rpc,dc=connexions
+objectClass: oncRpc
+objectClass: top
+description: RPC rstatd
+oncRpcNumber: 100001
+cn: rstatd
+cn: perfmeter
+cn: rstat
+cn: rstat_svc
+cn: rup
+
+# rusersd, Rpc, connexions
+dn: cn=rusersd,ou=Rpc,dc=connexions
+objectClass: oncRpc
+objectClass: top
+description: RPC rusersd
+oncRpcNumber: 100002
+cn: rusersd
+cn: rusers
+
+# nfs, Rpc, connexions
+dn: cn=nfs,ou=Rpc,dc=connexions
+objectClass: oncRpc
+objectClass: top
+description: RPC nfs
+oncRpcNumber: 100003
+cn: nfs
+cn: nfsprog
+
+# ypserv, Rpc, connexions
+dn: cn=ypserv,ou=Rpc,dc=connexions
+objectClass: oncRpc
+objectClass: top
+description: RPC ypserv
+oncRpcNumber: 100004
+cn: ypserv
+cn: ypprog
+
+# mountd, Rpc, connexions
+dn: cn=mountd,ou=Rpc,dc=connexions
+objectClass: oncRpc
+objectClass: top
+description: RPC mountd
+oncRpcNumber: 100005
+cn: mountd
+cn: mount
+cn: showmount
+
+# ypbind, Rpc, connexions
+dn: cn=ypbind,ou=Rpc,dc=connexions
+objectClass: oncRpc
+objectClass: top
+description: RPC ypbind
+oncRpcNumber: 100007
+cn: ypbind
+
+# walld, Rpc, connexions
+dn: cn=walld,ou=Rpc,dc=connexions
+objectClass: oncRpc
+objectClass: top
+description: RPC walld
+oncRpcNumber: 100008
+cn: walld
+cn: rwall
+cn: shutdown
+
+# yppasswdd, Rpc, connexions
+dn: cn=yppasswdd,ou=Rpc,dc=connexions
+objectClass: oncRpc
+objectClass: top
+description: RPC yppasswdd
+oncRpcNumber: 100009
+cn: yppasswdd
+cn: yppasswd
+
+# etherstatd, Rpc, connexions
+dn: cn=etherstatd,ou=Rpc,dc=connexions
+objectClass: oncRpc
+objectClass: top
+description: RPC etherstatd
+oncRpcNumber: 100010
+cn: etherstatd
+cn: etherstat
+
+# rquotad, Rpc, connexions
+dn: cn=rquotad,ou=Rpc,dc=connexions
+objectClass: oncRpc
+objectClass: top
+description: RPC rquotad
+oncRpcNumber: 100011
+cn: rquotad
+cn: quota
+cn: rquota
+cn: rquotaprog
+
+# sprayd, Rpc, connexions
+dn: cn=sprayd,ou=Rpc,dc=connexions
+objectClass: oncRpc
+objectClass: top
+description: RPC sprayd
+oncRpcNumber: 100012
+cn: sprayd
+cn: spray
+
+# 3270_mapper, Rpc, connexions
+dn: cn=3270_mapper,ou=Rpc,dc=connexions
+objectClass: oncRpc
+objectClass: top
+description: RPC 3270_mapper
+oncRpcNumber: 100013
+cn: 3270_mapper
+
+# rje_mapper, Rpc, connexions
+dn: cn=rje_mapper,ou=Rpc,dc=connexions
+objectClass: oncRpc
+objectClass: top
+description: RPC rje_mapper
+oncRpcNumber: 100014
+cn: rje_mapper
+
+# selection_svc, Rpc, connexions
+dn: cn=selection_svc,ou=Rpc,dc=connexions
+objectClass: oncRpc
+objectClass: top
+description: RPC selection_svc
+oncRpcNumber: 100015
+cn: selection_svc
+cn: selnsvc
+
+# database_svc, Rpc, connexions
+dn: cn=database_svc,ou=Rpc,dc=connexions
+objectClass: oncRpc
+objectClass: top
+description: RPC database_svc
+oncRpcNumber: 100016
+cn: database_svc
+
+# rexd, Rpc, connexions
+dn: cn=rexd,ou=Rpc,dc=connexions
+objectClass: oncRpc
+objectClass: top
+description: RPC rexd
+oncRpcNumber: 100017
+cn: rexd
+cn: rex
+
+# alis, Rpc, connexions
+dn: cn=alis,ou=Rpc,dc=connexions
+objectClass: oncRpc
+objectClass: top
+description: RPC alis
+oncRpcNumber: 100018
+cn: alis
+
+# sched, Rpc, connexions
+dn: cn=sched,ou=Rpc,dc=connexions
+objectClass: oncRpc
+objectClass: top
+description: RPC sched
+oncRpcNumber: 100019
+cn: sched
+
+# llockmgr, Rpc, connexions
+dn: cn=llockmgr,ou=Rpc,dc=connexions
+objectClass: oncRpc
+objectClass: top
+description: RPC llockmgr
+oncRpcNumber: 100020
+cn: llockmgr
+
+# nlockmgr, Rpc, connexions
+dn: cn=nlockmgr,ou=Rpc,dc=connexions
+objectClass: oncRpc
+objectClass: top
+description: RPC nlockmgr
+oncRpcNumber: 100021
+cn: nlockmgr
+
+# x25.inr, Rpc, connexions
+dn: cn=x25.inr,ou=Rpc,dc=connexions
+objectClass: oncRpc
+objectClass: top
+description: RPC x25.inr
+oncRpcNumber: 100022
+cn: x25.inr
+
+# statmon, Rpc, connexions
+dn: cn=statmon,ou=Rpc,dc=connexions
+objectClass: oncRpc
+objectClass: top
+description: RPC statmon
+oncRpcNumber: 100023
+cn: statmon
+
+# status, Rpc, connexions
+dn: cn=status,ou=Rpc,dc=connexions
+objectClass: oncRpc
+objectClass: top
+description: RPC status
+oncRpcNumber: 100024
+cn: status
+
+# bootparam, Rpc, connexions
+dn: cn=bootparam,ou=Rpc,dc=connexions
+objectClass: oncRpc
+objectClass: top
+description: RPC bootparam
+oncRpcNumber: 100026
+cn: bootparam
+
+# ypupdated, Rpc, connexions
+dn: cn=ypupdated,ou=Rpc,dc=connexions
+objectClass: oncRpc
+objectClass: top
+description: RPC ypupdated
+oncRpcNumber: 100028
+cn: ypupdated
+cn: ypupdate
+
+# keyserv, Rpc, connexions
+dn: cn=keyserv,ou=Rpc,dc=connexions
+objectClass: oncRpc
+objectClass: top
+description: RPC keyserv
+oncRpcNumber: 100029
+cn: keyserv
+cn: keyserver
+
+# tfsd, Rpc, connexions
+dn: cn=tfsd,ou=Rpc,dc=connexions
+objectClass: oncRpc
+objectClass: top
+description: RPC tfsd
+oncRpcNumber: 100037
+cn: tfsd
+
+# nsed, Rpc, connexions
+dn: cn=nsed,ou=Rpc,dc=connexions
+objectClass: oncRpc
+objectClass: top
+description: RPC nsed
+oncRpcNumber: 100038
+cn: nsed
+
+# nsemntd, Rpc, connexions
+dn: cn=nsemntd,ou=Rpc,dc=connexions
+objectClass: oncRpc
+objectClass: top
+description: RPC nsemntd
+oncRpcNumber: 100039
+cn: nsemntd
+
+# pcnfsd, Rpc, connexions
+dn: cn=pcnfsd,ou=Rpc,dc=connexions
+objectClass: oncRpc
+objectClass: top
+description: RPC pcnfsd
+oncRpcNumber: 150001
+cn: pcnfsd
+
+# amd, Rpc, connexions
+dn: cn=amd,ou=Rpc,dc=connexions
+objectClass: oncRpc
+objectClass: top
+description: RPC amd
+oncRpcNumber: 300019
+cn: amd
+cn: amq
+
+# sgi_fam, Rpc, connexions
+dn: cn=sgi_fam,ou=Rpc,dc=connexions
+objectClass: oncRpc
+objectClass: top
+description: RPC sgi_fam
+oncRpcNumber: 391002
+cn: sgi_fam
+
+# ugidd, Rpc, connexions
+dn: cn=ugidd,ou=Rpc,dc=connexions
+objectClass: oncRpc
+objectClass: top
+description: RPC ugidd
+oncRpcNumber: 545580417
+cn: ugidd
+
+# bwnfsd, Rpc, connexions
+dn: cn=bwnfsd,ou=Rpc,dc=connexions
+objectClass: oncRpc
+objectClass: top
+description: RPC bwnfsd
+oncRpcNumber: 788585389
+cn: bwnfsd
+
+# tcp, Services, connexions
+dn: ou=tcp,ou=Services,dc=connexions
+ou: tcp
+objectClass: top
+objectClass: organizationalUnit
+
+# tcpmux, tcp, Services, connexions
+dn: cn=tcpmux,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 1
+ipServiceProtocol: tcp
+cn: tcpmux
+
+# echo, tcp, Services, connexions
+dn: cn=echo,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 7
+ipServiceProtocol: tcp
+cn: echo
+
+# udp, Services, connexions
+dn: ou=udp,ou=Services,dc=connexions
+ou: udp
+objectClass: top
+objectClass: organizationalUnit
+
+# echo, udp, Services, connexions
+dn: cn=echo,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 7
+ipServiceProtocol: udp
+cn: echo
+
+# discard, tcp, Services, connexions
+dn: cn=discard,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 9
+ipServiceProtocol: tcp
+cn: discard
+cn: null
+cn: sink
+
+# discard, udp, Services, connexions
+dn: cn=discard,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 9
+ipServiceProtocol: udp
+cn: discard
+cn: null
+cn: sink
+
+# systat, tcp, Services, connexions
+dn: cn=systat,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 11
+ipServiceProtocol: tcp
+cn: systat
+cn: users
+
+# daytime, tcp, Services, connexions
+dn: cn=daytime,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 13
+ipServiceProtocol: tcp
+cn: daytime
+
+# daytime, udp, Services, connexions
+dn: cn=daytime,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 13
+ipServiceProtocol: udp
+cn: daytime
+
+# netstat, tcp, Services, connexions
+dn: cn=netstat,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 15
+ipServiceProtocol: tcp
+cn: netstat
+
+# qotd, tcp, Services, connexions
+dn: cn=qotd,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 17
+ipServiceProtocol: tcp
+cn: qotd
+cn: quote
+
+# msp, tcp, Services, connexions
+dn: cn=msp,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 18
+ipServiceProtocol: tcp
+cn: msp
+
+# msp, udp, Services, connexions
+dn: cn=msp,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 18
+ipServiceProtocol: udp
+cn: msp
+
+# chargen, tcp, Services, connexions
+dn: cn=chargen,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 19
+ipServiceProtocol: tcp
+cn: chargen
+cn: source
+cn: ttytst
+
+# chargen, udp, Services, connexions
+dn: cn=chargen,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 19
+ipServiceProtocol: udp
+cn: chargen
+cn: source
+cn: ttytst
+
+# ftp-data, tcp, Services, connexions
+dn: cn=ftp-data,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 20
+ipServiceProtocol: tcp
+cn: ftp-data
+
+# ftp, tcp, Services, connexions
+dn: cn=ftp,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 21
+ipServiceProtocol: tcp
+cn: ftp
+
+# fsp, udp, Services, connexions
+dn: cn=fsp,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 21
+ipServiceProtocol: udp
+cn: fsp
+cn: fspd
+
+# ssh, tcp, Services, connexions
+dn: cn=ssh,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 22
+ipServiceProtocol: tcp
+cn: ssh
+
+# ssh, udp, Services, connexions
+dn: cn=ssh,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 22
+ipServiceProtocol: udp
+cn: ssh
+
+# telnet, tcp, Services, connexions
+dn: cn=telnet,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 23
+ipServiceProtocol: tcp
+cn: telnet
+
+# smtp, tcp, Services, connexions
+dn: cn=smtp,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 25
+ipServiceProtocol: tcp
+cn: smtp
+cn: mail
+
+# time, tcp, Services, connexions
+dn: cn=time,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 37
+ipServiceProtocol: tcp
+cn: time
+cn: timserver
+
+# time, udp, Services, connexions
+dn: cn=time,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 37
+ipServiceProtocol: udp
+cn: time
+cn: timserver
+
+# rlp, udp, Services, connexions
+dn: cn=rlp,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 39
+ipServiceProtocol: udp
+cn: rlp
+cn: resource
+
+# nameserver, tcp, Services, connexions
+dn: cn=nameserver,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 42
+ipServiceProtocol: tcp
+cn: nameserver
+cn: name
+
+# whois, tcp, Services, connexions
+dn: cn=whois,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 43
+ipServiceProtocol: tcp
+cn: whois
+cn: nicname
+
+# re-mail-ck, tcp, Services, connexions
+dn: cn=re-mail-ck,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 50
+ipServiceProtocol: tcp
+cn: re-mail-ck
+
+# re-mail-ck, udp, Services, connexions
+dn: cn=re-mail-ck,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 50
+ipServiceProtocol: udp
+cn: re-mail-ck
+
+# domain, tcp, Services, connexions
+dn: cn=domain,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 53
+ipServiceProtocol: tcp
+cn: domain
+cn: nameserver
+
+# domain, udp, Services, connexions
+dn: cn=domain,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 53
+ipServiceProtocol: udp
+cn: domain
+cn: nameserver
+
+# mtp, tcp, Services, connexions
+dn: cn=mtp,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 57
+ipServiceProtocol: tcp
+cn: mtp
+
+# bootps, tcp, Services, connexions
+dn: cn=bootps,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 67
+ipServiceProtocol: tcp
+cn: bootps
+
+# bootps, udp, Services, connexions
+dn: cn=bootps,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 67
+ipServiceProtocol: udp
+cn: bootps
+
+# bootpc, tcp, Services, connexions
+dn: cn=bootpc,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 68
+ipServiceProtocol: tcp
+cn: bootpc
+
+# bootpc, udp, Services, connexions
+dn: cn=bootpc,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 68
+ipServiceProtocol: udp
+cn: bootpc
+
+# tftp, udp, Services, connexions
+dn: cn=tftp,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 69
+ipServiceProtocol: udp
+cn: tftp
+
+# gopher, tcp, Services, connexions
+dn: cn=gopher,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 70
+ipServiceProtocol: tcp
+cn: gopher
+
+# gopher, udp, Services, connexions
+dn: cn=gopher,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 70
+ipServiceProtocol: udp
+cn: gopher
+
+# rje, tcp, Services, connexions
+dn: cn=rje,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 77
+ipServiceProtocol: tcp
+cn: rje
+cn: netrjs
+
+# finger, tcp, Services, connexions
+dn: cn=finger,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 79
+ipServiceProtocol: tcp
+cn: finger
+
+# www, tcp, Services, connexions
+dn: cn=www,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 80
+ipServiceProtocol: tcp
+cn: www
+cn: http
+
+# www, udp, Services, connexions
+dn: cn=www,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 80
+ipServiceProtocol: udp
+cn: www
+
+# link, tcp, Services, connexions
+dn: cn=link,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 87
+ipServiceProtocol: tcp
+cn: link
+cn: ttylink
+
+# kerberos, tcp, Services, connexions
+dn: cn=kerberos,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 88
+ipServiceProtocol: tcp
+cn: kerberos
+cn: kerberos-sec
+cn: kerberos5
+cn: krb5
+
+# kerberos, udp, Services, connexions
+dn: cn=kerberos,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 88
+ipServiceProtocol: udp
+cn: kerberos
+cn: kerberos-sec
+cn: kerberos5
+cn: krb5
+
+# supdup, tcp, Services, connexions
+dn: cn=supdup,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 95
+ipServiceProtocol: tcp
+cn: supdup
+
+# hostnames, tcp, Services, connexions
+dn: cn=hostnames,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 101
+ipServiceProtocol: tcp
+cn: hostnames
+cn: hostname
+
+# iso-tsap, tcp, Services, connexions
+dn: cn=iso-tsap,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 102
+ipServiceProtocol: tcp
+cn: iso-tsap
+cn: tsap
+
+# csnet-ns, tcp, Services, connexions
+dn: cn=csnet-ns,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 105
+ipServiceProtocol: tcp
+cn: csnet-ns
+cn: cso-ns
+
+# csnet-ns, udp, Services, connexions
+dn: cn=csnet-ns,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 105
+ipServiceProtocol: udp
+cn: csnet-ns
+cn: cso-ns
+
+# rtelnet, tcp, Services, connexions
+dn: cn=rtelnet,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 107
+ipServiceProtocol: tcp
+cn: rtelnet
+
+# rtelnet, udp, Services, connexions
+dn: cn=rtelnet,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 107
+ipServiceProtocol: udp
+cn: rtelnet
+
+# pop2, tcp, Services, connexions
+dn: cn=pop2,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 109
+ipServiceProtocol: tcp
+cn: pop2
+cn: pop-2
+cn: postoffice
+
+# pop2, udp, Services, connexions
+dn: cn=pop2,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 109
+ipServiceProtocol: udp
+cn: pop2
+cn: pop-2
+
+# pop3, tcp, Services, connexions
+dn: cn=pop3,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 110
+ipServiceProtocol: tcp
+cn: pop3
+cn: pop-3
+
+# pop3, udp, Services, connexions
+dn: cn=pop3,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 110
+ipServiceProtocol: udp
+cn: pop3
+cn: pop-3
+
+# sunrpc, tcp, Services, connexions
+dn: cn=sunrpc,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 111
+ipServiceProtocol: tcp
+cn: sunrpc
+cn: portmapper
+
+# sunrpc, udp, Services, connexions
+dn: cn=sunrpc,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 111
+ipServiceProtocol: udp
+cn: sunrpc
+cn: portmapper
+
+# auth, tcp, Services, connexions
+dn: cn=auth,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 113
+ipServiceProtocol: tcp
+cn: auth
+cn: authentication
+cn: ident
+cn: tap
+
+# sftp, tcp, Services, connexions
+dn: cn=sftp,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 115
+ipServiceProtocol: tcp
+cn: sftp
+
+# uucp-path, tcp, Services, connexions
+dn: cn=uucp-path,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 117
+ipServiceProtocol: tcp
+cn: uucp-path
+
+# nntp, tcp, Services, connexions
+dn: cn=nntp,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 119
+ipServiceProtocol: tcp
+cn: nntp
+cn: readnews
+cn: untp
+
+# ntp, tcp, Services, connexions
+dn: cn=ntp,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 123
+ipServiceProtocol: tcp
+cn: ntp
+
+# ntp, udp, Services, connexions
+dn: cn=ntp,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 123
+ipServiceProtocol: udp
+cn: ntp
+
+# pwdgen, tcp, Services, connexions
+dn: cn=pwdgen,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 129
+ipServiceProtocol: tcp
+cn: pwdgen
+
+# pwdgen, udp, Services, connexions
+dn: cn=pwdgen,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 129
+ipServiceProtocol: udp
+cn: pwdgen
+
+# netbios-ns, tcp, Services, connexions
+dn: cn=netbios-ns,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 137
+ipServiceProtocol: tcp
+cn: netbios-ns
+
+# netbios-ns, udp, Services, connexions
+dn: cn=netbios-ns,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 137
+ipServiceProtocol: udp
+cn: netbios-ns
+
+# netbios-dgm, tcp, Services, connexions
+dn: cn=netbios-dgm,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 138
+ipServiceProtocol: tcp
+cn: netbios-dgm
+
+# netbios-dgm, udp, Services, connexions
+dn: cn=netbios-dgm,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 138
+ipServiceProtocol: udp
+cn: netbios-dgm
+
+# netbios-ssn, tcp, Services, connexions
+dn: cn=netbios-ssn,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 139
+ipServiceProtocol: tcp
+cn: netbios-ssn
+
+# netbios-ssn, udp, Services, connexions
+dn: cn=netbios-ssn,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 139
+ipServiceProtocol: udp
+cn: netbios-ssn
+
+# imap2, tcp, Services, connexions
+dn: cn=imap2,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 143
+ipServiceProtocol: tcp
+cn: imap2
+cn: imap
+
+# imap2, udp, Services, connexions
+dn: cn=imap2,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 143
+ipServiceProtocol: udp
+cn: imap2
+cn: imap
+
+# snmp, udp, Services, connexions
+dn: cn=snmp,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 161
+ipServiceProtocol: udp
+cn: snmp
+
+# snmp-trap, udp, Services, connexions
+dn: cn=snmp-trap,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 162
+ipServiceProtocol: udp
+cn: snmp-trap
+cn: snmptrap
+
+# cmip-man, tcp, Services, connexions
+dn: cn=cmip-man,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 163
+ipServiceProtocol: tcp
+cn: cmip-man
+
+# cmip-man, udp, Services, connexions
+dn: cn=cmip-man,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 163
+ipServiceProtocol: udp
+cn: cmip-man
+
+# cmip-agent, tcp, Services, connexions
+dn: cn=cmip-agent,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 164
+ipServiceProtocol: tcp
+cn: cmip-agent
+
+# cmip-agent, udp, Services, connexions
+dn: cn=cmip-agent,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 164
+ipServiceProtocol: udp
+cn: cmip-agent
+
+# mailq, tcp, Services, connexions
+dn: cn=mailq,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 174
+ipServiceProtocol: tcp
+cn: mailq
+
+# mailq, udp, Services, connexions
+dn: cn=mailq,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 174
+ipServiceProtocol: udp
+cn: mailq
+
+# xdmcp, tcp, Services, connexions
+dn: cn=xdmcp,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 177
+ipServiceProtocol: tcp
+cn: xdmcp
+
+# xdmcp, udp, Services, connexions
+dn: cn=xdmcp,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 177
+ipServiceProtocol: udp
+cn: xdmcp
+
+# nextstep, tcp, Services, connexions
+dn: cn=nextstep,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 178
+ipServiceProtocol: tcp
+cn: nextstep
+
+# nextstep, udp, Services, connexions
+dn: cn=nextstep,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 178
+ipServiceProtocol: udp
+cn: nextstep
+
+# bgp, tcp, Services, connexions
+dn: cn=bgp,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 179
+ipServiceProtocol: tcp
+cn: bgp
+
+# bgp, udp, Services, connexions
+dn: cn=bgp,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 179
+ipServiceProtocol: udp
+cn: bgp
+
+# prospero, tcp, Services, connexions
+dn: cn=prospero,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 191
+ipServiceProtocol: tcp
+cn: prospero
+
+# prospero, udp, Services, connexions
+dn: cn=prospero,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 191
+ipServiceProtocol: udp
+cn: prospero
+
+# irc, tcp, Services, connexions
+dn: cn=irc,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 194
+ipServiceProtocol: tcp
+cn: irc
+
+# irc, udp, Services, connexions
+dn: cn=irc,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 194
+ipServiceProtocol: udp
+cn: irc
+
+# smux, tcp, Services, connexions
+dn: cn=smux,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 199
+ipServiceProtocol: tcp
+cn: smux
+
+# smux, udp, Services, connexions
+dn: cn=smux,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 199
+ipServiceProtocol: udp
+cn: smux
+
+# at-rtmp, tcp, Services, connexions
+dn: cn=at-rtmp,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 201
+ipServiceProtocol: tcp
+cn: at-rtmp
+
+# at-rtmp, udp, Services, connexions
+dn: cn=at-rtmp,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 201
+ipServiceProtocol: udp
+cn: at-rtmp
+
+# at-nbp, tcp, Services, connexions
+dn: cn=at-nbp,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 202
+ipServiceProtocol: tcp
+cn: at-nbp
+
+# at-nbp, udp, Services, connexions
+dn: cn=at-nbp,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 202
+ipServiceProtocol: udp
+cn: at-nbp
+
+# at-echo, tcp, Services, connexions
+dn: cn=at-echo,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 204
+ipServiceProtocol: tcp
+cn: at-echo
+
+# at-echo, udp, Services, connexions
+dn: cn=at-echo,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 204
+ipServiceProtocol: udp
+cn: at-echo
+
+# at-zis, tcp, Services, connexions
+dn: cn=at-zis,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 206
+ipServiceProtocol: tcp
+cn: at-zis
+
+# at-zis, udp, Services, connexions
+dn: cn=at-zis,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 206
+ipServiceProtocol: udp
+cn: at-zis
+
+# qmtp, tcp, Services, connexions
+dn: cn=qmtp,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 209
+ipServiceProtocol: tcp
+cn: qmtp
+
+# qmtp, udp, Services, connexions
+dn: cn=qmtp,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 209
+ipServiceProtocol: udp
+cn: qmtp
+
+# z3950, tcp, Services, connexions
+dn: cn=z3950,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 210
+ipServiceProtocol: tcp
+cn: z3950
+cn: wais
+
+# z3950, udp, Services, connexions
+dn: cn=z3950,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 210
+ipServiceProtocol: udp
+cn: z3950
+cn: wais
+
+# ipx, tcp, Services, connexions
+dn: cn=ipx,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 213
+ipServiceProtocol: tcp
+cn: ipx
+
+# ipx, udp, Services, connexions
+dn: cn=ipx,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 213
+ipServiceProtocol: udp
+cn: ipx
+
+# imap3, tcp, Services, connexions
+dn: cn=imap3,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 220
+ipServiceProtocol: tcp
+cn: imap3
+
+# imap3, udp, Services, connexions
+dn: cn=imap3,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 220
+ipServiceProtocol: udp
+cn: imap3
+
+# rpc2portmap, tcp, Services, connexions
+dn: cn=rpc2portmap,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 369
+ipServiceProtocol: tcp
+cn: rpc2portmap
+
+# rpc2portmap, udp, Services, connexions
+dn: cn=rpc2portmap,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 369
+ipServiceProtocol: udp
+cn: rpc2portmap
+
+# codaauth2, tcp, Services, connexions
+dn: cn=codaauth2,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 370
+ipServiceProtocol: tcp
+cn: codaauth2
+
+# codaauth2, udp, Services, connexions
+dn: cn=codaauth2,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 370
+ipServiceProtocol: udp
+cn: codaauth2
+
+# ulistserv, tcp, Services, connexions
+dn: cn=ulistserv,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 372
+ipServiceProtocol: tcp
+cn: ulistserv
+
+# ulistserv, udp, Services, connexions
+dn: cn=ulistserv,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 372
+ipServiceProtocol: udp
+cn: ulistserv
+
+# ldap, tcp, Services, connexions
+dn: cn=ldap,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 389
+ipServiceProtocol: tcp
+cn: ldap
+
+# ldap, udp, Services, connexions
+dn: cn=ldap,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 389
+ipServiceProtocol: udp
+cn: ldap
+
+# https, tcp, Services, connexions
+dn: cn=https,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 443
+ipServiceProtocol: tcp
+cn: https
+
+# https, udp, Services, connexions
+dn: cn=https,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 443
+ipServiceProtocol: udp
+cn: https
+
+# snpp, tcp, Services, connexions
+dn: cn=snpp,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 444
+ipServiceProtocol: tcp
+cn: snpp
+
+# snpp, udp, Services, connexions
+dn: cn=snpp,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 444
+ipServiceProtocol: udp
+cn: snpp
+
+# saft, tcp, Services, connexions
+dn: cn=saft,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 487
+ipServiceProtocol: tcp
+cn: saft
+
+# saft, udp, Services, connexions
+dn: cn=saft,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 487
+ipServiceProtocol: udp
+cn: saft
+
+# npmp-local, tcp, Services, connexions
+dn: cn=npmp-local,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 610
+ipServiceProtocol: tcp
+cn: npmp-local
+cn: dqs313_qmaster
+
+# npmp-local, udp, Services, connexions
+dn: cn=npmp-local,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 610
+ipServiceProtocol: udp
+cn: npmp-local
+cn: dqs313_qmaster
+
+# npmp-gui, tcp, Services, connexions
+dn: cn=npmp-gui,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 611
+ipServiceProtocol: tcp
+cn: npmp-gui
+cn: dqs313_execd
+
+# npmp-gui, udp, Services, connexions
+dn: cn=npmp-gui,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 611
+ipServiceProtocol: udp
+cn: npmp-gui
+cn: dqs313_execd
+
+# hmmp-ind, tcp, Services, connexions
+dn: cn=hmmp-ind,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 612
+ipServiceProtocol: tcp
+cn: hmmp-ind
+cn: dqs313_intercell
+
+# hmmp-ind, udp, Services, connexions
+dn: cn=hmmp-ind,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 612
+ipServiceProtocol: udp
+cn: hmmp-ind
+cn: dqs313_intercell
+
+# ipp, tcp, Services, connexions
+dn: cn=ipp,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 631
+ipServiceProtocol: tcp
+cn: ipp
+
+# ipp, udp, Services, connexions
+dn: cn=ipp,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 631
+ipServiceProtocol: udp
+cn: ipp
+
+# exec, tcp, Services, connexions
+dn: cn=exec,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 512
+ipServiceProtocol: tcp
+cn: exec
+
+# biff, udp, Services, connexions
+dn: cn=biff,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 512
+ipServiceProtocol: udp
+cn: biff
+cn: comsat
+
+# login, tcp, Services, connexions
+dn: cn=login,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 513
+ipServiceProtocol: tcp
+cn: login
+
+# who, udp, Services, connexions
+dn: cn=who,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 513
+ipServiceProtocol: udp
+cn: who
+cn: whod
+
+# shell, tcp, Services, connexions
+dn: cn=shell,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 514
+ipServiceProtocol: tcp
+cn: shell
+cn: cmd
+
+# syslog, udp, Services, connexions
+dn: cn=syslog,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 514
+ipServiceProtocol: udp
+cn: syslog
+
+# printer, tcp, Services, connexions
+dn: cn=printer,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 515
+ipServiceProtocol: tcp
+cn: printer
+cn: spooler
+
+# talk, udp, Services, connexions
+dn: cn=talk,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 517
+ipServiceProtocol: udp
+cn: talk
+
+# ntalk, udp, Services, connexions
+dn: cn=ntalk,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 518
+ipServiceProtocol: udp
+cn: ntalk
+
+# route, udp, Services, connexions
+dn: cn=route,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 520
+ipServiceProtocol: udp
+cn: route
+cn: routed
+cn: router
+
+# timed, udp, Services, connexions
+dn: cn=timed,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 525
+ipServiceProtocol: udp
+cn: timed
+cn: timeserver
+
+# tempo, tcp, Services, connexions
+dn: cn=tempo,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 526
+ipServiceProtocol: tcp
+cn: tempo
+cn: newdate
+
+# courier, tcp, Services, connexions
+dn: cn=courier,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 530
+ipServiceProtocol: tcp
+cn: courier
+cn: rpc
+
+# conference, tcp, Services, connexions
+dn: cn=conference,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 531
+ipServiceProtocol: tcp
+cn: conference
+cn: chat
+
+# netnews, tcp, Services, connexions
+dn: cn=netnews,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 532
+ipServiceProtocol: tcp
+cn: netnews
+cn: readnews
+
+# netwall, udp, Services, connexions
+dn: cn=netwall,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 533
+ipServiceProtocol: udp
+cn: netwall
+
+# gdomap, tcp, Services, connexions
+dn: cn=gdomap,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 538
+ipServiceProtocol: tcp
+cn: gdomap
+
+# gdomap, udp, Services, connexions
+dn: cn=gdomap,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 538
+ipServiceProtocol: udp
+cn: gdomap
+
+# uucp, tcp, Services, connexions
+dn: cn=uucp,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 540
+ipServiceProtocol: tcp
+cn: uucp
+cn: uucpd
+
+# afpovertcp, tcp, Services, connexions
+dn: cn=afpovertcp,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 548
+ipServiceProtocol: tcp
+cn: afpovertcp
+
+# afpovertcp, udp, Services, connexions
+dn: cn=afpovertcp,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 548
+ipServiceProtocol: udp
+cn: afpovertcp
+
+# remotefs, tcp, Services, connexions
+dn: cn=remotefs,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 556
+ipServiceProtocol: tcp
+cn: remotefs
+cn: rfs
+cn: rfs_server
+
+# klogin, tcp, Services, connexions
+dn: cn=klogin,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 543
+ipServiceProtocol: tcp
+cn: klogin
+
+# kshell, tcp, Services, connexions
+dn: cn=kshell,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 544
+ipServiceProtocol: tcp
+cn: kshell
+cn: krcmd
+
+# nntps, tcp, Services, connexions
+dn: cn=nntps,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 563
+ipServiceProtocol: tcp
+cn: nntps
+cn: snntp
+
+# nntps, udp, Services, connexions
+dn: cn=nntps,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 563
+ipServiceProtocol: udp
+cn: nntps
+cn: snntp
+
+# ldaps, tcp, Services, connexions
+dn: cn=ldaps,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 636
+ipServiceProtocol: tcp
+cn: ldaps
+
+# ldaps, udp, Services, connexions
+dn: cn=ldaps,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 636
+ipServiceProtocol: udp
+cn: ldaps
+
+# tinc, tcp, Services, connexions
+dn: cn=tinc,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 655
+ipServiceProtocol: tcp
+cn: tinc
+
+# tinc, udp, Services, connexions
+dn: cn=tinc,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 655
+ipServiceProtocol: udp
+cn: tinc
+
+# kerberos-adm, tcp, Services, connexions
+dn: cn=kerberos-adm,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 749
+ipServiceProtocol: tcp
+cn: kerberos-adm
+
+# webster, tcp, Services, connexions
+dn: cn=webster,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 765
+ipServiceProtocol: tcp
+cn: webster
+
+# webster, udp, Services, connexions
+dn: cn=webster,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 765
+ipServiceProtocol: udp
+cn: webster
+
+# rsync, tcp, Services, connexions
+dn: cn=rsync,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 873
+ipServiceProtocol: tcp
+cn: rsync
+
+# rsync, udp, Services, connexions
+dn: cn=rsync,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 873
+ipServiceProtocol: udp
+cn: rsync
+
+# ftps-data, tcp, Services, connexions
+dn: cn=ftps-data,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 989
+ipServiceProtocol: tcp
+cn: ftps-data
+
+# ftps, tcp, Services, connexions
+dn: cn=ftps,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 990
+ipServiceProtocol: tcp
+cn: ftps
+
+# telnets, tcp, Services, connexions
+dn: cn=telnets,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 992
+ipServiceProtocol: tcp
+cn: telnets
+
+# telnets, udp, Services, connexions
+dn: cn=telnets,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 992
+ipServiceProtocol: udp
+cn: telnets
+
+# imaps, tcp, Services, connexions
+dn: cn=imaps,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 993
+ipServiceProtocol: tcp
+cn: imaps
+
+# imaps, udp, Services, connexions
+dn: cn=imaps,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 993
+ipServiceProtocol: udp
+cn: imaps
+
+# ircs, tcp, Services, connexions
+dn: cn=ircs,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 994
+ipServiceProtocol: tcp
+cn: ircs
+
+# ircs, udp, Services, connexions
+dn: cn=ircs,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 994
+ipServiceProtocol: udp
+cn: ircs
+
+# pop3s, tcp, Services, connexions
+dn: cn=pop3s,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 995
+ipServiceProtocol: tcp
+cn: pop3s
+
+# pop3s, udp, Services, connexions
+dn: cn=pop3s,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 995
+ipServiceProtocol: udp
+cn: pop3s
+
+# socks, tcp, Services, connexions
+dn: cn=socks,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 1080
+ipServiceProtocol: tcp
+cn: socks
+
+# socks, udp, Services, connexions
+dn: cn=socks,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 1080
+ipServiceProtocol: udp
+cn: socks
+
+# lotusnote, tcp, Services, connexions
+dn: cn=lotusnote,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 1352
+ipServiceProtocol: tcp
+cn: lotusnote
+cn: lotusnotes
+
+# lotusnote, udp, Services, connexions
+dn: cn=lotusnote,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 1352
+ipServiceProtocol: udp
+cn: lotusnote
+cn: lotusnotes
+
+# ingreslock, tcp, Services, connexions
+dn: cn=ingreslock,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 1524
+ipServiceProtocol: tcp
+cn: ingreslock
+
+# ingreslock, udp, Services, connexions
+dn: cn=ingreslock,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 1524
+ipServiceProtocol: udp
+cn: ingreslock
+
+# prospero-np, tcp, Services, connexions
+dn: cn=prospero-np,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 1525
+ipServiceProtocol: tcp
+cn: prospero-np
+
+# prospero-np, udp, Services, connexions
+dn: cn=prospero-np,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 1525
+ipServiceProtocol: udp
+cn: prospero-np
+
+# datametrics, tcp, Services, connexions
+dn: cn=datametrics,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 1645
+ipServiceProtocol: tcp
+cn: datametrics
+cn: old-radius
+
+# datametrics, udp, Services, connexions
+dn: cn=datametrics,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 1645
+ipServiceProtocol: udp
+cn: datametrics
+cn: old-radius
+
+# sa-msg-port, tcp, Services, connexions
+dn: cn=sa-msg-port,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 1646
+ipServiceProtocol: tcp
+cn: sa-msg-port
+cn: old-radacct
+
+# sa-msg-port, udp, Services, connexions
+dn: cn=sa-msg-port,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 1646
+ipServiceProtocol: udp
+cn: sa-msg-port
+cn: old-radacct
+
+# radius, tcp, Services, connexions
+dn: cn=radius,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 1812
+ipServiceProtocol: tcp
+cn: radius
+
+# radius, udp, Services, connexions
+dn: cn=radius,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 1812
+ipServiceProtocol: udp
+cn: radius
+
+# radius-acct, tcp, Services, connexions
+dn: cn=radius-acct,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 1813
+ipServiceProtocol: tcp
+cn: radius-acct
+cn: radacct
+
+# radius-acct, udp, Services, connexions
+dn: cn=radius-acct,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 1813
+ipServiceProtocol: udp
+cn: radius-acct
+cn: radacct
+
+# rtcm-sc104, tcp, Services, connexions
+dn: cn=rtcm-sc104,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 2101
+ipServiceProtocol: tcp
+cn: rtcm-sc104
+
+# rtcm-sc104, udp, Services, connexions
+dn: cn=rtcm-sc104,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 2101
+ipServiceProtocol: udp
+cn: rtcm-sc104
+
+# cvspserver, tcp, Services, connexions
+dn: cn=cvspserver,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 2401
+ipServiceProtocol: tcp
+cn: cvspserver
+
+# cvspserver, udp, Services, connexions
+dn: cn=cvspserver,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 2401
+ipServiceProtocol: udp
+cn: cvspserver
+
+# venus, tcp, Services, connexions
+dn: cn=venus,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 2430
+ipServiceProtocol: tcp
+cn: venus
+
+# venus, udp, Services, connexions
+dn: cn=venus,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 2430
+ipServiceProtocol: udp
+cn: venus
+
+# venus-se, tcp, Services, connexions
+dn: cn=venus-se,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 2431
+ipServiceProtocol: tcp
+cn: venus-se
+
+# venus-se, udp, Services, connexions
+dn: cn=venus-se,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 2431
+ipServiceProtocol: udp
+cn: venus-se
+
+# codasrv, tcp, Services, connexions
+dn: cn=codasrv,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 2432
+ipServiceProtocol: tcp
+cn: codasrv
+
+# codasrv, udp, Services, connexions
+dn: cn=codasrv,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 2432
+ipServiceProtocol: udp
+cn: codasrv
+
+# codasrv-se, tcp, Services, connexions
+dn: cn=codasrv-se,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 2433
+ipServiceProtocol: tcp
+cn: codasrv-se
+
+# codasrv-se, udp, Services, connexions
+dn: cn=codasrv-se,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 2433
+ipServiceProtocol: udp
+cn: codasrv-se
+
+# mon, tcp, Services, connexions
+dn: cn=mon,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 2583
+ipServiceProtocol: tcp
+cn: mon
+
+# mon, udp, Services, connexions
+dn: cn=mon,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 2583
+ipServiceProtocol: udp
+cn: mon
+
+# dict, tcp, Services, connexions
+dn: cn=dict,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 2628
+ipServiceProtocol: tcp
+cn: dict
+
+# dict, udp, Services, connexions
+dn: cn=dict,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 2628
+ipServiceProtocol: udp
+cn: dict
+
+# gds_db, tcp, Services, connexions
+dn: cn=gds_db,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 3050
+ipServiceProtocol: tcp
+cn: gds_db
+
+# gds_db, udp, Services, connexions
+dn: cn=gds_db,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 3050
+ipServiceProtocol: udp
+cn: gds_db
+
+# icpv2, tcp, Services, connexions
+dn: cn=icpv2,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 3130
+ipServiceProtocol: tcp
+cn: icpv2
+cn: icp
+
+# icpv2, udp, Services, connexions
+dn: cn=icpv2,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 3130
+ipServiceProtocol: udp
+cn: icpv2
+cn: icp
+
+# mysql, tcp, Services, connexions
+dn: cn=mysql,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 3306
+ipServiceProtocol: tcp
+cn: mysql
+
+# mysql, udp, Services, connexions
+dn: cn=mysql,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 3306
+ipServiceProtocol: udp
+cn: mysql
+
+# rfe, tcp, Services, connexions
+dn: cn=rfe,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 5002
+ipServiceProtocol: tcp
+cn: rfe
+
+# rfe, udp, Services, connexions
+dn: cn=rfe,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 5002
+ipServiceProtocol: udp
+cn: rfe
+
+# cfengine, tcp, Services, connexions
+dn: cn=cfengine,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 5308
+ipServiceProtocol: tcp
+cn: cfengine
+
+# cfengine, udp, Services, connexions
+dn: cn=cfengine,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 5308
+ipServiceProtocol: udp
+cn: cfengine
+
+# x11, tcp, Services, connexions
+dn: cn=x11,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 6000
+ipServiceProtocol: tcp
+cn: x11
+cn: x11-0
+
+# x11, udp, Services, connexions
+dn: cn=x11,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 6000
+ipServiceProtocol: udp
+cn: x11
+cn: x11-0
+
+# x11-1, tcp, Services, connexions
+dn: cn=x11-1,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 6001
+ipServiceProtocol: tcp
+cn: x11-1
+
+# x11-1, udp, Services, connexions
+dn: cn=x11-1,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 6001
+ipServiceProtocol: udp
+cn: x11-1
+
+# x11-2, tcp, Services, connexions
+dn: cn=x11-2,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 6002
+ipServiceProtocol: tcp
+cn: x11-2
+
+# x11-2, udp, Services, connexions
+dn: cn=x11-2,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 6002
+ipServiceProtocol: udp
+cn: x11-2
+
+# x11-3, tcp, Services, connexions
+dn: cn=x11-3,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 6003
+ipServiceProtocol: tcp
+cn: x11-3
+
+# x11-3, udp, Services, connexions
+dn: cn=x11-3,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 6003
+ipServiceProtocol: udp
+cn: x11-3
+
+# x11-4, tcp, Services, connexions
+dn: cn=x11-4,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 6004
+ipServiceProtocol: tcp
+cn: x11-4
+
+# x11-4, udp, Services, connexions
+dn: cn=x11-4,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 6004
+ipServiceProtocol: udp
+cn: x11-4
+
+# x11-5, tcp, Services, connexions
+dn: cn=x11-5,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 6005
+ipServiceProtocol: tcp
+cn: x11-5
+
+# x11-5, udp, Services, connexions
+dn: cn=x11-5,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 6005
+ipServiceProtocol: udp
+cn: x11-5
+
+# x11-6, tcp, Services, connexions
+dn: cn=x11-6,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 6006
+ipServiceProtocol: tcp
+cn: x11-6
+
+# x11-6, udp, Services, connexions
+dn: cn=x11-6,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 6006
+ipServiceProtocol: udp
+cn: x11-6
+
+# x11-7, tcp, Services, connexions
+dn: cn=x11-7,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 6007
+ipServiceProtocol: tcp
+cn: x11-7
+
+# x11-7, udp, Services, connexions
+dn: cn=x11-7,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 6007
+ipServiceProtocol: udp
+cn: x11-7
+
+# afs3-fileserver, tcp, Services, connexions
+dn: cn=afs3-fileserver,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 7000
+ipServiceProtocol: tcp
+cn: afs3-fileserver
+cn: bbs
+
+# afs3-fileserver, udp, Services, connexions
+dn: cn=afs3-fileserver,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 7000
+ipServiceProtocol: udp
+cn: afs3-fileserver
+cn: bbs
+
+# afs3-callback, tcp, Services, connexions
+dn: cn=afs3-callback,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 7001
+ipServiceProtocol: tcp
+cn: afs3-callback
+
+# afs3-callback, udp, Services, connexions
+dn: cn=afs3-callback,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 7001
+ipServiceProtocol: udp
+cn: afs3-callback
+
+# afs3-prserver, tcp, Services, connexions
+dn: cn=afs3-prserver,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 7002
+ipServiceProtocol: tcp
+cn: afs3-prserver
+
+# afs3-prserver, udp, Services, connexions
+dn: cn=afs3-prserver,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 7002
+ipServiceProtocol: udp
+cn: afs3-prserver
+
+# afs3-vlserver, tcp, Services, connexions
+dn: cn=afs3-vlserver,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 7003
+ipServiceProtocol: tcp
+cn: afs3-vlserver
+
+# afs3-vlserver, udp, Services, connexions
+dn: cn=afs3-vlserver,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 7003
+ipServiceProtocol: udp
+cn: afs3-vlserver
+
+# afs3-kaserver, tcp, Services, connexions
+dn: cn=afs3-kaserver,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 7004
+ipServiceProtocol: tcp
+cn: afs3-kaserver
+
+# afs3-kaserver, udp, Services, connexions
+dn: cn=afs3-kaserver,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 7004
+ipServiceProtocol: udp
+cn: afs3-kaserver
+
+# afs3-volser, tcp, Services, connexions
+dn: cn=afs3-volser,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 7005
+ipServiceProtocol: tcp
+cn: afs3-volser
+
+# afs3-volser, udp, Services, connexions
+dn: cn=afs3-volser,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 7005
+ipServiceProtocol: udp
+cn: afs3-volser
+
+# afs3-errors, tcp, Services, connexions
+dn: cn=afs3-errors,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 7006
+ipServiceProtocol: tcp
+cn: afs3-errors
+
+# afs3-errors, udp, Services, connexions
+dn: cn=afs3-errors,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 7006
+ipServiceProtocol: udp
+cn: afs3-errors
+
+# afs3-bos, tcp, Services, connexions
+dn: cn=afs3-bos,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 7007
+ipServiceProtocol: tcp
+cn: afs3-bos
+
+# afs3-bos, udp, Services, connexions
+dn: cn=afs3-bos,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 7007
+ipServiceProtocol: udp
+cn: afs3-bos
+
+# afs3-update, tcp, Services, connexions
+dn: cn=afs3-update,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 7008
+ipServiceProtocol: tcp
+cn: afs3-update
+
+# afs3-update, udp, Services, connexions
+dn: cn=afs3-update,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 7008
+ipServiceProtocol: udp
+cn: afs3-update
+
+# afs3-rmtsys, tcp, Services, connexions
+dn: cn=afs3-rmtsys,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 7009
+ipServiceProtocol: tcp
+cn: afs3-rmtsys
+
+# afs3-rmtsys, udp, Services, connexions
+dn: cn=afs3-rmtsys,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 7009
+ipServiceProtocol: udp
+cn: afs3-rmtsys
+
+# font-service, tcp, Services, connexions
+dn: cn=font-service,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 7100
+ipServiceProtocol: tcp
+cn: font-service
+cn: xfs
+
+# font-service, udp, Services, connexions
+dn: cn=font-service,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 7100
+ipServiceProtocol: udp
+cn: font-service
+cn: xfs
+
+# wnn6, tcp, Services, connexions
+dn: cn=wnn6,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 22273
+ipServiceProtocol: tcp
+cn: wnn6
+
+# wnn6, udp, Services, connexions
+dn: cn=wnn6,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 22273
+ipServiceProtocol: udp
+cn: wnn6
+
+# kerberos4, udp, Services, connexions
+dn: cn=kerberos4,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 750
+ipServiceProtocol: udp
+cn: kerberos4
+cn: kdc
+cn: kerberos-iv
+
+# kerberos4, tcp, Services, connexions
+dn: cn=kerberos4,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 750
+ipServiceProtocol: tcp
+cn: kerberos4
+cn: kdc
+cn: kerberos-iv
+
+# kerberos_master, udp, Services, connexions
+dn: cn=kerberos_master,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 751
+ipServiceProtocol: udp
+cn: kerberos_master
+
+# kerberos_master, tcp, Services, connexions
+dn: cn=kerberos_master,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 751
+ipServiceProtocol: tcp
+cn: kerberos_master
+
+# passwd_server, udp, Services, connexions
+dn: cn=passwd_server,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 752
+ipServiceProtocol: udp
+cn: passwd_server
+
+# krb_prop, tcp, Services, connexions
+dn: cn=krb_prop,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 754
+ipServiceProtocol: tcp
+cn: krb_prop
+
+# krbupdate, tcp, Services, connexions
+dn: cn=krbupdate,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 760
+ipServiceProtocol: tcp
+cn: krbupdate
+cn: kreg
+
+# kpasswd, tcp, Services, connexions
+dn: cn=kpasswd,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 761
+ipServiceProtocol: tcp
+cn: kpasswd
+cn: kpwd
+
+# swat, tcp, Services, connexions
+dn: cn=swat,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 901
+ipServiceProtocol: tcp
+cn: swat
+
+# kpop, tcp, Services, connexions
+dn: cn=kpop,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 1109
+ipServiceProtocol: tcp
+cn: kpop
+
+# knetd, tcp, Services, connexions
+dn: cn=knetd,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 2053
+ipServiceProtocol: tcp
+cn: knetd
+
+# zephyr-srv, udp, Services, connexions
+dn: cn=zephyr-srv,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 2102
+ipServiceProtocol: udp
+cn: zephyr-srv
+
+# zephyr-clt, udp, Services, connexions
+dn: cn=zephyr-clt,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 2103
+ipServiceProtocol: udp
+cn: zephyr-clt
+
+# zephyr-hm, udp, Services, connexions
+dn: cn=zephyr-hm,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 2104
+ipServiceProtocol: udp
+cn: zephyr-hm
+
+# eklogin, tcp, Services, connexions
+dn: cn=eklogin,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 2105
+ipServiceProtocol: tcp
+cn: eklogin
+
+# kx, tcp, Services, connexions
+dn: cn=kx,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 2111
+ipServiceProtocol: tcp
+cn: kx
+
+# supfilesrv, tcp, Services, connexions
+dn: cn=supfilesrv,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 871
+ipServiceProtocol: tcp
+cn: supfilesrv
+
+# supfiledbg, tcp, Services, connexions
+dn: cn=supfiledbg,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 1127
+ipServiceProtocol: tcp
+cn: supfiledbg
+
+# ddp, Services, connexions
+dn: ou=ddp,ou=Services,dc=connexions
+ou: ddp
+objectClass: top
+objectClass: organizationalUnit
+
+# rtmp, ddp, Services, connexions
+dn: cn=rtmp,ou=ddp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 1
+ipServiceProtocol: ddp
+cn: rtmp
+
+# nbp, ddp, Services, connexions
+dn: cn=nbp,ou=ddp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 2
+ipServiceProtocol: ddp
+cn: nbp
+
+# echo, ddp, Services, connexions
+dn: cn=echo,ou=ddp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 4
+ipServiceProtocol: ddp
+cn: echo
+
+# zip, ddp, Services, connexions
+dn: cn=zip,ou=ddp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 6
+ipServiceProtocol: ddp
+cn: zip
+
+# linuxconf, tcp, Services, connexions
+dn: cn=linuxconf,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 98
+ipServiceProtocol: tcp
+cn: linuxconf
+
+# poppassd, tcp, Services, connexions
+dn: cn=poppassd,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 106
+ipServiceProtocol: tcp
+cn: poppassd
+
+# poppassd, udp, Services, connexions
+dn: cn=poppassd,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 106
+ipServiceProtocol: udp
+cn: poppassd
+
+# imsp, tcp, Services, connexions
+dn: cn=imsp,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 406
+ipServiceProtocol: tcp
+cn: imsp
+
+# imsp, udp, Services, connexions
+dn: cn=imsp,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 406
+ipServiceProtocol: udp
+cn: imsp
+
+# ssmtp, tcp, Services, connexions
+dn: cn=ssmtp,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 465
+ipServiceProtocol: tcp
+cn: ssmtp
+cn: smtps
+
+# nqs, tcp, Services, connexions
+dn: cn=nqs,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 607
+ipServiceProtocol: tcp
+cn: nqs
+
+# moira_db, tcp, Services, connexions
+dn: cn=moira_db,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 775
+ipServiceProtocol: tcp
+cn: moira_db
+
+# moira_update, tcp, Services, connexions
+dn: cn=moira_update,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 777
+ipServiceProtocol: tcp
+cn: moira_update
+
+# moira_ureg, udp, Services, connexions
+dn: cn=moira_ureg,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 779
+ipServiceProtocol: udp
+cn: moira_ureg
+
+# omirr, tcp, Services, connexions
+dn: cn=omirr,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 808
+ipServiceProtocol: tcp
+cn: omirr
+cn: omirrd
+
+# omirr, udp, Services, connexions
+dn: cn=omirr,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 808
+ipServiceProtocol: udp
+cn: omirr
+cn: omirrd
+
+# customs, tcp, Services, connexions
+dn: cn=customs,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 1001
+ipServiceProtocol: tcp
+cn: customs
+
+# customs, udp, Services, connexions
+dn: cn=customs,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 1001
+ipServiceProtocol: udp
+cn: customs
+
+# rmiregistry, tcp, Services, connexions
+dn: cn=rmiregistry,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 1099
+ipServiceProtocol: tcp
+cn: rmiregistry
+
+# skkserv, tcp, Services, connexions
+dn: cn=skkserv,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 1178
+ipServiceProtocol: tcp
+cn: skkserv
+
+# predict, udp, Services, connexions
+dn: cn=predict,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 1210
+ipServiceProtocol: udp
+cn: predict
+
+# rmtcfg, tcp, Services, connexions
+dn: cn=rmtcfg,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 1236
+ipServiceProtocol: tcp
+cn: rmtcfg
+
+# xtel, tcp, Services, connexions
+dn: cn=xtel,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 1313
+ipServiceProtocol: tcp
+cn: xtel
+
+# xtelw, tcp, Services, connexions
+dn: cn=xtelw,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 1314
+ipServiceProtocol: tcp
+cn: xtelw
+
+# support, tcp, Services, connexions
+dn: cn=support,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 1529
+ipServiceProtocol: tcp
+cn: support
+
+# sieve, tcp, Services, connexions
+dn: cn=sieve,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 2000
+ipServiceProtocol: tcp
+cn: sieve
+
+# cfinger, tcp, Services, connexions
+dn: cn=cfinger,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 2003
+ipServiceProtocol: tcp
+cn: cfinger
+cn: lmtp
+
+# ndtp, tcp, Services, connexions
+dn: cn=ndtp,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 2010
+ipServiceProtocol: tcp
+cn: ndtp
+
+# ninstall, tcp, Services, connexions
+dn: cn=ninstall,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 2150
+ipServiceProtocol: tcp
+cn: ninstall
+
+# ninstall, udp, Services, connexions
+dn: cn=ninstall,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 2150
+ipServiceProtocol: udp
+cn: ninstall
+
+# zebrasrv, tcp, Services, connexions
+dn: cn=zebrasrv,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 2600
+ipServiceProtocol: tcp
+cn: zebrasrv
+
+# zebra, tcp, Services, connexions
+dn: cn=zebra,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 2601
+ipServiceProtocol: tcp
+cn: zebra
+
+# ripd, tcp, Services, connexions
+dn: cn=ripd,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 2602
+ipServiceProtocol: tcp
+cn: ripd
+
+# ripngd, tcp, Services, connexions
+dn: cn=ripngd,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 2603
+ipServiceProtocol: tcp
+cn: ripngd
+
+# ospfd, tcp, Services, connexions
+dn: cn=ospfd,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 2604
+ipServiceProtocol: tcp
+cn: ospfd
+
+# bgpd, tcp, Services, connexions
+dn: cn=bgpd,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 2605
+ipServiceProtocol: tcp
+cn: bgpd
+
+# ospf6d, tcp, Services, connexions
+dn: cn=ospf6d,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 2606
+ipServiceProtocol: tcp
+cn: ospf6d
+
+# afbackup, tcp, Services, connexions
+dn: cn=afbackup,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 2988
+ipServiceProtocol: tcp
+cn: afbackup
+
+# afbackup, udp, Services, connexions
+dn: cn=afbackup,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 2988
+ipServiceProtocol: udp
+cn: afbackup
+
+# afmbackup, tcp, Services, connexions
+dn: cn=afmbackup,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 2989
+ipServiceProtocol: tcp
+cn: afmbackup
+
+# afmbackup, udp, Services, connexions
+dn: cn=afmbackup,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 2989
+ipServiceProtocol: udp
+cn: afmbackup
+
+# xtell, tcp, Services, connexions
+dn: cn=xtell,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 4224
+ipServiceProtocol: tcp
+cn: xtell
+
+# fax, tcp, Services, connexions
+dn: cn=fax,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 4557
+ipServiceProtocol: tcp
+cn: fax
+
+# hylafax, tcp, Services, connexions
+dn: cn=hylafax,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 4559
+ipServiceProtocol: tcp
+cn: hylafax
+
+# pcrd, tcp, Services, connexions
+dn: cn=pcrd,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 5151
+ipServiceProtocol: tcp
+cn: pcrd
+
+# noclog, tcp, Services, connexions
+dn: cn=noclog,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 5354
+ipServiceProtocol: tcp
+cn: noclog
+
+# noclog, udp, Services, connexions
+dn: cn=noclog,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 5354
+ipServiceProtocol: udp
+cn: noclog
+
+# hostmon, tcp, Services, connexions
+dn: cn=hostmon,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 5355
+ipServiceProtocol: tcp
+cn: hostmon
+
+# hostmon, udp, Services, connexions
+dn: cn=hostmon,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 5355
+ipServiceProtocol: udp
+cn: hostmon
+
+# postgres, tcp, Services, connexions
+dn: cn=postgres,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 5432
+ipServiceProtocol: tcp
+cn: postgres
+
+# postgres, udp, Services, connexions
+dn: cn=postgres,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 5432
+ipServiceProtocol: udp
+cn: postgres
+
+# mrtd, tcp, Services, connexions
+dn: cn=mrtd,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 5674
+ipServiceProtocol: tcp
+cn: mrtd
+
+# bgpsim, tcp, Services, connexions
+dn: cn=bgpsim,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 5675
+ipServiceProtocol: tcp
+cn: bgpsim
+
+# canna, tcp, Services, connexions
+dn: cn=canna,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 5680
+ipServiceProtocol: tcp
+cn: canna
+
+# sane, tcp, Services, connexions
+dn: cn=sane,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 6566
+ipServiceProtocol: tcp
+cn: sane
+cn: saned
+
+# ircd, tcp, Services, connexions
+dn: cn=ircd,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 6667
+ipServiceProtocol: tcp
+cn: ircd
+
+# ircd, udp, Services, connexions
+dn: cn=ircd,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 6667
+ipServiceProtocol: udp
+cn: ircd
+
+# ircd-dalnet, tcp, Services, connexions
+dn: cn=ircd-dalnet,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 7000
+ipServiceProtocol: tcp
+cn: ircd-dalnet
+
+# ircd-dalnet, udp, Services, connexions
+dn: cn=ircd-dalnet,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 7000
+ipServiceProtocol: udp
+cn: ircd-dalnet
+
+# webcache, tcp, Services, connexions
+dn: cn=webcache,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 8080
+ipServiceProtocol: tcp
+cn: webcache
+
+# webcache, udp, Services, connexions
+dn: cn=webcache,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 8080
+ipServiceProtocol: udp
+cn: webcache
+
+# tproxy, tcp, Services, connexions
+dn: cn=tproxy,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 8081
+ipServiceProtocol: tcp
+cn: tproxy
+
+# tproxy, udp, Services, connexions
+dn: cn=tproxy,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 8081
+ipServiceProtocol: udp
+cn: tproxy
+
+# omniorb, tcp, Services, connexions
+dn: cn=omniorb,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 8088
+ipServiceProtocol: tcp
+cn: omniorb
+
+# omniorb, udp, Services, connexions
+dn: cn=omniorb,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 8088
+ipServiceProtocol: udp
+cn: omniorb
+
+# mandelspawn, udp, Services, connexions
+dn: cn=mandelspawn,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 9359
+ipServiceProtocol: udp
+cn: mandelspawn
+cn: mandelbrot
+
+# amanda, udp, Services, connexions
+dn: cn=amanda,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 10080
+ipServiceProtocol: udp
+cn: amanda
+
+# kamanda, tcp, Services, connexions
+dn: cn=kamanda,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 10081
+ipServiceProtocol: tcp
+cn: kamanda
+
+# kamanda, udp, Services, connexions
+dn: cn=kamanda,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 10081
+ipServiceProtocol: udp
+cn: kamanda
+
+# amandaidx, tcp, Services, connexions
+dn: cn=amandaidx,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 10082
+ipServiceProtocol: tcp
+cn: amandaidx
+
+# amidxtape, tcp, Services, connexions
+dn: cn=amidxtape,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 10083
+ipServiceProtocol: tcp
+cn: amidxtape
+
+# smsqp, tcp, Services, connexions
+dn: cn=smsqp,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 11201
+ipServiceProtocol: tcp
+cn: smsqp
+
+# smsqp, udp, Services, connexions
+dn: cn=smsqp,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 11201
+ipServiceProtocol: udp
+cn: smsqp
+
+# xpilot, tcp, Services, connexions
+dn: cn=xpilot,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 15345
+ipServiceProtocol: tcp
+cn: xpilot
+
+# xpilot, udp, Services, connexions
+dn: cn=xpilot,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 15345
+ipServiceProtocol: udp
+cn: xpilot
+
+# isdnlog, tcp, Services, connexions
+dn: cn=isdnlog,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 20011
+ipServiceProtocol: tcp
+cn: isdnlog
+
+# isdnlog, udp, Services, connexions
+dn: cn=isdnlog,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 20011
+ipServiceProtocol: udp
+cn: isdnlog
+
+# vboxd, tcp, Services, connexions
+dn: cn=vboxd,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 20012
+ipServiceProtocol: tcp
+cn: vboxd
+
+# vboxd, udp, Services, connexions
+dn: cn=vboxd,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 20012
+ipServiceProtocol: udp
+cn: vboxd
+
+# binkp, tcp, Services, connexions
+dn: cn=binkp,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 24554
+ipServiceProtocol: tcp
+cn: binkp
+
+# binkp, udp, Services, connexions
+dn: cn=binkp,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 24554
+ipServiceProtocol: udp
+cn: binkp
+
+# asp, tcp, Services, connexions
+dn: cn=asp,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 27374
+ipServiceProtocol: tcp
+cn: asp
+
+# asp, udp, Services, connexions
+dn: cn=asp,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 27374
+ipServiceProtocol: udp
+cn: asp
+
+# dircproxy, tcp, Services, connexions
+dn: cn=dircproxy,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 57000
+ipServiceProtocol: tcp
+cn: dircproxy
+
+# tfido, tcp, Services, connexions
+dn: cn=tfido,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 60177
+ipServiceProtocol: tcp
+cn: tfido
+
+# tfido, udp, Services, connexions
+dn: cn=tfido,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 60177
+ipServiceProtocol: udp
+cn: tfido
+
+# fido, tcp, Services, connexions
+dn: cn=fido,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 60179
+ipServiceProtocol: tcp
+cn: fido
+
+# fido, udp, Services, connexions
+dn: cn=fido,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 60179
+ipServiceProtocol: udp
+cn: fido
+
+# users, Group, connexions
+dn: cn=users,ou=Group,dc=connexions
+objectClass: posixGroup
+objectClass: top
+cn: users
+gidNumber: 100
+memberUid: brentmh
+memberUid: reedstrm
+memberUid: crouton
+memberUid: jccooper
+memberUid: charlet
+memberUid: jago
+memberUid: mariyah
+memberUid: kevinduh
+memberUid: mjeanes
+memberUid: lizzardg
+memberUid: kclarks
+memberUid: erkrause
+memberUid: liqun
+memberUid: jsilv
+memberUid: maxwell
+memberUid: ahughes
+memberUid: scottdp
+memberUid: reijo
+memberUid: dtrahan
+memberUid: guest1
+memberUid: guest2
+memberUid: guest3
+memberUid: foo
+memberUid: prash
+memberUid: mhusband
+memberUid: bnwest
+memberUid: jenn
+memberUid: skursar
+memberUid: emaloney
+memberUid: blambert
+memberUid: ilsai
+memberUid: ahlfing
+memberUid: picazo
+memberUid: dglazman
+memberUid: s001552
+memberUid: mshiralkar05
+memberUid: ghenry
+memberUid: yingmm
+userPassword:: e2NyeXB0fXg=
+
+# nogroup, Group, connexions
+dn: cn=nogroup,ou=Group,dc=connexions
+objectClass: posixGroup
+objectClass: top
+cn: nogroup
+gidNumber: 65534
+userPassword:: e2NyeXB0fXg=
+
+# reedstrm, Group, connexions
+dn: cn=reedstrm,ou=Group,dc=connexions
+objectClass: posixGroup
+objectClass: top
+cn: reedstrm
+gidNumber: 1000
+userPassword:: e2NyeXB0fXg=
+
+# auto.homes, connexions
+dn: ou=auto.homes,dc=connexions
+ou: auto.homes
+objectClass: top
+objectClass: organizationalUnit
+
+# crouton, auto.homes, connexions
+dn: cn=crouton,ou=auto.homes,dc=connexions
+cn: crouton
+objectClass: automount
+automountInformation: -rw,intr,soft bunker.cnx.rice.edu:/homes/crouton
+
+# reedstrm, auto.homes, connexions
+dn: cn=reedstrm,ou=auto.homes,dc=connexions
+cn: reedstrm
+objectClass: automount
+automountInformation: -rw,intr,soft wallace.cnx.rice.edu:/homes/reedstrm
+
+# jenn, People, connexions
+dn: uid=jenn,ou=People,dc=connexions
+uid: jenn
+cn: Jennifer A. Drummond
+objectClass: posixAccount
+objectClass: top
+objectClass: shadowAccount
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+uidNumber: 2814
+gidNumber: 100
+homeDirectory: /home/jenn
+gecos: Jennifer A. Drummond
+givenName: Jennifer
+initials: A.
+sn: Drummond
+loginShell: /bin/bash
+mail: jenn@rice.edu
+telephoneNumber: 713-348-3741
+userPassword:: e2NyeXB0fW1PL3NOaHFWZ3QyODY=
+
+# brentmh, auto.homes, connexions
+dn: cn=brentmh,ou=auto.homes,dc=connexions
+cn: brentmh
+objectClass: automount
+automountInformation: -rw,intr,soft yoda.cnx.rice.edu:/homes/brentmh
+
+# root, Group, connexions
+dn: cn=root,ou=Group,dc=connexions
+objectClass: posixGroup
+objectClass: top
+cn: root
+gidNumber: 0
+memberUid: brentmh
+memberUid: reedstrm
+userPassword:: e2NyeXB0fXg=
+
+# daemon, Group, connexions
+dn: cn=daemon,ou=Group,dc=connexions
+objectClass: posixGroup
+objectClass: top
+cn: daemon
+gidNumber: 1
+userPassword:: e2NyeXB0fXg=
+
+# bin, Group, connexions
+dn: cn=bin,ou=Group,dc=connexions
+objectClass: posixGroup
+objectClass: top
+cn: bin
+gidNumber: 2
+userPassword:: e2NyeXB0fXg=
+
+# sys, Group, connexions
+dn: cn=sys,ou=Group,dc=connexions
+objectClass: posixGroup
+objectClass: top
+cn: sys
+gidNumber: 3
+userPassword:: e2NyeXB0fXg=
+
+# adm, Group, connexions
+dn: cn=adm,ou=Group,dc=connexions
+objectClass: posixGroup
+objectClass: top
+cn: adm
+gidNumber: 4
+userPassword:: e2NyeXB0fXg=
+memberUid: reedstrm
+memberUid: brentmh
+
+# tty, Group, connexions
+dn: cn=tty,ou=Group,dc=connexions
+objectClass: posixGroup
+objectClass: top
+cn: tty
+gidNumber: 5
+userPassword:: e2NyeXB0fXg=
+
+# disk, Group, connexions
+dn: cn=disk,ou=Group,dc=connexions
+objectClass: posixGroup
+objectClass: top
+cn: disk
+gidNumber: 6
+userPassword:: e2NyeXB0fXg=
+
+# lp, Group, connexions
+dn: cn=lp,ou=Group,dc=connexions
+objectClass: posixGroup
+objectClass: top
+cn: lp
+gidNumber: 7
+userPassword:: e2NyeXB0fXg=
+
+# mail, Group, connexions
+dn: cn=mail,ou=Group,dc=connexions
+objectClass: posixGroup
+objectClass: top
+cn: mail
+gidNumber: 8
+userPassword:: e2NyeXB0fXg=
+
+# news, Group, connexions
+dn: cn=news,ou=Group,dc=connexions
+objectClass: posixGroup
+objectClass: top
+cn: news
+gidNumber: 9
+userPassword:: e2NyeXB0fXg=
+
+# uucp, Group, connexions
+dn: cn=uucp,ou=Group,dc=connexions
+objectClass: posixGroup
+objectClass: top
+cn: uucp
+gidNumber: 10
+userPassword:: e2NyeXB0fXg=
+
+# proxy, Group, connexions
+dn: cn=proxy,ou=Group,dc=connexions
+objectClass: posixGroup
+objectClass: top
+cn: proxy
+gidNumber: 13
+userPassword:: e2NyeXB0fXg=
+
+# kmem, Group, connexions
+dn: cn=kmem,ou=Group,dc=connexions
+objectClass: posixGroup
+objectClass: top
+cn: kmem
+gidNumber: 15
+userPassword:: e2NyeXB0fXg=
+
+# dialout, Group, connexions
+dn: cn=dialout,ou=Group,dc=connexions
+objectClass: posixGroup
+objectClass: top
+cn: dialout
+gidNumber: 20
+userPassword:: e2NyeXB0fXg=
+
+# fax, Group, connexions
+dn: cn=fax,ou=Group,dc=connexions
+objectClass: posixGroup
+objectClass: top
+cn: fax
+gidNumber: 21
+userPassword:: e2NyeXB0fXg=
+
+# voice, Group, connexions
+dn: cn=voice,ou=Group,dc=connexions
+objectClass: posixGroup
+objectClass: top
+cn: voice
+gidNumber: 22
+userPassword:: e2NyeXB0fXg=
+
+# cdrom, Group, connexions
+dn: cn=cdrom,ou=Group,dc=connexions
+objectClass: posixGroup
+objectClass: top
+cn: cdrom
+gidNumber: 24
+memberUid: brentmh
+memberUid: reedstrm
+memberUid: crouton
+memberUid: jccooper
+memberUid: charlet
+memberUid: jago
+memberUid: mariyah
+memberUid: kevinduh
+memberUid: mjeanes
+memberUid: lizzardg
+memberUid: kclarks
+memberUid: erkrause
+memberUid: liqun
+memberUid: jsilv
+memberUid: maxwell
+memberUid: ahughes
+memberUid: scottdp
+memberUid: reijo
+memberUid: dtrahan
+memberUid: guest1
+memberUid: guest2
+memberUid: guest3
+memberUid: foo
+memberUid: prash
+memberUid: mhusband
+memberUid: bnwest
+memberUid: jenn
+memberUid: skursar
+memberUid: emaloney
+memberUid: ilsai
+memberUid: ahlfing
+memberUid: picazo
+memberUid: dglazman
+memberUid: s001552
+memberUid: mshiralkar05
+memberUid: ghenry
+memberUid: yingmm
+userPassword:: e2NyeXB0fXg=
+
+# floppy, Group, connexions
+dn: cn=floppy,ou=Group,dc=connexions
+objectClass: posixGroup
+objectClass: top
+cn: floppy
+gidNumber: 25
+memberUid: brentmh
+memberUid: reedstrm
+memberUid: crouton
+memberUid: jccooper
+memberUid: charlet
+memberUid: jago
+memberUid: mariyah
+memberUid: kevinduh
+memberUid: mjeanes
+memberUid: lizzardg
+memberUid: kclarks
+memberUid: erkrause
+memberUid: liqun
+memberUid: jsilv
+memberUid: maxwell
+memberUid: ahughes
+memberUid: scottdp
+memberUid: reijo
+memberUid: dtrahan
+memberUid: guest1
+memberUid: guest2
+memberUid: guest3
+memberUid: foo
+memberUid: prash
+memberUid: mhusband
+memberUid: bnwest
+memberUid: jenn
+memberUid: skursar
+memberUid: emaloney
+memberUid: ilsai
+memberUid: ahlfing
+memberUid: picazo
+memberUid: dglazman
+memberUid: s001552
+memberUid: mshiralkar05
+memberUid: ghenry
+memberUid: yingmm
+userPassword:: e2NyeXB0fXg=
+
+# tape, Group, connexions
+dn: cn=tape,ou=Group,dc=connexions
+objectClass: posixGroup
+objectClass: top
+cn: tape
+gidNumber: 26
+userPassword:: e2NyeXB0fXg=
+
+# sudo, Group, connexions
+dn: cn=sudo,ou=Group,dc=connexions
+objectClass: posixGroup
+objectClass: top
+cn: sudo
+gidNumber: 27
+userPassword:: e2NyeXB0fXg=
+
+# audio, Group, connexions
+dn: cn=audio,ou=Group,dc=connexions
+objectClass: posixGroup
+objectClass: top
+cn: audio
+gidNumber: 29
+memberUid: crouton
+memberUid: reedstrm
+memberUid: brentmh
+memberUid: jccooper
+memberUid: charlet
+memberUid: jago
+memberUid: mariyah
+memberUid: kevinduh
+memberUid: mjeanes
+memberUid: lizzardg
+memberUid: kclarks
+memberUid: erkrause
+memberUid: liqun
+memberUid: jsilv
+memberUid: maxwell
+memberUid: ahughes
+memberUid: scottdp
+memberUid: reijo
+memberUid: dtrahan
+memberUid: guest1
+memberUid: guest2
+memberUid: guest3
+memberUid: foo
+memberUid: prash
+memberUid: mhusband
+memberUid: bnwest
+memberUid: jenn
+memberUid: skursar
+memberUid: emaloney
+memberUid: ilsai
+memberUid: ahlfing
+memberUid: picazo
+memberUid: dglazman
+memberUid: s001552
+memberUid: mshiralkar05
+memberUid: ghenry
+memberUid: yingmm
+userPassword:: e2NyeXB0fXg=
+
+# dip, Group, connexions
+dn: cn=dip,ou=Group,dc=connexions
+objectClass: posixGroup
+objectClass: top
+cn: dip
+gidNumber: 30
+userPassword:: e2NyeXB0fXg=
+
+# postgres, Group, connexions
+dn: cn=postgres,ou=Group,dc=connexions
+objectClass: posixGroup
+objectClass: top
+cn: postgres
+gidNumber: 32
+userPassword:: e2NyeXB0fXg=
+
+# www-data, Group, connexions
+dn: cn=www-data,ou=Group,dc=connexions
+objectClass: posixGroup
+objectClass: top
+cn: www-data
+gidNumber: 33
+memberUid: mjeanes
+memberUid: reedstrm
+memberUid: brentmh
+memberUid: jccooper
+memberUid: jago
+memberUid: maxwell
+memberUid: jenn
+memberUid: s001552
+userPassword:: e2NyeXB0fXg=
+
+# backup, Group, connexions
+dn: cn=backup,ou=Group,dc=connexions
+objectClass: posixGroup
+objectClass: top
+cn: backup
+gidNumber: 34
+userPassword:: e2NyeXB0fXg=
+
+# operator, Group, connexions
+dn: cn=operator,ou=Group,dc=connexions
+objectClass: posixGroup
+objectClass: top
+cn: operator
+gidNumber: 37
+userPassword:: e2NyeXB0fXg=
+
+# list, Group, connexions
+dn: cn=list,ou=Group,dc=connexions
+objectClass: posixGroup
+objectClass: top
+cn: list
+gidNumber: 38
+userPassword:: e2NyeXB0fXg=
+
+# irc, Group, connexions
+dn: cn=irc,ou=Group,dc=connexions
+objectClass: posixGroup
+objectClass: top
+cn: irc
+gidNumber: 39
+userPassword:: e2NyeXB0fXg=
+
+# src, Group, connexions
+dn: cn=src,ou=Group,dc=connexions
+objectClass: posixGroup
+objectClass: top
+cn: src
+gidNumber: 40
+memberUid: brentmh
+memberUid: reedstrm
+memberUid: jago
+memberUid: jccooper
+memberUid: maxwell
+memberUid: jenn
+userPassword:: e2NyeXB0fXg=
+
+# gnats, Group, connexions
+dn: cn=gnats,ou=Group,dc=connexions
+objectClass: posixGroup
+objectClass: top
+cn: gnats
+gidNumber: 41
+userPassword:: e2NyeXB0fXg=
+
+# shadow, Group, connexions
+dn: cn=shadow,ou=Group,dc=connexions
+objectClass: posixGroup
+objectClass: top
+cn: shadow
+gidNumber: 42
+userPassword:: e2NyeXB0fXg=
+
+# utmp, Group, connexions
+dn: cn=utmp,ou=Group,dc=connexions
+objectClass: posixGroup
+objectClass: top
+cn: utmp
+gidNumber: 43
+userPassword:: e2NyeXB0fXg=
+
+# video, Group, connexions
+dn: cn=video,ou=Group,dc=connexions
+objectClass: posixGroup
+objectClass: top
+cn: video
+gidNumber: 44
+userPassword:: e2NyeXB0fXg=
+memberUid: reedstrm
+
+# staff, Group, connexions
+dn: cn=staff,ou=Group,dc=connexions
+objectClass: posixGroup
+objectClass: top
+cn: staff
+gidNumber: 50
+memberUid: brentmh
+memberUid: reedstrm
+memberUid: crouton
+memberUid: jccooper
+memberUid: charlet
+memberUid: jago
+memberUid: mariyah
+memberUid: kevinduh
+memberUid: mjeanes
+memberUid: lizzardg
+memberUid: kclarks
+memberUid: erkrause
+memberUid: liqun
+memberUid: jsilv
+memberUid: maxwell
+memberUid: ahughes
+memberUid: scottdp
+memberUid: reijo
+memberUid: dtrahan
+memberUid: guest1
+memberUid: guest2
+memberUid: guest3
+memberUid: foo
+memberUid: prash
+memberUid: mhusband
+memberUid: bnwest
+memberUid: jenn
+memberUid: skursar
+memberUid: emaloney
+memberUid: ilsai
+memberUid: ahlfing
+memberUid: picazo
+memberUid: dglazman
+memberUid: s001552
+memberUid: mshiralkar05
+memberUid: ghenry
+memberUid: yingmm
+userPassword:: e2NyeXB0fXg=
+
+# games, Group, connexions
+dn: cn=games,ou=Group,dc=connexions
+objectClass: posixGroup
+objectClass: top
+cn: games
+gidNumber: 60
+userPassword:: e2NyeXB0fXg=
+
+# crouton2, Group, connexions
+dn: cn=crouton2,ou=Group,dc=connexions
+objectClass: posixGroup
+objectClass: top
+cn: crouton2
+gidNumber: 1006
+userPassword:: e2NyeXB0fXg=
+
+# ssh, Group, connexions
+dn: cn=ssh,ou=Group,dc=connexions
+objectClass: posixGroup
+objectClass: top
+cn: ssh
+gidNumber: 101
+userPassword:: e2NyeXB0fXg=
+
+# jccooper, auto.homes, connexions
+dn: cn=jccooper,ou=auto.homes,dc=connexions
+cn: jccooper
+objectClass: automount
+automountInformation: -rw,intr,soft sullivan.cnx.rice.edu:/homes/jccooper
+
+# charlet, People, connexions
+dn: uid=charlet,ou=People,dc=connexions
+uid: charlet
+cn: Charlet Reedstrom
+objectClass: posixAccount
+objectClass: top
+objectClass: shadowAccount
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+loginShell: /bin/csh
+uidNumber: 5951
+gidNumber: 100
+homeDirectory: /home/charlet
+gecos: Charlet Reedstrom
+givenName: Charlet
+initials: K.
+sn: Reedstrom
+mail: charlet@rice.edu
+userPassword:: e2NyeXB0fU03SmxrWC5CNjRRRW8=
+
+# charlet, auto.homes, connexions
+dn: cn=charlet,ou=auto.homes,dc=connexions
+cn: charlet
+objectClass: automount
+automountInformation: -rw,intr,soft gandhi.cnx.rice.edu:/homes/charlet
+
+# jago, auto.homes, connexions
+dn: cn=jago,ou=auto.homes,dc=connexions
+cn: jago
+objectClass: automount
+automountInformation: -rw,intr,soft confucius:/homes/jago
+
+# mariyah, auto.homes, connexions
+dn: cn=mariyah,ou=auto.homes,dc=connexions
+cn: mariyah
+objectClass: automount
+automountInformation: -rw,intr,soft bunker.cnx.rice.edu:/homes/mariyah
+
+# kevinduh, auto.homes, connexions
+dn: cn=kevinduh,ou=auto.homes,dc=connexions
+cn: kevinduh
+objectClass: automount
+automountInformation: -rw,intr,soft bunker.cnx.rice.edu:/homes/kevinduh
+
+# mjeanes, auto.homes, connexions
+dn: cn=mjeanes,ou=auto.homes,dc=connexions
+cn: mjeanes
+objectClass: automount
+automountInformation: -rw,intr,soft bunker.cnx.rice.edu:/homes/mjeanes
+
+# lizzardg, auto.homes, connexions
+dn: cn=lizzardg,ou=auto.homes,dc=connexions
+cn: lizzardg
+objectClass: automount
+automountInformation: -rw,intr,soft bunker.cnx.rice.edu:/homes/lizzardg
+
+# kclarks, auto.homes, connexions
+dn: cn=kclarks,ou=auto.homes,dc=connexions
+cn: kclarks
+objectClass: automount
+automountInformation: -rw,intr,soft bunker.cnx.rice.edu:/homes/kclarks
+
+# erkrause, auto.homes, connexions
+dn: cn=erkrause,ou=auto.homes,dc=connexions
+cn: erkrause
+objectClass: automount
+automountInformation: -rw,intr,soft bunker.cnx.rice.edu:/homes/erkrause
+
+# jsilv, auto.homes, connexions
+dn: cn=jsilv,ou=auto.homes,dc=connexions
+cn: jsilv
+objectClass: automount
+automountInformation: -rw,intr,soft bunker.cnx.rice.edu:/homes/jsilv
+
+# ahughes, auto.homes, connexions
+dn: cn=ahughes,ou=auto.homes,dc=connexions
+cn: ahughes
+objectClass: automount
+automountInformation: -rw,intr,soft bunker.cnx.rice.edu:/homes/ahughes
+
+# scottdp, auto.homes, connexions
+dn: cn=scottdp,ou=auto.homes,dc=connexions
+cn: scottdp
+objectClass: automount
+automountInformation: -rw,intr,soft bunker.cnx.rice.edu:/homes/scottdp
+
+# reijo, auto.homes, connexions
+dn: cn=reijo,ou=auto.homes,dc=connexions
+cn: reijo
+objectClass: automount
+automountInformation: -rw,intr,soft bunker.cnx.rice.edu:/homes/reijo
+
+# dtrahan, People, connexions
+dn: uid=dtrahan,ou=People,dc=connexions
+uid: dtrahan
+objectClass: posixAccount
+objectClass: top
+objectClass: shadowAccount
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+loginShell: /bin/csh
+uidNumber: 1016
+gidNumber: 100
+homeDirectory: /home/dtrahan
+givenName: Debbie
+sn: Trahan
+cn: Debbie Trahan
+gecos: Debbie Trahan
+userPassword:: e2NyeXB0fSo=
+
+# dtrahan, auto.homes, connexions
+dn: cn=dtrahan,ou=auto.homes,dc=connexions
+cn: dtrahan
+objectClass: automount
+automountInformation: -rw,intr,soft bunker.cnx.rice.edu:/homes/dtrahan
+
+# guest1, People, connexions
+dn: uid=guest1,ou=People,dc=connexions
+uid: guest1
+objectClass: posixAccount
+objectClass: top
+objectClass: shadowAccount
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+loginShell: /bin/csh
+uidNumber: 1017
+gidNumber: 100
+homeDirectory: /home/guest1
+givenName: Guest
+initials: 1
+sn: Account
+cn: Guest Training Account 1
+gecos: Guest Training Account 1
+shadowLastChange: 12464
+mail: guest1@cnx.rice.edu
+userPassword:: e0NSWVBUfWtvWi9QMlgzdVNkajY=
+
+# guest1, auto.homes, connexions
+dn: cn=guest1,ou=auto.homes,dc=connexions
+cn: guest1
+objectClass: automount
+automountInformation: -rw,intr,soft bunker.cnx.rice.edu:/homes/guest1
+
+# guest2, People, connexions
+dn: uid=guest2,ou=People,dc=connexions
+uid: guest2
+objectClass: posixAccount
+objectClass: top
+objectClass: shadowAccount
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+loginShell: /bin/csh
+uidNumber: 1018
+gidNumber: 100
+homeDirectory: /home/guest2
+givenName: Guest
+initials: 2
+sn: Account
+cn: Guest Training Account 2
+gecos: Guest Training Account 2
+shadowLastChange: 12263
+mail: guest2@cnx.rice.edu
+userPassword:: e0NSWVBUfSQxJEMxU0ZvV3NNJDNJeGZ0NGlSaVpITTZVeWguNzU3TzA=
+
+# guest2, auto.homes, connexions
+dn: cn=guest2,ou=auto.homes,dc=connexions
+cn: guest2
+objectClass: automount
+automountInformation: -rw,intr,soft bunker.cnx.rice.edu:/homes/guest2
+
+# guest3, People, connexions
+dn: uid=guest3,ou=People,dc=connexions
+uid: guest3
+objectClass: posixAccount
+objectClass: top
+objectClass: shadowAccount
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+loginShell: /bin/csh
+uidNumber: 1019
+gidNumber: 100
+homeDirectory: /home/guest3
+givenName: Guest
+sn: Account
+initials: 3
+cn: Guest Training Account 3
+gecos: Guest Training Account 3
+shadowLastChange: 12263
+mail: guest3@cnx.rice.edu
+userPassword:: e0NSWVBUfSQxJEQxZU50emgwJEJOZTJvemZlakxuNEJTdUQuRTlTRzE=
+
+# guest3, auto.homes, connexions
+dn: cn=guest3,ou=auto.homes,dc=connexions
+cn: guest3
+objectClass: automount
+automountInformation: -rw,intr,soft bunker.cnx.rice.edu:/homes/guest3
+
+# foo, auto.homes, connexions
+dn: cn=foo,ou=auto.homes,dc=connexions
+cn: foo
+objectClass: automount
+automountInformation: -rw,intr,soft bunker.cnx.rice.edu:/homes/foo
+
+# jenn, auto.homes, connexions
+dn: cn=jenn,ou=auto.homes,dc=connexions
+cn: jenn
+objectClass: automount
+automountInformation: -rw,intr,soft bunker.cnx.rice.edu:/homes/jenn
+
+# prash, auto.homes, connexions
+dn: cn=prash,ou=auto.homes,dc=connexions
+cn: prash
+objectClass: automount
+automountInformation: -rw,intr,soft bunker.cnx.rice.edu:/homes/prash
+
+# swi, Group, connexions
+dn: cn=swi,ou=Group,dc=connexions
+objectClass: posixGroup
+objectClass: top
+cn: swi
+gidNumber: 1002
+memberUid: crouton
+memberUid: reedstrm
+memberUid: brentmh
+memberUid: jccooper
+memberUid: charlet
+memberUid: jago
+memberUid: mariyah
+memberUid: kevinduh
+memberUid: mjeanes
+memberUid: lizzardg
+memberUid: kclarks
+memberUid: erkrause
+memberUid: liqun
+memberUid: jsilv
+memberUid: maxwell
+memberUid: ahughes
+memberUid: scottdp
+memberUid: reijo
+memberUid: dtrahan
+memberUid: guest1
+memberUid: guest2
+memberUid: guest3
+memberUid: foo
+memberUid: prash
+memberUid: bnwest
+memberUid: blambert
+memberUid: picazo
+
+# maxwell, auto.homes, connexions
+dn: cn=maxwell,ou=auto.homes,dc=connexions
+objectClass: automount
+cn: maxwell
+automountInformation: -rw,intr,soft bunker.cnx.rice.edu:/homes/maxwell
+
+# admins, netgroup, connexions
+dn: cn=admins,ou=netgroup,dc=connexions
+cn: admins
+nisNetgroupTriple: (,reedstrm,)
+nisNetgroupTriple: (,brentmh,)
+nisNetgroupTriple: (,jenn,)
+nisNetgroupTriple: (,jccooper,)
+objectClass: top
+objectClass: nisNetGroup
+
+# admin-netgroup, netgroup, connexions
+dn: cn=admin-netgroup,ou=netgroup,dc=connexions
+cn: admin-netgroup
+nisNetgroupTriple: (,admins,connexions)
+memberNisNetgroup: admins
+objectClass: top
+objectClass: nisNetGroup
+
+# mhusband, auto.homes, connexions
+dn: cn=mhusband,ou=auto.homes,dc=connexions
+cn: mhusband
+objectClass: automount
+automountInformation: -rw,intr,soft bunker.cnx.rice.edu:/homes/mhusband
+
+# bnwest, auto.homes, connexions
+dn: cn=bnwest,ou=auto.homes,dc=connexions
+cn: bnwest
+objectClass: automount
+automountInformation: -rw,intr,soft dijkstra.cnx.rice.edu:/homes/bnwest
+
+# devels, netgroup, connexions
+dn: cn=devels,ou=netgroup,dc=connexions
+cn: devels
+objectClass: top
+objectClass: nisNetGroup
+nisNetgroupTriple: (,s001552,)
+nisNetgroupTriple: (,reedstrm,)
+nisNetgroupTriple: (,brentmh,)
+nisNetgroupTriple: (,jenn,)
+nisNetgroupTriple: (,jccooper,)
+nisNetgroupTriple: (,jago,)
+nisNetgroupTriple: (,maxwell,)
+nisNetgroupTriple: (,bnwest,)
+
+# devel-netgroup, netgroup, connexions
+dn: cn=devel-netgroup,ou=netgroup,dc=connexions
+cn: devel-netgroup
+nisNetgroupTriple: (,devels,connexions)
+memberNisNetgroup: devels
+objectClass: top
+objectClass: nisNetGroup
+
+# skursar, People, connexions
+dn: uid=skursar,ou=People,dc=connexions
+uid: skursar
+cn: Steve Kursar
+objectClass: posixAccount
+objectClass: top
+objectClass: shadowAccount
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+gidNumber: 100
+homeDirectory: /home/skursar
+gecos: Steve Kursar
+givenName: Steve
+sn: Kursar
+loginShell: /bin/bash
+uidNumber: 1025
+userPassword:: e2NyeXB0fSo=
+
+# skursar, auto.homes, connexions
+dn: cn=skursar,ou=auto.homes,dc=connexions
+cn: skursar
+objectClass: automount
+automountInformation: -rw,intr,soft bunker.cnx.rice.edu:/homes/skursar
+
+# emaloney, auto.homes, connexions
+dn: cn=emaloney,ou=auto.homes,dc=connexions
+cn: emaloney
+objectClass: automount
+automountInformation: -rw,intr,soft bunker.cnx.rice.edu:/homes/emaloney
+
+# blambert, auto.homes, connexions
+dn: cn=blambert,ou=auto.homes,dc=connexions
+cn: blambert
+objectClass: automount
+automountInformation: -rw,intr,soft bunker.cnx.rice.edu:/homes/blambert
+
+# brentmh, People, connexions
+dn: uid=brentmh,ou=People,dc=connexions
+uid: brentmh
+cn: Brent Hendricks
+sn: Hendricks
+givenName: Brent
+objectClass: posixAccount
+objectClass: top
+objectClass: shadowAccount
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+userPassword:: e2NyeXB0fVZIWlFlQXVDWUkxdi4=
+loginShell: /bin/csh
+uidNumber: 5996
+gidNumber: 50
+homeDirectory: /home/brentmh
+gecos: Brent Hendricks
+mail: brentmh@rice.edu
+
+# crouton, People, connexions
+dn: uid=crouton,ou=People,dc=connexions
+shadowMax: 99999
+shadowWarning: 7
+uid: crouton
+cn: Crouton O. Death
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: posixAccount
+objectClass: top
+objectClass: shadowAccount
+loginShell: /bin/bash
+uidNumber: 1001
+homeDirectory: /home/crouton
+gecos: Crouton O.
+givenName: Crouton
+sn: O. Death,,,
+gidNumber: 100
+userPassword:: e0NSWVBUfSQxJE1SaGdFOEtYJE5USmt6bmZyOFk1L2FqWUhtM0tSYTA=
+shadowLastChange: 12557
+
+# jago, People, connexions
+dn: uid=jago,ou=People,dc=connexions
+uid: jago
+cn: Adan Galvan
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: posixAccount
+objectClass: top
+loginShell: /bin/csh
+uidNumber: 4342
+gidNumber: 100
+homeDirectory: /home/jago
+gecos: Adan Galvan
+givenName: Adan
+sn: Galvan
+mail: jago@rice.edu
+userPassword:: e2NyeXB0fUwxWWlDdlpzYnFLSDI=
+
+# maxwell, People, connexions
+dn: uid=maxwell,ou=People,dc=connexions
+uid: maxwell
+cn: Maxwell Murry Starkenburg
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: posixAccount
+objectClass: top
+loginShell: /bin/csh
+uidNumber: 7012
+gidNumber: 100
+homeDirectory: /home/maxwell
+gecos: Maxwell Murry
+givenName: Maxwell
+sn: Murry Starkenburg
+mail: maxwell@rice.edu
+userPassword:: e2NyeXB0fXN2SXBvWkU2UTNWaUU=
+
+# jccooper, People, connexions
+dn: uid=jccooper,ou=People,dc=connexions
+uid: jccooper
+cn: James Cameron Cooper
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: posixAccount
+objectClass: top
+loginShell: /bin/bash
+uidNumber: 889
+gidNumber: 100
+homeDirectory: /home/jccooper
+gecos: James Cameron
+givenName: James
+sn: Cameron Cooper
+mail: jccooper@rice.edu
+userPassword:: e2NyeXB0fUptS3lsMkNydDYyeTY=
+
+# mariyah, People, connexions
+dn: uid=mariyah,ou=People,dc=connexions
+uid: mariyah
+cn: Mariyah Fatima Poonawala
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: posixAccount
+objectClass: top
+loginShell: /bin/bash
+uidNumber: 1007
+gidNumber: 100
+homeDirectory: /home/mariyah
+gecos: Mariyah Fatima
+givenName: Mariyah
+sn: Fatima Poonawala
+userPassword:: e2NyeXB0fSo=
+
+# kevinduh, People, connexions
+dn: uid=kevinduh,ou=People,dc=connexions
+uid: kevinduh
+cn: Kevin Kaiping Duh
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: posixAccount
+objectClass: top
+loginShell: /bin/bash
+uidNumber: 8968
+gidNumber: 100
+homeDirectory: /home/kevinduh
+gecos: Kevin Kaiping
+givenName: Kevin
+sn: Kaiping Duh
+userPassword:: e2NyeXB0fSo=
+
+# mjeanes, People, connexions
+dn: uid=mjeanes,ou=People,dc=connexions
+uid: mjeanes
+cn: Matthew John Jeanes
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: posixAccount
+objectClass: top
+loginShell: /usr/bin/tcsh
+uidNumber: 1008
+gidNumber: 100
+homeDirectory: /home/mjeanes
+gecos: Matthew John
+givenName: Matthew
+sn: John Jeanes
+mail: mjeanes@rice.edu
+userPassword:: e2NyeXB0fSo=
+
+# lizzardg, People, connexions
+dn: uid=lizzardg,ou=People,dc=connexions
+uid: lizzardg
+cn: Elizabeth Claridge Gregory
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: posixAccount
+objectClass: top
+loginShell: /usr/bin/tcsh
+uidNumber: 1009
+gidNumber: 100
+homeDirectory: /home/lizzardg
+gecos: Elizabeth Claridge
+givenName: Elizabeth
+sn: Claridge Gregory
+mail: lizzardg@rice.edu
+userPassword:: e2NyeXB0fWMzbnFyS28wZHVoTEE=
+
+# kclarks, People, connexions
+dn: uid=kclarks,ou=People,dc=connexions
+uid: kclarks
+cn: Kyle Evan Clarkson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: posixAccount
+objectClass: top
+loginShell: /bin/bash
+uidNumber: 1010
+gidNumber: 100
+homeDirectory: /home/kclarks
+gecos: Kyle Evan
+givenName: Kyle
+sn: Evan Clarkson
+mail: kclarks@rice.edu
+userPassword:: e2NyeXB0fTI3WGpxL2NmcWFxeTY=
+
+# erkrause, People, connexions
+dn: uid=erkrause,ou=People,dc=connexions
+uid: erkrause
+cn: Eileen Ruth Krause
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: posixAccount
+objectClass: top
+loginShell: /usr/bin/tcsh
+uidNumber: 1011
+gidNumber: 100
+homeDirectory: /home/erkrause
+gecos: Eileen Ruth
+givenName: Eileen
+sn: Ruth Krause
+userPassword:: e2NyeXB0fSo=
+
+# jsilv, People, connexions
+dn: uid=jsilv,ou=People,dc=connexions
+uid: jsilv
+cn: Jeffrey Michael Silverman
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: posixAccount
+objectClass: top
+loginShell: /usr/bin/tcsh
+uidNumber: 1012
+gidNumber: 90
+homeDirectory: /home/jsilv
+gecos: Jeffrey Michael
+givenName: Jeffrey
+sn: Michael Silverman
+mail: jsilv@rice.edu
+userPassword:: e0NSWVBUfSQxJG84czJxZEoxJFJ0NVZJZVRVenJSVjRkajM1UjJncS8=
+
+# ahughes, People, connexions
+dn: uid=ahughes,ou=People,dc=connexions
+uid: ahughes
+cn: Andrew Carter Hughes
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: posixAccount
+objectClass: top
+loginShell: /usr/bin/tcsh
+uidNumber: 1013
+gidNumber: 100
+homeDirectory: /home/ahughes
+gecos: Andrew Carter
+givenName: Andrew
+sn: Carter Hughes
+userPassword:: e2NyeXB0fSo=
+
+# scottdp, People, connexions
+dn: uid=scottdp,ou=People,dc=connexions
+uid: scottdp
+cn: Scott Alan DiPasquale
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: posixAccount
+objectClass: top
+loginShell: /usr/bin/tcsh
+uidNumber: 1014
+gidNumber: 100
+homeDirectory: /home/scottdp
+gecos: Scott Alan
+givenName: Scott
+sn: Alan DiPasquale
+userPassword:: e2NyeXB0fSo=
+
+# reijo, People, connexions
+dn: uid=reijo,ou=People,dc=connexions
+uid: reijo
+cn: Reijo Anttila
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: posixAccount
+objectClass: top
+loginShell: /usr/bin/tcsh
+uidNumber: 1015
+gidNumber: 100
+homeDirectory: /home/reijo
+gecos: Reijo Anttila
+givenName: Reijo
+sn: Anttila
+userPassword:: e2NyeXB0fSo=
+
+# prash, People, connexions
+dn: uid=prash,ou=People,dc=connexions
+uid: prash
+cn: Prashant Singh
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: posixAccount
+objectClass: top
+loginShell: /bin/csh
+uidNumber: 1021
+gidNumber: 100
+homeDirectory: /home/prash
+gecos: Prashant Singh
+givenName: Prashant
+sn: Singh
+mail: prash@rice.edu
+userPassword:: e2NyeXB0fSo=
+
+# mhusband, People, connexions
+dn: uid=mhusband,ou=People,dc=connexions
+uid: mhusband
+cn: Mark S. Husband
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: posixAccount
+objectClass: top
+loginShell: /bin/csh
+uidNumber: 1022
+gidNumber: 100
+homeDirectory: /home/mhusband
+gecos: Mark S.
+givenName: Mark
+sn: S. Husband
+mail: mhusband@rice.edu
+userPassword:: e0NSWVBUfSQxJFVCMFp2RlVwJFVMWUh3cS9SaklObGZYNGVvM080aDA=
+
+# bnwest, People, connexions
+dn: uid=bnwest,ou=People,dc=connexions
+uid: bnwest
+cn: Brian West
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: posixAccount
+objectClass: top
+loginShell: /bin/csh
+uidNumber: 1024
+gidNumber: 100
+homeDirectory: /home/bnwest
+gecos: Brian West
+givenName: Brian
+sn: West
+mail: bnwest@rice.edu
+userPassword:: e0NSWVBUfSQxJDNaTlFydUlnJEFJU1doVmNxMFNMallvWVkxU0pDai4=
+
+# emaloney, People, connexions
+dn: uid=emaloney,ou=People,dc=connexions
+uid: emaloney
+cn: Erin Maloney
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: posixAccount
+objectClass: top
+loginShell: /bin/csh
+uidNumber: 1026
+gidNumber: 100
+homeDirectory: /home/emaloney
+gecos: Erin Maloney
+givenName: Erin
+sn: Maloney
+mail: emaloney@rice.edu
+userPassword:: e2NyeXB0fSo=
+
+# blambert, People, connexions
+dn: uid=blambert,ou=People,dc=connexions
+uid: blambert
+cn: Brent Lambert
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: posixAccount
+objectClass: top
+uidNumber: 1027
+gidNumber: 100
+homeDirectory: /home/blambert
+gecos: Brent Lambert
+givenName: Brent
+sn: Lambert
+loginShell: /bin/sh
+userPassword:: e0NSWVBUfSQxJFJDZmJxUzRoJENYQS5UTndWaC4wdDZtdzVTRmZrMzA=
+
+# nobody, People, connexions
+dn: uid=nobody,ou=People,dc=connexions
+uid: nobody
+cn: nobody
+sn: nobody
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: posixAccount
+objectClass: top
+objectClass: shadowAccount
+shadowLastChange: 12149
+shadowMax: 99999
+shadowWarning: 7
+loginShell: /bin/sh
+uidNumber: 65534
+gidNumber: 65534
+homeDirectory: /home
+gecos: nobody
+userPassword:: e2NyeXB0fSo=
+
+# ilsai, People, connexions
+dn: uid=ilsai,ou=People,dc=connexions
+uid: ilsai
+cn: Harika Basana
+objectClass: person
+objectClass: inetorgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+userPassword:: e2NyeXB0fU1zNFRVWHVjd09kZ0k=
+loginShell: /bin/csh
+uidNumber: 1028
+gidNumber: 100
+homeDirectory: /home/ilsai
+gecos: Harika Basana
+givenName: Harika
+sn: Basana
+
+# ahlfing, People, connexions
+dn: uid=ahlfing,ou=People,dc=connexions
+uid: ahlfing
+cn: Robert Ahlfinger
+objectClass: person
+objectClass: inetorgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+userPassword:: e2NyeXB0fVZ4R1FjRVpZbkJUN0U=
+loginShell: /bin/csh
+uidNumber: 1029
+gidNumber: 100
+homeDirectory: /home/ahlfing
+gecos: Robert Ahlfinger
+givenName: Robert
+sn: Ahlfinger
+
+# ahlfing, auto.homes, connexions
+dn: cn=ahlfing,ou=auto.homes,dc=connexions
+cn: ahlfing
+objectClass: automount
+automountInformation: -rw,intr,soft bunker.cnx.rice.edu:/homes/ahlfing
+
+# ilsai, auto.homes, connexions
+dn: cn=ilsai,ou=auto.homes,dc=connexions
+cn: ilsai
+objectClass: automount
+automountInformation: -rw,intr,soft bunker.cnx.rice.edu:/homes/ilsai
+
+# picazo, People, connexions
+dn: uid=picazo,ou=People,dc=connexions
+uid: picazo
+cn: Genaro Picazo
+objectClass: person
+objectClass: inetorgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+userPassword:: e2NyeXB0fTcwdDR1b2Yvb25aVi4=
+loginShell: /bin/csh
+uidNumber: 1030
+gidNumber: 100
+homeDirectory: /home/picazo
+gecos: Genaro Picazo
+givenName: Genaro
+sn: Picazo
+
+# picazo, auto.homes, connexions
+dn: cn=picazo,ou=auto.homes,dc=connexions
+cn: picazo
+objectClass: automount
+automountInformation: -rw,intr,soft bunker.cnx.rice.edu:/homes/picazo
+
+# dglazman, People, connexions
+dn: uid=dglazman,ou=People,dc=connexions
+uid: dglazman
+cn: Daniel Glazman
+objectClass: person
+objectClass: inetorgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+loginShell: /bin/csh
+uidNumber: 1031
+gidNumber: 100
+homeDirectory: /home/dglazman
+gecos: Daniel Glazman
+givenName: Daniel
+sn: Glazman
+userPassword:: e0NSWVBUfSQxJG1CVDgwOWd1JDVDblVBUXhwWEtLMFdjc0laeVYwYzA=
+shadowLastChange: 12563
+
+# dglazman, auto.homes, connexions
+dn: cn=dglazman,ou=auto.homes,dc=connexions
+cn: dglazman
+objectClass: automount
+automountInformation: -rw,intr,soft bunker.cnx.rice.edu:/homes/dglazman
+
+# s001552, People, connexions
+dn: uid=s001552,ou=People,dc=connexions
+uid: s001552
+cn: Per Thorsteinsson
+objectClass: person
+objectClass: inetorgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+loginShell: /bin/csh
+uidNumber: 8969
+gidNumber: 100
+homeDirectory: /home/s001552
+gecos: Per Thorsteinsson
+givenName: Per
+sn: Thorsteinsson
+userPassword:: e0NSWVBUfSQxJFEuaGQ2LkIzJDFaWXlDVzlyMklaOHNMSm5oVDZxeDA=
+shadowLastChange: 12577
+
+# s001552, auto.homes, connexions
+dn: cn=s001552,ou=auto.homes,dc=connexions
+cn: s001552
+objectClass: automount
+automountInformation: -rw,intr,soft bunker.cnx.rice.edu:/homes/s001552
+
+# mshiralkar05, People, connexions
+dn: uid=mshiralkar05,ou=People,dc=connexions
+uid: mshiralkar05
+cn: Malan Shiralkar
+objectClass: person
+objectClass: inetorgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+loginShell: /bin/csh
+uidNumber: 8970
+gidNumber: 100
+homeDirectory: /home/mshiralkar05
+gecos: Malan Shiralkar
+givenName: Malan
+sn: Shiralkar
+userPassword:: e0NSWVBUfSQxJEZnOHdoaWRaJGdZSlppQUw1Z3dqWW83RmFpbWp2Qi4=
+shadowLastChange: 12577
+
+# mshiralkar05, auto.homes, connexions
+dn: cn=mshiralkar05,ou=auto.homes,dc=connexions
+cn: mshiralkar05
+objectClass: automount
+automountInformation: -rw,intr,soft bunker.cnx.rice.edu:/homes/mshiralkar05
+
+# ghenry, People, connexions
+dn: uid=ghenry,ou=People,dc=connexions
+uid: ghenry
+cn: Geneva Henry
+objectClass: person
+objectClass: inetorgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+loginShell: /bin/csh
+uidNumber: 8971
+gidNumber: 100
+homeDirectory: /home/ghenry
+gecos: Geneva Henry
+givenName: Geneva
+sn: Henry
+userPassword:: e0NSWVBUfSQxJGxqa2Fvd1MzJHpVYzNBNnVPdXRiRHlkZDB5Y0draTE=
+shadowLastChange: 12586
+
+# ghenry, auto.homes, connexions
+dn: cn=ghenry,ou=auto.homes,dc=connexions
+cn: ghenry
+objectClass: automount
+automountInformation: -rw,intr,soft bunker.cnx.rice.edu:/homes/ghenry
+
+# yingmm, People, connexions
+dn: uid=yingmm,ou=People,dc=connexions
+uid: yingmm
+cn: Minmin Yang
+objectClass: person
+objectClass: inetorgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+userPassword:: e0NSWVBUfSQxJGdsbktZLkV6JDJITEY5ZWl0a2ZnaXZyNmRSYVdJMTE=
+loginShell: /bin/csh
+uidNumber: 8972
+gidNumber: 100
+homeDirectory: /home/yingmm
+gecos: Minmin Yang
+givenName: Minmin
+sn: Yang
+
+# yingmm, auto.homes, connexions
+dn: cn=yingmm,ou=auto.homes,dc=connexions
+cn: yingmm
+objectClass: automount
+automountInformation: -rw,intr,soft bunker.cnx.rice.edu:/homes/yingmm
+
+# search result
+search: 2
+result: 0 Success
+
+# numResponses: 576
+# numEntries: 575

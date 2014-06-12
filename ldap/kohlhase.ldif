@@ -1,0 +1,49 @@
+dn: uid=kohlhase,ou=People,dc=connexions
+uid: kohlhase
+cn: Michael Kohlhase
+objectClass: person
+objectClass: inetorgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+userPassword: {CRYPT}$1$sebk8ExZ$XUATcW1vZ0QSjFMIIZriI.
+loginShell: /bin/csh
+uidNumber: 8981
+gidNumber: 100
+homeDirectory: /home/kohlhase
+gecos: Michael Kohlhase
+givenName: Michael
+sn: Kohlhase
+
+
+dn: cn=kohlhase,ou=auto.homes,dc=connexions
+cn: kohlhase
+objectClass: automount
+automountInformation: -rw,intr,soft,nfsvers=3 bokken.cnx.rice.edu:/homes/kohlhase
+
+dn: cn=audio,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: kohlhase
+
+dn: cn=staff,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: kohlhase
+
+dn: cn=cdrom,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: kohlhase
+
+dn: cn=users,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: kohlhase
+
+dn: cn=floppy,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: kohlhase
+

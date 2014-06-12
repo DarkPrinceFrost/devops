@@ -1,0 +1,49 @@
+dn: uid=vnguyen,ou=People,dc=connexions
+uid: vnguyen
+cn: Vickie Nguyen
+objectClass: person
+objectClass: inetorgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+userPassword: {CRYPT}$1$bOUhs0GJ$cSa4oxPO03RY4dctxrPWA.
+loginShell: /bin/bash
+uidNumber: 8996
+gidNumber: 100
+homeDirectory: /home/vnguyen
+gecos: Vickie Nguyen
+givenName: Vickie
+sn: Nguyen
+
+
+dn: cn=vnguyen,ou=auto.homes,dc=connexions
+cn: vnguyen
+objectClass: automount
+automountInformation: -rw,intr,soft bokken.cnx.rice.edu:/homes/vnguyen
+
+dn: cn=audio,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: vnguyen
+
+dn: cn=staff,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: vnguyen
+
+dn: cn=cdrom,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: vnguyen
+
+dn: cn=users,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: vnguyen
+
+dn: cn=floppy,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: vnguyen
+

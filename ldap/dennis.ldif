@@ -1,0 +1,54 @@
+dn: uid=dennis,ou=People,dc=connexions
+uid: dennis
+cn: Dennis Williamson
+objectClass: person
+objectClass: inetorgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+userPassword: {CRYPT}$1$9hmBb/Zq$TKwHTNkEKLJm2axpUGji6/
+loginShell: /bin/bash
+uidNumber: 9051
+gidNumber: 100
+homeDirectory: /home/dennis
+gecos: Dennis Williamson
+givenName: Dennis
+sn: Williamson
+
+
+dn: cn=dennis,ou=auto.homes,dc=connexions
+cn: dennis
+objectClass: automount
+automountInformation: -rw,intr,soft wakizashi.cnx.rice.edu:/homes/dennis
+
+dn: cn=audio,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: dennis
+
+dn: cn=staff,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: dennis
+
+dn: cn=cdrom,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: dennis
+
+dn: cn=users,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: dennis
+
+dn: cn=floppy,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: dennis
+
+dn: cn=www-data,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: dennis
+

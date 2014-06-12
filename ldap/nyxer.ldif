@@ -1,0 +1,54 @@
+dn: uid=nyxer,ou=People,dc=connexions
+uid: nyxer
+cn: Alana Lemay-Gibson
+objectClass: person
+objectClass: inetorgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+userPassword: {CRYPT}$1$BqRRmHom$c1I5xg/PuCqekuaJE9H/E1
+loginShell: /bin/bash
+uidNumber: 9052
+gidNumber: 100
+homeDirectory: /home/nyxer
+gecos: Alana Lemay-Gibson
+givenName: Alana
+sn: Lemay-Gibson
+
+
+dn: cn=nyxer,ou=auto.homes,dc=connexions
+cn: nyxer
+objectClass: automount
+automountInformation: -rw,intr,soft wakizashi.cnx.rice.edu:/homes/nyxer
+
+dn: cn=audio,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: nyxer
+
+dn: cn=staff,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: nyxer
+
+dn: cn=cdrom,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: nyxer
+
+dn: cn=users,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: nyxer
+
+dn: cn=floppy,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: nyxer
+
+dn: cn=www-data,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: nyxer
+

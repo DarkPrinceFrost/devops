@@ -1,0 +1,54 @@
+dn: uid=karen,ou=People,dc=connexions
+uid: karen
+cn: Karen Chan
+objectClass: person
+objectClass: inetorgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+userPassword: {CRYPT}$1$6Jafz6Z6$/tcGZEZa9FreV4e/znzTa0
+loginShell: /bin/bash
+uidNumber: 9049
+gidNumber: 100
+homeDirectory: /home/karen
+gecos: Karen Chan
+givenName: Karen
+sn: Chan
+
+
+dn: cn=karen,ou=auto.homes,dc=connexions
+cn: karen
+objectClass: automount
+automountInformation: -rw,intr,soft wakizashi.cnx.rice.edu:/homes/karen
+
+dn: cn=audio,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: karen
+
+dn: cn=staff,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: karen
+
+dn: cn=cdrom,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: karen
+
+dn: cn=users,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: karen
+
+dn: cn=floppy,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: karen
+
+dn: cn=www-data,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: karen
+

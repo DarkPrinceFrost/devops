@@ -1,0 +1,54 @@
+dn: uid=nikolay,ou=People,dc=connexions
+uid: nikolay
+cn: Nikolay Kim
+objectClass: person
+objectClass: inetorgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+userPassword: {CRYPT}$1$HhRNC7xj$k/6BVwXRkpSyrHcBQNDzA.
+loginShell: /bin/bash
+uidNumber: 9035
+gidNumber: 100
+homeDirectory: /home/nikolay
+gecos: Nikolay Kim
+givenName: Nikolay
+sn: Kim
+
+
+dn: cn=nikolay,ou=auto.homes,dc=connexions
+cn: nikolay
+objectClass: automount
+automountInformation: -rw,intr,soft bokken.cnx.rice.edu:/homes/nikolay
+
+dn: cn=audio,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: nikolay
+
+dn: cn=staff,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: nikolay
+
+dn: cn=cdrom,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: nikolay
+
+dn: cn=users,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: nikolay
+
+dn: cn=floppy,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: nikolay
+
+dn: cn=www-data,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: nikolay
+

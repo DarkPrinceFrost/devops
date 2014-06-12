@@ -1,0 +1,49 @@
+dn: uid=rwagner,ou=People,dc=connexions
+uid: rwagner
+cn: Wagner Raymond
+objectClass: person
+objectClass: inetorgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+userPassword: {CRYPT}$1$BgLyShw/$LPBWKyEc3xXatrqTIes1c1
+loginShell: /bin/csh
+uidNumber: 8992
+gidNumber: 100
+homeDirectory: /home/rwagner
+gecos: Wagner Raymond
+givenName: Wagner
+sn: Raymond
+
+
+dn: cn=rwagner,ou=auto.homes,dc=connexions
+cn: rwagner
+objectClass: automount
+automountInformation: -rw,intr,soft,nfsvers=3 wakizashi.cnx.rice.edu:/homes/rwagner
+
+dn: cn=audio,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: rwagner
+
+dn: cn=staff,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: rwagner
+
+dn: cn=cdrom,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: rwagner
+
+dn: cn=users,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: rwagner
+
+dn: cn=floppy,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: rwagner
+

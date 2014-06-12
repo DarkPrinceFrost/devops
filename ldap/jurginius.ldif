@@ -1,0 +1,54 @@
+dn: uid=jurginius,ou=People,dc=connexions
+uid: jurginius
+cn: Jurgen Blignaut
+objectClass: person
+objectClass: inetorgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+userPassword: {CRYPT}$1$bfLaD/s6$X08Alia6CE/itWtRjyAEb/
+loginShell: /bin/bash
+uidNumber: 9016
+gidNumber: 100
+homeDirectory: /home/jurginius
+gecos: Jurgen Blignaut
+givenName: Jurgen
+sn: Blignaut
+
+
+dn: cn=jurginius,ou=auto.homes,dc=connexions
+cn: jurginius
+objectClass: automount
+automountInformation: -rw,intr,soft wakizashi.cnx.rice.edu:/homes/jurginius
+
+dn: cn=audio,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: jurginius
+
+dn: cn=staff,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: jurginius
+
+dn: cn=cdrom,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: jurginius
+
+dn: cn=users,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: jurginius
+
+dn: cn=floppy,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: jurginius
+
+dn: cn=www-data,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: jurginius
+

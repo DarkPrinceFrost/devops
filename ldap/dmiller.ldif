@@ -1,0 +1,49 @@
+dn: uid=dmiller7,ou=People,dc=connexions
+uid: dmiller7
+cn: Deborah Miller
+objectClass: person
+objectClass: inetorgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+userPassword: {CRYPT}$1$DxvWO6vT$TmHURkJGFYIsYTzqfIUV01
+loginShell: /bin/csh
+uidNumber: 8980
+gidNumber: 100
+homeDirectory: /home/dmiller7
+gecos: Deborah Miller
+givenName: Deborah
+sn: Miller
+
+
+dn: cn=dmiller7,ou=auto.homes,dc=connexions
+cn: dmiller7
+objectClass: automount
+automountInformation: -rw,intr,soft barracks.cnx.rice.edu:/homes/dmiller7
+
+dn: cn=audio,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: dmiller7
+
+dn: cn=staff,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: dmiller7
+
+dn: cn=cdrom,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: dmiller7
+
+dn: cn=users,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: dmiller7
+
+dn: cn=floppy,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: dmiller7
+

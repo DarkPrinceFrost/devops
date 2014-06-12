@@ -1,1 +1,2 @@
 *.secret filter=git-crypt diff=git-crypt
+ldap/* filter=git-crypt diff=git-crypt

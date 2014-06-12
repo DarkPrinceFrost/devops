@@ -1,0 +1,11 @@
+dn: cn=root,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: brentmh
+memberUid: reedstrm
+
+dn: cn=admin,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: brentmh
+memberUid: reedstrm

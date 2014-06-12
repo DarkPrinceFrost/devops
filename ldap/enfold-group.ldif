@@ -1,0 +1,5 @@
+# enfold, Group, connexions
+dn: cn=enfold,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: john

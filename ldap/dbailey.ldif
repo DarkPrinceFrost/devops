@@ -1,0 +1,54 @@
+dn: uid=dbailey,ou=People,dc=connexions
+uid: dbailey
+cn: Dwayne Bailey
+objectClass: person
+objectClass: inetorgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+userPassword: {CRYPT}$1$STsLgasJ$B7iG1JGUROLN0eL2o.cc70
+loginShell: /bin/bash
+uidNumber: 9034
+gidNumber: 100
+homeDirectory: /home/dbailey
+gecos: Dwayne Bailey
+givenName: Dwayne
+sn: Bailey
+
+
+dn: cn=dbailey,ou=auto.homes,dc=connexions
+cn: dbailey
+objectClass: automount
+automountInformation: -rw,intr,soft bokken.cnx.rice.edu:/homes/dbailey
+
+dn: cn=audio,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: dbailey
+
+dn: cn=staff,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: dbailey
+
+dn: cn=cdrom,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: dbailey
+
+dn: cn=users,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: dbailey
+
+dn: cn=floppy,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: dbailey
+
+dn: cn=www-data,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: dbailey
+

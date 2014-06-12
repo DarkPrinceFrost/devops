@@ -1,0 +1,8 @@
+dn: cn=admin,ou=Group,dc=connexions
+changetype: modify
+delete: memberUid
+memberUid: brentmh
+-
+delete: member
+member: uid=brentmh,ou=People,dc=connexions
+

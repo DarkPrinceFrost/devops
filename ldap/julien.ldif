@@ -1,0 +1,54 @@
+dn: uid=julien,ou=People,dc=connexions
+uid: julien
+cn: Julien Anguenot
+objectClass: person
+objectClass: inetorgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+userPassword: {CRYPT}$1$Y7XRL5gd$D4EmKR8E5Tc9sCrH9F.F9.
+loginShell: /bin/bash
+uidNumber: 9026
+gidNumber: 100
+homeDirectory: /home/julien
+gecos: Julien Anguenot
+givenName: Julien
+sn: Anguenot
+
+
+dn: cn=julien,ou=auto.homes,dc=connexions
+cn: julien
+objectClass: automount
+automountInformation: -rw,intr,soft wakizashi.cnx.rice.edu:/homes/julien
+
+dn: cn=audio,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: julien
+
+dn: cn=staff,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: julien
+
+dn: cn=cdrom,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: julien
+
+dn: cn=users,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: julien
+
+dn: cn=floppy,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: julien
+
+dn: cn=www-data,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: julien
+

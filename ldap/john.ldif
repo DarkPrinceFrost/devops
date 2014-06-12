@@ -1,0 +1,54 @@
+dn: uid=john,ou=People,dc=connexions
+uid: john
+cn: John Dorapalli
+objectClass: person
+objectClass: inetorgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+userPassword: {CRYPT}$1$3xlUWdTn$Rd/gv0gMOAASVH4Nb77.O/
+loginShell: /bin/bash
+uidNumber: 9029
+gidNumber: 100
+homeDirectory: /home/john
+gecos: John Dorapalli
+givenName: John
+sn: Dorapalli
+
+
+dn: cn=john,ou=auto.homes,dc=connexions
+cn: john
+objectClass: automount
+automountInformation: -rw,intr,soft cleaver.cnx.rice.edu:/homes/john
+
+dn: cn=audio,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: john
+
+dn: cn=staff,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: john
+
+dn: cn=cdrom,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: john
+
+dn: cn=users,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: john
+
+dn: cn=floppy,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: john
+
+dn: cn=www-data,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: john
+

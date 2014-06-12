@@ -1,0 +1,49 @@
+dn: uid=newroot,ou=People,dc=connexions
+uid: newroot
+cn: Root Me
+objectClass: person
+objectClass: inetorgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+userPassword: {CRYPT}$1$88Zq4h/5$P20lagRSpWYrhA38kTOw.1
+loginShell: /bin/bash
+uidNumber: 0
+gidNumber: 0
+homeDirectory: /root
+gecos: Root Me
+givenName: Root
+sn: Me
+
+
+dn: cn=audio,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: newroot
+
+dn: cn=staff,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: newroot
+
+dn: cn=cdrom,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: newroot
+
+dn: cn=users,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: newroot
+
+dn: cn=floppy,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: newroot
+
+dn: cn=www-data,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: newroot
+

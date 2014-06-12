@@ -1,0 +1,129 @@
+dn: uid=mjeanes,ou=People,dc=connexions
+uid: mjeanes
+cn::TWF0dGhldyBKb2huIEplYW5lcw==
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+userPassword: {crypt}7cj01IqF832sM
+loginShell: /usr/bin/tcsh
+uidNumber: 1008
+gidNumber: 100
+homeDirectory: /home/mjeanes
+gecos: Matthew John Jeanes
+
+dn: uid=lizzardg,ou=People,dc=connexions
+uid: lizzardg
+cn::RWxpemFiZXRoIENsYXJpZGdlIEdyZWdvcnk=
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+userPassword: {crypt}c3nqrKo0duhLA
+loginShell: /usr/bin/tcsh
+uidNumber: 1009
+gidNumber: 100
+homeDirectory: /home/lizzardg
+gecos: Elizabeth Claridge Gregory
+
+dn: uid=kclarks,ou=People,dc=connexions
+uid: kclarks
+cn::S3lsZSBFdmFuIENsYXJrc29u
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+userPassword: {crypt}27Xjq/cfqaqy6
+loginShell: /bin/bash
+uidNumber: 1010
+gidNumber: 100
+homeDirectory: /home/kclarks
+gecos: Kyle Evan Clarkson
+
+
+dn: cn=mjeanes,ou=auto.homes,dc=connexions
+cn: mjeanes
+objectClass: automount
+automountInformation: -rw,intr,soft cnx-246-67.ece.rice.edu:/homes/mjeanes
+
+dn: cn=audio,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: mjeanes
+
+dn: cn=staff,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: mjeanes
+
+dn: cn=cdrom,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: mjeanes
+
+dn: cn=users,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: mjeanes
+
+dn: cn=floppy,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: mjeanes
+
+dn: cn=lizzardg,ou=auto.homes,dc=connexions
+cn: lizzardg
+objectClass: automount
+automountInformation: -rw,intr,soft cnx-246-67.ece.rice.edu:/homes/lizzardg
+
+dn: cn=audio,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: lizzardg
+
+dn: cn=staff,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: lizzardg
+
+dn: cn=cdrom,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: lizzardg
+
+dn: cn=users,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: lizzardg
+
+dn: cn=floppy,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: lizzardg
+
+dn: cn=kclarks,ou=auto.homes,dc=connexions
+cn: kclarks
+objectClass: automount
+automountInformation: -rw,intr,soft cnx-246-67.ece.rice.edu:/homes/kclarks
+
+dn: cn=audio,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: kclarks
+
+dn: cn=staff,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: kclarks
+
+dn: cn=cdrom,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: kclarks
+
+dn: cn=users,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: kclarks
+
+dn: cn=floppy,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: kclarks

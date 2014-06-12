@@ -1,0 +1,13 @@
+dn: uid=maxwell,ou=People,dc=connexions
+uid: maxwell
+cn: Maxwell Murry Starkenburg
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+loginShell: /bin/csh
+uidNumber: 7012
+gidNumber: 100
+homeDirectory: /home/maxwell
+gecos: Maxwell Murry Starkenburg
+userPassword:: e0NSWVBUfSQxJGhNdDBCalk3JEhPNDFZYmJYOXJFa2YxV2NwY0NJcTA=
+

@@ -1,0 +1,54 @@
+dn: uid=francois_lubbe,ou=People,dc=connexions
+uid: francois_lubbe
+cn: Francois Lubbe
+objectClass: person
+objectClass: inetorgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+userPassword: {CRYPT}$1$VbvyZVmk$dJuqTDbWeVV/warxVcvHc.
+loginShell: /bin/bash
+uidNumber: 9017
+gidNumber: 100
+homeDirectory: /home/francois_lubbe
+gecos: Francois Lubbe
+givenName: Francois
+sn: Lubbe
+
+
+dn: cn=francois_lubbe,ou=auto.homes,dc=connexions
+cn: francois_lubbe
+objectClass: automount
+automountInformation: -rw,intr,soft wakizashi.cnx.rice.edu:/homes/francois_lubbe
+
+dn: cn=audio,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: francois_lubbe
+
+dn: cn=staff,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: francois_lubbe
+
+dn: cn=cdrom,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: francois_lubbe
+
+dn: cn=users,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: francois_lubbe
+
+dn: cn=floppy,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: francois_lubbe
+
+dn: cn=www-data,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: francois_lubbe
+

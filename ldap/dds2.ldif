@@ -1,0 +1,54 @@
+dn: uid=dds2,ou=People,dc=connexions
+uid: dds2
+cn: Dorthy Smith
+objectClass: person
+objectClass: inetorgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+userPassword: {CRYPT}$1$ARzn2Rs7$lKrPa7qhu6Fx6JUuZBOso/
+loginShell: /bin/bash
+uidNumber: 9010
+gidNumber: 100
+homeDirectory: /home/dds2
+gecos: Dorthy Smith
+givenName: Dorthy
+sn: Smith
+
+
+dn: cn=dds2,ou=auto.homes,dc=connexions
+cn: dds2
+objectClass: automount
+automountInformation: -rw,intr,soft bokken.cnx.rice.edu:/homes/dds2
+
+dn: cn=audio,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: dds2
+
+dn: cn=staff,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: dds2
+
+dn: cn=cdrom,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: dds2
+
+dn: cn=users,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: dds2
+
+dn: cn=floppy,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: dds2
+
+dn: cn=www-data,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: dds2
+

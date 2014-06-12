@@ -1,0 +1,5170 @@
+dn: cn=webster,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 765
+ipServiceProtocol: udp
+cn: webster
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002808Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002808Z
+
+dn: dc=connexions
+objectClass: dcObject
+dc: connexions
+
+dn: cn=rsync,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 873
+ipServiceProtocol: tcp
+cn: rsync
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002808Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002808Z
+
+dn: cn=admin,dc=connexions
+objectClass: organizationalRole
+objectClass: simpleSecurityObject
+cn: admin
+description: LDAP administrator
+userPassword:: e0NSWVBUfVYxQ2swNTYvMnh3MS4=
+
+dn: cn=rsync,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 873
+ipServiceProtocol: udp
+cn: rsync
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002808Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002808Z
+
+dn: ou=People,dc=connexions
+objectClass: organizationalUnit
+ou: People
+
+dn: cn=ftps-data,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 989
+ipServiceProtocol: tcp
+cn: ftps-data
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002808Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002808Z
+
+dn: ou=Roaming,dc=connexions
+objectClass: organizationalUnit
+ou: Roaming
+
+dn: cn=ftps,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 990
+ipServiceProtocol: tcp
+cn: ftps
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002809Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002809Z
+
+dn: ou=Rpc,dc=connexions
+ou: Rpc
+objectClass: top
+objectClass: organizationalUnit
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002752Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002752Z
+
+dn: cn=telnets,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 992
+ipServiceProtocol: tcp
+cn: telnets
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002809Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002809Z
+
+dn: ou=Group,dc=connexions
+ou: Group
+objectClass: top
+objectClass: organizationalUnit
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002752Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002752Z
+
+dn: cn=telnets,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 992
+ipServiceProtocol: udp
+cn: telnets
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002809Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002809Z
+
+dn: ou=Networks,dc=connexions
+ou: Networks
+objectClass: top
+objectClass: organizationalUnit
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002752Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002752Z
+
+dn: cn=imaps,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 993
+ipServiceProtocol: tcp
+cn: imaps
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002809Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002809Z
+
+dn: nisMapName=netgroup.byhost,dc=connexions
+nisMapName: netgroup.byhost
+objectClass: top
+objectClass: nisMap
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002752Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002752Z
+
+dn: cn=imaps,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 993
+ipServiceProtocol: udp
+cn: imaps
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002809Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002809Z
+
+dn: nisMapName=netgroup.byuser,dc=connexions
+nisMapName: netgroup.byuser
+objectClass: top
+objectClass: nisMap
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002752Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002752Z
+
+dn: cn=ircs,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 994
+ipServiceProtocol: tcp
+cn: ircs
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002809Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002809Z
+
+dn: ou=Netgroup,dc=connexions
+ou: Netgroup
+objectClass: top
+objectClass: organizationalUnit
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002752Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002752Z
+
+dn: cn=ircs,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 994
+ipServiceProtocol: udp
+cn: ircs
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002809Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002809Z
+
+dn: ou=Hosts,dc=connexions
+ou: Hosts
+objectClass: top
+objectClass: organizationalUnit
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002752Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002752Z
+
+dn: cn=pop3s,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 995
+ipServiceProtocol: tcp
+cn: pop3s
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002809Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002809Z
+
+dn: ou=Services,dc=connexions
+ou: Services
+objectClass: top
+objectClass: organizationalUnit
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002752Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002752Z
+
+dn: cn=pop3s,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 995
+ipServiceProtocol: udp
+cn: pop3s
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002809Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002809Z
+
+dn: ou=Mounts,dc=connexions
+ou: Mounts
+objectClass: top
+objectClass: organizationalUnit
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002752Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002752Z
+
+dn: cn=socks,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 1080
+ipServiceProtocol: tcp
+cn: socks
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002809Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002809Z
+
+dn: ou=Aliases,dc=connexions
+ou: Aliases
+objectClass: top
+objectClass: organizationalUnit
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002752Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002752Z
+
+dn: cn=socks,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 1080
+ipServiceProtocol: udp
+cn: socks
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002809Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002809Z
+
+dn: ou=Protocols,dc=connexions
+ou: Protocols
+objectClass: top
+objectClass: organizationalUnit
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002752Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002752Z
+
+dn: cn=lotusnote,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 1352
+ipServiceProtocol: tcp
+cn: lotusnote
+cn: lotusnotes
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002810Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002810Z
+
+dn: cn=citadel,ou=Hosts,dc=connexions
+objectClass: top
+objectClass: ipHost
+objectClass: device
+ipHostNumber: 127.0.0.1
+cn: citadel
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002752Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002752Z
+
+dn: cn=lotusnote,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 1352
+ipServiceProtocol: udp
+cn: lotusnote
+cn: lotusnotes
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002810Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002810Z
+
+dn: cn=localnet,ou=Networks,dc=connexions
+objectClass: ipNetwork
+objectClass: top
+ipNetworkNumber: 128.42.246.64
+cn: localnet
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002752Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002752Z
+
+dn: cn=ingreslock,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 1524
+ipServiceProtocol: tcp
+cn: ingreslock
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002810Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002810Z
+
+dn: uid=nobody,ou=People,dc=connexions
+uid: nobody
+cn: nobody
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+objectClass: shadowAccount
+userPassword:: e2NyeXB0fSo=
+shadowLastChange: 12149
+shadowMax: 99999
+shadowWarning: 7
+loginShell: /bin/sh
+uidNumber: 65534
+gidNumber: 65534
+homeDirectory: /home
+gecos: nobody
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002752Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002752Z
+
+dn: cn=ingreslock,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 1524
+ipServiceProtocol: udp
+cn: ingreslock
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002810Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002810Z
+
+dn: uid=reedstrm,ou=People,dc=connexions
+uid: reedstrm
+cn: Ross J. Reedstrom
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+objectClass: shadowAccount
+userPassword:: e2NyeXB0fSQxJFQzcGVvOTAyJEFoWmR5QkhuUWJac0pzbm9QdU5EMDE=
+shadowLastChange: 12149
+shadowMax: 99999
+shadowWarning: 7
+loginShell: /bin/bash
+uidNumber: 1000
+gidNumber: 1000
+homeDirectory: /home/reedstrm
+gecos: Ross J. Reedstrom,,,
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002752Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002752Z
+
+dn: cn=prospero-np,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 1525
+ipServiceProtocol: tcp
+cn: prospero-np
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002810Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002810Z
+
+dn: cn=ip,ou=Protocols,dc=connexions
+objectClass: ipProtocol
+objectClass: top
+description: Protocol ip
+ipProtocolNumber: 0
+cn: ip
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002752Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002752Z
+
+dn: cn=prospero-np,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 1525
+ipServiceProtocol: udp
+cn: prospero-np
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002810Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002810Z
+
+dn: cn=icmp,ou=Protocols,dc=connexions
+objectClass: ipProtocol
+objectClass: top
+description: Protocol icmp
+ipProtocolNumber: 1
+cn: icmp
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002753Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002753Z
+
+dn: cn=datametrics,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 1645
+ipServiceProtocol: tcp
+cn: datametrics
+cn: old-radius
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002810Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002810Z
+
+dn: cn=igmp,ou=Protocols,dc=connexions
+objectClass: ipProtocol
+objectClass: top
+description: Protocol igmp
+ipProtocolNumber: 2
+cn: igmp
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002753Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002753Z
+
+dn: cn=datametrics,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 1645
+ipServiceProtocol: udp
+cn: datametrics
+cn: old-radius
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002810Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002810Z
+
+dn: cn=ggp,ou=Protocols,dc=connexions
+objectClass: ipProtocol
+objectClass: top
+description: Protocol ggp
+ipProtocolNumber: 3
+cn: ggp
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002753Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002753Z
+
+dn: cn=sa-msg-port,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 1646
+ipServiceProtocol: tcp
+cn: sa-msg-port
+cn: old-radacct
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002810Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002810Z
+
+dn: cn=ipencap,ou=Protocols,dc=connexions
+objectClass: ipProtocol
+objectClass: top
+description: Protocol ipencap
+ipProtocolNumber: 4
+cn: ipencap
+cn: IP-ENCAP
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002753Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002753Z
+
+dn: cn=sa-msg-port,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 1646
+ipServiceProtocol: udp
+cn: sa-msg-port
+cn: old-radacct
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002810Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002810Z
+
+dn: cn=st,ou=Protocols,dc=connexions
+objectClass: ipProtocol
+objectClass: top
+description: Protocol st
+ipProtocolNumber: 5
+cn: st
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002753Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002753Z
+
+dn: cn=radius,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 1812
+ipServiceProtocol: tcp
+cn: radius
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002810Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002810Z
+
+dn: cn=tcp,ou=Protocols,dc=connexions
+objectClass: ipProtocol
+objectClass: top
+description: Protocol tcp
+ipProtocolNumber: 6
+cn: tcp
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002753Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002753Z
+
+dn: cn=radius,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 1812
+ipServiceProtocol: udp
+cn: radius
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002811Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002811Z
+
+dn: cn=egp,ou=Protocols,dc=connexions
+objectClass: ipProtocol
+objectClass: top
+description: Protocol egp
+ipProtocolNumber: 8
+cn: egp
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002753Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002753Z
+
+dn: cn=radius-acct,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 1813
+ipServiceProtocol: tcp
+cn: radius-acct
+cn: radacct
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002811Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002811Z
+
+dn: cn=pup,ou=Protocols,dc=connexions
+objectClass: ipProtocol
+objectClass: top
+description: Protocol pup
+ipProtocolNumber: 12
+cn: pup
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002753Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002753Z
+
+dn: cn=radius-acct,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 1813
+ipServiceProtocol: udp
+cn: radius-acct
+cn: radacct
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002811Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002811Z
+
+dn: cn=udp,ou=Protocols,dc=connexions
+objectClass: ipProtocol
+objectClass: top
+description: Protocol udp
+ipProtocolNumber: 17
+cn: udp
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002753Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002753Z
+
+dn: cn=rtcm-sc104,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 2101
+ipServiceProtocol: tcp
+cn: rtcm-sc104
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002811Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002811Z
+
+dn: cn=hmp,ou=Protocols,dc=connexions
+objectClass: ipProtocol
+objectClass: top
+description: Protocol hmp
+ipProtocolNumber: 20
+cn: hmp
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002753Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002753Z
+
+dn: cn=rtcm-sc104,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 2101
+ipServiceProtocol: udp
+cn: rtcm-sc104
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002811Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002811Z
+
+dn: cn=xns-idp,ou=Protocols,dc=connexions
+objectClass: ipProtocol
+objectClass: top
+description: Protocol xns-idp
+ipProtocolNumber: 22
+cn: xns-idp
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002753Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002753Z
+
+dn: cn=cvspserver,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 2401
+ipServiceProtocol: tcp
+cn: cvspserver
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002811Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002811Z
+
+dn: cn=rdp,ou=Protocols,dc=connexions
+objectClass: ipProtocol
+objectClass: top
+description: Protocol rdp
+ipProtocolNumber: 27
+cn: rdp
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002753Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002753Z
+
+dn: cn=cvspserver,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 2401
+ipServiceProtocol: udp
+cn: cvspserver
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002811Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002811Z
+
+dn: cn=iso-tp4,ou=Protocols,dc=connexions
+objectClass: ipProtocol
+objectClass: top
+description: Protocol iso-tp4
+ipProtocolNumber: 29
+cn: iso-tp4
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002753Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002753Z
+
+dn: cn=venus,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 2430
+ipServiceProtocol: tcp
+cn: venus
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002811Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002811Z
+
+dn: cn=xtp,ou=Protocols,dc=connexions
+objectClass: ipProtocol
+objectClass: top
+description: Protocol xtp
+ipProtocolNumber: 36
+cn: xtp
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002753Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002753Z
+
+dn: cn=venus,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 2430
+ipServiceProtocol: udp
+cn: venus
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002811Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002811Z
+
+dn: cn=ddp,ou=Protocols,dc=connexions
+objectClass: ipProtocol
+objectClass: top
+description: Protocol ddp
+ipProtocolNumber: 37
+cn: ddp
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002753Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002753Z
+
+dn: cn=venus-se,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 2431
+ipServiceProtocol: tcp
+cn: venus-se
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002811Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002811Z
+
+dn: cn=idpr-cmtp,ou=Protocols,dc=connexions
+objectClass: ipProtocol
+objectClass: top
+description: Protocol idpr-cmtp
+ipProtocolNumber: 38
+cn: idpr-cmtp
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002753Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002753Z
+
+dn: cn=venus-se,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 2431
+ipServiceProtocol: udp
+cn: venus-se
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002811Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002811Z
+
+dn: cn=ipv6,ou=Protocols,dc=connexions
+objectClass: ipProtocol
+objectClass: top
+description: Protocol ipv6
+ipProtocolNumber: 41
+cn: ipv6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002753Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002753Z
+
+dn: cn=codasrv,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 2432
+ipServiceProtocol: tcp
+cn: codasrv
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002811Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002811Z
+
+dn: cn=ipv6-route,ou=Protocols,dc=connexions
+objectClass: ipProtocol
+objectClass: top
+description: Protocol ipv6-route
+ipProtocolNumber: 43
+cn: ipv6-route
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002753Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002753Z
+
+dn: cn=codasrv,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 2432
+ipServiceProtocol: udp
+cn: codasrv
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002812Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002812Z
+
+dn: cn=ipv6-frag,ou=Protocols,dc=connexions
+objectClass: ipProtocol
+objectClass: top
+description: Protocol ipv6-frag
+ipProtocolNumber: 44
+cn: ipv6-frag
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002753Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002753Z
+
+dn: cn=codasrv-se,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 2433
+ipServiceProtocol: tcp
+cn: codasrv-se
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002812Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002812Z
+
+dn: cn=idrp,ou=Protocols,dc=connexions
+objectClass: ipProtocol
+objectClass: top
+description: Protocol idrp
+ipProtocolNumber: 45
+cn: idrp
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002753Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002753Z
+
+dn: cn=codasrv-se,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 2433
+ipServiceProtocol: udp
+cn: codasrv-se
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002812Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002812Z
+
+dn: cn=rsvp,ou=Protocols,dc=connexions
+objectClass: ipProtocol
+objectClass: top
+description: Protocol rsvp
+ipProtocolNumber: 46
+cn: rsvp
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002753Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002753Z
+
+dn: cn=mon,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 2583
+ipServiceProtocol: tcp
+cn: mon
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002812Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002812Z
+
+dn: cn=gre,ou=Protocols,dc=connexions
+objectClass: ipProtocol
+objectClass: top
+description: Protocol gre
+ipProtocolNumber: 47
+cn: gre
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002754Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002754Z
+
+dn: cn=mon,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 2583
+ipServiceProtocol: udp
+cn: mon
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002812Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002812Z
+
+dn: cn=esp,ou=Protocols,dc=connexions
+objectClass: ipProtocol
+objectClass: top
+description: Protocol esp
+ipProtocolNumber: 50
+cn: esp
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002754Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002754Z
+
+dn: cn=dict,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 2628
+ipServiceProtocol: tcp
+cn: dict
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002812Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002812Z
+
+dn: cn=ah,ou=Protocols,dc=connexions
+objectClass: ipProtocol
+objectClass: top
+description: Protocol ah
+ipProtocolNumber: 51
+cn: ah
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002754Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002754Z
+
+dn: cn=dict,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 2628
+ipServiceProtocol: udp
+cn: dict
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002812Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002812Z
+
+dn: cn=skip,ou=Protocols,dc=connexions
+objectClass: ipProtocol
+objectClass: top
+description: Protocol skip
+ipProtocolNumber: 57
+cn: skip
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002754Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002754Z
+
+dn: cn=gds_db,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 3050
+ipServiceProtocol: tcp
+cn: gds_db
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002812Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002812Z
+
+dn: cn=ipv6-icmp,ou=Protocols,dc=connexions
+objectClass: ipProtocol
+objectClass: top
+description: Protocol ipv6-icmp
+ipProtocolNumber: 58
+cn: ipv6-icmp
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002754Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002754Z
+
+dn: cn=gds_db,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 3050
+ipServiceProtocol: udp
+cn: gds_db
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002812Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002812Z
+
+dn: cn=ipv6-nonxt,ou=Protocols,dc=connexions
+objectClass: ipProtocol
+objectClass: top
+description: Protocol ipv6-nonxt
+ipProtocolNumber: 59
+cn: ipv6-nonxt
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002754Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002754Z
+
+dn: cn=icpv2,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 3130
+ipServiceProtocol: tcp
+cn: icpv2
+cn: icp
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002812Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002812Z
+
+dn: cn=ipv6-opts,ou=Protocols,dc=connexions
+objectClass: ipProtocol
+objectClass: top
+description: Protocol ipv6-opts
+ipProtocolNumber: 60
+cn: ipv6-opts
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002754Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002754Z
+
+dn: cn=icpv2,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 3130
+ipServiceProtocol: udp
+cn: icpv2
+cn: icp
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002812Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002812Z
+
+dn: cn=rspf,ou=Protocols,dc=connexions
+objectClass: ipProtocol
+objectClass: top
+description: Protocol rspf
+ipProtocolNumber: 73
+cn: rspf
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002754Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002754Z
+
+dn: cn=mysql,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 3306
+ipServiceProtocol: tcp
+cn: mysql
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002813Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002813Z
+
+dn: cn=vmtp,ou=Protocols,dc=connexions
+objectClass: ipProtocol
+objectClass: top
+description: Protocol vmtp
+ipProtocolNumber: 81
+cn: vmtp
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002754Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002754Z
+
+dn: cn=mysql,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 3306
+ipServiceProtocol: udp
+cn: mysql
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002813Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002813Z
+
+dn: cn=ospf,ou=Protocols,dc=connexions
+objectClass: ipProtocol
+objectClass: top
+description: Protocol ospf
+ipProtocolNumber: 89
+cn: ospf
+cn: OSPFIGP
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002754Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002754Z
+
+dn: cn=rfe,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 5002
+ipServiceProtocol: tcp
+cn: rfe
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002813Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002813Z
+
+dn: cn=ipip,ou=Protocols,dc=connexions
+objectClass: ipProtocol
+objectClass: top
+description: Protocol ipip
+ipProtocolNumber: 94
+cn: ipip
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002754Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002754Z
+
+dn: cn=rfe,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 5002
+ipServiceProtocol: udp
+cn: rfe
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002813Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002813Z
+
+dn: cn=encap,ou=Protocols,dc=connexions
+objectClass: ipProtocol
+objectClass: top
+description: Protocol encap
+ipProtocolNumber: 98
+cn: encap
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002754Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002754Z
+
+dn: cn=cfengine,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 5308
+ipServiceProtocol: tcp
+cn: cfengine
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002813Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002813Z
+
+dn: cn=pim,ou=Protocols,dc=connexions
+objectClass: ipProtocol
+objectClass: top
+description: Protocol pim
+ipProtocolNumber: 103
+cn: pim
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002754Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002754Z
+
+dn: cn=cfengine,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 5308
+ipServiceProtocol: udp
+cn: cfengine
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002813Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002813Z
+
+dn: cn=portmapper,ou=Rpc,dc=connexions
+objectClass: oncRpc
+objectClass: top
+description: RPC portmapper
+oncRpcNumber: 100000
+cn: portmapper
+cn: portmap
+cn: sunrpc
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002754Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002754Z
+
+dn: cn=x11,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 6000
+ipServiceProtocol: tcp
+cn: x11
+cn: x11-0
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002813Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002813Z
+
+dn: cn=rstatd,ou=Rpc,dc=connexions
+objectClass: oncRpc
+objectClass: top
+description: RPC rstatd
+oncRpcNumber: 100001
+cn: rstatd
+cn: perfmeter
+cn: rstat
+cn: rstat_svc
+cn: rup
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002754Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002754Z
+
+dn: cn=x11,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 6000
+ipServiceProtocol: udp
+cn: x11
+cn: x11-0
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002813Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002813Z
+
+dn: cn=rusersd,ou=Rpc,dc=connexions
+objectClass: oncRpc
+objectClass: top
+description: RPC rusersd
+oncRpcNumber: 100002
+cn: rusersd
+cn: rusers
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002754Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002754Z
+
+dn: cn=x11-1,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 6001
+ipServiceProtocol: tcp
+cn: x11-1
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002813Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002813Z
+
+dn: cn=nfs,ou=Rpc,dc=connexions
+objectClass: oncRpc
+objectClass: top
+description: RPC nfs
+oncRpcNumber: 100003
+cn: nfs
+cn: nfsprog
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002754Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002754Z
+
+dn: cn=x11-1,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 6001
+ipServiceProtocol: udp
+cn: x11-1
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002813Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002813Z
+
+dn: cn=ypserv,ou=Rpc,dc=connexions
+objectClass: oncRpc
+objectClass: top
+description: RPC ypserv
+oncRpcNumber: 100004
+cn: ypserv
+cn: ypprog
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002754Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002754Z
+
+dn: cn=x11-2,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 6002
+ipServiceProtocol: tcp
+cn: x11-2
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002813Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002813Z
+
+dn: cn=mountd,ou=Rpc,dc=connexions
+objectClass: oncRpc
+objectClass: top
+description: RPC mountd
+oncRpcNumber: 100005
+cn: mountd
+cn: mount
+cn: showmount
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002754Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002754Z
+
+dn: cn=x11-2,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 6002
+ipServiceProtocol: udp
+cn: x11-2
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002813Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002813Z
+
+dn: cn=ypbind,ou=Rpc,dc=connexions
+objectClass: oncRpc
+objectClass: top
+description: RPC ypbind
+oncRpcNumber: 100007
+cn: ypbind
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002754Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002754Z
+
+dn: cn=x11-3,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 6003
+ipServiceProtocol: tcp
+cn: x11-3
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002814Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002814Z
+
+dn: cn=walld,ou=Rpc,dc=connexions
+objectClass: oncRpc
+objectClass: top
+description: RPC walld
+oncRpcNumber: 100008
+cn: walld
+cn: rwall
+cn: shutdown
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002755Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002755Z
+
+dn: cn=x11-3,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 6003
+ipServiceProtocol: udp
+cn: x11-3
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002814Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002814Z
+
+dn: cn=yppasswdd,ou=Rpc,dc=connexions
+objectClass: oncRpc
+objectClass: top
+description: RPC yppasswdd
+oncRpcNumber: 100009
+cn: yppasswdd
+cn: yppasswd
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002755Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002755Z
+
+dn: cn=x11-4,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 6004
+ipServiceProtocol: tcp
+cn: x11-4
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002814Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002814Z
+
+dn: cn=etherstatd,ou=Rpc,dc=connexions
+objectClass: oncRpc
+objectClass: top
+description: RPC etherstatd
+oncRpcNumber: 100010
+cn: etherstatd
+cn: etherstat
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002755Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002755Z
+
+dn: cn=x11-4,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 6004
+ipServiceProtocol: udp
+cn: x11-4
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002814Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002814Z
+
+dn: cn=rquotad,ou=Rpc,dc=connexions
+objectClass: oncRpc
+objectClass: top
+description: RPC rquotad
+oncRpcNumber: 100011
+cn: rquotad
+cn: quota
+cn: rquota
+cn: rquotaprog
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002755Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002755Z
+
+dn: cn=x11-5,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 6005
+ipServiceProtocol: tcp
+cn: x11-5
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002814Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002814Z
+
+dn: cn=sprayd,ou=Rpc,dc=connexions
+objectClass: oncRpc
+objectClass: top
+description: RPC sprayd
+oncRpcNumber: 100012
+cn: sprayd
+cn: spray
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002755Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002755Z
+
+dn: cn=x11-5,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 6005
+ipServiceProtocol: udp
+cn: x11-5
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002814Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002814Z
+
+dn: cn=3270_mapper,ou=Rpc,dc=connexions
+objectClass: oncRpc
+objectClass: top
+description: RPC 3270_mapper
+oncRpcNumber: 100013
+cn: 3270_mapper
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002755Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002755Z
+
+dn: cn=x11-6,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 6006
+ipServiceProtocol: tcp
+cn: x11-6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002814Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002814Z
+
+dn: cn=rje_mapper,ou=Rpc,dc=connexions
+objectClass: oncRpc
+objectClass: top
+description: RPC rje_mapper
+oncRpcNumber: 100014
+cn: rje_mapper
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002755Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002755Z
+
+dn: cn=x11-6,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 6006
+ipServiceProtocol: udp
+cn: x11-6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002814Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002814Z
+
+dn: cn=selection_svc,ou=Rpc,dc=connexions
+objectClass: oncRpc
+objectClass: top
+description: RPC selection_svc
+oncRpcNumber: 100015
+cn: selection_svc
+cn: selnsvc
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002755Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002755Z
+
+dn: cn=x11-7,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 6007
+ipServiceProtocol: tcp
+cn: x11-7
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002814Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002814Z
+
+dn: cn=database_svc,ou=Rpc,dc=connexions
+objectClass: oncRpc
+objectClass: top
+description: RPC database_svc
+oncRpcNumber: 100016
+cn: database_svc
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002755Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002755Z
+
+dn: cn=x11-7,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 6007
+ipServiceProtocol: udp
+cn: x11-7
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002814Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002814Z
+
+dn: cn=rexd,ou=Rpc,dc=connexions
+objectClass: oncRpc
+objectClass: top
+description: RPC rexd
+oncRpcNumber: 100017
+cn: rexd
+cn: rex
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002755Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002755Z
+
+dn: cn=afs3-fileserver,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 7000
+ipServiceProtocol: tcp
+cn: afs3-fileserver
+cn: bbs
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002814Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002814Z
+
+dn: cn=alis,ou=Rpc,dc=connexions
+objectClass: oncRpc
+objectClass: top
+description: RPC alis
+oncRpcNumber: 100018
+cn: alis
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002755Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002755Z
+
+dn: cn=afs3-fileserver,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 7000
+ipServiceProtocol: udp
+cn: afs3-fileserver
+cn: bbs
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002814Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002814Z
+
+dn: cn=sched,ou=Rpc,dc=connexions
+objectClass: oncRpc
+objectClass: top
+description: RPC sched
+oncRpcNumber: 100019
+cn: sched
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002755Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002755Z
+
+dn: cn=afs3-callback,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 7001
+ipServiceProtocol: tcp
+cn: afs3-callback
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002815Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002815Z
+
+dn: cn=llockmgr,ou=Rpc,dc=connexions
+objectClass: oncRpc
+objectClass: top
+description: RPC llockmgr
+oncRpcNumber: 100020
+cn: llockmgr
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002755Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002755Z
+
+dn: cn=afs3-callback,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 7001
+ipServiceProtocol: udp
+cn: afs3-callback
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002815Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002815Z
+
+dn: cn=nlockmgr,ou=Rpc,dc=connexions
+objectClass: oncRpc
+objectClass: top
+description: RPC nlockmgr
+oncRpcNumber: 100021
+cn: nlockmgr
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002755Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002755Z
+
+dn: cn=afs3-prserver,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 7002
+ipServiceProtocol: tcp
+cn: afs3-prserver
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002815Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002815Z
+
+dn: cn=x25.inr,ou=Rpc,dc=connexions
+objectClass: oncRpc
+objectClass: top
+description: RPC x25.inr
+oncRpcNumber: 100022
+cn: x25.inr
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002755Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002755Z
+
+dn: cn=afs3-prserver,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 7002
+ipServiceProtocol: udp
+cn: afs3-prserver
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002815Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002815Z
+
+dn: cn=statmon,ou=Rpc,dc=connexions
+objectClass: oncRpc
+objectClass: top
+description: RPC statmon
+oncRpcNumber: 100023
+cn: statmon
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002755Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002755Z
+
+dn: cn=afs3-vlserver,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 7003
+ipServiceProtocol: tcp
+cn: afs3-vlserver
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002815Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002815Z
+
+dn: cn=status,ou=Rpc,dc=connexions
+objectClass: oncRpc
+objectClass: top
+description: RPC status
+oncRpcNumber: 100024
+cn: status
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002755Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002755Z
+
+dn: cn=afs3-vlserver,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 7003
+ipServiceProtocol: udp
+cn: afs3-vlserver
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002815Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002815Z
+
+dn: cn=bootparam,ou=Rpc,dc=connexions
+objectClass: oncRpc
+objectClass: top
+description: RPC bootparam
+oncRpcNumber: 100026
+cn: bootparam
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002755Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002755Z
+
+dn: cn=afs3-kaserver,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 7004
+ipServiceProtocol: tcp
+cn: afs3-kaserver
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002815Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002815Z
+
+dn: cn=ypupdated,ou=Rpc,dc=connexions
+objectClass: oncRpc
+objectClass: top
+description: RPC ypupdated
+oncRpcNumber: 100028
+cn: ypupdated
+cn: ypupdate
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002755Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002755Z
+
+dn: cn=afs3-kaserver,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 7004
+ipServiceProtocol: udp
+cn: afs3-kaserver
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002815Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002815Z
+
+dn: cn=keyserv,ou=Rpc,dc=connexions
+objectClass: oncRpc
+objectClass: top
+description: RPC keyserv
+oncRpcNumber: 100029
+cn: keyserv
+cn: keyserver
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002755Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002755Z
+
+dn: cn=afs3-volser,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 7005
+ipServiceProtocol: tcp
+cn: afs3-volser
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002815Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002815Z
+
+dn: cn=tfsd,ou=Rpc,dc=connexions
+objectClass: oncRpc
+objectClass: top
+description: RPC tfsd
+oncRpcNumber: 100037
+cn: tfsd
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002756Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002756Z
+
+dn: cn=afs3-volser,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 7005
+ipServiceProtocol: udp
+cn: afs3-volser
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002815Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002815Z
+
+dn: cn=nsed,ou=Rpc,dc=connexions
+objectClass: oncRpc
+objectClass: top
+description: RPC nsed
+oncRpcNumber: 100038
+cn: nsed
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002756Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002756Z
+
+dn: cn=afs3-errors,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 7006
+ipServiceProtocol: tcp
+cn: afs3-errors
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002815Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002815Z
+
+dn: cn=nsemntd,ou=Rpc,dc=connexions
+objectClass: oncRpc
+objectClass: top
+description: RPC nsemntd
+oncRpcNumber: 100039
+cn: nsemntd
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002756Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002756Z
+
+dn: cn=afs3-errors,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 7006
+ipServiceProtocol: udp
+cn: afs3-errors
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002815Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002815Z
+
+dn: cn=pcnfsd,ou=Rpc,dc=connexions
+objectClass: oncRpc
+objectClass: top
+description: RPC pcnfsd
+oncRpcNumber: 150001
+cn: pcnfsd
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002756Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002756Z
+
+dn: cn=afs3-bos,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 7007
+ipServiceProtocol: tcp
+cn: afs3-bos
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002816Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002816Z
+
+dn: cn=amd,ou=Rpc,dc=connexions
+objectClass: oncRpc
+objectClass: top
+description: RPC amd
+oncRpcNumber: 300019
+cn: amd
+cn: amq
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002756Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002756Z
+
+dn: cn=afs3-bos,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 7007
+ipServiceProtocol: udp
+cn: afs3-bos
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002816Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002816Z
+
+dn: cn=sgi_fam,ou=Rpc,dc=connexions
+objectClass: oncRpc
+objectClass: top
+description: RPC sgi_fam
+oncRpcNumber: 391002
+cn: sgi_fam
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002756Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002756Z
+
+dn: cn=afs3-update,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 7008
+ipServiceProtocol: tcp
+cn: afs3-update
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002816Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002816Z
+
+dn: cn=ugidd,ou=Rpc,dc=connexions
+objectClass: oncRpc
+objectClass: top
+description: RPC ugidd
+oncRpcNumber: 545580417
+cn: ugidd
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002756Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002756Z
+
+dn: cn=afs3-update,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 7008
+ipServiceProtocol: udp
+cn: afs3-update
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002816Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002816Z
+
+dn: cn=bwnfsd,ou=Rpc,dc=connexions
+objectClass: oncRpc
+objectClass: top
+description: RPC bwnfsd
+oncRpcNumber: 788585389
+cn: bwnfsd
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002756Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002756Z
+
+dn: cn=afs3-rmtsys,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 7009
+ipServiceProtocol: tcp
+cn: afs3-rmtsys
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002816Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002816Z
+
+dn: ou=tcp,ou=Services,dc=connexions
+ou: tcp
+objectClass: top
+objectClass: organizationalUnit
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002756Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002756Z
+
+dn: cn=afs3-rmtsys,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 7009
+ipServiceProtocol: udp
+cn: afs3-rmtsys
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002816Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002816Z
+
+dn: cn=tcpmux,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 1
+ipServiceProtocol: tcp
+cn: tcpmux
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002756Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002756Z
+
+dn: cn=font-service,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 7100
+ipServiceProtocol: tcp
+cn: font-service
+cn: xfs
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002816Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002816Z
+
+dn: cn=echo,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 7
+ipServiceProtocol: tcp
+cn: echo
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002756Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002756Z
+
+dn: cn=font-service,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 7100
+ipServiceProtocol: udp
+cn: font-service
+cn: xfs
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002816Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002816Z
+
+dn: ou=udp,ou=Services,dc=connexions
+ou: udp
+objectClass: top
+objectClass: organizationalUnit
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002756Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002756Z
+
+dn: cn=wnn6,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 22273
+ipServiceProtocol: tcp
+cn: wnn6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002816Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002816Z
+
+dn: cn=echo,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 7
+ipServiceProtocol: udp
+cn: echo
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002756Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002756Z
+
+dn: cn=wnn6,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 22273
+ipServiceProtocol: udp
+cn: wnn6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002816Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002816Z
+
+dn: cn=discard,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 9
+ipServiceProtocol: tcp
+cn: discard
+cn: null
+cn: sink
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002756Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002756Z
+
+dn: cn=kerberos4,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 750
+ipServiceProtocol: udp
+cn: kerberos4
+cn: kdc
+cn: kerberos-iv
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002816Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002816Z
+
+dn: cn=discard,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 9
+ipServiceProtocol: udp
+cn: discard
+cn: null
+cn: sink
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002756Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002756Z
+
+dn: cn=kerberos4,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 750
+ipServiceProtocol: tcp
+cn: kerberos4
+cn: kdc
+cn: kerberos-iv
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002817Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002817Z
+
+dn: cn=systat,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 11
+ipServiceProtocol: tcp
+cn: systat
+cn: users
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002756Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002756Z
+
+dn: cn=kerberos_master,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 751
+ipServiceProtocol: udp
+cn: kerberos_master
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002817Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002817Z
+
+dn: cn=daytime,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 13
+ipServiceProtocol: tcp
+cn: daytime
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002756Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002756Z
+
+dn: cn=kerberos_master,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 751
+ipServiceProtocol: tcp
+cn: kerberos_master
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002817Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002817Z
+
+dn: cn=daytime,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 13
+ipServiceProtocol: udp
+cn: daytime
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002756Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002756Z
+
+dn: cn=passwd_server,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 752
+ipServiceProtocol: udp
+cn: passwd_server
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002817Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002817Z
+
+dn: cn=netstat,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 15
+ipServiceProtocol: tcp
+cn: netstat
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002756Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002756Z
+
+dn: cn=krb_prop,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 754
+ipServiceProtocol: tcp
+cn: krb_prop
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002817Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002817Z
+
+dn: cn=qotd,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 17
+ipServiceProtocol: tcp
+cn: qotd
+cn: quote
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002756Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002756Z
+
+dn: cn=krbupdate,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 760
+ipServiceProtocol: tcp
+cn: krbupdate
+cn: kreg
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002817Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002817Z
+
+dn: cn=msp,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 18
+ipServiceProtocol: tcp
+cn: msp
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002757Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002757Z
+
+dn: cn=kpasswd,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 761
+ipServiceProtocol: tcp
+cn: kpasswd
+cn: kpwd
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002817Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002817Z
+
+dn: cn=msp,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 18
+ipServiceProtocol: udp
+cn: msp
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002757Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002757Z
+
+dn: cn=swat,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 901
+ipServiceProtocol: tcp
+cn: swat
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002817Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002817Z
+
+dn: cn=chargen,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 19
+ipServiceProtocol: tcp
+cn: chargen
+cn: source
+cn: ttytst
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002757Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002757Z
+
+dn: cn=kpop,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 1109
+ipServiceProtocol: tcp
+cn: kpop
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002817Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002817Z
+
+dn: cn=chargen,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 19
+ipServiceProtocol: udp
+cn: chargen
+cn: source
+cn: ttytst
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002757Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002757Z
+
+dn: cn=knetd,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 2053
+ipServiceProtocol: tcp
+cn: knetd
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002817Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002817Z
+
+dn: cn=ftp-data,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 20
+ipServiceProtocol: tcp
+cn: ftp-data
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002757Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002757Z
+
+dn: cn=zephyr-srv,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 2102
+ipServiceProtocol: udp
+cn: zephyr-srv
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002817Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002817Z
+
+dn: cn=ftp,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 21
+ipServiceProtocol: tcp
+cn: ftp
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002757Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002757Z
+
+dn: cn=zephyr-clt,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 2103
+ipServiceProtocol: udp
+cn: zephyr-clt
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002817Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002817Z
+
+dn: cn=fsp,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 21
+ipServiceProtocol: udp
+cn: fsp
+cn: fspd
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002757Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002757Z
+
+dn: cn=zephyr-hm,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 2104
+ipServiceProtocol: udp
+cn: zephyr-hm
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002817Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002817Z
+
+dn: cn=ssh,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 22
+ipServiceProtocol: tcp
+cn: ssh
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002757Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002757Z
+
+dn: cn=eklogin,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 2105
+ipServiceProtocol: tcp
+cn: eklogin
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002818Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002818Z
+
+dn: cn=ssh,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 22
+ipServiceProtocol: udp
+cn: ssh
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002757Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002757Z
+
+dn: cn=kx,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 2111
+ipServiceProtocol: tcp
+cn: kx
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002818Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002818Z
+
+dn: cn=telnet,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 23
+ipServiceProtocol: tcp
+cn: telnet
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002757Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002757Z
+
+dn: cn=supfilesrv,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 871
+ipServiceProtocol: tcp
+cn: supfilesrv
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002818Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002818Z
+
+dn: cn=smtp,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 25
+ipServiceProtocol: tcp
+cn: smtp
+cn: mail
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002757Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002757Z
+
+dn: cn=supfiledbg,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 1127
+ipServiceProtocol: tcp
+cn: supfiledbg
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002818Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002818Z
+
+dn: cn=time,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 37
+ipServiceProtocol: tcp
+cn: time
+cn: timserver
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002757Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002757Z
+
+dn: ou=ddp,ou=Services,dc=connexions
+ou: ddp
+objectClass: top
+objectClass: organizationalUnit
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002818Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002818Z
+
+dn: cn=time,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 37
+ipServiceProtocol: udp
+cn: time
+cn: timserver
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002757Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002757Z
+
+dn: cn=rtmp,ou=ddp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 1
+ipServiceProtocol: ddp
+cn: rtmp
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002818Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002818Z
+
+dn: cn=rlp,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 39
+ipServiceProtocol: udp
+cn: rlp
+cn: resource
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002757Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002757Z
+
+dn: cn=nbp,ou=ddp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 2
+ipServiceProtocol: ddp
+cn: nbp
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002818Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002818Z
+
+dn: cn=nameserver,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 42
+ipServiceProtocol: tcp
+cn: nameserver
+cn: name
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002757Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002757Z
+
+dn: cn=echo,ou=ddp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 4
+ipServiceProtocol: ddp
+cn: echo
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002818Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002818Z
+
+dn: cn=whois,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 43
+ipServiceProtocol: tcp
+cn: whois
+cn: nicname
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002757Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002757Z
+
+dn: cn=zip,ou=ddp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 6
+ipServiceProtocol: ddp
+cn: zip
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002818Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002818Z
+
+dn: cn=re-mail-ck,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 50
+ipServiceProtocol: tcp
+cn: re-mail-ck
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002757Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002757Z
+
+dn: cn=linuxconf,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 98
+ipServiceProtocol: tcp
+cn: linuxconf
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002818Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002818Z
+
+dn: cn=re-mail-ck,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 50
+ipServiceProtocol: udp
+cn: re-mail-ck
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002757Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002757Z
+
+dn: cn=poppassd,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 106
+ipServiceProtocol: tcp
+cn: poppassd
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002818Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002818Z
+
+dn: cn=domain,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 53
+ipServiceProtocol: tcp
+cn: domain
+cn: nameserver
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002757Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002757Z
+
+dn: cn=poppassd,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 106
+ipServiceProtocol: udp
+cn: poppassd
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002819Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002819Z
+
+dn: cn=domain,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 53
+ipServiceProtocol: udp
+cn: domain
+cn: nameserver
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002758Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002758Z
+
+dn: cn=imsp,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 406
+ipServiceProtocol: tcp
+cn: imsp
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002819Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002819Z
+
+dn: cn=mtp,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 57
+ipServiceProtocol: tcp
+cn: mtp
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002758Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002758Z
+
+dn: cn=imsp,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 406
+ipServiceProtocol: udp
+cn: imsp
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002819Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002819Z
+
+dn: cn=bootps,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 67
+ipServiceProtocol: tcp
+cn: bootps
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002758Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002758Z
+
+dn: cn=ssmtp,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 465
+ipServiceProtocol: tcp
+cn: ssmtp
+cn: smtps
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002819Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002819Z
+
+dn: cn=bootps,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 67
+ipServiceProtocol: udp
+cn: bootps
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002758Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002758Z
+
+dn: cn=nqs,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 607
+ipServiceProtocol: tcp
+cn: nqs
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002819Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002819Z
+
+dn: cn=bootpc,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 68
+ipServiceProtocol: tcp
+cn: bootpc
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002758Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002758Z
+
+dn: cn=moira_db,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 775
+ipServiceProtocol: tcp
+cn: moira_db
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002819Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002819Z
+
+dn: cn=bootpc,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 68
+ipServiceProtocol: udp
+cn: bootpc
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002758Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002758Z
+
+dn: cn=moira_update,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 777
+ipServiceProtocol: tcp
+cn: moira_update
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002819Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002819Z
+
+dn: cn=tftp,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 69
+ipServiceProtocol: udp
+cn: tftp
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002758Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002758Z
+
+dn: cn=moira_ureg,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 779
+ipServiceProtocol: udp
+cn: moira_ureg
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002819Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002819Z
+
+dn: cn=gopher,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 70
+ipServiceProtocol: tcp
+cn: gopher
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002758Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002758Z
+
+dn: cn=omirr,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 808
+ipServiceProtocol: tcp
+cn: omirr
+cn: omirrd
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002819Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002819Z
+
+dn: cn=gopher,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 70
+ipServiceProtocol: udp
+cn: gopher
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002758Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002758Z
+
+dn: cn=omirr,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 808
+ipServiceProtocol: udp
+cn: omirr
+cn: omirrd
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002819Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002819Z
+
+dn: cn=rje,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 77
+ipServiceProtocol: tcp
+cn: rje
+cn: netrjs
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002758Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002758Z
+
+dn: cn=customs,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 1001
+ipServiceProtocol: tcp
+cn: customs
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002819Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002819Z
+
+dn: cn=finger,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 79
+ipServiceProtocol: tcp
+cn: finger
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002758Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002758Z
+
+dn: cn=customs,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 1001
+ipServiceProtocol: udp
+cn: customs
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002820Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002820Z
+
+dn: cn=www,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 80
+ipServiceProtocol: tcp
+cn: www
+cn: http
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002758Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002758Z
+
+dn: cn=rmiregistry,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 1099
+ipServiceProtocol: tcp
+cn: rmiregistry
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002820Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002820Z
+
+dn: cn=www,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 80
+ipServiceProtocol: udp
+cn: www
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002758Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002758Z
+
+dn: cn=skkserv,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 1178
+ipServiceProtocol: tcp
+cn: skkserv
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002820Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002820Z
+
+dn: cn=link,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 87
+ipServiceProtocol: tcp
+cn: link
+cn: ttylink
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002758Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002758Z
+
+dn: cn=predict,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 1210
+ipServiceProtocol: udp
+cn: predict
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002820Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002820Z
+
+dn: cn=kerberos,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 88
+ipServiceProtocol: tcp
+cn: kerberos
+cn: kerberos-sec
+cn: kerberos5
+cn: krb5
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002758Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002758Z
+
+dn: cn=rmtcfg,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 1236
+ipServiceProtocol: tcp
+cn: rmtcfg
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002820Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002820Z
+
+dn: cn=kerberos,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 88
+ipServiceProtocol: udp
+cn: kerberos
+cn: kerberos-sec
+cn: kerberos5
+cn: krb5
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002758Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002758Z
+
+dn: cn=xtel,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 1313
+ipServiceProtocol: tcp
+cn: xtel
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002820Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002820Z
+
+dn: cn=supdup,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 95
+ipServiceProtocol: tcp
+cn: supdup
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002759Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002759Z
+
+dn: cn=xtelw,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 1314
+ipServiceProtocol: tcp
+cn: xtelw
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002820Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002820Z
+
+dn: cn=hostnames,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 101
+ipServiceProtocol: tcp
+cn: hostnames
+cn: hostname
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002759Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002759Z
+
+dn: cn=support,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 1529
+ipServiceProtocol: tcp
+cn: support
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002820Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002820Z
+
+dn: cn=iso-tsap,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 102
+ipServiceProtocol: tcp
+cn: iso-tsap
+cn: tsap
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002759Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002759Z
+
+dn: cn=sieve,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 2000
+ipServiceProtocol: tcp
+cn: sieve
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002820Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002820Z
+
+dn: cn=csnet-ns,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 105
+ipServiceProtocol: tcp
+cn: csnet-ns
+cn: cso-ns
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002759Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002759Z
+
+dn: cn=cfinger,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 2003
+ipServiceProtocol: tcp
+cn: cfinger
+cn: lmtp
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002820Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002820Z
+
+dn: cn=csnet-ns,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 105
+ipServiceProtocol: udp
+cn: csnet-ns
+cn: cso-ns
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002759Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002759Z
+
+dn: cn=ndtp,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 2010
+ipServiceProtocol: tcp
+cn: ndtp
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002821Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002821Z
+
+dn: cn=rtelnet,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 107
+ipServiceProtocol: tcp
+cn: rtelnet
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002759Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002759Z
+
+dn: cn=ninstall,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 2150
+ipServiceProtocol: tcp
+cn: ninstall
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002821Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002821Z
+
+dn: cn=rtelnet,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 107
+ipServiceProtocol: udp
+cn: rtelnet
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002759Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002759Z
+
+dn: cn=ninstall,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 2150
+ipServiceProtocol: udp
+cn: ninstall
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002821Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002821Z
+
+dn: cn=pop2,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 109
+ipServiceProtocol: tcp
+cn: pop2
+cn: pop-2
+cn: postoffice
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002759Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002759Z
+
+dn: cn=zebrasrv,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 2600
+ipServiceProtocol: tcp
+cn: zebrasrv
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002821Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002821Z
+
+dn: cn=pop2,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 109
+ipServiceProtocol: udp
+cn: pop2
+cn: pop-2
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002759Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002759Z
+
+dn: cn=zebra,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 2601
+ipServiceProtocol: tcp
+cn: zebra
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002821Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002821Z
+
+dn: cn=pop3,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 110
+ipServiceProtocol: tcp
+cn: pop3
+cn: pop-3
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002759Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002759Z
+
+dn: cn=ripd,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 2602
+ipServiceProtocol: tcp
+cn: ripd
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002821Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002821Z
+
+dn: cn=pop3,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 110
+ipServiceProtocol: udp
+cn: pop3
+cn: pop-3
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002759Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002759Z
+
+dn: cn=ripngd,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 2603
+ipServiceProtocol: tcp
+cn: ripngd
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002821Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002821Z
+
+dn: cn=sunrpc,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 111
+ipServiceProtocol: tcp
+cn: sunrpc
+cn: portmapper
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002759Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002759Z
+
+dn: cn=ospfd,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 2604
+ipServiceProtocol: tcp
+cn: ospfd
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002821Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002821Z
+
+dn: cn=sunrpc,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 111
+ipServiceProtocol: udp
+cn: sunrpc
+cn: portmapper
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002759Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002759Z
+
+dn: cn=bgpd,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 2605
+ipServiceProtocol: tcp
+cn: bgpd
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002821Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002821Z
+
+dn: cn=auth,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 113
+ipServiceProtocol: tcp
+cn: auth
+cn: authentication
+cn: ident
+cn: tap
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002759Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002759Z
+
+dn: cn=ospf6d,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 2606
+ipServiceProtocol: tcp
+cn: ospf6d
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002821Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002821Z
+
+dn: cn=sftp,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 115
+ipServiceProtocol: tcp
+cn: sftp
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002800Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002800Z
+
+dn: cn=afbackup,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 2988
+ipServiceProtocol: tcp
+cn: afbackup
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002821Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002821Z
+
+dn: cn=uucp-path,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 117
+ipServiceProtocol: tcp
+cn: uucp-path
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002800Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002800Z
+
+dn: cn=afbackup,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 2988
+ipServiceProtocol: udp
+cn: afbackup
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002822Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002822Z
+
+dn: cn=nntp,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 119
+ipServiceProtocol: tcp
+cn: nntp
+cn: readnews
+cn: untp
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002800Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002800Z
+
+dn: cn=afmbackup,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 2989
+ipServiceProtocol: tcp
+cn: afmbackup
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002822Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002822Z
+
+dn: cn=ntp,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 123
+ipServiceProtocol: tcp
+cn: ntp
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002800Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002800Z
+
+dn: cn=afmbackup,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 2989
+ipServiceProtocol: udp
+cn: afmbackup
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002822Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002822Z
+
+dn: cn=ntp,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 123
+ipServiceProtocol: udp
+cn: ntp
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002800Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002800Z
+
+dn: cn=xtell,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 4224
+ipServiceProtocol: tcp
+cn: xtell
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002822Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002822Z
+
+dn: cn=pwdgen,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 129
+ipServiceProtocol: tcp
+cn: pwdgen
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002800Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002800Z
+
+dn: cn=fax,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 4557
+ipServiceProtocol: tcp
+cn: fax
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002822Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002822Z
+
+dn: cn=pwdgen,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 129
+ipServiceProtocol: udp
+cn: pwdgen
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002800Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002800Z
+
+dn: cn=hylafax,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 4559
+ipServiceProtocol: tcp
+cn: hylafax
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002822Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002822Z
+
+dn: cn=netbios-ns,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 137
+ipServiceProtocol: tcp
+cn: netbios-ns
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002800Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002800Z
+
+dn: cn=pcrd,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 5151
+ipServiceProtocol: tcp
+cn: pcrd
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002822Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002822Z
+
+dn: cn=netbios-ns,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 137
+ipServiceProtocol: udp
+cn: netbios-ns
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002800Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002800Z
+
+dn: cn=noclog,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 5354
+ipServiceProtocol: tcp
+cn: noclog
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002822Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002822Z
+
+dn: cn=netbios-dgm,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 138
+ipServiceProtocol: tcp
+cn: netbios-dgm
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002800Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002800Z
+
+dn: cn=noclog,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 5354
+ipServiceProtocol: udp
+cn: noclog
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002822Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002822Z
+
+dn: cn=netbios-dgm,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 138
+ipServiceProtocol: udp
+cn: netbios-dgm
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002800Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002800Z
+
+dn: cn=hostmon,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 5355
+ipServiceProtocol: tcp
+cn: hostmon
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002822Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002822Z
+
+dn: cn=netbios-ssn,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 139
+ipServiceProtocol: tcp
+cn: netbios-ssn
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002800Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002800Z
+
+dn: cn=hostmon,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 5355
+ipServiceProtocol: udp
+cn: hostmon
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002822Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002822Z
+
+dn: cn=netbios-ssn,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 139
+ipServiceProtocol: udp
+cn: netbios-ssn
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002800Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002800Z
+
+dn: cn=postgres,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 5432
+ipServiceProtocol: tcp
+cn: postgres
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002823Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002823Z
+
+dn: cn=imap2,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 143
+ipServiceProtocol: tcp
+cn: imap2
+cn: imap
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002800Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002800Z
+
+dn: cn=postgres,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 5432
+ipServiceProtocol: udp
+cn: postgres
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002823Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002823Z
+
+dn: cn=imap2,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 143
+ipServiceProtocol: udp
+cn: imap2
+cn: imap
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002801Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002801Z
+
+dn: cn=mrtd,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 5674
+ipServiceProtocol: tcp
+cn: mrtd
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002823Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002823Z
+
+dn: cn=snmp,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 161
+ipServiceProtocol: udp
+cn: snmp
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002801Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002801Z
+
+dn: cn=bgpsim,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 5675
+ipServiceProtocol: tcp
+cn: bgpsim
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002823Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002823Z
+
+dn: cn=snmp-trap,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 162
+ipServiceProtocol: udp
+cn: snmp-trap
+cn: snmptrap
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002801Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002801Z
+
+dn: cn=canna,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 5680
+ipServiceProtocol: tcp
+cn: canna
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002823Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002823Z
+
+dn: cn=cmip-man,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 163
+ipServiceProtocol: tcp
+cn: cmip-man
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002801Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002801Z
+
+dn: cn=sane,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 6566
+ipServiceProtocol: tcp
+cn: sane
+cn: saned
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002823Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002823Z
+
+dn: cn=cmip-man,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 163
+ipServiceProtocol: udp
+cn: cmip-man
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002801Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002801Z
+
+dn: cn=ircd,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 6667
+ipServiceProtocol: tcp
+cn: ircd
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002823Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002823Z
+
+dn: cn=cmip-agent,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 164
+ipServiceProtocol: tcp
+cn: cmip-agent
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002801Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002801Z
+
+dn: cn=ircd,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 6667
+ipServiceProtocol: udp
+cn: ircd
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002823Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002823Z
+
+dn: cn=cmip-agent,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 164
+ipServiceProtocol: udp
+cn: cmip-agent
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002801Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002801Z
+
+dn: cn=ircd-dalnet,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 7000
+ipServiceProtocol: tcp
+cn: ircd-dalnet
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002823Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002823Z
+
+dn: cn=mailq,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 174
+ipServiceProtocol: tcp
+cn: mailq
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002801Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002801Z
+
+dn: cn=ircd-dalnet,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 7000
+ipServiceProtocol: udp
+cn: ircd-dalnet
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002823Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002823Z
+
+dn: cn=mailq,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 174
+ipServiceProtocol: udp
+cn: mailq
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002801Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002801Z
+
+dn: cn=webcache,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 8080
+ipServiceProtocol: tcp
+cn: webcache
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002823Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002823Z
+
+dn: cn=xdmcp,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 177
+ipServiceProtocol: tcp
+cn: xdmcp
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002801Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002801Z
+
+dn: cn=webcache,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 8080
+ipServiceProtocol: udp
+cn: webcache
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002823Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002823Z
+
+dn: cn=xdmcp,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 177
+ipServiceProtocol: udp
+cn: xdmcp
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002801Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002801Z
+
+dn: cn=tproxy,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 8081
+ipServiceProtocol: tcp
+cn: tproxy
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002824Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002824Z
+
+dn: cn=nextstep,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 178
+ipServiceProtocol: tcp
+cn: nextstep
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002802Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002802Z
+
+dn: cn=tproxy,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 8081
+ipServiceProtocol: udp
+cn: tproxy
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002824Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002824Z
+
+dn: cn=nextstep,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 178
+ipServiceProtocol: udp
+cn: nextstep
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002802Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002802Z
+
+dn: cn=omniorb,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 8088
+ipServiceProtocol: tcp
+cn: omniorb
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002824Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002824Z
+
+dn: cn=bgp,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 179
+ipServiceProtocol: tcp
+cn: bgp
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002802Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002802Z
+
+dn: cn=omniorb,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 8088
+ipServiceProtocol: udp
+cn: omniorb
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002824Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002824Z
+
+dn: cn=bgp,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 179
+ipServiceProtocol: udp
+cn: bgp
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002802Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002802Z
+
+dn: cn=mandelspawn,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 9359
+ipServiceProtocol: udp
+cn: mandelspawn
+cn: mandelbrot
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002824Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002824Z
+
+dn: cn=prospero,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 191
+ipServiceProtocol: tcp
+cn: prospero
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002802Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002802Z
+
+dn: cn=amanda,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 10080
+ipServiceProtocol: udp
+cn: amanda
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002824Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002824Z
+
+dn: cn=prospero,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 191
+ipServiceProtocol: udp
+cn: prospero
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002802Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002802Z
+
+dn: cn=kamanda,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 10081
+ipServiceProtocol: tcp
+cn: kamanda
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002824Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002824Z
+
+dn: cn=irc,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 194
+ipServiceProtocol: tcp
+cn: irc
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002802Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002802Z
+
+dn: cn=kamanda,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 10081
+ipServiceProtocol: udp
+cn: kamanda
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002824Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002824Z
+
+dn: cn=irc,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 194
+ipServiceProtocol: udp
+cn: irc
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002802Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002802Z
+
+dn: cn=amandaidx,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 10082
+ipServiceProtocol: tcp
+cn: amandaidx
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002824Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002824Z
+
+dn: cn=smux,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 199
+ipServiceProtocol: tcp
+cn: smux
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002802Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002802Z
+
+dn: cn=amidxtape,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 10083
+ipServiceProtocol: tcp
+cn: amidxtape
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002824Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002824Z
+
+dn: cn=smux,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 199
+ipServiceProtocol: udp
+cn: smux
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002802Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002802Z
+
+dn: cn=smsqp,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 11201
+ipServiceProtocol: tcp
+cn: smsqp
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002824Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002824Z
+
+dn: cn=at-rtmp,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 201
+ipServiceProtocol: tcp
+cn: at-rtmp
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002802Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002802Z
+
+dn: cn=smsqp,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 11201
+ipServiceProtocol: udp
+cn: smsqp
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002825Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002825Z
+
+dn: cn=at-rtmp,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 201
+ipServiceProtocol: udp
+cn: at-rtmp
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002802Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002802Z
+
+dn: cn=xpilot,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 15345
+ipServiceProtocol: tcp
+cn: xpilot
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002825Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002825Z
+
+dn: cn=at-nbp,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 202
+ipServiceProtocol: tcp
+cn: at-nbp
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002802Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002802Z
+
+dn: cn=xpilot,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 15345
+ipServiceProtocol: udp
+cn: xpilot
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002825Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002825Z
+
+dn: cn=at-nbp,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 202
+ipServiceProtocol: udp
+cn: at-nbp
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002802Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002802Z
+
+dn: cn=isdnlog,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 20011
+ipServiceProtocol: tcp
+cn: isdnlog
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002825Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002825Z
+
+dn: cn=at-echo,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 204
+ipServiceProtocol: tcp
+cn: at-echo
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002803Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002803Z
+
+dn: cn=isdnlog,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 20011
+ipServiceProtocol: udp
+cn: isdnlog
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002825Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002825Z
+
+dn: cn=at-echo,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 204
+ipServiceProtocol: udp
+cn: at-echo
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002803Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002803Z
+
+dn: cn=vboxd,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 20012
+ipServiceProtocol: tcp
+cn: vboxd
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002825Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002825Z
+
+dn: cn=at-zis,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 206
+ipServiceProtocol: tcp
+cn: at-zis
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002803Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002803Z
+
+dn: cn=vboxd,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 20012
+ipServiceProtocol: udp
+cn: vboxd
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002825Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002825Z
+
+dn: cn=at-zis,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 206
+ipServiceProtocol: udp
+cn: at-zis
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002803Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002803Z
+
+dn: cn=binkp,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 24554
+ipServiceProtocol: tcp
+cn: binkp
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002825Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002825Z
+
+dn: cn=qmtp,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 209
+ipServiceProtocol: tcp
+cn: qmtp
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002803Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002803Z
+
+dn: cn=binkp,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 24554
+ipServiceProtocol: udp
+cn: binkp
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002825Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002825Z
+
+dn: cn=qmtp,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 209
+ipServiceProtocol: udp
+cn: qmtp
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002803Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002803Z
+
+dn: cn=asp,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 27374
+ipServiceProtocol: tcp
+cn: asp
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002825Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002825Z
+
+dn: cn=z3950,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 210
+ipServiceProtocol: tcp
+cn: z3950
+cn: wais
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002803Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002803Z
+
+dn: cn=asp,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 27374
+ipServiceProtocol: udp
+cn: asp
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002825Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002825Z
+
+dn: cn=z3950,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 210
+ipServiceProtocol: udp
+cn: z3950
+cn: wais
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002803Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002803Z
+
+dn: cn=dircproxy,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 57000
+ipServiceProtocol: tcp
+cn: dircproxy
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002826Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002826Z
+
+dn: cn=ipx,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 213
+ipServiceProtocol: tcp
+cn: ipx
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002803Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002803Z
+
+dn: cn=tfido,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 60177
+ipServiceProtocol: tcp
+cn: tfido
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002826Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002826Z
+
+dn: cn=ipx,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 213
+ipServiceProtocol: udp
+cn: ipx
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002803Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002803Z
+
+dn: cn=tfido,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 60177
+ipServiceProtocol: udp
+cn: tfido
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002826Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002826Z
+
+dn: cn=imap3,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 220
+ipServiceProtocol: tcp
+cn: imap3
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002803Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002803Z
+
+dn: cn=fido,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 60179
+ipServiceProtocol: tcp
+cn: fido
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002826Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002826Z
+
+dn: cn=imap3,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 220
+ipServiceProtocol: udp
+cn: imap3
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002803Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002803Z
+
+dn: cn=fido,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 60179
+ipServiceProtocol: udp
+cn: fido
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002826Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002826Z
+
+dn: cn=rpc2portmap,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 369
+ipServiceProtocol: tcp
+cn: rpc2portmap
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002803Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002803Z
+
+dn: cn=users,ou=Group,dc=connexions
+objectClass: posixGroup
+objectClass: top
+cn: users
+userPassword:: e2NyeXB0fXg=
+gidNumber: 100
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410014939Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410014939Z
+
+dn: cn=rpc2portmap,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 369
+ipServiceProtocol: udp
+cn: rpc2portmap
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002804Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002804Z
+
+dn: cn=nogroup,ou=Group,dc=connexions
+objectClass: posixGroup
+objectClass: top
+cn: nogroup
+userPassword:: e2NyeXB0fXg=
+gidNumber: 65534
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410014939Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410014939Z
+
+dn: cn=codaauth2,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 370
+ipServiceProtocol: tcp
+cn: codaauth2
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002804Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002804Z
+
+dn: cn=reedstrm,ou=Group,dc=connexions
+objectClass: posixGroup
+objectClass: top
+cn: reedstrm
+userPassword:: e2NyeXB0fXg=
+gidNumber: 1000
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410014939Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410014939Z
+
+dn: cn=codaauth2,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 370
+ipServiceProtocol: udp
+cn: codaauth2
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002804Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002804Z
+
+dn: uid=crouton,ou=People,dc=connexions
+uid: crouton
+cn: Crouton O. Death
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+objectClass: shadowAccount
+loginShell: /bin/bash
+uidNumber: 1001
+gidNumber: 1001
+userPassword:: Q09E
+homeDirectory: /home/crouton
+gecos: Crouton O. Death,,,
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030414184009Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030414184009Z
+
+dn: cn=ulistserv,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 372
+ipServiceProtocol: tcp
+cn: ulistserv
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002804Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002804Z
+
+dn: cn=ulistserv,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 372
+ipServiceProtocol: udp
+cn: ulistserv
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002804Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002804Z
+
+dn: cn=ldap,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 389
+ipServiceProtocol: tcp
+cn: ldap
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002804Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002804Z
+
+dn: cn=ldap,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 389
+ipServiceProtocol: udp
+cn: ldap
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002804Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002804Z
+
+dn: cn=https,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 443
+ipServiceProtocol: tcp
+cn: https
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002804Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002804Z
+
+dn: cn=https,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 443
+ipServiceProtocol: udp
+cn: https
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002804Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002804Z
+
+dn: cn=snpp,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 444
+ipServiceProtocol: tcp
+cn: snpp
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002804Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002804Z
+
+dn: cn=snpp,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 444
+ipServiceProtocol: udp
+cn: snpp
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002804Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002804Z
+
+dn: cn=saft,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 487
+ipServiceProtocol: tcp
+cn: saft
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002804Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002804Z
+
+dn: cn=saft,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 487
+ipServiceProtocol: udp
+cn: saft
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002805Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002805Z
+
+dn: cn=npmp-local,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 610
+ipServiceProtocol: tcp
+cn: npmp-local
+cn: dqs313_qmaster
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002805Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002805Z
+
+dn: cn=npmp-local,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 610
+ipServiceProtocol: udp
+cn: npmp-local
+cn: dqs313_qmaster
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002805Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002805Z
+
+dn: cn=npmp-gui,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 611
+ipServiceProtocol: tcp
+cn: npmp-gui
+cn: dqs313_execd
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002805Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002805Z
+
+dn: cn=npmp-gui,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 611
+ipServiceProtocol: udp
+cn: npmp-gui
+cn: dqs313_execd
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002805Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002805Z
+
+dn: cn=hmmp-ind,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 612
+ipServiceProtocol: tcp
+cn: hmmp-ind
+cn: dqs313_intercell
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002805Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002805Z
+
+dn: cn=hmmp-ind,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 612
+ipServiceProtocol: udp
+cn: hmmp-ind
+cn: dqs313_intercell
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002805Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002805Z
+
+dn: cn=ipp,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 631
+ipServiceProtocol: tcp
+cn: ipp
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002805Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002805Z
+
+dn: cn=ipp,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 631
+ipServiceProtocol: udp
+cn: ipp
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002805Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002805Z
+
+dn: cn=exec,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 512
+ipServiceProtocol: tcp
+cn: exec
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002805Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002805Z
+
+dn: cn=biff,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 512
+ipServiceProtocol: udp
+cn: biff
+cn: comsat
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002805Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002805Z
+
+dn: cn=login,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 513
+ipServiceProtocol: tcp
+cn: login
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002806Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002806Z
+
+dn: cn=who,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 513
+ipServiceProtocol: udp
+cn: who
+cn: whod
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002806Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002806Z
+
+dn: cn=shell,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 514
+ipServiceProtocol: tcp
+cn: shell
+cn: cmd
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002806Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002806Z
+
+dn: cn=syslog,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 514
+ipServiceProtocol: udp
+cn: syslog
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002806Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002806Z
+
+dn: cn=printer,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 515
+ipServiceProtocol: tcp
+cn: printer
+cn: spooler
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002806Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002806Z
+
+dn: cn=talk,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 517
+ipServiceProtocol: udp
+cn: talk
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002806Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002806Z
+
+dn: cn=ntalk,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 518
+ipServiceProtocol: udp
+cn: ntalk
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002806Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002806Z
+
+dn: cn=route,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 520
+ipServiceProtocol: udp
+cn: route
+cn: routed
+cn: router
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002806Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002806Z
+
+dn: cn=timed,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 525
+ipServiceProtocol: udp
+cn: timed
+cn: timeserver
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002806Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002806Z
+
+dn: cn=tempo,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 526
+ipServiceProtocol: tcp
+cn: tempo
+cn: newdate
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002806Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002806Z
+
+dn: cn=courier,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 530
+ipServiceProtocol: tcp
+cn: courier
+cn: rpc
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002806Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002806Z
+
+dn: cn=conference,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 531
+ipServiceProtocol: tcp
+cn: conference
+cn: chat
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002807Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002807Z
+
+dn: cn=netnews,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 532
+ipServiceProtocol: tcp
+cn: netnews
+cn: readnews
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002807Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002807Z
+
+dn: cn=netwall,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 533
+ipServiceProtocol: udp
+cn: netwall
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002807Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002807Z
+
+dn: cn=gdomap,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 538
+ipServiceProtocol: tcp
+cn: gdomap
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002807Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002807Z
+
+dn: cn=gdomap,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 538
+ipServiceProtocol: udp
+cn: gdomap
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002807Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002807Z
+
+dn: cn=uucp,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 540
+ipServiceProtocol: tcp
+cn: uucp
+cn: uucpd
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002807Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002807Z
+
+dn: cn=afpovertcp,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 548
+ipServiceProtocol: tcp
+cn: afpovertcp
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002807Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002807Z
+
+dn: cn=afpovertcp,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 548
+ipServiceProtocol: udp
+cn: afpovertcp
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002807Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002807Z
+
+dn: cn=remotefs,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 556
+ipServiceProtocol: tcp
+cn: remotefs
+cn: rfs
+cn: rfs_server
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002807Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002807Z
+
+dn: cn=klogin,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 543
+ipServiceProtocol: tcp
+cn: klogin
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002807Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002807Z
+
+dn: cn=kshell,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 544
+ipServiceProtocol: tcp
+cn: kshell
+cn: krcmd
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002807Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002807Z
+
+dn: cn=nntps,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 563
+ipServiceProtocol: tcp
+cn: nntps
+cn: snntp
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002807Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002807Z
+
+dn: cn=nntps,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 563
+ipServiceProtocol: udp
+cn: nntps
+cn: snntp
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002808Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002808Z
+
+dn: cn=ldaps,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 636
+ipServiceProtocol: tcp
+cn: ldaps
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002808Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002808Z
+
+dn: cn=ldaps,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 636
+ipServiceProtocol: udp
+cn: ldaps
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002808Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002808Z
+
+dn: cn=tinc,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 655
+ipServiceProtocol: tcp
+cn: tinc
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002808Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002808Z
+
+dn: cn=tinc,ou=udp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 655
+ipServiceProtocol: udp
+cn: tinc
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002808Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002808Z
+
+dn: cn=kerberos-adm,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 749
+ipServiceProtocol: tcp
+cn: kerberos-adm
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002808Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002808Z
+
+dn: cn=webster,ou=tcp,ou=Services,dc=connexions
+objectClass: ipService
+objectClass: top
+ipServicePort: 765
+ipServiceProtocol: tcp
+cn: webster
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20030410002808Z
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20030410002808Z
+

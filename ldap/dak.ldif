@@ -1,0 +1,54 @@
+dn: uid=dak,ou=People,dc=connexions
+uid: dak
+cn: Derek Kent
+objectClass: person
+objectClass: inetorgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+userPassword: {CRYPT}$1$VTrbCQeS$KVw8gQcrlP6qlkrRD8p/p/
+loginShell: /bin/bash
+uidNumber: 9045
+gidNumber: 100
+homeDirectory: /home/dak
+gecos: Derek Kent
+givenName: Derek
+sn: Kent
+
+
+dn: cn=dak,ou=auto.homes,dc=connexions
+cn: dak
+objectClass: automount
+automountInformation: -rw,intr,soft wakizashi.cnx.rice.edu:/homes/dak
+
+dn: cn=audio,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: dak
+
+dn: cn=staff,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: dak
+
+dn: cn=cdrom,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: dak
+
+dn: cn=users,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: dak
+
+dn: cn=floppy,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: dak
+
+dn: cn=www-data,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: dak
+

@@ -1,0 +1,49 @@
+dn: uid=elvena,ou=People,dc=connexions
+uid: elvena
+cn: Elvena Mayo
+objectClass: person
+objectClass: inetorgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+userPassword: {CRYPT}$1$4ok/bCBo$h3Mw00PZRiypjMn6NADEU0
+loginShell: /bin/csh
+uidNumber: 8984
+gidNumber: 100
+homeDirectory: /home/elvena
+gecos: Elvena Mayo
+givenName: Elvena
+sn: Mayo
+
+
+dn: cn=elvena,ou=auto.homes,dc=connexions
+cn: elvena
+objectClass: automount
+automountInformation: -rw,intr,soft,nfsvers=3 bokken.cnx.rice.edu:/homes/elvena
+
+dn: cn=audio,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: elvena
+
+dn: cn=staff,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: elvena
+
+dn: cn=cdrom,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: elvena
+
+dn: cn=users,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: elvena
+
+dn: cn=floppy,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: elvena
+

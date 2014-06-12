@@ -1,0 +1,54 @@
+dn: uid=jca2,ou=People,dc=connexions
+uid: jca2
+cn: Jared Adler
+objectClass: person
+objectClass: inetorgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+userPassword: {CRYPT}$1$v/VKYjxglmF6A
+loginShell: /bin/bash
+uidNumber: 9033
+gidNumber: 100
+homeDirectory: /home/jca2
+gecos: Jared Adler
+givenName: Jared
+sn: Adler
+
+
+dn: cn=jca2,ou=auto.homes,dc=connexions
+cn: jca2
+objectClass: automount
+automountInformation: -rw,intr,soft cleaver.cnx.rice.edu:/homes/jca2
+
+dn: cn=audio,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: jca2
+
+dn: cn=staff,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: jca2
+
+dn: cn=cdrom,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: jca2
+
+dn: cn=users,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: jca2
+
+dn: cn=floppy,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: jca2
+
+dn: cn=www-data,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: jca2
+

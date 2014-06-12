@@ -1,0 +1,2419 @@
+dn: dc=connexions
+objectClass: top
+objectClass: dcObject
+objectClass: organization
+o: connexions
+dc: connexions
+structuralObjectClass: organization
+entryUUID: 3e21eb1a-d1c4-102c-8f7b-fbd20e0b1c06
+creatorsName:
+modifiersName:
+createTimestamp: 20080618205243Z
+modifyTimestamp: 20080618205243Z
+entryCSN: 20080618205243Z#000000#00#000000
+
+dn: cn=admin,dc=connexions
+objectClass: simpleSecurityObject
+objectClass: organizationalRole
+cn: admin
+description: LDAP administrator
+userPassword:: e2NyeXB0fWs1aldycEc5TVAueGc=
+structuralObjectClass: organizationalRole
+entryUUID: 3e2f94b8-d1c4-102c-8f7c-fbd20e0b1c06
+creatorsName:
+modifiersName:
+createTimestamp: 20080618205243Z
+modifyTimestamp: 20080618205243Z
+entryCSN: 20080618205243Z#000001#00#000000
+
+dn: ou=People,dc=connexions
+objectClass: organizationalUnit
+ou: People
+structuralObjectClass: organizationalUnit
+entryUUID: 034986b8-d1cb-102c-8a1a-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080618214111Z
+entryCSN: 20080618214111Z#000001#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080618214111Z
+
+dn: ou=Roaming,dc=connexions
+objectClass: organizationalUnit
+ou: Roaming
+structuralObjectClass: organizationalUnit
+entryUUID: 034ff3c2-d1cb-102c-8a1b-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080618214111Z
+entryCSN: 20080618214111Z#000002#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080618214111Z
+
+dn: uid=reedstrm,ou=People,dc=connexions
+uid: reedstrm
+cn: Ross J. Reedstrom
+sn: Reedstrom
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+objectClass: shadowAccount
+shadowMax: 99999
+shadowWarning: 7
+loginShell: /bin/bash
+uidNumber: 1000
+gidNumber: 1000
+homeDirectory: /home/reedstrm
+gecos: Ross J. Reedstrom,,,
+structuralObjectClass: inetOrgPerson
+entryUUID: 2209ee44-d1cb-102c-8a1f-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080618214202Z
+userPassword:: e0NSWVBUfSQxJEd4QVZ5TXVZJDkzYklubEZuajR5dGIwL3YzT21PNDA=
+shadowLastChange: 14053
+entryCSN: 20080623200431Z#000001#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080623200431Z
+
+dn: uid=bitten,ou=People,dc=connexions
+uid: bitten
+cn: Bitten Slave
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+userPassword:: e0NSWVBUfSQxJEp0M0FxOTFIJFFLdk1lV1FDckMuTk4veEtrellacDA=
+loginShell: /bin/bash
+uidNumber: 9003
+gidNumber: 100
+homeDirectory: /home/bitten
+gecos: Bitten Slave
+givenName: Bitten
+sn: Slave
+structuralObjectClass: inetOrgPerson
+entryUUID: 255042b0-d1cb-102c-8a21-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080618214208Z
+entryCSN: 20080618214208Z#000001#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080618214208Z
+
+dn: uid=bnwest,ou=People,dc=connexions
+uid: bnwest
+cn: Brian West
+sn: West
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+loginShell: /bin/csh
+uidNumber: 1024
+gidNumber: 100
+homeDirectory: /home/bnwest
+gecos: Brian West
+structuralObjectClass: inetOrgPerson
+entryUUID: 25702bca-d1cb-102c-8a23-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080618214208Z
+userPassword:: e0NSWVBUfSQxJE9kRllaWGRpJDBOSlQ3QnpGaEhMNTBwMGFFcmhvYTE=
+entryCSN: 20080623141056Z#000000#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080623141056Z
+
+dn: uid=brentmh,ou=People,dc=connexions
+uid: brentmh
+cn: Brent Hendricks
+sn: Hendricks
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+userPassword:: e2NyeXB0fVZIWlFlQXVDWUkxdi4=
+loginShell: /bin/csh
+uidNumber: 5996
+gidNumber: 50
+homeDirectory: /home/brentmh
+gecos: Brent Hendricks
+structuralObjectClass: inetOrgPerson
+entryUUID: 2577afa8-d1cb-102c-8a25-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080618214208Z
+entryCSN: 20080618214208Z#000005#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080618214208Z
+
+dn: uid=cbearden,ou=People,dc=connexions
+uid: cbearden
+cn: Chuck Bearden
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+uidNumber: 8974
+gidNumber: 100
+homeDirectory: /home/cbearden
+gecos: Chuck Bearden
+givenName: Chuck
+sn: Bearden
+structuralObjectClass: inetOrgPerson
+entryUUID: 25840f28-d1cb-102c-8a26-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080618214208Z
+userPassword:: e0NSWVBUfSQxJFVhbEpKZFF6JHZpQUp5Qjk4cGdXR0hkejgvazNRRi4=
+shadowLastChange: 14048
+loginShell: /bin/bash
+entryCSN: 20080619150918Z#000000#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080619150918Z
+
+dn: uid=ch8,ou=People,dc=connexions
+uid: ch8
+cn: Chinwei Hu
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+userPassword:: e0NSWVBUfSQxJEJldkU4Tk5uJE53TzNWQmEvREE4MlZSUmpvalBteS4=
+loginShell: /bin/bash
+uidNumber: 9007
+gidNumber: 100
+homeDirectory: /home/ch8
+gecos: Chinwei Hu
+givenName: Chinwei
+sn: Hu
+structuralObjectClass: inetOrgPerson
+entryUUID: 258c64b6-d1cb-102c-8a28-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080618214208Z
+entryCSN: 20080618214208Z#000008#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080618214208Z
+
+dn: uid=charlet,ou=People,dc=connexions
+uid: charlet
+cn: Charlet Reedstrom
+sn: Reedstrom
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+userPassword:: e2NyeXB0fU03SmxrWC5CNjRRRW8=
+loginShell: /bin/csh
+uidNumber: 5951
+gidNumber: 100
+homeDirectory: /home/charlet
+gecos: Charlet Reedstrom
+structuralObjectClass: inetOrgPerson
+entryUUID: 25940c98-d1cb-102c-8a2a-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080618214208Z
+entryCSN: 20080618214208Z#00000a#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080618214208Z
+
+dn: uid=dglazman,ou=People,dc=connexions
+uid: dglazman
+cn: Daniel Glazman
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+userPassword:: e0NSWVBUfSQxJHN1VVlRTlo0JFZPOTlqZVcyZlFtL2tYQU03NUw2YjE=
+loginShell: /bin/csh
+uidNumber: 8973
+gidNumber: 100
+homeDirectory: /home/dglazman
+gecos: Daniel Glazman
+givenName: Daniel
+sn: Glazman
+structuralObjectClass: inetOrgPerson
+entryUUID: 25a05a84-d1cb-102c-8a2d-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080618214209Z
+entryCSN: 20080618214209Z#000000#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080618214209Z
+
+dn: uid=dtrahan,ou=People,dc=connexions
+uid: dtrahan
+cn: Debbie trahan
+sn: trahan
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+userPassword:: e2NyeXB0fURlYmJpZQ==
+loginShell: /bin/csh
+uidNumber: 1016
+gidNumber: 100
+homeDirectory: /home/dtrahan
+gecos: Debbie trahan
+structuralObjectClass: inetOrgPerson
+entryUUID: 25a84262-d1cb-102c-8a2f-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080618214209Z
+entryCSN: 20080618214209Z#000002#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080618214209Z
+
+dn: uid=easgarov,ou=People,dc=connexions
+uid: easgarov
+cn: Asgarov Elchin
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+userPassword:: e0NSWVBUfSQxJEZGRjdVVjZQJGhqWS40NVRyRXlwUnJ4MmI1YTBMRC8=
+loginShell: /bin/csh
+uidNumber: 8993
+gidNumber: 100
+homeDirectory: /home/easgarov
+gecos: Asgarov Elchin
+givenName: Asgarov
+sn: Elchin
+structuralObjectClass: inetOrgPerson
+entryUUID: 25b0336e-d1cb-102c-8a31-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080618214209Z
+entryCSN: 20080618214209Z#000004#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080618214209Z
+
+dn: uid=emaloney,ou=People,dc=connexions
+uid: emaloney
+cn: Erin Maloney
+sn: Maloney
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+userPassword:: e0NSWVBUfSQxJFBIWW9RS04vJHIycGpJNy5ScXFqMEVSLnViS0ZwZDA=
+loginShell: /bin/csh
+uidNumber: 1026
+gidNumber: 100
+homeDirectory: /home/emaloney
+gecos: Erin Maloney
+structuralObjectClass: inetOrgPerson
+entryUUID: 25b824e8-d1cb-102c-8a33-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080618214209Z
+entryCSN: 20080618214209Z#000006#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080618214209Z
+
+dn: uid=erkrause,ou=People,dc=connexions
+uid: erkrause
+cn: Eileen Ruth Krause
+sn: Krause
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+userPassword:: e2NyeXB0fTRmaS9oZGhQbmhQYXc=
+loginShell: /usr/bin/tcsh
+uidNumber: 1011
+gidNumber: 100
+homeDirectory: /home/erkrause
+gecos: Eileen Ruth Krause
+structuralObjectClass: inetOrgPerson
+entryUUID: 25bf5a74-d1cb-102c-8a35-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080618214209Z
+entryCSN: 20080618214209Z#000008#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080618214209Z
+
+dn: uid=ew2,ou=People,dc=connexions
+uid: ew2
+cn: Edward Woodward
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+loginShell: /bin/bash
+uidNumber: 9006
+gidNumber: 100
+homeDirectory: /home/ew2
+gecos: Edward Woodward
+givenName: Edward
+sn: Woodward
+structuralObjectClass: inetOrgPerson
+entryUUID: 25c6fa2c-d1cb-102c-8a37-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080618214209Z
+userPassword:: e0NSWVBUfSQxJExBSUFSL3RSJFFiS0pndHpXZUtVWHZtUnFZenR6by4=
+shadowLastChange: 14049
+entryCSN: 20080619140341Z#000001#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080619140341Z
+
+dn: uid=ewang,ou=People,dc=connexions
+uid: ewang
+cn: Eric Wang
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+userPassword:: e0NSWVBUfSQxJEEvd2c0ZUVCJDdCdU5aTThmcGhTTFg0Z2xuY0tkeS8=
+loginShell: /bin/csh
+uidNumber: 8975
+gidNumber: 100
+homeDirectory: /home/ewang
+gecos: Eric Wang
+givenName: Eric
+sn: Wang
+structuralObjectClass: inetOrgPerson
+entryUUID: 25cf5532-d1cb-102c-8a39-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080618214209Z
+entryCSN: 20080618214209Z#00000c#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080618214209Z
+
+dn: uid=hungtrv,ou=People,dc=connexions
+uid: hungtrv
+cn: Hung Tran
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+userPassword:: e0NSWVBUfSQxJE1kS29IaklUJFZ1d1ZSb2lJZzQxbTBmT1psaHowWS8=
+loginShell: /bin/bash
+uidNumber: 8986
+gidNumber: 100
+homeDirectory: /home/hungtrv
+gecos: Hung Tran
+givenName: Hung
+sn: Tran
+structuralObjectClass: inetOrgPerson
+entryUUID: 25d88a80-d1cb-102c-8a3b-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080618214209Z
+entryCSN: 20080618214209Z#00000e#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080618214209Z
+
+dn: uid=ic3,ou=People,dc=connexions
+uid: ic3
+cn: Iris Chu
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+userPassword:: e2NyeXB0fUJLcWpDNmszSmhhQi4=
+loginShell: /bin/bash
+uidNumber: 9000
+gidNumber: 100
+homeDirectory: /home/ic3
+gecos: Iris Chu
+givenName: Iris
+sn: Chu
+structuralObjectClass: inetOrgPerson
+entryUUID: 25e29750-d1cb-102c-8a3d-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080618214209Z
+entryCSN: 20080618214209Z#000010#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080618214209Z
+
+dn: uid=ilsai,ou=People,dc=connexions
+uid: ilsai
+cn: Harika Basana
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+loginShell: /bin/csh
+uidNumber: 1028
+gidNumber: 100
+homeDirectory: /home/ilsai
+gecos: Harika Basana
+givenName: Harika
+sn: Basana
+structuralObjectClass: inetOrgPerson
+entryUUID: 25eb17f4-d1cb-102c-8a3f-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080618214209Z
+userPassword:: ZTJOeWVYQjBmU289
+entryCSN: 20080618225414Z#000005#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080618225414Z
+
+dn: uid=jccooper,ou=People,dc=connexions
+uid: jccooper
+cn: James Cameron Cooper
+sn: Cooper
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+loginShell: /bin/bash
+uidNumber: 889
+gidNumber: 100
+homeDirectory: /home/jccooper
+gecos: James Cameron Cooper
+structuralObjectClass: inetOrgPerson
+entryUUID: 25f44fcc-d1cb-102c-8a41-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080618214209Z
+userPassword:: e0NSWVBUfSQxJEtlQjM0djlNJDIvcXdBZ3cya1lqTjB0L2ZiOVpBSDA=
+entryCSN: 20080619143917Z#000000#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080619143917Z
+
+dn: uid=je2,ou=People,dc=connexions
+uid: je2
+cn: Jonathan Emmons
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+loginShell: /bin/bash
+uidNumber: 9004
+gidNumber: 100
+homeDirectory: /home/je2
+gecos: Jonathan Emmons
+givenName: Jonathan
+sn: Emmons
+structuralObjectClass: inetOrgPerson
+entryUUID: 25fcc10c-d1cb-102c-8a42-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080618214209Z
+userPassword:: e0NSWVBUfSQxJDRlSlE3Nnd5JGJwOWZ6UjN3MEh3MnpJWk5Ia1EwejE=
+shadowLastChange: 14048
+entryCSN: 20080618223334Z#000001#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080618223334Z
+
+dn: uid=jenn,ou=People,dc=connexions
+uid: jenn
+cn: Jennifer A. Drummond
+sn: Drummond
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+uidNumber: 2814
+gidNumber: 100
+homeDirectory: /home/jenn
+gecos: Jennifer A. Drummond
+structuralObjectClass: inetOrgPerson
+entryUUID: 2604ec06-d1cb-102c-8a44-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080618214209Z
+userPassword:: e0NSWVBUfSQxJEdidGJmeHlJJGNFci8zN1lXdkdmNzBxTXpNQ0JPcTE=
+loginShell: /bin/bash
+entryCSN: 20080619150800Z#000000#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080619150800Z
+
+dn: uid=joel,ou=People,dc=connexions
+uid: joel
+cn: Joel Thierstein
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+userPassword:: e0NSWVBUfSQxJFlCNFNVYlZLJHdOODZqL1drLjBNZTl0aWJUMld3VS4=
+loginShell: /bin/csh
+uidNumber: 8988
+gidNumber: 100
+homeDirectory: /home/joel
+gecos: Joel Thierstein
+givenName: Joel
+sn: Thierstein
+structuralObjectClass: inetOrgPerson
+entryUUID: 260d4298-d1cb-102c-8a45-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080618214209Z
+entryCSN: 20080618214209Z#000018#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080618214209Z
+
+dn: uid=kef,ou=People,dc=connexions
+uid: kef
+cn: Kathi Fletcher
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+loginShell: /bin/csh
+uidNumber: 8987
+gidNumber: 100
+homeDirectory: /home/kef
+gecos: Kathi Fletcher
+givenName: Kathi
+sn: Fletcher
+structuralObjectClass: inetOrgPerson
+entryUUID: 2614dc10-d1cb-102c-8a47-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080618214209Z
+userPassword:: e0NSWVBUfSQxJEQ2ZzZXRnUyJDI3VlBrUlNZby55TWFTRmd2N2ZsSy4=
+shadowLastChange: 14049
+entryCSN: 20080619140345Z#000001#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080619140345Z
+
+dn: uid=ljouanneau,ou=People,dc=connexions
+uid: ljouanneau
+cn: Laurent Jouanneau
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+userPassword:: e0NSWVBUfSQxJEwyZzhKNzkuJHF5SUlZTDdTY2drREtyanZlWDFnNjE=
+loginShell: /bin/csh
+uidNumber: 8973
+gidNumber: 100
+homeDirectory: /home/ljouanneau
+gecos: Laurent Jouanneau
+givenName: Laurent
+sn: Jouanneau
+structuralObjectClass: inetOrgPerson
+entryUUID: 261d24ba-d1cb-102c-8a49-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080618214209Z
+entryCSN: 20080618214209Z#00001c#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080618214209Z
+
+dn: uid=lwilson,ou=People,dc=connexions
+uid: lwilson
+cn: Lorne Wilson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+uidNumber: 8991
+gidNumber: 100
+homeDirectory: /home/lwilson
+gecos: Lorne Wilson
+givenName: Lorne
+sn: Wilson
+structuralObjectClass: inetOrgPerson
+entryUUID: 26247c7e-d1cb-102c-8a4b-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080618214209Z
+userPassword:: e2NyeXB0fSQxJHhSMFp0dlEvJDhzUXFZUE9mbUVOdzU3MVlVWjNnZDE=
+shadowLastChange: 14050
+loginShell: /bin/bash
+entryCSN: 20080620214439Z#000000#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080620214439Z
+
+dn: uid=mariyah,ou=People,dc=connexions
+uid: mariyah
+cn: Mariyah Fatima Poonawala
+sn: Poonawala
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+userPassword:: e2NyeXB0fTViSW1GbjZhM1I4OEE=
+loginShell: /bin/bash
+uidNumber: 1007
+gidNumber: 100
+homeDirectory: /home/mariyah
+gecos: Mariyah Fatima Poonawala
+structuralObjectClass: inetOrgPerson
+entryUUID: 26330b18-d1cb-102c-8a4e-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080618214209Z
+entryCSN: 20080618214209Z#000021#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080618214209Z
+
+dn: uid=mhusband,ou=People,dc=connexions
+uid: mhusband
+cn: Mark S. Husband
+sn: Husband
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+loginShell: /bin/csh
+uidNumber: 1022
+gidNumber: 100
+homeDirectory: /home/mhusband
+gecos: Mark S. Husband
+userPassword:: e0NSWVBUfSQxJEUyanZUOEwzJE9TelphOEdkejZlem9TZGVHQUdqMi8=
+structuralObjectClass: inetOrgPerson
+entryUUID: 263fd4f6-d1cb-102c-8a50-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080618214210Z
+entryCSN: 20080618214210Z#000001#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080618214210Z
+
+dn: uid=mhutch,ou=People,dc=connexions
+uid: mhutch
+cn: Matthew Hutchinson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+userPassword:: e0NSWVBUfSQxJENjc0Q1QWQxJDlnZnE0bzR1THZDT3VubldyOVFadi8=
+loginShell: /bin/csh
+uidNumber: 8983
+gidNumber: 100
+homeDirectory: /home/mhutch
+gecos: Matthew Hutchinson
+givenName: Matthew
+sn: Hutchinson
+structuralObjectClass: inetOrgPerson
+entryUUID: 264753d4-d1cb-102c-8a51-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080618214210Z
+entryCSN: 20080618214210Z#000002#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080618214210Z
+
+dn: uid=prafulla,ou=People,dc=connexions
+uid: prafulla
+cn: Prafulla Phalgunan
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+userPassword:: e0NSWVBUfSQxJGQuVE1CLnJvJHFsb3VMQnJvMzVkTzYuRHYvdmhrTTE=
+loginShell: /bin/bash
+uidNumber: 8998
+gidNumber: 100
+homeDirectory: /home/prafulla
+gecos: Prafulla Phalgunan
+givenName: Prafulla
+sn: Phalgunan
+structuralObjectClass: inetOrgPerson
+entryUUID: 2652fe5a-d1cb-102c-8a53-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080618214210Z
+entryCSN: 20080618214210Z#000005#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080618214210Z
+
+dn: uid=prash,ou=People,dc=connexions
+uid: prash
+cn: Prashant Singh
+sn: Singh
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+userPassword:: e0NSWVBUfTU3VTJNdnJsM0RVaUE=
+loginShell: /bin/csh
+uidNumber: 1021
+gidNumber: 100
+homeDirectory: /home/prash
+gecos: Prashant Singh
+structuralObjectClass: inetOrgPerson
+entryUUID: 265aa826-d1cb-102c-8a55-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080618214210Z
+entryCSN: 20080618214210Z#000007#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080618214210Z
+
+dn: uid=ramy,ou=People,dc=connexions
+uid: ramy
+cn: Ramy-Claude James
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+userPassword:: e0NSWVBUfSQxJGs2Q3VJaS9MJGZaT3FGcHh5N1lud0NRaUVUMWxZeS4=
+loginShell: /bin/bash
+uidNumber: 8995
+gidNumber: 100
+homeDirectory: /home/ramy
+gecos: Ramy-Claude James
+givenName: Ramy-Claude
+sn: James
+structuralObjectClass: inetOrgPerson
+entryUUID: 266229ac-d1cb-102c-8a57-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080618214210Z
+entryCSN: 20080618214210Z#000009#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080618214210Z
+
+dn: uid=reijo,ou=People,dc=connexions
+uid: reijo
+cn: Reijo Anttila
+sn: Anttila
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+userPassword:: e2NyeXB0fVE0QUJwamRVYjZnOEk=
+loginShell: /usr/bin/tcsh
+uidNumber: 1015
+gidNumber: 100
+homeDirectory: /home/reijo
+gecos: Reijo Anttila
+structuralObjectClass: inetOrgPerson
+entryUUID: 266ec900-d1cb-102c-8a5a-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080618214210Z
+entryCSN: 20080618214210Z#00000c#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080618214210Z
+
+dn: uid=richb,ou=People,dc=connexions
+uid: richb
+cn: Richard Baraniuk
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+userPassword:: e0NSWVBUfSQxJHNMWHlpb0xxJEw5eU5HNC8zbS52QmtRYzdzQUx2Yy4=
+loginShell: /bin/csh
+uidNumber: 8979
+gidNumber: 100
+homeDirectory: /home/richb
+gecos: Richard Baraniuk
+givenName: Richard
+sn: Baraniuk
+structuralObjectClass: inetOrgPerson
+entryUUID: 2675cb9c-d1cb-102c-8a5c-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080618214210Z
+entryCSN: 20080618214210Z#00000e#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080618214210Z
+
+dn: uid=rwagner,ou=People,dc=connexions
+uid: rwagner
+cn: Wagner Raymond
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+loginShell: /bin/csh
+uidNumber: 8992
+gidNumber: 100
+homeDirectory: /home/rwagner
+gecos: Wagner Raymond
+givenName: Wagner
+sn: Raymond
+structuralObjectClass: inetOrgPerson
+entryUUID: 267d63d4-d1cb-102c-8a5e-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080618214210Z
+userPassword:: e0NSWVBUfSQxJGFlM3dTMllEJDFSM3RtWm8xdHFiVHIvejkvSURmZC8=
+shadowLastChange: 14048
+entryCSN: 20080618221307Z#000001#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080618221307Z
+
+dn: uid=sanca,ou=People,dc=connexions
+uid: sanca
+cn: Stefan Anca
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+userPassword:: e0NSWVBUfSQxJERBaHluZnhJJEgyRVBxSTYzcURVSEpnYXNwVlouZDE=
+loginShell: /bin/csh
+uidNumber: 8985
+gidNumber: 100
+homeDirectory: /home/sanca
+gecos: Stefan Anca
+givenName: Stefan
+sn: Anca
+structuralObjectClass: inetOrgPerson
+entryUUID: 2685abe8-d1cb-102c-8a60-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080618214210Z
+entryCSN: 20080618214210Z#000012#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080618214210Z
+
+dn: uid=scottdp,ou=People,dc=connexions
+uid: scottdp
+cn: Scott Alan DiPasquale
+sn: DiPasquale
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+userPassword:: e2NyeXB0fWViYzAyZWtKV2RFMmM=
+loginShell: /usr/bin/tcsh
+uidNumber: 1014
+gidNumber: 100
+homeDirectory: /home/scottdp
+gecos: Scott Alan DiPasquale
+structuralObjectClass: inetOrgPerson
+entryUUID: 268d60ae-d1cb-102c-8a62-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080618214210Z
+entryCSN: 20080618214210Z#000014#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080618214210Z
+
+dn: uid=sk8,ou=People,dc=connexions
+uid: sk8
+cn: Scott Kravitz
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+loginShell: /bin/bash
+uidNumber: 8999
+gidNumber: 100
+homeDirectory: /home/sk8
+gecos: Scott Kravitz
+givenName: Scott
+sn: Kravitz
+structuralObjectClass: inetOrgPerson
+entryUUID: 26950bd8-d1cb-102c-8a64-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080618214210Z
+userPassword:: e0NSWVBUfSQxJHFEbDJZSktHJGZHWGpWaFhqQkUuMUZOeXhPd0dWai4=
+shadowLastChange: 14049
+entryCSN: 20080619151318Z#000001#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080619151318Z
+
+dn: uid=skursar,ou=People,dc=connexions
+uid: skursar
+cn: Steve Kursar
+sn: Kursar
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+userPassword:: e2NyeXB0fVE0QUJwamRVYjZnOEk=
+loginShell: /usr/bin/bash
+uidNumber: 1025
+gidNumber: 100
+homeDirectory: /home/skursar
+gecos: Steve Kursar
+structuralObjectClass: inetOrgPerson
+entryUUID: 269dc41c-d1cb-102c-8a66-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080618214210Z
+entryCSN: 20080618214210Z#000018#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080618214210Z
+
+dn: uid=stevenw,ou=People,dc=connexions
+uid: stevenw
+cn: Steven Weintraub
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+loginShell: /bin/bash
+uidNumber: 9002
+gidNumber: 100
+homeDirectory: /home/stevenw
+gecos: Steven Weintraub
+givenName: Steven
+sn: Weintraub
+structuralObjectClass: inetOrgPerson
+entryUUID: 26a5cfae-d1cb-102c-8a68-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080618214210Z
+userPassword:: e0NSWVBUfSQxJDZ6cUc0d2p5JGJLOVZjem9SR2lyei9XUXphSDlMejE=
+shadowLastChange: 14048
+entryCSN: 20080618223810Z#000001#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080618223810Z
+
+dn: uid=uchenna,ou=People,dc=connexions
+uid: uchenna
+cn: Uchenna Anyikam
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+userPassword:: e0NSWVBUfSQxJGpXY3VaUWdjJHY4bzBmQlNXNWszMDBPZzhzTGp1NjE=
+loginShell: /bin/bash
+uidNumber: 9008
+gidNumber: 100
+homeDirectory: /home/uchenna
+gecos: Uchenna Anyikam
+givenName: Uchenna
+sn: Anyikam
+structuralObjectClass: inetOrgPerson
+entryUUID: 26ad0d96-d1cb-102c-8a6a-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080618214210Z
+entryCSN: 20080618214210Z#00001c#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080618214210Z
+
+dn: uid=vickien,ou=People,dc=connexions
+uid: vickien
+cn: Vickie Nguyen
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+loginShell: /bin/csh
+uidNumber: 8989
+gidNumber: 100
+homeDirectory: /home/vickien
+gecos: Vickie Nguyen
+givenName: Vickie
+sn: Nguyen
+structuralObjectClass: inetOrgPerson
+entryUUID: 26b56f68-d1cb-102c-8a6c-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080618214210Z
+userPassword:: e2NyeXB0fU5sRjFuMzhpY053Y2M=
+shadowLastChange: 14055
+entryCSN: 20080625202717Z#000001#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080625202717Z
+
+dn: uid=manpreet,ou=People,dc=connexions
+uid: manpreet
+cn: Manpreet Kuar
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+loginShell: /bin/csh
+uidNumber: 8982
+gidNumber: 100
+homeDirectory: /home/manpreet
+gecos: Manpreet Kuar
+givenName: Manpreet
+sn: Kuar
+structuralObjectClass: inetOrgPerson
+entryUUID: aa82aed2-d1cb-102c-8a99-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080618214551Z
+userPassword:: e0NSWVBUfSQxJGNQYnJVR0ZSJEdKeDE0WEJyZG53dkZSeUwwZVkvbi8=
+shadowLastChange: 14050
+entryCSN: 20080620141638Z#000000#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080620141638Z
+
+dn: uid=maxwell,ou=People,dc=connexions
+uid: maxwell
+cn: Maxwell Murry Starkenburg
+sn: Starkenburg
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+loginShell: /bin/csh
+uidNumber: 7012
+gidNumber: 100
+homeDirectory: /home/maxwell
+gecos: Maxwell Murry Starkenburg
+structuralObjectClass: inetOrgPerson
+entryUUID: 102b68be-d1cc-102c-8a9b-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080618214842Z
+userPassword:: e0NSWVBUfSQxJERmcE40Mk5QJG1tSWtvQy9zUS5hbTVQclhid2hFYS4=
+entryCSN: 20080618215939Z#000000#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080618215939Z
+
+dn: ou=auto.homes,dc=connexions
+ou: auto.homes
+objectClass: top
+objectClass: organizationalUnit
+structuralObjectClass: organizationalUnit
+entryUUID: 27f085da-d1cf-102c-8a9c-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080618221050Z
+entryCSN: 20080618221050Z#000000#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080618221050Z
+
+dn: cn=crouton,ou=auto.homes,dc=connexions
+cn: crouton
+objectClass: automount
+structuralObjectClass: automount
+entryUUID: 27f585f8-d1cf-102c-8a9d-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080618221050Z
+automountInformation: -rw,intr,soft bokken.cnx.rice.edu:/homes/crouton
+entryCSN: 20080618221917Z#000000#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080618221917Z
+
+dn: cn=reedstrm,ou=auto.homes,dc=connexions
+cn: reedstrm
+objectClass: automount
+structuralObjectClass: automount
+entryUUID: 27fa80b2-d1cf-102c-8a9e-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080618221050Z
+automountInformation: -rw,intr,soft cooker.cnx.rice.edu:/homes/reedstrm
+entryCSN: 20080618221359Z#000000#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080618221359Z
+
+dn: cn=brentmh,ou=auto.homes,dc=connexions
+cn: brentmh
+objectClass: automount
+structuralObjectClass: automount
+entryUUID: 27fee7b0-d1cf-102c-8a9f-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080618221050Z
+automountInformation: -rw,intr,soft obiwan.cnx.rice.edu:/homes/brentmh
+entryCSN: 20080618221421Z#000000#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080618221421Z
+
+dn: cn=jccooper,ou=auto.homes,dc=connexions
+cn: jccooper
+objectClass: automount
+structuralObjectClass: automount
+entryUUID: 28045e66-d1cf-102c-8aa0-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080618221051Z
+automountInformation: -rw,intr,soft boole.cnx.rice.edu:/homes/jccooper
+entryCSN: 20080619190349Z#000000#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080619190349Z
+
+dn: cn=charlet,ou=auto.homes,dc=connexions
+cn: charlet
+objectClass: automount
+structuralObjectClass: automount
+entryUUID: 28078a64-d1cf-102c-8aa1-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080618221051Z
+automountInformation: -rw,intr,soft cooker.cnx.rice.edu:/homes/charlet
+entryCSN: 20080618221413Z#000000#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080618221413Z
+
+dn: cn=jago,ou=auto.homes,dc=connexions
+cn: jago
+objectClass: automount
+automountInformation: -rw,intr,soft escalante.cnx.rice.edu:/homes/jago
+structuralObjectClass: automount
+entryUUID: 280abcf2-d1cf-102c-8aa2-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080618221051Z
+entryCSN: 20080618221051Z#000002#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080618221051Z
+
+dn: cn=mariyah,ou=auto.homes,dc=connexions
+cn: mariyah
+objectClass: automount
+automountInformation: -rw,intr,soft bunker.cnx.rice.edu:/homes/mariyah
+structuralObjectClass: automount
+entryUUID: 280e5380-d1cf-102c-8aa3-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080618221051Z
+entryCSN: 20080618221051Z#000003#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080618221051Z
+
+dn: cn=kevinduh,ou=auto.homes,dc=connexions
+cn: kevinduh
+objectClass: automount
+automountInformation: -rw,intr,soft bunker.cnx.rice.edu:/homes/kevinduh
+structuralObjectClass: automount
+entryUUID: 28116336-d1cf-102c-8aa4-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080618221051Z
+entryCSN: 20080618221051Z#000004#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080618221051Z
+
+dn: cn=mjeanes,ou=auto.homes,dc=connexions
+cn: mjeanes
+objectClass: automount
+automountInformation: -rw,intr,soft bunker.cnx.rice.edu:/homes/mjeanes
+structuralObjectClass: automount
+entryUUID: 28147940-d1cf-102c-8aa5-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080618221051Z
+entryCSN: 20080618221051Z#000005#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080618221051Z
+
+dn: cn=lizzardg,ou=auto.homes,dc=connexions
+cn: lizzardg
+objectClass: automount
+automountInformation: -rw,intr,soft bunker.cnx.rice.edu:/homes/lizzardg
+structuralObjectClass: automount
+entryUUID: 2817cbfe-d1cf-102c-8aa6-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080618221051Z
+entryCSN: 20080618221051Z#000006#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080618221051Z
+
+dn: cn=kclarks,ou=auto.homes,dc=connexions
+cn: kclarks
+objectClass: automount
+automountInformation: -rw,intr,soft bunker.cnx.rice.edu:/homes/kclarks
+structuralObjectClass: automount
+entryUUID: 281ab4e0-d1cf-102c-8aa7-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080618221051Z
+entryCSN: 20080618221051Z#000007#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080618221051Z
+
+dn: cn=erkrause,ou=auto.homes,dc=connexions
+cn: erkrause
+objectClass: automount
+automountInformation: -rw,intr,soft bunker.cnx.rice.edu:/homes/erkrause
+structuralObjectClass: automount
+entryUUID: 281dca54-d1cf-102c-8aa8-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080618221051Z
+entryCSN: 20080618221051Z#000008#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080618221051Z
+
+dn: cn=jsilv,ou=auto.homes,dc=connexions
+cn: jsilv
+objectClass: automount
+automountInformation: -rw,intr,soft bunker.cnx.rice.edu:/homes/jsilv
+structuralObjectClass: automount
+entryUUID: 2820d910-d1cf-102c-8aa9-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080618221051Z
+entryCSN: 20080618221051Z#000009#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080618221051Z
+
+dn: cn=ahughes,ou=auto.homes,dc=connexions
+cn: ahughes
+objectClass: automount
+structuralObjectClass: automount
+entryUUID: 2823fe74-d1cf-102c-8aaa-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080618221051Z
+automountInformation: -rw,intr,soft bokken.cnx.rice.edu:/homes/ahughes
+entryCSN: 20080618221429Z#000000#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080618221429Z
+
+dn: cn=scottdp,ou=auto.homes,dc=connexions
+cn: scottdp
+objectClass: automount
+automountInformation: -rw,intr,soft bunker.cnx.rice.edu:/homes/scottdp
+structuralObjectClass: automount
+entryUUID: 28270984-d1cf-102c-8aab-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080618221051Z
+entryCSN: 20080618221051Z#00000b#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080618221051Z
+
+dn: cn=reijo,ou=auto.homes,dc=connexions
+cn: reijo
+objectClass: automount
+automountInformation: -rw,intr,soft bunker.cnx.rice.edu:/homes/reijo
+structuralObjectClass: automount
+entryUUID: 282a3d8e-d1cf-102c-8aac-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080618221051Z
+entryCSN: 20080618221051Z#00000c#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080618221051Z
+
+dn: cn=dtrahan,ou=auto.homes,dc=connexions
+cn: dtrahan
+objectClass: automount
+structuralObjectClass: automount
+entryUUID: 282d506e-d1cf-102c-8aad-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080618221051Z
+automountInformation: -rw,intr,soft bokken.cnx.rice.edu:/homes/dtrahan
+entryCSN: 20080618221442Z#000000#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080618221442Z
+
+dn: cn=guest1,ou=auto.homes,dc=connexions
+cn: guest1
+objectClass: automount
+automountInformation: -rw,intr,soft bunker.cnx.rice.edu:/homes/guest1
+structuralObjectClass: automount
+entryUUID: 2830656a-d1cf-102c-8aae-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080618221051Z
+entryCSN: 20080618221051Z#00000e#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080618221051Z
+
+dn: cn=guest2,ou=auto.homes,dc=connexions
+cn: guest2
+objectClass: automount
+automountInformation: -rw,intr,soft bunker.cnx.rice.edu:/homes/guest2
+structuralObjectClass: automount
+entryUUID: 2832f190-d1cf-102c-8aaf-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080618221051Z
+entryCSN: 20080618221051Z#00000f#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080618221051Z
+
+dn: cn=guest3,ou=auto.homes,dc=connexions
+cn: guest3
+objectClass: automount
+automountInformation: -rw,intr,soft bunker.cnx.rice.edu:/homes/guest3
+structuralObjectClass: automount
+entryUUID: 283768b0-d1cf-102c-8ab0-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080618221051Z
+entryCSN: 20080618221051Z#000010#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080618221051Z
+
+dn: cn=foo,ou=auto.homes,dc=connexions
+cn: foo
+objectClass: automount
+automountInformation: -rw,intr,soft bunker.cnx.rice.edu:/homes/foo
+structuralObjectClass: automount
+entryUUID: 283d9a32-d1cf-102c-8ab1-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080618221051Z
+entryCSN: 20080618221051Z#000011#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080618221051Z
+
+dn: cn=jenn,ou=auto.homes,dc=connexions
+cn: jenn
+objectClass: automount
+structuralObjectClass: automount
+entryUUID: 284283ee-d1cf-102c-8ab2-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080618221051Z
+automountInformation: -rw,intr,soft bokken.cnx.rice.edu:/homes/jenn
+entryCSN: 20080619151244Z#000000#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080619151244Z
+
+dn: cn=prash,ou=auto.homes,dc=connexions
+cn: prash
+objectClass: automount
+automountInformation: -rw,intr,soft bunker.cnx.rice.edu:/homes/prash
+structuralObjectClass: automount
+entryUUID: 28489eb4-d1cf-102c-8ab3-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080618221051Z
+entryCSN: 20080618221051Z#000013#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080618221051Z
+
+dn: cn=maxwell,ou=auto.homes,dc=connexions
+objectClass: automount
+cn: maxwell
+structuralObjectClass: automount
+entryUUID: 284f289c-d1cf-102c-8ab4-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080618221051Z
+automountInformation: -rw,intr,soft bokken.cnx.rice.edu:/homes/maxwell
+entryCSN: 20080618222104Z#000000#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080618222104Z
+
+dn: cn=ahlfing,ou=auto.homes,dc=connexions
+cn: ahlfing
+objectClass: automount
+automountInformation: -rw,intr,soft bunker.cnx.rice.edu:/homes/ahlfing
+structuralObjectClass: automount
+entryUUID: 19566980-d1d0-102c-8ab5-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080618221735Z
+entryCSN: 20080618221735Z#000000#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080618221735Z
+
+dn: cn=bitten,ou=auto.homes,dc=connexions
+cn: bitten
+objectClass: automount
+automountInformation: -rw,intr,soft barracks.cnx.rice.edu:/homes/bitten
+structuralObjectClass: automount
+entryUUID: 1d863fc6-d1d0-102c-8ae2-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080618221742Z
+entryCSN: 20080618221742Z#000007#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080618221742Z
+
+dn: cn=bnwest,ou=auto.homes,dc=connexions
+cn: bnwest
+objectClass: automount
+structuralObjectClass: automount
+entryUUID: 1da4aac4-d1d0-102c-8ae4-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080618221743Z
+automountInformation: -rw,intr,soft stevens.cnx.rice.edu:/homes/bnwest
+entryCSN: 20080618221837Z#000000#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080618221837Z
+
+dn: cn=cbearden,ou=auto.homes,dc=connexions
+cn: cbearden
+objectClass: automount
+structuralObjectClass: automount
+entryUUID: 1db2da72-d1d0-102c-8ae7-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080618221743Z
+automountInformation: -rw,intr,soft plantinga.cnx.rice.edu:/homes/cbearden
+entryCSN: 20080618221806Z#000000#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080618221806Z
+
+dn: cn=ch8,ou=auto.homes,dc=connexions
+cn: ch8
+objectClass: automount
+automountInformation: -rw,intr,soft wakizashi.cnx.rice.edu:/homes/ch8
+structuralObjectClass: automount
+entryUUID: 1dbc488c-d1d0-102c-8ae9-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080618221743Z
+entryCSN: 20080618221743Z#000016#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080618221743Z
+
+dn: cn=dglazman,ou=auto.homes,dc=connexions
+cn: dglazman
+objectClass: automount
+automountInformation: -rw,intr,soft barracks.cnx.rice.edu:/homes/dglazman
+structuralObjectClass: automount
+entryUUID: 1dd3eb36-d1d0-102c-8aee-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080618221743Z
+entryCSN: 20080618221743Z#000026#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080618221743Z
+
+dn: cn=easgarov,ou=auto.homes,dc=connexions
+cn: easgarov
+objectClass: automount
+automountInformation: -rw,intr,soft,nfsvers=3 wakizashi.cnx.rice.edu:/homes/ea
+ sgarov
+structuralObjectClass: automount
+entryUUID: 1de37f7e-d1d0-102c-8af2-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080618221743Z
+entryCSN: 20080618221743Z#000034#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080618221743Z
+
+dn: cn=emaloney,ou=auto.homes,dc=connexions
+cn: emaloney
+objectClass: automount
+automountInformation: -rw,intr,soft bunker.cnx.rice.edu:/homes/emaloney
+structuralObjectClass: automount
+entryUUID: 1dedad0a-d1d0-102c-8af4-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080618221743Z
+entryCSN: 20080618221743Z#00003b#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080618221743Z
+
+dn: cn=ew2,ou=auto.homes,dc=connexions
+cn: ew2
+objectClass: automount
+automountInformation: -rw,intr,soft wakizashi.cnx.rice.edu:/homes/ew2
+structuralObjectClass: automount
+entryUUID: 1dfd2c94-d1d0-102c-8af8-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080618221743Z
+entryCSN: 20080618221743Z#000049#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080618221743Z
+
+dn: cn=ewang,ou=auto.homes,dc=connexions
+cn: ewang
+objectClass: automount
+automountInformation: -rw,intr,soft barracks.cnx.rice.edu:/homes/ewang
+structuralObjectClass: automount
+entryUUID: 1e06ce16-d1d0-102c-8afa-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080618221743Z
+entryCSN: 20080618221743Z#000051#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080618221743Z
+
+dn: cn=hungtrv,ou=auto.homes,dc=connexions
+cn: hungtrv
+objectClass: automount
+automountInformation: -rw,intr,soft,nfsvers=3 wakizashi.cnx.rice.edu:/homes/hu
+ ngtrv
+structuralObjectClass: automount
+entryUUID: 1e10ba66-d1d0-102c-8afc-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080618221743Z
+entryCSN: 20080618221743Z#000058#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080618221743Z
+
+dn: cn=ic3,ou=auto.homes,dc=connexions
+cn: ic3
+objectClass: automount
+automountInformation: -rw,intr,soft dijkstra.cnx.rice.edu:/homes/ic3
+structuralObjectClass: automount
+entryUUID: 1e1af576-d1d0-102c-8afe-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080618221743Z
+entryCSN: 20080618221743Z#00005f#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080618221743Z
+
+dn: cn=ilsai,ou=auto.homes,dc=connexions
+cn: ilsai
+objectClass: automount
+automountInformation: -rw,intr,soft bunker.cnx.rice.edu:/homes/ilsai
+structuralObjectClass: automount
+entryUUID: 1e254314-d1d0-102c-8b00-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080618221743Z
+entryCSN: 20080618221743Z#000067#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080618221743Z
+
+dn: cn=je2,ou=auto.homes,dc=connexions
+cn: je2
+objectClass: automount
+automountInformation: -rw,intr,soft barracks.cnx.rice.edu:/homes/je2
+structuralObjectClass: automount
+entryUUID: 1e34d6f8-d1d0-102c-8b03-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080618221744Z
+entryCSN: 20080618221744Z#000002#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080618221744Z
+
+dn: cn=joel,ou=auto.homes,dc=connexions
+cn: joel
+objectClass: automount
+automountInformation: -rw,intr,soft,nfsvers=3 wakizashi.cnx.rice.edu:/homes/jo
+ el
+structuralObjectClass: automount
+entryUUID: 1e4205bc-d1d0-102c-8b06-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080618221744Z
+entryCSN: 20080618221744Z#00000b#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080618221744Z
+
+dn: cn=kef,ou=auto.homes,dc=connexions
+cn: kef
+objectClass: automount
+structuralObjectClass: automount
+entryUUID: 1e4cba98-d1d0-102c-8b08-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080618221744Z
+automountInformation: -rw,intr,soft,nfsvers=3 wakizashi.cnx.rice.edu:/homes/ke
+ f
+entryCSN: 20080620143317Z#000000#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080620143317Z
+
+dn: cn=ljouanneau,ou=auto.homes,dc=connexions
+cn: ljouanneau
+objectClass: automount
+automountInformation: -rw,intr,soft barracks.cnx.rice.edu:/homes/ljouanneau
+structuralObjectClass: automount
+entryUUID: 1e55b620-d1d0-102c-8b0a-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080618221744Z
+entryCSN: 20080618221744Z#000019#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080618221744Z
+
+dn: cn=lwilson,ou=auto.homes,dc=connexions
+cn: lwilson
+objectClass: automount
+automountInformation: -rw,intr,soft,nfsvers=3 bokken.cnx.rice.edu:/homes/lwils
+ on
+structuralObjectClass: automount
+entryUUID: 1e5fc03e-d1d0-102c-8b0c-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080618221744Z
+entryCSN: 20080618221744Z#000020#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080618221744Z
+
+dn: cn=manpreet,ou=auto.homes,dc=connexions
+cn: manpreet
+objectClass: automount
+automountInformation: -rw,intr,soft,nfsvers=3 obiwan.cnx.rice.edu:/homes/manpr
+ eet
+structuralObjectClass: automount
+entryUUID: 1e698542-d1d0-102c-8b0e-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080618221744Z
+entryCSN: 20080618221744Z#000027#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080618221744Z
+
+dn: cn=mhutch,ou=auto.homes,dc=connexions
+cn: mhutch
+objectClass: automount
+automountInformation: -rw,intr,soft,nfsvers=3 bokken.cnx.rice.edu:/homes/mhutc
+ h
+structuralObjectClass: automount
+entryUUID: 1e82d556-d1d0-102c-8b13-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080618221744Z
+entryCSN: 20080618221744Z#00003b#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080618221744Z
+
+dn: cn=prafulla,ou=auto.homes,dc=connexions
+cn: prafulla
+objectClass: automount
+automountInformation: -rw,intr,soft dijkstra.cnx.rice.edu:/homes/prafulla
+structuralObjectClass: automount
+entryUUID: 1e8fd940-d1d0-102c-8b15-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080618221744Z
+entryCSN: 20080618221744Z#000043#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080618221744Z
+
+dn: cn=ramy,ou=auto.homes,dc=connexions
+cn: ramy
+objectClass: automount
+automountInformation: -rw,intr,soft bokken.cnx.rice.edu:/homes/ramy
+structuralObjectClass: automount
+entryUUID: 1e9dd9fa-d1d0-102c-8b19-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080618221744Z
+entryCSN: 20080618221744Z#000052#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080618221744Z
+
+dn: cn=richb,ou=auto.homes,dc=connexions
+cn: richb
+objectClass: automount
+automountInformation: -rw,intr,soft barracks.cnx.rice.edu:/homes/richb
+structuralObjectClass: automount
+entryUUID: 1eb12b90-d1d0-102c-8b1e-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080618221744Z
+entryCSN: 20080618221744Z#000061#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080618221744Z
+
+dn: cn=rwagner,ou=auto.homes,dc=connexions
+cn: rwagner
+objectClass: automount
+automountInformation: -rw,intr,soft,nfsvers=3 wakizashi.cnx.rice.edu:/homes/rw
+ agner
+structuralObjectClass: automount
+entryUUID: 1eb9eac8-d1d0-102c-8b20-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080618221744Z
+entryCSN: 20080618221744Z#000068#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080618221744Z
+
+dn: cn=sanca,ou=auto.homes,dc=connexions
+cn: sanca
+objectClass: automount
+automountInformation: -rw,intr,soft,nfsvers=3 wakizashi.cnx.rice.edu:/homes/sa
+ nca
+structuralObjectClass: automount
+entryUUID: 1ec4dbf4-d1d0-102c-8b22-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080618221744Z
+entryCSN: 20080618221744Z#00006f#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080618221744Z
+
+dn: cn=sk8,ou=auto.homes,dc=connexions
+cn: sk8
+objectClass: automount
+structuralObjectClass: automount
+entryUUID: 1ed43644-d1d0-102c-8b26-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080618221745Z
+automountInformation: -rw,intr,soft plantinga.cnx.rice.edu:/homes/sk8
+entryCSN: 20080619151623Z#000000#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080619151623Z
+
+dn: cn=skursar,ou=auto.homes,dc=connexions
+cn: skursar
+objectClass: automount
+automountInformation: -rw,intr,soft bunker.cnx.rice.edu:/homes/skursar
+structuralObjectClass: automount
+entryUUID: 1edd6a0c-d1d0-102c-8b28-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080618221745Z
+entryCSN: 20080618221745Z#000015#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080618221745Z
+
+dn: cn=stevenw,ou=auto.homes,dc=connexions
+cn: stevenw
+objectClass: automount
+automountInformation: -rw,intr,soft wakizashi.cnx.rice.edu:/homes/stevenw
+structuralObjectClass: automount
+entryUUID: 1ee66882-d1d0-102c-8b2a-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080618221745Z
+entryCSN: 20080618221745Z#00001c#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080618221745Z
+
+dn: cn=uchenna,ou=auto.homes,dc=connexions
+cn: uchenna
+objectClass: automount
+automountInformation: -rw,intr,soft barracks.cnx.rice.edu:/homes/uchenna
+structuralObjectClass: automount
+entryUUID: 1eefd5a2-d1d0-102c-8b2c-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080618221745Z
+entryCSN: 20080618221745Z#000024#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080618221745Z
+
+dn: cn=vickien,ou=auto.homes,dc=connexions
+cn: vickien
+objectClass: automount
+automountInformation: -rw,intr,soft,nfsvers=3 wakizashi.cnx.rice.edu:/homes/vi
+ ckien
+structuralObjectClass: automount
+entryUUID: 1ef996fa-d1d0-102c-8b2e-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080618221745Z
+entryCSN: 20080618221745Z#00002c#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080618221745Z
+
+dn: ou=Group,dc=connexions
+ou: Group
+objectClass: top
+objectClass: organizationalUnit
+structuralObjectClass: organizationalUnit
+entryUUID: 90dae3e2-d260-102c-8b7f-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080619153143Z
+entryCSN: 20080619153143Z#000000#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080619153143Z
+
+dn: cn=root,ou=Group,dc=connexions
+objectClass: posixGroup
+objectClass: top
+cn: root
+userPassword:: e2NyeXB0fXg=
+gidNumber: 0
+structuralObjectClass: posixGroup
+entryUUID: 90de7642-d260-102c-8b80-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080619153143Z
+entryCSN: 20080619153143Z#000001#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080619153143Z
+
+dn: cn=daemon,ou=Group,dc=connexions
+objectClass: posixGroup
+objectClass: top
+cn: daemon
+userPassword:: e2NyeXB0fXg=
+gidNumber: 1
+structuralObjectClass: posixGroup
+entryUUID: 90e19a2a-d260-102c-8b81-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080619153143Z
+entryCSN: 20080619153143Z#000002#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080619153143Z
+
+dn: cn=bin,ou=Group,dc=connexions
+objectClass: posixGroup
+objectClass: top
+cn: bin
+userPassword:: e2NyeXB0fXg=
+gidNumber: 2
+structuralObjectClass: posixGroup
+entryUUID: 90e4bb06-d260-102c-8b82-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080619153143Z
+entryCSN: 20080619153143Z#000003#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080619153143Z
+
+dn: cn=sys,ou=Group,dc=connexions
+objectClass: posixGroup
+objectClass: top
+cn: sys
+userPassword:: e2NyeXB0fXg=
+gidNumber: 3
+structuralObjectClass: posixGroup
+entryUUID: 90e7b8a6-d260-102c-8b83-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080619153144Z
+entryCSN: 20080619153144Z#000000#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080619153144Z
+
+dn: cn=adm,ou=Group,dc=connexions
+objectClass: posixGroup
+objectClass: top
+cn: adm
+userPassword:: e2NyeXB0fXg=
+gidNumber: 4
+structuralObjectClass: posixGroup
+entryUUID: 90eae788-d260-102c-8b84-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080619153144Z
+entryCSN: 20080619153144Z#000001#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080619153144Z
+
+dn: cn=tty,ou=Group,dc=connexions
+objectClass: posixGroup
+objectClass: top
+cn: tty
+userPassword:: e2NyeXB0fXg=
+gidNumber: 5
+structuralObjectClass: posixGroup
+entryUUID: 90ed5f54-d260-102c-8b85-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080619153144Z
+entryCSN: 20080619153144Z#000002#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080619153144Z
+
+dn: cn=disk,ou=Group,dc=connexions
+objectClass: posixGroup
+objectClass: top
+cn: disk
+userPassword:: e2NyeXB0fXg=
+gidNumber: 6
+structuralObjectClass: posixGroup
+entryUUID: 90f0813e-d260-102c-8b86-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080619153144Z
+entryCSN: 20080619153144Z#000003#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080619153144Z
+
+dn: cn=lp,ou=Group,dc=connexions
+objectClass: posixGroup
+objectClass: top
+cn: lp
+userPassword:: e2NyeXB0fXg=
+gidNumber: 7
+structuralObjectClass: posixGroup
+entryUUID: 90f2f2b6-d260-102c-8b87-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080619153144Z
+entryCSN: 20080619153144Z#000004#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080619153144Z
+
+dn: cn=mail,ou=Group,dc=connexions
+objectClass: posixGroup
+objectClass: top
+cn: mail
+userPassword:: e2NyeXB0fXg=
+gidNumber: 8
+structuralObjectClass: posixGroup
+entryUUID: 90f56e6a-d260-102c-8b88-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080619153144Z
+entryCSN: 20080619153144Z#000005#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080619153144Z
+
+dn: cn=news,ou=Group,dc=connexions
+objectClass: posixGroup
+objectClass: top
+cn: news
+userPassword:: e2NyeXB0fXg=
+gidNumber: 9
+structuralObjectClass: posixGroup
+entryUUID: 90f7ee9c-d260-102c-8b89-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080619153144Z
+entryCSN: 20080619153144Z#000006#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080619153144Z
+
+dn: cn=uucp,ou=Group,dc=connexions
+objectClass: posixGroup
+objectClass: top
+cn: uucp
+userPassword:: e2NyeXB0fXg=
+gidNumber: 10
+structuralObjectClass: posixGroup
+entryUUID: 90faffe2-d260-102c-8b8a-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080619153144Z
+entryCSN: 20080619153144Z#000007#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080619153144Z
+
+dn: cn=proxy,ou=Group,dc=connexions
+objectClass: posixGroup
+objectClass: top
+cn: proxy
+userPassword:: e2NyeXB0fXg=
+gidNumber: 13
+structuralObjectClass: posixGroup
+entryUUID: 90fe186c-d260-102c-8b8b-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080619153144Z
+entryCSN: 20080619153144Z#000008#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080619153144Z
+
+dn: cn=kmem,ou=Group,dc=connexions
+objectClass: posixGroup
+objectClass: top
+cn: kmem
+userPassword:: e2NyeXB0fXg=
+gidNumber: 15
+structuralObjectClass: posixGroup
+entryUUID: 91015a40-d260-102c-8b8c-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080619153144Z
+entryCSN: 20080619153144Z#000009#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080619153144Z
+
+dn: cn=dialout,ou=Group,dc=connexions
+objectClass: posixGroup
+objectClass: top
+cn: dialout
+userPassword:: e2NyeXB0fXg=
+gidNumber: 20
+structuralObjectClass: posixGroup
+entryUUID: 9104560a-d260-102c-8b8d-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080619153144Z
+entryCSN: 20080619153144Z#00000a#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080619153144Z
+
+dn: cn=fax,ou=Group,dc=connexions
+objectClass: posixGroup
+objectClass: top
+cn: fax
+userPassword:: e2NyeXB0fXg=
+gidNumber: 21
+structuralObjectClass: posixGroup
+entryUUID: 910761d8-d260-102c-8b8e-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080619153144Z
+entryCSN: 20080619153144Z#00000b#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080619153144Z
+
+dn: cn=voice,ou=Group,dc=connexions
+objectClass: posixGroup
+objectClass: top
+cn: voice
+userPassword:: e2NyeXB0fXg=
+gidNumber: 22
+structuralObjectClass: posixGroup
+entryUUID: 910a7b98-d260-102c-8b8f-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080619153144Z
+entryCSN: 20080619153144Z#00000c#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080619153144Z
+
+dn: cn=cdrom,ou=Group,dc=connexions
+objectClass: posixGroup
+objectClass: top
+cn: cdrom
+userPassword:: e2NyeXB0fXg=
+gidNumber: 24
+structuralObjectClass: posixGroup
+entryUUID: 910dac14-d260-102c-8b90-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080619153144Z
+memberUid: reedstrm
+memberUid: jccooper
+memberUid: jenn
+memberUid: cbearden
+memberUid: bnwest
+memberUid: ew2
+memberUid: kef
+memberUid: ic3
+memberUid: ch8
+memberUid: uchenna
+memberUid: vickien
+memberUid: maxwell
+memberUid: sk8
+memberUid: rwagner
+memberUid: lwilson
+memberUid: je2
+entryCSN: 20080627144130Z#000002#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080627144130Z
+
+dn: cn=floppy,ou=Group,dc=connexions
+objectClass: posixGroup
+objectClass: top
+cn: floppy
+userPassword:: e2NyeXB0fXg=
+gidNumber: 25
+structuralObjectClass: posixGroup
+entryUUID: 9110ab4e-d260-102c-8b91-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080619153144Z
+memberUid: reedstrm
+memberUid: jccooper
+memberUid: jenn
+memberUid: cbearden
+memberUid: bnwest
+memberUid: ew2
+memberUid: kef
+memberUid: ic3
+memberUid: ch8
+memberUid: uchenna
+memberUid: vickien
+memberUid: maxwell
+memberUid: sk8
+memberUid: rwagner
+memberUid: lwilson
+memberUid: je2
+entryCSN: 20080627144130Z#000004#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080627144130Z
+
+dn: cn=tape,ou=Group,dc=connexions
+objectClass: posixGroup
+objectClass: top
+cn: tape
+userPassword:: e2NyeXB0fXg=
+gidNumber: 26
+structuralObjectClass: posixGroup
+entryUUID: 9113bdd4-d260-102c-8b92-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080619153144Z
+entryCSN: 20080619153144Z#00000f#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080619153144Z
+
+dn: cn=sudo,ou=Group,dc=connexions
+objectClass: posixGroup
+objectClass: top
+cn: sudo
+userPassword:: e2NyeXB0fXg=
+gidNumber: 27
+structuralObjectClass: posixGroup
+entryUUID: 91164d9c-d260-102c-8b93-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080619153144Z
+entryCSN: 20080619153144Z#000010#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080619153144Z
+
+dn: cn=audio,ou=Group,dc=connexions
+objectClass: posixGroup
+objectClass: top
+cn: audio
+userPassword:: e2NyeXB0fXg=
+gidNumber: 29
+memberUid: crouton
+memberUid: reedstrm
+memberUid: jccooper
+memberUid: jenn
+memberUid: cbearden
+memberUid: bnwest
+memberUid: ew2
+memberUid: kef
+memberUid: ic3
+memberUid: ch8
+memberUid: uchenna
+memberUid: vickien
+memberUid: maxwell
+memberUid: sk8
+memberUid: rwagner
+memberUid: lwilson
+memberUid: je2
+structuralObjectClass: posixGroup
+entryUUID: 9118c5ea-d260-102c-8b94-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080619153144Z
+entryCSN: 20080627154847Z#000000#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080627154847Z
+
+dn: cn=dip,ou=Group,dc=connexions
+objectClass: posixGroup
+objectClass: top
+cn: dip
+userPassword:: e2NyeXB0fXg=
+gidNumber: 30
+structuralObjectClass: posixGroup
+entryUUID: 91266d30-d260-102c-8b95-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080619153144Z
+entryCSN: 20080619153144Z#000012#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080619153144Z
+
+dn: cn=postgres,ou=Group,dc=connexions
+objectClass: posixGroup
+objectClass: top
+cn: postgres
+userPassword:: e2NyeXB0fXg=
+gidNumber: 32
+structuralObjectClass: posixGroup
+entryUUID: 9129827c-d260-102c-8b96-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080619153144Z
+entryCSN: 20080619153144Z#000013#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080619153144Z
+
+dn: cn=www-data,ou=Group,dc=connexions
+objectClass: posixGroup
+objectClass: top
+cn: www-data
+userPassword:: e2NyeXB0fXg=
+gidNumber: 33
+structuralObjectClass: posixGroup
+entryUUID: 912ca54c-d260-102c-8b97-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080619153144Z
+memberUid: jenn
+memberUid: reedstrm
+memberUid: bnwest
+memberUid: jccooper
+memberUid: sk8
+memberUid: ew2
+memberUid: ic3
+memberUid: cbearden
+memberUid: ch8
+memberUid: maxwell
+entryCSN: 20080619163203Z#000000#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080619163203Z
+
+dn: cn=backup,ou=Group,dc=connexions
+objectClass: posixGroup
+objectClass: top
+cn: backup
+userPassword:: e2NyeXB0fXg=
+gidNumber: 34
+structuralObjectClass: posixGroup
+entryUUID: 912fb20a-d260-102c-8b98-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080619153144Z
+entryCSN: 20080619153144Z#000015#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080619153144Z
+
+dn: cn=operator,ou=Group,dc=connexions
+objectClass: posixGroup
+objectClass: top
+cn: operator
+userPassword:: e2NyeXB0fXg=
+gidNumber: 37
+structuralObjectClass: posixGroup
+entryUUID: 9132dc00-d260-102c-8b99-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080619153144Z
+entryCSN: 20080619153144Z#000016#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080619153144Z
+
+dn: cn=list,ou=Group,dc=connexions
+objectClass: posixGroup
+objectClass: top
+cn: list
+userPassword:: e2NyeXB0fXg=
+gidNumber: 38
+structuralObjectClass: posixGroup
+entryUUID: 9135e1b6-d260-102c-8b9a-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080619153144Z
+entryCSN: 20080619153144Z#000017#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080619153144Z
+
+dn: cn=irc,ou=Group,dc=connexions
+objectClass: posixGroup
+objectClass: top
+cn: irc
+userPassword:: e2NyeXB0fXg=
+gidNumber: 39
+structuralObjectClass: posixGroup
+entryUUID: 9138f34c-d260-102c-8b9b-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080619153144Z
+entryCSN: 20080619153144Z#000018#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080619153144Z
+
+dn: cn=src,ou=Group,dc=connexions
+objectClass: posixGroup
+objectClass: top
+cn: src
+userPassword:: e2NyeXB0fXg=
+gidNumber: 40
+structuralObjectClass: posixGroup
+entryUUID: 913c0d8e-d260-102c-8b9c-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080619153144Z
+entryCSN: 20080619153144Z#000019#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080619153144Z
+
+dn: cn=gnats,ou=Group,dc=connexions
+objectClass: posixGroup
+objectClass: top
+cn: gnats
+userPassword:: e2NyeXB0fXg=
+gidNumber: 41
+structuralObjectClass: posixGroup
+entryUUID: 913f42b0-d260-102c-8b9d-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080619153144Z
+entryCSN: 20080619153144Z#00001a#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080619153144Z
+
+dn: cn=shadow,ou=Group,dc=connexions
+objectClass: posixGroup
+objectClass: top
+cn: shadow
+userPassword:: e2NyeXB0fXg=
+gidNumber: 42
+structuralObjectClass: posixGroup
+entryUUID: 9141b59a-d260-102c-8b9e-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080619153144Z
+entryCSN: 20080619153144Z#00001b#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080619153144Z
+
+dn: cn=utmp,ou=Group,dc=connexions
+objectClass: posixGroup
+objectClass: top
+cn: utmp
+userPassword:: e2NyeXB0fXg=
+gidNumber: 43
+structuralObjectClass: posixGroup
+entryUUID: 91443522-d260-102c-8b9f-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080619153144Z
+entryCSN: 20080619153144Z#00001c#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080619153144Z
+
+dn: cn=video,ou=Group,dc=connexions
+objectClass: posixGroup
+objectClass: top
+cn: video
+userPassword:: e2NyeXB0fXg=
+gidNumber: 44
+structuralObjectClass: posixGroup
+entryUUID: 914751b2-d260-102c-8ba0-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080619153144Z
+entryCSN: 20080619153144Z#00001d#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080619153144Z
+
+dn: cn=staff,ou=Group,dc=connexions
+objectClass: posixGroup
+objectClass: top
+cn: staff
+userPassword:: e2NyeXB0fXg=
+gidNumber: 50
+structuralObjectClass: posixGroup
+entryUUID: 9149c0c8-d260-102c-8ba1-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080619153144Z
+memberUid: reedstrm
+memberUid: jccooper
+memberUid: jenn
+memberUid: cbearden
+memberUid: bnwest
+memberUid: ew2
+memberUid: kef
+memberUid: ic3
+memberUid: ch8
+memberUid: uchenna
+memberUid: vickien
+memberUid: maxwell
+memberUid: sk8
+memberUid: rwagner
+memberUid: lwilson
+memberUid: je2
+entryCSN: 20080627144130Z#000001#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080627144130Z
+
+dn: cn=games,ou=Group,dc=connexions
+objectClass: posixGroup
+objectClass: top
+cn: games
+userPassword:: e2NyeXB0fXg=
+gidNumber: 60
+structuralObjectClass: posixGroup
+entryUUID: 914cd7c2-d260-102c-8ba2-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080619153144Z
+entryCSN: 20080619153144Z#00001f#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080619153144Z
+
+dn: cn=admin,ou=Group,dc=connexions
+objectClass: posixGroup
+objectClass: top
+cn: admin
+userPassword:: e2NyeXB0fXg=
+gidNumber: 80
+structuralObjectClass: posixGroup
+entryUUID: 914ff772-d260-102c-8ba3-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080619153144Z
+memberUid: reedstrm
+memberUid: jccooper
+memberUid: jenn
+memberUid: cbearden
+entryCSN: 20080627144130Z#000006#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080627144130Z
+
+dn: cn=users,ou=Group,dc=connexions
+objectClass: posixGroup
+objectClass: top
+cn: users
+userPassword:: e2NyeXB0fXg=
+gidNumber: 100
+structuralObjectClass: posixGroup
+entryUUID: 91530642-d260-102c-8ba4-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080619153144Z
+memberUid: reedstrm
+memberUid: jccooper
+memberUid: jenn
+memberUid: cbearden
+memberUid: bnwest
+memberUid: ew2
+memberUid: kef
+memberUid: ic3
+memberUid: ch8
+memberUid: uchenna
+memberUid: vickien
+memberUid: maxwell
+memberUid: sk8
+memberUid: rwagner
+memberUid: lwilson
+memberUid: je2
+entryCSN: 20080627144130Z#000003#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080627144130Z
+
+dn: cn=nogroup,ou=Group,dc=connexions
+objectClass: posixGroup
+objectClass: top
+cn: nogroup
+userPassword:: e2NyeXB0fXg=
+gidNumber: 65534
+structuralObjectClass: posixGroup
+entryUUID: 9156368c-d260-102c-8ba5-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080619153144Z
+entryCSN: 20080619153144Z#000022#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080619153144Z
+
+dn: cn=crouton2,ou=Group,dc=connexions
+objectClass: posixGroup
+objectClass: top
+cn: crouton2
+userPassword:: e2NyeXB0fXg=
+gidNumber: 1006
+structuralObjectClass: posixGroup
+entryUUID: 915937ba-d260-102c-8ba6-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080619153144Z
+entryCSN: 20080619153144Z#000023#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080619153144Z
+
+dn: cn=ssh,ou=Group,dc=connexions
+objectClass: posixGroup
+objectClass: top
+cn: ssh
+userPassword:: e2NyeXB0fXg=
+gidNumber: 101
+structuralObjectClass: posixGroup
+entryUUID: 915c4fd6-d260-102c-8ba7-491e93b6f6a6
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20080619153144Z
+entryCSN: 20080619153144Z#000024#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20080619153144Z
+

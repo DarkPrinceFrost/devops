@@ -1,0 +1,54 @@
+dn: uid=ic3,ou=People,dc=connexions
+uid: ic3
+cn: Iris Chu
+objectClass: person
+objectClass: inetorgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+userPassword: {crypt}BKqjC6k3JhaB.
+loginShell: /bin/bash
+uidNumber: 9000
+gidNumber: 100
+homeDirectory: /home/ic3
+gecos: Iris Chu
+givenName: Iris
+sn: Chu
+
+
+dn: cn=ic3,ou=auto.homes,dc=connexions
+cn: ic3
+objectClass: automount
+automountInformation: -rw,intr,soft dijkstra.cnx.rice.edu:/homes/ic3
+
+dn: cn=audio,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: ic3
+
+dn: cn=staff,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: ic3
+
+dn: cn=cdrom,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: ic3
+
+dn: cn=users,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: ic3
+
+dn: cn=floppy,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: ic3
+
+dn: cn=www-data,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: ic3
+

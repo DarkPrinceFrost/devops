@@ -1,0 +1,360 @@
+# guest1, People, connexions
+dn: uid=guest1,ou=People,dc=connexions
+uid: guest1
+objectClass: posixAccount
+objectClass: top
+objectClass: shadowAccount
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+loginShell: /bin/csh
+uidNumber: 1017
+gidNumber: 100
+homeDirectory: /home/guest1
+givenName: Guest
+initials: 1
+sn: Account
+cn: Guest Training Account 1
+gecos: Guest Training Account 1
+mail: guest1@cnx.rice.edu
+shadowLastChange: 12969
+userPassword:: e2NyeXB0fXg=
+
+# guest2, People, connexions
+dn: uid=guest2,ou=People,dc=connexions
+uid: guest2
+objectClass: posixAccount
+objectClass: top
+objectClass: shadowAccount
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+loginShell: /bin/csh
+uidNumber: 1018
+gidNumber: 100
+homeDirectory: /home/guest2
+givenName: Guest
+initials: 2
+sn: Account
+cn: Guest Training Account 2
+gecos: Guest Training Account 2
+mail: guest2@cnx.rice.edu
+shadowLastChange: 12954
+userPassword:: e2NyeXB0fXg=
+
+# guest3, People, connexions
+dn: uid=guest3,ou=People,dc=connexions
+uid: guest3
+objectClass: posixAccount
+objectClass: top
+objectClass: shadowAccount
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+loginShell: /bin/csh
+uidNumber: 1019
+gidNumber: 100
+homeDirectory: /home/guest3
+givenName: Guest
+sn: Account
+initials: 3
+cn: Guest Training Account 3
+gecos: Guest Training Account 3
+mail: guest3@cnx.rice.edu
+shadowLastChange: 12954
+userPassword:: e2NyeXB0fXg=
+
+# crouton, People, connexions
+dn: uid=crouton,ou=People,dc=connexions
+shadowMax: 99999
+shadowWarning: 7
+uid: crouton
+cn: Crouton O. Death
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: posixAccount
+objectClass: top
+objectClass: shadowAccount
+loginShell: /bin/bash
+uidNumber: 1001
+homeDirectory: /home/crouton
+gecos: Crouton O.
+givenName: Crouton
+sn: O. Death,,,
+gidNumber: 100
+shadowLastChange: 13346
+userPassword:: e2NyeXB0fXg=
+
+# jago, People, connexions
+dn: uid=jago,ou=People,dc=connexions
+uid: jago
+cn: Adan Galvan
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: posixAccount
+objectClass: top
+objectClass: shadowAccount
+loginShell: /bin/csh
+uidNumber: 4342
+gidNumber: 100
+homeDirectory: /home/jago
+gecos: Adan Galvan
+givenName: Adan
+sn: Galvan
+mail: jago@rice.edu
+shadowExpire: 12957
+userPassword:: e2NyeXB0fXg=
+
+# kevinduh, People, connexions
+dn: uid=kevinduh,ou=People,dc=connexions
+uid: kevinduh
+cn: Kevin Kaiping Duh
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: posixAccount
+objectClass: top
+objectClass: shadowAccount
+loginShell: /bin/bash
+uidNumber: 8968
+gidNumber: 100
+homeDirectory: /home/kevinduh
+gecos: Kevin Kaiping
+givenName: Kevin
+sn: Kaiping Duh
+userPassword:: e2NyeXB0fXg=
+
+# lizzardg, People, connexions
+dn: uid=lizzardg,ou=People,dc=connexions
+uid: lizzardg
+cn: Elizabeth Claridge Gregory
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: posixAccount
+objectClass: top
+objectClass: shadowAccount
+uidNumber: 1009
+gidNumber: 100
+homeDirectory: /home/lizzardg
+gecos: Elizabeth Claridge
+givenName: Elizabeth
+sn: Claridge Gregory
+mail: lizzardg@rice.edu
+shadowLastChange: 12956
+loginShell: /bin/bash
+userPassword:: e2NyeXB0fXg=
+
+# kclarks, People, connexions
+dn: uid=kclarks,ou=People,dc=connexions
+uid: kclarks
+cn: Kyle Evan Clarkson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: posixAccount
+objectClass: top
+objectClass: shadowAccount
+loginShell: /bin/bash
+uidNumber: 1010
+gidNumber: 100
+homeDirectory: /home/kclarks
+gecos: Kyle Evan
+givenName: Kyle
+sn: Evan Clarkson
+mail: kclarks@rice.edu
+shadowLastChange: 12957
+userPassword:: e2NyeXB0fXg=
+
+# jsilv, People, connexions
+dn: uid=jsilv,ou=People,dc=connexions
+uid: jsilv
+cn: Jeffrey Michael Silverman
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: posixAccount
+objectClass: top
+objectClass: shadowAccount
+objectClass: sambaSamAccount
+loginShell: /usr/bin/tcsh
+uidNumber: 1012
+gidNumber: 90
+homeDirectory: /home/jsilv
+gecos: Jeffrey Michael
+givenName: Jeffrey
+sn: Michael Silverman
+mail: jsilv@rice.edu
+sambaSID: S-1-5-21-3094334300-761729071-1355841744-3024
+sambaPrimaryGroupSID: S-1-5-21-3094334300-761729071-1355841744-1181
+displayName: Jeffrey Michael
+sambaPwdMustChange: 2147483647
+sambaPasswordHistory: 00000000000000000000000000000000000000000000000000000000
+ 00000000
+sambaAcctFlags: [U          ]
+sambaPwdCanChange: 1119626753
+sambaPwdLastSet: 1119626753
+shadowLastChange: 12961
+userPassword:: e2NyeXB0fXg=
+
+# s001552, People, connexions
+dn: uid=s001552,ou=People,dc=connexions
+uid: s001552
+cn: Per Thorsteinsson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+loginShell: /bin/csh
+uidNumber: 8969
+gidNumber: 100
+homeDirectory: /home/s001552
+gecos: Per Thorsteinsson
+givenName: Per
+sn: Thorsteinsson
+shadowLastChange: 12577
+userPassword:: e2NyeXB0fXg=
+
+# ghenry, People, connexions
+dn: uid=ghenry,ou=People,dc=connexions
+uid: ghenry
+cn: Geneva Henry
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+loginShell: /bin/csh
+uidNumber: 8971
+gidNumber: 100
+homeDirectory: /home/ghenry
+gecos: Geneva Henry
+givenName: Geneva
+sn: Henry
+shadowLastChange: 12586
+userPassword:: e2NyeXB0fXg=
+
+# yingmm, People, connexions
+dn: uid=yingmm,ou=People,dc=connexions
+uid: yingmm
+cn: Minmin Yang
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+loginShell: /bin/csh
+uidNumber: 8972
+gidNumber: 100
+homeDirectory: /home/yingmm
+gecos: Minmin Yang
+givenName: Minmin
+sn: Yang
+userPassword:: e2NyeXB0fXg=
+
+# samba_servers, people, connexions
+dn: uid=samba_servers,ou=people,dc=connexions
+objectClass: person
+objectClass: uidObject
+uid: samba_servers
+description: Account used by Samba servers to access user passwords
+cn: samba_servers
+sn: samba_servers
+userPassword:: e2NyeXB0fXg=
+
+# wjking, People, connexions
+dn: uid=wjking,ou=People,dc=connexions
+uid: wjking
+cn: Joey King
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+objectClass: sambaSamAccount
+loginShell: /bin/csh
+uidNumber: 8978
+gidNumber: 100
+homeDirectory: /home/wjking
+gecos: Joey King
+givenName: Joey
+sn: King
+shadowLastChange: 12970
+sambaSID: S-1-5-21-3094334300-761729071-1355841744-18956
+sambaPrimaryGroupSID: S-1-5-21-3094334300-761729071-1355841744-1201
+displayName: Joey King
+sambaPwdCanChange: 1122563226
+sambaPwdMustChange: 2147483647
+sambaPasswordHistory: 00000000000000000000000000000000000000000000000000000000
+ 00000000
+sambaPwdLastSet: 1122563226
+sambaAcctFlags: [U          ]
+userPassword:: e2NyeXB0fXg=
+
+# dmiller7, People, connexions
+dn: uid=dmiller7,ou=People,dc=connexions
+uid: dmiller7
+cn: Deborah Miller
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+loginShell: /bin/csh
+uidNumber: 8980
+gidNumber: 100
+homeDirectory: /home/dmiller7
+gecos: Deborah Miller
+givenName: Deborah
+sn: Miller
+shadowLastChange: 13090
+userPassword:: e2NyeXB0fXg=
+
+# kohlhase, People, connexions
+dn: uid=kohlhase,ou=People,dc=connexions
+uid: kohlhase
+cn: Michael Kohlhase
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+loginShell: /bin/csh
+uidNumber: 8981
+gidNumber: 100
+homeDirectory: /home/kohlhase
+gecos: Michael Kohlhase
+givenName: Michael
+sn: Kohlhase
+shadowLastChange: 13122
+userPassword:: e2NyeXB0fXg=
+
+# elvena, People, connexions
+dn: uid=elvena,ou=People,dc=connexions
+uid: elvena
+cn: Elvena Mayo
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+loginShell: /bin/csh
+uidNumber: 8984
+gidNumber: 100
+homeDirectory: /home/elvena
+gecos: Elvena Mayo
+givenName: Elvena
+sn: Mayo
+shadowLastChange: 13391
+userPassword:: e2NyeXB0fXg=
+

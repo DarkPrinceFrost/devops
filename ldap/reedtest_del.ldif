@@ -1,0 +1,30 @@
+dn: uid=reedtest,ou=People,dc=connexions
+changetype: delete
+
+dn: cn=reedtest,ou=auto.homes,dc=connexions
+changetype: delete
+
+dn: cn=audio,ou=Group,dc=connexions
+delete: memberUid
+memberUid: reedtest
+
+dn: cn=staff,ou=Group,dc=connexions
+delete: memberUid
+memberUid: reedtest
+
+dn: cn=cdrom,ou=Group,dc=connexions
+delete: memberUid
+memberUid: reedtest
+
+dn: cn=users,ou=Group,dc=connexions
+delete: memberUid
+memberUid: reedtest
+
+dn: cn=floppy,ou=Group,dc=connexions
+delete: memberUid
+memberUid: reedtest
+
+dn: cn=www-data,ou=Group,dc=connexions
+delete: memberUid
+memberUid: reedtest
+

@@ -1,0 +1,32 @@
+# extended LDIF
+#
+# LDAPv3
+# base <> with scope subtree
+# filter: uid=reedstrm
+# requesting: ALL
+#
+
+# reedstrm, People, connexions
+dn: uid=reedstrm,ou=People,dc=connexions
+uid: reedstrm
+cn: Ross J. Reedstrom
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+objectClass: shadowAccount
+shadowMax: 99999
+shadowWarning: 7
+loginShell: /bin/bash
+uidNumber: 1000
+gidNumber: 1000
+homeDirectory: /home/reedstrm
+gecos: Ross J. Reedstrom,,,
+userPassword:: e0NSWVBUfSQxJEd4QVZ5TXVZJDkzYklubEZuajR5dGIwL3YzT21PNDA=
+shadowLastChange: 14053
+
+# search result
+search: 2
+result: 0 Success
+
+# numResponses: 2
+# numEntries: 1

@@ -1,0 +1,54 @@
+dn: uid=dsglaser,ou=People,dc=connexions
+uid: dsglaser
+cn: Daniel Glaser
+objectClass: person
+objectClass: inetorgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+userPassword: {CRYPT}$1$r7iZW6Dq$wE/ocDuTxLr/r6wUTeJTa.
+loginShell: /bin/bash
+uidNumber: 9025
+gidNumber: 100
+homeDirectory: /home/dsglaser
+gecos: Daniel Glaser
+givenName: Daniel
+sn: Glaser
+
+
+dn: cn=dsglaser,ou=auto.homes,dc=connexions
+cn: dsglaser
+objectClass: automount
+automountInformation: -rw,intr,soft obiwan.cnx.rice.edu:/homes/dsglaser
+
+dn: cn=audio,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: dsglaser
+
+dn: cn=staff,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: dsglaser
+
+dn: cn=cdrom,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: dsglaser
+
+dn: cn=users,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: dsglaser
+
+dn: cn=floppy,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: dsglaser
+
+dn: cn=www-data,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: dsglaser
+

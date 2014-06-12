@@ -1,0 +1,3 @@
+dn: uid=reedstrm,ou=People,dc=connexions
+uid: reedstrm
+uidNumber: 1000

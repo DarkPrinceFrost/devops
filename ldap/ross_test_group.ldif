@@ -1,0 +1,10 @@
+dn: cn=enfold,ou=Group,dc=connexions
+changetype: modify
+delete: memberUid
+memberUid: reedstrm
+
+dn: cn=admin,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: reedstrm
+

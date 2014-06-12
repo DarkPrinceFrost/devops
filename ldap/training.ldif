@@ -1,0 +1,131 @@
+dn: uid=guest1,ou=People,dc=connexions
+uid: guest1
+cn: Guest Training Account
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+userPassword: {CRYPT}$1$ORZtK5HH$Xddjn5hoXJyQXGONT7zYi1
+loginShell: /bin/csh
+uidNumber: 1017
+gidNumber: 100
+homeDirectory: /home/guest1
+gecos: Guest Training Account
+
+
+dn: cn=guest1,ou=auto.homes,dc=connexions
+cn: guest1
+objectClass: automount
+automountInformation: -rw,intr,soft cnx-246-67.ece.rice.edu:/homes/guest1
+
+dn: cn=audio,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: guest1
+
+dn: cn=staff,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: guest1
+
+dn: cn=cdrom,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: guest1
+
+dn: cn=users,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: guest1
+
+dn: cn=floppy,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: guest1
+
+dn: uid=guest2,ou=People,dc=connexions
+uid: guest2
+cn: Guest Training Account
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+userPassword: {CRYPT}$1$EJi8waFd$G05oA4OD01oDGpYHQa4CR0
+loginShell: /bin/csh
+uidNumber: 1018
+gidNumber: 100
+homeDirectory: /home/guest2
+gecos: Guest Training Account
+
+
+dn: cn=guest2,ou=auto.homes,dc=connexions
+cn: guest2
+objectClass: automount
+automountInformation: -rw,intr,soft cnx-246-67.ece.rice.edu:/homes/guest2
+
+dn: cn=audio,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: guest2
+
+dn: cn=staff,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: guest2
+
+dn: cn=cdrom,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: guest2
+
+dn: cn=users,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: guest2
+
+dn: cn=floppy,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: guest2
+
+dn: uid=guest3,ou=People,dc=connexions
+uid: guest3
+cn: Guest Training Account
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+userPassword: {CRYPT}$1$O0iT.xzh$vMqgOdgxOLR0wyxO8/bon0
+loginShell: /bin/csh
+uidNumber: 1019
+gidNumber: 100
+homeDirectory: /home/guest3
+gecos: Guest Training Account
+
+
+dn: cn=guest3,ou=auto.homes,dc=connexions
+cn: guest3
+objectClass: automount
+automountInformation: -rw,intr,soft cnx-246-67.ece.rice.edu:/homes/guest3
+
+dn: cn=audio,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: guest3
+
+dn: cn=staff,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: guest3
+
+dn: cn=cdrom,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: guest3
+
+dn: cn=users,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: guest3
+
+dn: cn=floppy,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: guest3

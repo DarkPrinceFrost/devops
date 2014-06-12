@@ -1,0 +1,54 @@
+dn: uid=natalie,ou=People,dc=connexions
+uid: natalie
+cn: Natalie Weber
+objectClass: person
+objectClass: inetorgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+userPassword: {CRYPT}$1$Qm/Bqim5$E6qw7/tJFj4NSaabrTtDU1
+loginShell: /bin/bash
+uidNumber: 9022
+gidNumber: 100
+homeDirectory: /home/natalie
+gecos: Natalie Weber
+givenName: Natalie
+sn: Weber
+
+
+dn: cn=natalie,ou=auto.homes,dc=connexions
+cn: natalie
+objectClass: automount
+automountInformation: -rw,intr,soft wakizashi.cnx.rice.edu:/homes/natalie
+
+dn: cn=audio,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: natalie
+
+dn: cn=staff,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: natalie
+
+dn: cn=cdrom,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: natalie
+
+dn: cn=users,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: natalie
+
+dn: cn=floppy,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: natalie
+
+dn: cn=www-data,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: natalie
+

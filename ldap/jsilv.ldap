@@ -1,0 +1,43 @@
+dn: uid=jsilv,ou=People,dc=connexions
+uid: jsilv
+cn::SmVmZnJleSBNaWNoYWVsIFNpbHZlcm1hbg==
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+userPassword: {crypt}6clTtJa3UxOi.
+loginShell: /usr/bin/tcsh
+uidNumber: 1012
+gidNumber: 90
+homeDirectory: /home/jsilv
+gecos: Jeffrey Michael Silverman
+
+
+dn: cn=jsilv,ou=auto.homes,dc=connexions
+cn: jsilv
+objectClass: automount
+automountInformation: -rw,intr,soft cnx-246-67.ece.rice.edu:/homes/jsilv
+
+dn: cn=audio,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: jsilv
+
+dn: cn=staff,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: jsilv
+
+dn: cn=cdrom,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: jsilv
+
+dn: cn=users,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: jsilv
+
+dn: cn=floppy,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: jsilv

@@ -1,0 +1,42 @@
+dn: uid=mariyah,ou=People,dc=connexions
+uid: mariyah
+cn::TWFyaXlhaCBGYXRpbWEgUG9vbmF3YWxh
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+userPassword: {crypt}5bImFn6a3R88A
+loginShell: /bin/bash
+uidNumber: 1007
+gidNumber: 100
+homeDirectory: /home/mariyah
+gecos: Mariyah Fatima Poonawala
+
+dn: cn=mariyah,ou=auto.homes,dc=connexions
+cn: mariyah
+objectClass: automount
+automountInformation: -rw,intr,soft cnx-246-67.ece.rice.edu:/homes/mariyah
+
+dn: cn=audio,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: mariyah
+
+dn: cn=staff,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: mariyah
+
+dn: cn=cdrom,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: mariyah
+
+dn: cn=users,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: mariyah
+
+dn: cn=floppy,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: mariyah

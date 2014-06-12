@@ -1,0 +1,54 @@
+dn: uid=mikejmets,ou=People,dc=connexions
+uid: mikejmets
+cn: Mike Metcalfe
+objectClass: person
+objectClass: inetorgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+userPassword: {CRYPT}$1$e/rM0f14$gEy.A8cb4FPlbQ0A4/GbW0
+loginShell: /bin/bash
+uidNumber: 9019
+gidNumber: 100
+homeDirectory: /home/mikejmets
+gecos: Mike Metcalfe
+givenName: Mike
+sn: Metcalfe
+
+
+dn: cn=mikejmets,ou=auto.homes,dc=connexions
+cn: mikejmets
+objectClass: automount
+automountInformation: -rw,intr,soft wakizashi.cnx.rice.edu:/homes/mikejmets
+
+dn: cn=audio,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: mikejmets
+
+dn: cn=staff,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: mikejmets
+
+dn: cn=cdrom,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: mikejmets
+
+dn: cn=users,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: mikejmets
+
+dn: cn=floppy,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: mikejmets
+
+dn: cn=www-data,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: mikejmets
+

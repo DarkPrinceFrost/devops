@@ -1,0 +1,54 @@
+dn: uid=je2,ou=People,dc=connexions
+uid: je2
+cn: Jonathan Emmons
+objectClass: person
+objectClass: inetorgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+userPassword: {CRYPT}$1$g.6EwQ9d$NYKyPLGaplIqzDY8dqhTh/
+loginShell: /bin/bash
+uidNumber: 9004
+gidNumber: 100
+homeDirectory: /home/je2
+gecos: Jonathan Emmons
+givenName: Jonathan
+sn: Emmons
+
+
+dn: cn=je2,ou=auto.homes,dc=connexions
+cn: je2
+objectClass: automount
+automountInformation: -rw,intr,soft barracks.cnx.rice.edu:/homes/je2
+
+dn: cn=audio,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: je2
+
+dn: cn=staff,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: je2
+
+dn: cn=cdrom,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: je2
+
+dn: cn=users,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: je2
+
+dn: cn=floppy,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: je2
+
+dn: cn=www-data,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: je2
+

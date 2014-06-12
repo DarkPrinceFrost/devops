@@ -1,0 +1,49 @@
+dn: uid=cbearden,ou=People,dc=connexions
+uid: cbearden
+cn: Chuck Bearden
+objectClass: person
+objectClass: inetorgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+userPassword: {CRYPT}$1$qYm83KwV$B/9Sekvn/rjLgfV.XjX2F/
+loginShell: /bin/csh
+uidNumber: 8974
+gidNumber: 100
+homeDirectory: /home/cbearden
+gecos: Chuck Bearden
+givenName: Chuck
+sn: Bearden
+
+
+dn: cn=cbearden,ou=auto.homes,dc=connexions
+cn: cbearden
+objectClass: automount
+automountInformation: -rw,intr,soft confucius.cnx.rice.edu:/homes/cbearden
+
+dn: cn=audio,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: cbearden
+
+dn: cn=staff,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: cbearden
+
+dn: cn=cdrom,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: cbearden
+
+dn: cn=users,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: cbearden
+
+dn: cn=floppy,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: cbearden
+

@@ -1,0 +1,1467 @@
+Enter LDAP Password: 
+# extended LDIF
+#
+# LDAPv3
+# base <ou=People,dc=connexions> with scope subtree
+# filter: (objectclass=*)
+# requesting: ALL
+#
+
+# People, connexions
+dn: ou=People,dc=connexions
+objectClass: organizationalUnit
+ou: People
+
+# reedstrm, People, connexions
+dn: uid=reedstrm,ou=People,dc=connexions
+uid: reedstrm
+cn: Ross J. Reedstrom
+sn: Reedstrom
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+objectClass: shadowAccount
+shadowMax: 99999
+shadowWarning: 7
+loginShell: /bin/bash
+uidNumber: 1000
+gidNumber: 1000
+homeDirectory: /home/reedstrm
+gecos: Ross J. Reedstrom,,,
+userPassword:: e2NyeXB0fTI1NkE5bzkyLlJFb2s=
+shadowLastChange: 14517
+
+# bitten, People, connexions
+dn: uid=bitten,ou=People,dc=connexions
+uid: bitten
+cn: Bitten Slave
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+userPassword:: e0NSWVBUfSQxJEp0M0FxOTFIJFFLdk1lV1FDckMuTk4veEtrellacDA=
+loginShell: /bin/bash
+uidNumber: 9003
+gidNumber: 100
+homeDirectory: /home/bitten
+gecos: Bitten Slave
+givenName: Bitten
+sn: Slave
+
+# bnwest, People, connexions
+dn: uid=bnwest,ou=People,dc=connexions
+uid: bnwest
+cn: Brian West
+sn: West
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+loginShell: /bin/csh
+uidNumber: 1024
+gidNumber: 100
+homeDirectory: /home/bnwest
+gecos: Brian West
+userPassword:: e0NSWVBUfSQxJE9kRllaWGRpJDBOSlQ3QnpGaEhMNTBwMGFFcmhvYTE=
+
+# brentmh, People, connexions
+dn: uid=brentmh,ou=People,dc=connexions
+uid: brentmh
+cn: Brent Hendricks
+sn: Hendricks
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+userPassword:: e2NyeXB0fVZIWlFlQXVDWUkxdi4=
+loginShell: /bin/csh
+uidNumber: 5996
+gidNumber: 50
+homeDirectory: /home/brentmh
+gecos: Brent Hendricks
+
+# cbearden, People, connexions
+dn: uid=cbearden,ou=People,dc=connexions
+uid: cbearden
+cn: Chuck Bearden
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+uidNumber: 8974
+gidNumber: 100
+homeDirectory: /home/cbearden
+gecos: Chuck Bearden
+givenName: Chuck
+sn: Bearden
+userPassword:: e0NSWVBUfSQxJFVhbEpKZFF6JHZpQUp5Qjk4cGdXR0hkejgvazNRRi4=
+shadowLastChange: 14048
+loginShell: /bin/bash
+
+# ch8, People, connexions
+dn: uid=ch8,ou=People,dc=connexions
+uid: ch8
+cn: Chinwei Hu
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+userPassword:: e0NSWVBUfSQxJEJldkU4Tk5uJE53TzNWQmEvREE4MlZSUmpvalBteS4=
+loginShell: /bin/bash
+uidNumber: 9007
+gidNumber: 100
+homeDirectory: /home/ch8
+gecos: Chinwei Hu
+givenName: Chinwei
+sn: Hu
+
+# charlet, People, connexions
+dn: uid=charlet,ou=People,dc=connexions
+uid: charlet
+cn: Charlet Reedstrom
+sn: Reedstrom
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+loginShell: /bin/csh
+uidNumber: 5951
+gidNumber: 100
+homeDirectory: /home/charlet
+gecos: Charlet Reedstrom
+userPassword:: e2NyeXB0fVNydElHN0lzaFVWcG8=
+
+# dglazman, People, connexions
+dn: uid=dglazman,ou=People,dc=connexions
+uid: dglazman
+cn: Daniel Glazman
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+userPassword:: e0NSWVBUfSQxJHN1VVlRTlo0JFZPOTlqZVcyZlFtL2tYQU03NUw2YjE=
+loginShell: /bin/csh
+gidNumber: 100
+homeDirectory: /home/dglazman
+gecos: Daniel Glazman
+givenName: Daniel
+sn: Glazman
+uidNumber: 1031
+
+# dtrahan, People, connexions
+dn: uid=dtrahan,ou=People,dc=connexions
+uid: dtrahan
+cn: Debbie trahan
+sn: trahan
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+userPassword:: e2NyeXB0fURlYmJpZQ==
+loginShell: /bin/csh
+uidNumber: 1016
+gidNumber: 100
+homeDirectory: /home/dtrahan
+gecos: Debbie trahan
+
+# easgarov, People, connexions
+dn: uid=easgarov,ou=People,dc=connexions
+uid: easgarov
+cn: Asgarov Elchin
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+userPassword:: e0NSWVBUfSQxJEZGRjdVVjZQJGhqWS40NVRyRXlwUnJ4MmI1YTBMRC8=
+loginShell: /bin/csh
+uidNumber: 8993
+gidNumber: 100
+homeDirectory: /home/easgarov
+gecos: Asgarov Elchin
+givenName: Asgarov
+sn: Elchin
+
+# emaloney, People, connexions
+dn: uid=emaloney,ou=People,dc=connexions
+uid: emaloney
+cn: Erin Maloney
+sn: Maloney
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+userPassword:: e0NSWVBUfSQxJFBIWW9RS04vJHIycGpJNy5ScXFqMEVSLnViS0ZwZDA=
+loginShell: /bin/csh
+uidNumber: 1026
+gidNumber: 100
+homeDirectory: /home/emaloney
+gecos: Erin Maloney
+
+# erkrause, People, connexions
+dn: uid=erkrause,ou=People,dc=connexions
+uid: erkrause
+cn: Eileen Ruth Krause
+sn: Krause
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+userPassword:: e2NyeXB0fTRmaS9oZGhQbmhQYXc=
+loginShell: /usr/bin/tcsh
+uidNumber: 1011
+gidNumber: 100
+homeDirectory: /home/erkrause
+gecos: Eileen Ruth Krause
+
+# ew2, People, connexions
+dn: uid=ew2,ou=People,dc=connexions
+uid: ew2
+cn: Edward Woodward
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+loginShell: /bin/bash
+uidNumber: 9006
+gidNumber: 100
+homeDirectory: /home/ew2
+gecos: Edward Woodward
+givenName: Edward
+sn: Woodward
+userPassword:: e0NSWVBUfSQxJExBSUFSL3RSJFFiS0pndHpXZUtVWHZtUnFZenR6by4=
+shadowLastChange: 14049
+
+# ewang, People, connexions
+dn: uid=ewang,ou=People,dc=connexions
+uid: ewang
+cn: Eric Wang
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+userPassword:: e0NSWVBUfSQxJEEvd2c0ZUVCJDdCdU5aTThmcGhTTFg0Z2xuY0tkeS8=
+loginShell: /bin/csh
+uidNumber: 8975
+gidNumber: 100
+homeDirectory: /home/ewang
+gecos: Eric Wang
+givenName: Eric
+sn: Wang
+
+# hungtrv, People, connexions
+dn: uid=hungtrv,ou=People,dc=connexions
+uid: hungtrv
+cn: Hung Tran
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+userPassword:: e0NSWVBUfSQxJE1kS29IaklUJFZ1d1ZSb2lJZzQxbTBmT1psaHowWS8=
+loginShell: /bin/bash
+uidNumber: 8986
+gidNumber: 100
+homeDirectory: /home/hungtrv
+gecos: Hung Tran
+givenName: Hung
+sn: Tran
+
+# ic3, People, connexions
+dn: uid=ic3,ou=People,dc=connexions
+uid: ic3
+cn: Iris Chu
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+userPassword:: e2NyeXB0fUJLcWpDNmszSmhhQi4=
+loginShell: /bin/bash
+uidNumber: 9000
+gidNumber: 100
+homeDirectory: /home/ic3
+gecos: Iris Chu
+givenName: Iris
+sn: Chu
+
+# ilsai, People, connexions
+dn: uid=ilsai,ou=People,dc=connexions
+uid: ilsai
+cn: Harika Basana
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+loginShell: /bin/csh
+uidNumber: 1028
+gidNumber: 100
+homeDirectory: /home/ilsai
+gecos: Harika Basana
+givenName: Harika
+sn: Basana
+userPassword:: ZTJOeWVYQjBmU289
+
+# jccooper, People, connexions
+dn: uid=jccooper,ou=People,dc=connexions
+uid: jccooper
+cn: James Cameron Cooper
+sn: Cooper
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+loginShell: /bin/bash
+uidNumber: 889
+gidNumber: 100
+homeDirectory: /home/jccooper
+gecos: James Cameron Cooper
+userPassword:: e0NSWVBUfSQxJEtlQjM0djlNJDIvcXdBZ3cya1lqTjB0L2ZiOVpBSDA=
+
+# je2, People, connexions
+dn: uid=je2,ou=People,dc=connexions
+uid: je2
+cn: Jonathan Emmons
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+loginShell: /bin/bash
+uidNumber: 9004
+gidNumber: 100
+homeDirectory: /home/je2
+gecos: Jonathan Emmons
+givenName: Jonathan
+sn: Emmons
+userPassword:: e0NSWVBUfSQxJDRlSlE3Nnd5JGJwOWZ6UjN3MEh3MnpJWk5Ia1EwejE=
+shadowLastChange: 14048
+
+# jenn, People, connexions
+dn: uid=jenn,ou=People,dc=connexions
+uid: jenn
+cn: Jennifer A. Drummond
+sn: Drummond
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+uidNumber: 2814
+gidNumber: 100
+homeDirectory: /home/jenn
+gecos: Jennifer A. Drummond
+loginShell: /bin/bash
+userPassword:: e2NyeXB0fXRvQmxGZDZFMTBvd0U=
+
+# joel, People, connexions
+dn: uid=joel,ou=People,dc=connexions
+uid: joel
+cn: Joel Thierstein
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+loginShell: /bin/csh
+uidNumber: 8988
+gidNumber: 100
+homeDirectory: /home/joel
+gecos: Joel Thierstein
+givenName: Joel
+sn: Thierstein
+
+# kef, People, connexions
+dn: uid=kef,ou=People,dc=connexions
+uid: kef
+cn: Kathi Fletcher
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+loginShell: /bin/csh
+uidNumber: 8987
+gidNumber: 100
+homeDirectory: /home/kef
+gecos: Kathi Fletcher
+givenName: Kathi
+sn: Fletcher
+userPassword:: e0NSWVBUfSQxJEQ2ZzZXRnUyJDI3VlBrUlNZby55TWFTRmd2N2ZsSy4=
+shadowLastChange: 14049
+
+# ljouanneau, People, connexions
+dn: uid=ljouanneau,ou=People,dc=connexions
+uid: ljouanneau
+cn: Laurent Jouanneau
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+loginShell: /bin/csh
+uidNumber: 8973
+gidNumber: 100
+homeDirectory: /home/ljouanneau
+gecos: Laurent Jouanneau
+givenName: Laurent
+sn: Jouanneau
+shadowLastChange: 14167
+userPassword:: e1NIQX02bnA1RS84K2hMeHRRT1h5QjV2SVVxNFpRUmc9
+
+# lwilson, People, connexions
+dn: uid=lwilson,ou=People,dc=connexions
+uid: lwilson
+cn: Lorne Wilson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+uidNumber: 8991
+gidNumber: 100
+homeDirectory: /home/lwilson
+gecos: Lorne Wilson
+givenName: Lorne
+sn: Wilson
+userPassword:: e2NyeXB0fSQxJHhSMFp0dlEvJDhzUXFZUE9mbUVOdzU3MVlVWjNnZDE=
+loginShell: /bin/bash
+shadowLastChange: 14050
+
+# mariyah, People, connexions
+dn: uid=mariyah,ou=People,dc=connexions
+uid: mariyah
+cn: Mariyah Fatima Poonawala
+sn: Poonawala
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+userPassword:: e2NyeXB0fTViSW1GbjZhM1I4OEE=
+loginShell: /bin/bash
+uidNumber: 1007
+gidNumber: 100
+homeDirectory: /home/mariyah
+gecos: Mariyah Fatima Poonawala
+
+# mhusband, People, connexions
+dn: uid=mhusband,ou=People,dc=connexions
+uid: mhusband
+cn: Mark S. Husband
+sn: Husband
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+loginShell: /bin/csh
+uidNumber: 1022
+gidNumber: 100
+homeDirectory: /home/mhusband
+gecos: Mark S. Husband
+userPassword:: e0NSWVBUfSQxJEUyanZUOEwzJE9TelphOEdkejZlem9TZGVHQUdqMi8=
+
+# mhutch, People, connexions
+dn: uid=mhutch,ou=People,dc=connexions
+uid: mhutch
+cn: Matthew Hutchinson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+userPassword:: e0NSWVBUfSQxJENjc0Q1QWQxJDlnZnE0bzR1THZDT3VubldyOVFadi8=
+loginShell: /bin/csh
+uidNumber: 8983
+gidNumber: 100
+homeDirectory: /home/mhutch
+gecos: Matthew Hutchinson
+givenName: Matthew
+sn: Hutchinson
+
+# prafulla, People, connexions
+dn: uid=prafulla,ou=People,dc=connexions
+uid: prafulla
+cn: Prafulla Phalgunan
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+userPassword:: e0NSWVBUfSQxJGQuVE1CLnJvJHFsb3VMQnJvMzVkTzYuRHYvdmhrTTE=
+loginShell: /bin/bash
+uidNumber: 8998
+gidNumber: 100
+homeDirectory: /home/prafulla
+gecos: Prafulla Phalgunan
+givenName: Prafulla
+sn: Phalgunan
+
+# prash, People, connexions
+dn: uid=prash,ou=People,dc=connexions
+uid: prash
+cn: Prashant Singh
+sn: Singh
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+userPassword:: e0NSWVBUfTU3VTJNdnJsM0RVaUE=
+loginShell: /bin/csh
+uidNumber: 1021
+gidNumber: 100
+homeDirectory: /home/prash
+gecos: Prashant Singh
+
+# ramy, People, connexions
+dn: uid=ramy,ou=People,dc=connexions
+uid: ramy
+cn: Ramy-Claude James
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+userPassword:: e0NSWVBUfSQxJGs2Q3VJaS9MJGZaT3FGcHh5N1lud0NRaUVUMWxZeS4=
+loginShell: /bin/bash
+uidNumber: 8995
+gidNumber: 100
+homeDirectory: /home/ramy
+gecos: Ramy-Claude James
+givenName: Ramy-Claude
+sn: James
+
+# reijo, People, connexions
+dn: uid=reijo,ou=People,dc=connexions
+uid: reijo
+cn: Reijo Anttila
+sn: Anttila
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+userPassword:: e2NyeXB0fVE0QUJwamRVYjZnOEk=
+loginShell: /usr/bin/tcsh
+uidNumber: 1015
+gidNumber: 100
+homeDirectory: /home/reijo
+gecos: Reijo Anttila
+
+# richb, People, connexions
+dn: uid=richb,ou=People,dc=connexions
+uid: richb
+cn: Richard Baraniuk
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+userPassword:: e0NSWVBUfSQxJHNMWHlpb0xxJEw5eU5HNC8zbS52QmtRYzdzQUx2Yy4=
+loginShell: /bin/csh
+uidNumber: 8979
+gidNumber: 100
+homeDirectory: /home/richb
+gecos: Richard Baraniuk
+givenName: Richard
+sn: Baraniuk
+
+# rwagner, People, connexions
+dn: uid=rwagner,ou=People,dc=connexions
+uid: rwagner
+cn: Wagner Raymond
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+loginShell: /bin/csh
+uidNumber: 8992
+gidNumber: 100
+homeDirectory: /home/rwagner
+gecos: Wagner Raymond
+givenName: Wagner
+sn: Raymond
+userPassword:: e0NSWVBUfSQxJGFlM3dTMllEJDFSM3RtWm8xdHFiVHIvejkvSURmZC8=
+shadowLastChange: 14048
+
+# sanca, People, connexions
+dn: uid=sanca,ou=People,dc=connexions
+uid: sanca
+cn: Stefan Anca
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+userPassword:: e0NSWVBUfSQxJERBaHluZnhJJEgyRVBxSTYzcURVSEpnYXNwVlouZDE=
+loginShell: /bin/csh
+uidNumber: 8985
+gidNumber: 100
+homeDirectory: /home/sanca
+gecos: Stefan Anca
+givenName: Stefan
+sn: Anca
+
+# scottdp, People, connexions
+dn: uid=scottdp,ou=People,dc=connexions
+uid: scottdp
+cn: Scott Alan DiPasquale
+sn: DiPasquale
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+userPassword:: e2NyeXB0fWViYzAyZWtKV2RFMmM=
+loginShell: /usr/bin/tcsh
+uidNumber: 1014
+gidNumber: 100
+homeDirectory: /home/scottdp
+gecos: Scott Alan DiPasquale
+
+# sk8, People, connexions
+dn: uid=sk8,ou=People,dc=connexions
+uid: sk8
+cn: Scott Kravitz
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+loginShell: /bin/bash
+uidNumber: 8999
+gidNumber: 100
+homeDirectory: /home/sk8
+gecos: Scott Kravitz
+givenName: Scott
+sn: Kravitz
+userPassword:: e0NSWVBUfSQxJHFEbDJZSktHJGZHWGpWaFhqQkUuMUZOeXhPd0dWai4=
+shadowLastChange: 14049
+
+# skursar, People, connexions
+dn: uid=skursar,ou=People,dc=connexions
+uid: skursar
+cn: Steve Kursar
+sn: Kursar
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+userPassword:: e2NyeXB0fVE0QUJwamRVYjZnOEk=
+loginShell: /usr/bin/bash
+uidNumber: 1025
+gidNumber: 100
+homeDirectory: /home/skursar
+gecos: Steve Kursar
+
+# stevenw, People, connexions
+dn: uid=stevenw,ou=People,dc=connexions
+uid: stevenw
+cn: Steven Weintraub
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+loginShell: /bin/bash
+uidNumber: 9002
+gidNumber: 100
+homeDirectory: /home/stevenw
+gecos: Steven Weintraub
+givenName: Steven
+sn: Weintraub
+userPassword:: e0NSWVBUfSQxJDZ6cUc0d2p5JGJLOVZjem9SR2lyei9XUXphSDlMejE=
+shadowLastChange: 14048
+
+# uchenna, People, connexions
+dn: uid=uchenna,ou=People,dc=connexions
+uid: uchenna
+cn: Uchenna Anyikam
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+loginShell: /bin/bash
+uidNumber: 9008
+gidNumber: 100
+homeDirectory: /home/uchenna
+gecos: Uchenna Anyikam
+givenName: Uchenna
+sn: Anyikam
+userPassword:: e0NSWVBUfSQxJDZQVmRxT1ZDJDFxdENOZXV4clBnMHpmSXRMdVFibjA=
+shadowLastChange: 14253
+
+# vickien, People, connexions
+dn: uid=vickien,ou=People,dc=connexions
+uid: vickien
+cn: Vickie Nguyen
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+loginShell: /bin/csh
+uidNumber: 8989
+gidNumber: 100
+homeDirectory: /home/vickien
+gecos: Vickie Nguyen
+givenName: Vickie
+sn: Nguyen
+userPassword:: e2NyeXB0fU5sRjFuMzhpY053Y2M=
+shadowLastChange: 14055
+
+# manpreet, People, connexions
+dn: uid=manpreet,ou=People,dc=connexions
+uid: manpreet
+cn: Manpreet Kuar
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+loginShell: /bin/csh
+uidNumber: 8982
+gidNumber: 100
+homeDirectory: /home/manpreet
+gecos: Manpreet Kuar
+givenName: Manpreet
+sn: Kuar
+userPassword:: e0NSWVBUfSQxJGNQYnJVR0ZSJEdKeDE0WEJyZG53dkZSeUwwZVkvbi8=
+shadowLastChange: 14050
+
+# maxwell, People, connexions
+dn: uid=maxwell,ou=People,dc=connexions
+uid: maxwell
+cn: Maxwell Murry Starkenburg
+sn: Starkenburg
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+loginShell: /bin/csh
+uidNumber: 7012
+gidNumber: 100
+homeDirectory: /home/maxwell
+gecos: Maxwell Murry Starkenburg
+userPassword:: e0NSWVBUfSQxJHlwdGszNUdqJFlkLnZTVWRGM0xKZ2hJMXNGVDFycDA=
+
+# dcwill, People, connexions
+dn: uid=dcwill,ou=People,dc=connexions
+uid: dcwill
+cn: Daniel Williamson
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+loginShell: /bin/bash
+uidNumber: 9009
+gidNumber: 100
+homeDirectory: /home/dcwill
+gecos: Daniel Williamson
+givenName: Daniel
+sn: Williamson
+shadowLastChange: 14084
+userPassword:: e2NyeXB0fURoLmJMRkx1eVVwdEk=
+
+# dds2, People, connexions
+dn: uid=dds2,ou=People,dc=connexions
+uid: dds2
+cn: Dorthy Smith
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+loginShell: /bin/bash
+uidNumber: 9010
+gidNumber: 100
+homeDirectory: /home/dds2
+gecos: Dorthy Smith
+givenName: Dorthy
+sn: Smith
+userPassword:: e0NSWVBUfSQxJFZvYmxKZFJPJDZDRnZra2duNjAxTS9XQUlhQjBzVC8=
+shadowLastChange: 14105
+
+# schatz, People, connexions
+dn: uid=schatz,ou=People,dc=connexions
+uid: schatz
+cn: Philip Schatz
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+loginShell: /bin/bash
+uidNumber: 9011
+gidNumber: 100
+homeDirectory: /home/schatz
+gecos: Philip Schatz
+givenName: Philip
+sn: Schatz
+userPassword:: e2NyeXB0fTh1VGlObVhjSVBGSkU=
+shadowLastChange: 15434
+
+# baa4274, People, connexions
+dn: uid=baa4274,ou=People,dc=connexions
+uid: baa4274
+cn: Britt Antley
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+loginShell: /bin/bash
+uidNumber: 8997
+gidNumber: 100
+homeDirectory: /home/baa4274
+gecos: Britt Antley
+givenName: Britt
+sn: Antley
+userPassword:: e0NSWVBUfSQxJHVEdDh2SHdQJG4xRXp6U0F1T1ZWMmxKU3N0eE5MUjA=
+shadowLastChange: 14117
+
+# hedley, People, connexions
+dn: uid=hedley,ou=People,dc=connexions
+uid: hedley
+cn: Hedley Roos
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+loginShell: /bin/bash
+uidNumber: 9012
+gidNumber: 100
+homeDirectory: /home/hedley
+gecos: Hedley Roos
+givenName: Hedley
+sn: Roos
+userPassword:: e1NIQX1YeWJxMzA1YmdYMk1jT0tvbFRhSDF6SC9Fd3c9
+
+# johan, People, connexions
+dn: uid=johan,ou=People,dc=connexions
+uid: johan
+cn: Johan Beyers
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+loginShell: /bin/bash
+uidNumber: 9013
+gidNumber: 100
+homeDirectory: /home/johan
+gecos: Johan Beyers
+givenName: Johan
+sn: Beyers
+shadowLastChange: 14154
+userPassword:: e2NyeXB0fVBZS2VGVkdWcjhIaTI=
+
+# kylejb, People, connexions
+dn: uid=kylejb,ou=People,dc=connexions
+uid: kylejb
+cn: Kyle Barnhart
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+loginShell: /bin/bash
+uidNumber: 9014
+gidNumber: 100
+homeDirectory: /home/kylejb
+gecos: Kyle Barnhart
+givenName: Kyle
+sn: Barnhart
+userPassword:: e0NSWVBUfSQxJHAyRjM3U0Y0JFNqUnBNQlBta0RlYnBXMEZUbTJnbDA=
+shadowLastChange: 14193
+
+# roche, People, connexions
+dn: uid=roche,ou=People,dc=connexions
+uid: roche
+cn:: Um9jaMOpIENvbXBhYW4=
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+loginShell: /bin/bash
+uidNumber: 9015
+gidNumber: 100
+homeDirectory: /home/roche
+gecos: Roche Compaan
+givenName:: Um9jaMOp
+sn: Compaan
+userPassword:: e2NyeXB0fUFTOEhYNmFkZGpGNTY=
+shadowLastChange: 15013
+
+# jurginius, People, connexions
+dn: uid=jurginius,ou=People,dc=connexions
+uid: jurginius
+cn: Jurgen Blignaut
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+loginShell: /bin/bash
+uidNumber: 9016
+gidNumber: 100
+homeDirectory: /home/jurginius
+gecos: Jurgen Blignaut
+givenName: Jurgen
+sn: Blignaut
+userPassword:: e2NyeXB0fXVUeGhsMVdqZE15ek0=
+
+# francois_lubbe, People, connexions
+dn: uid=francois_lubbe,ou=People,dc=connexions
+uid: francois_lubbe
+cn: Francois Lubbe
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+loginShell: /bin/bash
+uidNumber: 9017
+gidNumber: 100
+homeDirectory: /home/francois_lubbe
+gecos: Francois Lubbe
+givenName: Francois
+sn: Lubbe
+userPassword:: e2NyeXB0fWloTklDb3FLY05lREU=
+
+# izak, People, connexions
+dn: uid=izak,ou=People,dc=connexions
+uid: izak
+cn: Izak Burger
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+loginShell: /bin/bash
+uidNumber: 9018
+gidNumber: 100
+homeDirectory: /home/izak
+gecos: Izak Burger
+givenName: Izak
+sn: Burger
+userPassword:: e1NIQX1UR0ZsOFYwcy8rbnh5a0ZSN1cvQTUxcGVBNzA9
+
+# mikejmets, People, connexions
+dn: uid=mikejmets,ou=People,dc=connexions
+uid: mikejmets
+cn: Mike Metcalfe
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+loginShell: /bin/bash
+uidNumber: 9019
+gidNumber: 100
+homeDirectory: /home/mikejmets
+gecos: Mike Metcalfe
+givenName: Mike
+sn: Metcalfe
+userPassword:: e2NyeXB0fXJwY1JacTkzOHBGcFE=
+shadowLastChange: 14496
+
+# terri, People, connexions
+dn: uid=terri,ou=People,dc=connexions
+uid: terri
+cn: Terri Arellano
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+loginShell: /bin/bash
+uidNumber: 9020
+gidNumber: 100
+homeDirectory: /home/terri
+gecos: Terri Arellano
+givenName: Terri
+sn: Arellano
+userPassword:: e0NSWVBUfSQxJGdoaVo3dExSJDB4bUFhWkhpT0pvQi5oSUhRWnNOTjE=
+shadowLastChange: 14266
+
+# mhorner, People, connexions
+dn: uid=mhorner,ou=People,dc=connexions
+uid: mhorner
+cn: Mark Horner
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+loginShell: /bin/bash
+uidNumber: 9021
+gidNumber: 100
+homeDirectory: /home/mhorner
+gecos: Mark Horner
+givenName: Mark
+sn: Horner
+shadowLastChange: 14913
+userPassword:: e2NyeXB0fU1MRTlrREdBNlZobkk=
+
+# natalie, People, connexions
+dn: uid=natalie,ou=People,dc=connexions
+uid: natalie
+cn: Natalie Weber
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+loginShell: /bin/bash
+uidNumber: 9022
+gidNumber: 100
+homeDirectory: /home/natalie
+gecos: Natalie Weber
+givenName: Natalie
+sn: Weber
+userPassword:: e1NIQX04WUFZSnc5U2FPS3BFMm5yTnlQZ25pSkFVTkE9
+
+# michaelrog, People, connexions
+dn: uid=michaelrog,ou=People,dc=connexions
+uid: michaelrog
+cn: Michael Rog
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+loginShell: /bin/bash
+uidNumber: 9023
+gidNumber: 100
+homeDirectory: /home/michaelrog
+gecos: Michael Rog
+givenName: Michael
+sn: Rog
+shadowLastChange: 14425
+userPassword:: e1NIQX10bGlNMjVNMmRQcU9Lci9PcW8vVGJLd2c4UUU9
+
+# kat1, People, connexions
+dn: uid=kat1,ou=People,dc=connexions
+uid: kat1
+cn: Katherine Threlkeld
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+loginShell: /bin/bash
+uidNumber: 9024
+gidNumber: 100
+homeDirectory: /home/kat1
+gecos: Katherine Threlkeld
+givenName: Katherine
+sn: Threlkeld
+userPassword:: e1NIQX00N3BEWUZER0t6QVkxTkVUcDBueVFVSEZIMEk9
+
+# dsglaser, People, connexions
+dn: uid=dsglaser,ou=People,dc=connexions
+uid: dsglaser
+cn: Daniel Glaser
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+loginShell: /bin/bash
+uidNumber: 9025
+gidNumber: 100
+homeDirectory: /home/dsglaser
+gecos: Daniel Glaser
+givenName: Daniel
+sn: Glaser
+userPassword:: e2NyeXB0fSQxJGpieGczYzVkJDcvbG9KSnA4RTI3dURjOFROc1kzUi4=
+shadowLastChange: 14412
+
+# julien, People, connexions
+dn: uid=julien,ou=People,dc=connexions
+uid: julien
+cn: Julien Anguenot
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+loginShell: /bin/bash
+uidNumber: 9026
+gidNumber: 100
+homeDirectory: /home/julien
+gecos: Julien Anguenot
+givenName: Julien
+sn: Anguenot
+userPassword:: e2NyeXB0fXdhUWhZOEtaMTNQRzI=
+
+# josh, People, connexions
+dn: uid=josh,ou=People,dc=connexions
+uid: josh
+cn: Josh LaPlace
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+loginShell: /bin/bash
+uidNumber: 9027
+gidNumber: 100
+homeDirectory: /home/josh
+gecos: Josh LaPlace
+givenName: Josh
+sn: LaPlace
+userPassword:: e2NyeXB0fU1SNzMyTWw1UzZWNm8=
+
+# raj, People, connexions
+dn: uid=raj,ou=People,dc=connexions
+uid: raj
+cn: Raj Shah
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+loginShell: /bin/bash
+uidNumber: 9028
+gidNumber: 100
+homeDirectory: /home/raj
+gecos: Raj Shah
+givenName: Raj
+sn: Shah
+userPassword:: e2NyeXB0fVRyejVxemlsVE95TFE=
+
+# john, People, connexions
+dn: uid=john,ou=People,dc=connexions
+uid: john
+cn: John Dorapalli
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+loginShell: /bin/bash
+uidNumber: 9029
+gidNumber: 100
+homeDirectory: /home/john
+gecos: John Dorapalli
+givenName: John
+sn: Dorapalli
+userPassword:: e2NyeXB0fWdCMWZEQ3NvNXY1by4=
+
+# natea, People, connexions
+dn: uid=natea,ou=People,dc=connexions
+uid: natea
+cn: Nate Aune
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+loginShell: /bin/bash
+uidNumber: 9030
+gidNumber: 100
+homeDirectory: /home/natea
+gecos: Nate Aune
+givenName: Nate
+sn: Aune
+userPassword:: e2NyeXB0fUcuMFZQcmVhN2NYbmM=
+shadowLastChange: 14617
+
+# rocky, People, connexions
+dn: uid=rocky,ou=People,dc=connexions
+uid: rocky
+cn: Rocky Burt
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+userPassword:: e0NSWVBUfSQxJDUwLm1jbGlIJGtBck1YZ2puQkhJMW9BZDIwMnFuZi4=
+loginShell: /bin/bash
+uidNumber: 9031
+gidNumber: 100
+homeDirectory: /home/rocky
+gecos: Rocky Burt
+givenName: Rocky
+sn: Burt
+
+# administrativeassistant, People, connexions
+dn: uid=administrativeassistant,ou=People,dc=connexions
+uid: administrativeassistant
+cn: Nosuch Person
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+userPassword:: e0NSWVBUfSQxJFp6Q2M3L1NZJDFFZ2FSRnUvTmdudk5XSmlLdnppSDE=
+loginShell: /bin/bash
+uidNumber: 9032
+gidNumber: 100
+homeDirectory: /home/administrativeassistant
+gecos: Nosuch Person
+givenName: Nosuch
+sn: Person
+
+# jca2, People, connexions
+dn: uid=jca2,ou=People,dc=connexions
+uid: jca2
+cn: Jared Adler
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+loginShell: /bin/bash
+uidNumber: 9033
+gidNumber: 100
+homeDirectory: /home/jca2
+gecos: Jared Adler
+givenName: Jared
+sn: Adler
+shadowLastChange: 14670
+userPassword:: e2NyeXB0fXRBVWsvYy56VW5PcnM=
+
+# dbailey, People, connexions
+dn: uid=dbailey,ou=People,dc=connexions
+uid: dbailey
+cn: Dwayne Bailey
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+loginShell: /bin/bash
+uidNumber: 9034
+gidNumber: 100
+homeDirectory: /home/dbailey
+gecos: Dwayne Bailey
+givenName: Dwayne
+sn: Bailey
+userPassword:: e2NyeXB0fUluQnZqdGpHWHhOM2c=
+
+# nikolay, People, connexions
+dn: uid=nikolay,ou=People,dc=connexions
+uid: nikolay
+cn: Nikolay Kim
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+loginShell: /bin/bash
+uidNumber: 9035
+gidNumber: 100
+homeDirectory: /home/nikolay
+gecos: Nikolay Kim
+givenName: Nikolay
+sn: Kim
+userPassword:: e0NSWVBUfSQxJC5leURSb1p1JHA4QlQ2ME5OQ1VGbzlrTHdjLmphSzE=
+shadowLastChange: 15028
+
+# jhb, People, connexions
+dn: uid=jhb,ou=People,dc=connexions
+uid: jhb
+cn: Joerg Baach
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+loginShell: /bin/bash
+uidNumber: 9036
+gidNumber: 100
+homeDirectory: /home/jhb
+gecos: Joerg Baach
+givenName: Joerg
+sn: Baach
+userPassword:: e2NyeXB0fXlHQ0lOZUhwM2JSTms=
+
+# pumazi, People, connexions
+dn: uid=pumazi,ou=People,dc=connexions
+uid: pumazi
+cn: Michael Mulich
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+loginShell: /bin/bash
+uidNumber: 9037
+gidNumber: 100
+homeDirectory: /home/pumazi
+gecos: Michael Mulich
+givenName: Michael
+sn: Mulich
+userPassword:: e2NyeXB0fVg3S0JXLm9QN2Nkc28=
+shadowLastChange: 15015
+
+# david, People, connexions
+dn: uid=david,ou=People,dc=connexions
+uid: david
+cn: David Bain
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+loginShell: /bin/bash
+uidNumber: 9038
+gidNumber: 100
+homeDirectory: /home/david
+gecos: David Bain
+givenName: David
+sn: Bain
+userPassword:: e2NyeXB0fWtzdzJFZi9DdmxSS2s=
+shadowLastChange: 15149
+
+# akm5, People, connexions
+dn: uid=akm5,ou=People,dc=connexions
+uid: akm5
+cn: Avery Murphy
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+loginShell: /bin/bash
+uidNumber: 9039
+gidNumber: 100
+homeDirectory: /home/akm5
+gecos: Avery Murphy
+givenName: Avery
+sn: Murphy
+userPassword:: e2NyeXB0fWg0TnBsaDNaeVFManM=
+shadowLastChange: 15174
+
+# rsg4, People, connexions
+dn: uid=rsg4,ou=People,dc=connexions
+uid: rsg4
+cn: Raven Grant
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+loginShell: /bin/bash
+uidNumber: 9040
+gidNumber: 100
+homeDirectory: /home/rsg4
+gecos: Raven Grant
+givenName: Raven
+sn: Grant
+userPassword:: e2NyeXB0fTBScjdaNC9ZNktNTXc=
+shadowLastChange: 15194
+
+# jburnett, People, connexions
+dn: uid=jburnett,ou=People,dc=connexions
+uid: jburnett
+cn: Jess Burnett
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+loginShell: /bin/bash
+uidNumber: 9041
+gidNumber: 100
+homeDirectory: /home/jburnett
+gecos: Jess Burnett
+givenName: Jess
+sn: Burnett
+userPassword:: e2NyeXB0fTdielh2RUFqRVdtVWc=
+shadowLastChange: 15450
+
+# search result
+search: 2
+result: 0 Success
+
+# numResponses: 78
+# numEntries: 77

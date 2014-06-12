@@ -1,0 +1,23 @@
+BEGIN {
+RS="\n\n"
+FS="\n"
+OFS="\n"
+ORS="\n\n"
+}
+/uid=crouton,ou=People,dc=connexions/ {print $0,"userPassword:: e2NyeXB0fXg="}
+/uid=dmiller7,ou=People,dc=connexions/ {print $0,"userPassword:: e2NyeXB0fXg="}
+/uid=elvena,ou=People,dc=connexions/ {print $0,"userPassword:: e2NyeXB0fXg="}
+/uid=ghenry,ou=People,dc=connexions/ {print $0,"userPassword:: e2NyeXB0fXg="}
+/uid=guest1,ou=People,dc=connexions/ {print $0,"userPassword:: e2NyeXB0fXg="}
+/uid=guest2,ou=People,dc=connexions/ {print $0,"userPassword:: e2NyeXB0fXg="}
+/uid=guest3,ou=People,dc=connexions/ {print $0,"userPassword:: e2NyeXB0fXg="}
+/uid=jago,ou=People,dc=connexions/ {print $0,"userPassword:: e2NyeXB0fXg="}
+/uid=jsilv,ou=People,dc=connexions/ {print $0,"userPassword:: e2NyeXB0fXg="}
+/uid=kclarks,ou=People,dc=connexions/ {print $0,"userPassword:: e2NyeXB0fXg="}
+/uid=kevinduh,ou=People,dc=connexions/ {print $0,"userPassword:: e2NyeXB0fXg="}
+/uid=kohlhase,ou=People,dc=connexions/ {print $0,"userPassword:: e2NyeXB0fXg="}
+/uid=lizzardg,ou=People,dc=connexions/ {print $0,"userPassword:: e2NyeXB0fXg="}
+/uid=s001552,ou=People,dc=connexions/ {print $0,"userPassword:: e2NyeXB0fXg="}
+/uid=samba_servers,ou=people,dc=connexions/ {print $0,"userPassword:: e2NyeXB0fXg="}
+/uid=wjking,ou=People,dc=connexions/ {print $0,"userPassword:: e2NyeXB0fXg="}
+/uid=yingmm,ou=People,dc=connexions/ {print $0,"userPassword:: e2NyeXB0fXg="}

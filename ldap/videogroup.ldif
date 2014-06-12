@@ -1,0 +1,6 @@
+dn: cn=adm,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: reedstrm
+memberUid: brentmh
+

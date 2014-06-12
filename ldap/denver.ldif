@@ -1,0 +1,54 @@
+dn: uid=denver,ou=People,dc=connexions
+uid: denver
+cn: Denver Greene
+objectClass: person
+objectClass: inetorgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+userPassword: {CRYPT}$1$kUUsC0rm$EqG5Z2fQKMRLvssFdmxPa0
+loginShell: /bin/bash
+uidNumber: 9047
+gidNumber: 100
+homeDirectory: /home/denver
+gecos: Denver Greene
+givenName: Denver
+sn: Greene
+
+
+dn: cn=denver,ou=auto.homes,dc=connexions
+cn: denver
+objectClass: automount
+automountInformation: -rw,intr,soft wakizashi.cnx.rice.edu:/homes/denver
+
+dn: cn=audio,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: denver
+
+dn: cn=staff,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: denver
+
+dn: cn=cdrom,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: denver
+
+dn: cn=users,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: denver
+
+dn: cn=floppy,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: denver
+
+dn: cn=www-data,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: denver
+

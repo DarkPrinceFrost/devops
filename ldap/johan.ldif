@@ -1,0 +1,54 @@
+dn: uid=johan,ou=People,dc=connexions
+uid: johan
+cn: Johan Beyers
+objectClass: person
+objectClass: inetorgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+userPassword: {CRYPT}$1$gSMkXEcF$7wR8Q7WRNe7hzMvcWhHkz0
+loginShell: /bin/bash
+uidNumber: 9013
+gidNumber: 100
+homeDirectory: /home/johan
+gecos: Johan Beyers
+givenName: Johan
+sn: Beyers
+
+
+dn: cn=johan,ou=auto.homes,dc=connexions
+cn: johan
+objectClass: automount
+automountInformation: -rw,intr,soft wakizashi.cnx.rice.edu:/homes/johan
+
+dn: cn=audio,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: johan
+
+dn: cn=staff,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: johan
+
+dn: cn=cdrom,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: johan
+
+dn: cn=users,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: johan
+
+dn: cn=floppy,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: johan
+
+dn: cn=www-data,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: johan
+

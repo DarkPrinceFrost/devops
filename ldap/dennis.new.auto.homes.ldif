@@ -1,0 +1,6 @@
+dn: cn=dennis,ou=new.auto.homes,dc=connexions
+cn: dennis
+objectClass: automount
+automountInformation: -rw,intr,soft wakizashi.cnx.rice.edu:/homes/dennis
+
+

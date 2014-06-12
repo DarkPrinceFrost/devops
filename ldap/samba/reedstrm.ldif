@@ -1,0 +1,50 @@
+# extended LDIF
+#
+# LDAPv3
+# base <> with scope sub
+# filter: uid=reedstrm
+# requesting: ALL
+#
+
+# reedstrm, People, connexions
+dn: uid=reedstrm,ou=People,dc=connexions
+cn: Ross J. Reedstrom
+objectClass: posixAccount
+objectClass: top
+objectClass: shadowAccount
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: sambaSamAccount
+shadowMax: 99999
+shadowWarning: 7
+loginShell: /bin/bash
+gidNumber: 1000
+homeDirectory: /home/reedstrm
+uid: reedstrm
+uidNumber: 1000
+givenName: Ross
+initials: J.
+sn: Reedstrom
+gecos: Ross J. Reedstrom
+shadowLastChange: 12503
+telephoneNumber: 713-348-6166
+physicalDeliveryOfficeName: Connexions MS375, Rice University
+postalCode: 77005
+st: TX
+l: Houston
+mobile: 713-203-2468
+mail: reedstrm@rice.edu
+ou: Rice University
+postOfficeBox: Connexions MS375
+postalAddress: 6100 Main St.
+street: 6100 Main St.
+sambaAcctFlags: [U          ]
+sambaSID: S-1-5-21-3094334300-761729071-1355841744-3000
+
+# search result
+search: 2
+result: 0 Success
+
+# numResponses: 2
+# numEntries: 1

@@ -1,0 +1,54 @@
+dn: uid=jhb,ou=People,dc=connexions
+uid: jhb
+cn: Joerg Baach
+objectClass: person
+objectClass: inetorgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+userPassword: {CRYPT}$1$qepy96ea$DZKo06nrPSSauiiaH0HqE/
+loginShell: /bin/bash
+uidNumber: 9036
+gidNumber: 100
+homeDirectory: /home/jhb
+gecos: Joerg Baach
+givenName: Joerg
+sn: Baach
+
+
+dn: cn=jhb,ou=auto.homes,dc=connexions
+cn: jhb
+objectClass: automount
+automountInformation: -rw,intr,soft bokken.cnx.rice.edu:/homes/jhb
+
+dn: cn=audio,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: jhb
+
+dn: cn=staff,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: jhb
+
+dn: cn=cdrom,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: jhb
+
+dn: cn=users,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: jhb
+
+dn: cn=floppy,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: jhb
+
+dn: cn=www-data,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: jhb
+

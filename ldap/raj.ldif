@@ -1,0 +1,54 @@
+dn: uid=raj,ou=People,dc=connexions
+uid: raj
+cn: Raj Shah
+objectClass: person
+objectClass: inetorgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+userPassword: {CRYPT}$1$EbfE0/P1$/weQ.kOF86w5JtsLFFog70
+loginShell: /bin/bash
+uidNumber: 9028
+gidNumber: 100
+homeDirectory: /home/raj
+gecos: Raj Shah
+givenName: Raj
+sn: Shah
+
+
+dn: cn=raj,ou=auto.homes,dc=connexions
+cn: raj
+objectClass: automount
+automountInformation: -rw,intr,soft cleaver.cnx.rice.edu:/homes/raj
+
+dn: cn=audio,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: raj
+
+dn: cn=staff,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: raj
+
+dn: cn=cdrom,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: raj
+
+dn: cn=users,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: raj
+
+dn: cn=floppy,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: raj
+
+dn: cn=www-data,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: raj
+

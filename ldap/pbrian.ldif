@@ -1,0 +1,59 @@
+dn: uid=pbrian,ou=People,dc=connexions
+uid: pbrian
+cn: Paul Broan
+objectClass: person
+objectClass: inetorgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+userPassword: {CRYPT}$1$VWg5OkMq$Nc4zmmuSw1oZ5Mt7AfrVP0
+loginShell: /bin/bash
+uidNumber: 9042
+gidNumber: 100
+homeDirectory: /home/pbrian
+gecos: Paul Broan
+givenName: Paul
+sn: Broan
+
+
+dn: cn=pbrian,ou=auto.homes,dc=connexions
+cn: pbrian
+objectClass: automount
+automountInformation: -rw,intr,soft fillet.cnx.rice.edu:/homes/pbrian
+
+dn: cn=pbrian,ou=new.auto.homes,dc=connexions
+cn: pbrian
+objectClass: automount
+automountInformation: -rw,intr,soft fillet.cnx.rice.edu:/homes/pbrian
+
+dn: cn=audio,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: pbrian
+
+dn: cn=staff,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: pbrian
+
+dn: cn=cdrom,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: pbrian
+
+dn: cn=users,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: pbrian
+
+dn: cn=floppy,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: pbrian
+
+dn: cn=www-data,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: pbrian
+

@@ -1,0 +1,54 @@
+dn: uid=bitten,ou=People,dc=connexions
+uid: bitten
+cn: Bitten Slave
+objectClass: person
+objectClass: inetorgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+userPassword: {CRYPT}$1$Jt3Aq91H$QKvMeWQCrC.NN/xKkzYZp0
+loginShell: /bin/bash
+uidNumber: 9003
+gidNumber: 100
+homeDirectory: /home/bitten
+gecos: Bitten Slave
+givenName: Bitten
+sn: Slave
+
+
+dn: cn=bitten,ou=auto.homes,dc=connexions
+cn: bitten
+objectClass: automount
+automountInformation: -rw,intr,soft barracks.cnx.rice.edu:/homes/bitten
+
+dn: cn=audio,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: bitten
+
+dn: cn=staff,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: bitten
+
+dn: cn=cdrom,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: bitten
+
+dn: cn=users,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: bitten
+
+dn: cn=floppy,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: bitten
+
+dn: cn=www-data,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: bitten
+

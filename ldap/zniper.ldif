@@ -1,0 +1,54 @@
+dn: uid=zniper,ou=People,dc=connexions
+uid: zniper
+cn: Ha Pham
+objectClass: person
+objectClass: inetorgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+userPassword: {CRYPT}$1$BG2eX9SE$3dus4spW21WgH7YonN6Mu.
+loginShell: /bin/bash
+uidNumber: 9046
+gidNumber: 100
+homeDirectory: /home/zniper
+gecos: Ha Pham
+givenName: Ha
+sn: Pham
+
+
+dn: cn=zniper,ou=auto.homes,dc=connexions
+cn: zniper
+objectClass: automount
+automountInformation: -rw,intr,soft wakizashi.cnx.rice.edu:/homes/zniper
+
+dn: cn=audio,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: zniper
+
+dn: cn=staff,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: zniper
+
+dn: cn=cdrom,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: zniper
+
+dn: cn=users,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: zniper
+
+dn: cn=floppy,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: zniper
+
+dn: cn=www-data,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: zniper
+

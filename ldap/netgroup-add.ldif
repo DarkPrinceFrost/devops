@@ -1,0 +1,6 @@
+dn: cn=devels,ou=netgroup,dc=connexions
+cn: devels
+changetype: modify
+add: nisNetgroupTriple
+nisNetgroupTriple: (,ramy,)
+

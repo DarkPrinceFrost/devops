@@ -1,0 +1,43 @@
+dn: uid=dtrahan,ou=People,dc=connexions
+uid: dtrahan
+cn: Debbie trahan
+objectClass: account
+objectClass: posixAccount
+objectClass: top
+userPassword: {crypt}Debbie
+loginShell: /bin/csh
+uidNumber: 1016
+gidNumber: 100
+homeDirectory: /home/dtrahan
+gecos: Debbie trahan
+
+
+dn: cn=dtrahan,ou=auto.homes,dc=connexions
+cn: dtrahan
+objectClass: automount
+automountInformation: -rw,intr,soft cnx-246-67.ece.rice.edu:/homes/dtrahan
+
+dn: cn=audio,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: dtrahan
+
+dn: cn=staff,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: dtrahan
+
+dn: cn=cdrom,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: dtrahan
+
+dn: cn=users,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: dtrahan
+
+dn: cn=floppy,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: dtrahan

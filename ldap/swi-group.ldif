@@ -1,0 +1,7 @@
+dn: cn=swi,ou=Group,dc=connexions
+objectClass: posixGroup
+objectClass: top
+cn: swi
+userPassword: {crypt}x
+gidNumber: 1002
+

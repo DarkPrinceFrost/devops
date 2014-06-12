@@ -1,0 +1,3 @@
+# crouton, People, connexions
+dn: uid=crouton,ou=People,dc=connexions
+userPassword: {crypt}$1$zYom9M2G$n9jTmtrxBVo27sQOg7kZW/

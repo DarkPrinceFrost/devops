@@ -1,0 +1,36 @@
+dn: uid=izak,ou=People,dc=connexions
+uid: izak
+cn: Izak Burger
+objectClass: person
+objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+loginShell: /bin/bash
+uidNumber: 9018
+gidNumber: 100
+homeDirectory: /home/izak
+gecos: Izak Burger
+givenName: Izak
+sn: Burger
+structuralObjectClass: inetOrgPerson
+entryUUID: 7e86858a-5c66-102d-95c5-e101f530092c
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20081212070150Z
+userPassword:: e1NIQX1UR0ZsOFYwcy8rbnh5a0ZSN1cvQTUxcGVBNzA9
+entryCSN: 20081212074208Z#000000#00#000000
+modifiersName: uid=izak,ou=People,dc=connexions
+modifyTimestamp: 20081212074208Z
+
+dn: cn=izak,ou=auto.homes,dc=connexions
+cn: izak
+objectClass: automount
+structuralObjectClass: automount
+entryUUID: 7e89a65c-5c66-102d-95c6-e101f530092c
+creatorsName: cn=admin,dc=connexions
+createTimestamp: 20081212070150Z
+automountInformation: -rw,intr,soft butcher.cnx.rice.edu:/homes/izak
+entryCSN: 20090908142945Z#000000#00#000000
+modifiersName: cn=admin,dc=connexions
+modifyTimestamp: 20090908142945Z

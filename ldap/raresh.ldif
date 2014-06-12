@@ -1,0 +1,49 @@
+dn: uid=rares,ou=People,dc=connexions
+uid: rares
+cn: Raresh Ambrush
+objectClass: person
+objectClass: inetorgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+userPassword: {CRYPT}$1$0YUxaLSz$8rQXgKlPhycmFB/FkwwkA/
+loginShell: /bin/csh
+uidNumber: 8976
+gidNumber: 100
+homeDirectory: /home/rares
+gecos: Raresh Ambrush
+givenName: Raresh
+sn: Ambrush
+
+
+dn: cn=rares,ou=auto.homes,dc=connexions
+cn: rares
+objectClass: automount
+automountInformation: -rw,intr,soft barracks.cnx.rice.edu:/homes/rares
+
+dn: cn=audio,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: rares
+
+dn: cn=staff,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: rares
+
+dn: cn=cdrom,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: rares
+
+dn: cn=users,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: rares
+
+dn: cn=floppy,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: rares
+

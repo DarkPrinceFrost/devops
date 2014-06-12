@@ -1,0 +1,54 @@
+dn: uid=david,ou=People,dc=connexions
+uid: david
+cn: David Bain
+objectClass: person
+objectClass: inetorgPerson
+objectClass: organizationalPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: top
+userPassword: {CRYPT}$1$d52N.ywT$AO07ziGV/lNEnYqODpokj.
+loginShell: /bin/bash
+uidNumber: 9038
+gidNumber: 100
+homeDirectory: /home/david
+gecos: David Bain
+givenName: David
+sn: Bain
+
+
+dn: cn=david,ou=auto.homes,dc=connexions
+cn: david
+objectClass: automount
+automountInformation: -rw,intr,soft wakizashi.cnx.rice.edu:/homes/david
+
+dn: cn=audio,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: david
+
+dn: cn=staff,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: david
+
+dn: cn=cdrom,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: david
+
+dn: cn=users,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: david
+
+dn: cn=floppy,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: david
+
+dn: cn=www-data,ou=Group,dc=connexions
+changetype: modify
+add: memberUid
+memberUid: david
+

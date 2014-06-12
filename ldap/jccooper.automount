@@ -1,0 +1,5 @@
+dn: cn=jccooper,ou=auto.homes,dc=connexions
+cn: jccooper
+objectClass: automount
+automountInformation: -rw,intr,soft sullivan.cnx.rice.edu:/homes/jccooper
+
