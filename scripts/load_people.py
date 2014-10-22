@@ -6,7 +6,7 @@ import sys
 import psycopg2
 
 
-def store_person(cursor,person):
+def store_person(cursor, person, appid):
     """load a csv row into db"""
 
     # Row looks like:
@@ -51,12 +51,19 @@ def store_person(cursor,person):
                                             CURRENT_TIMESTAMP,CURRENT_TIMESTAMP) RETURNING id""",\
                  (email, userid ))
 
+    cursor.execute("""INSERT INTO application_users (application_id, user_id, created_at, updated_at)
+                   VALUES (%s, %s, NOW(), NOW())""",\
+                 (appid, userid ))
 
-def load_people(conn, csvfile):
+
+def load_people(conn, appname,csvfile):
     cursor = conn.cursor()
+    cursor.execute("""SELECT id from oauth_applications where name ~ %s""", (appname,))
+    appid = cursor.fetchall()[0][0]
+
     csvlines = csv.reader(csvfile)
     for num,person in enumerate(csvlines,1):
-        store_person(cursor,person)
+        store_person(cursor,person, appid)
         if not (num % 1000):
             conn.commit()
             print "Stored: ", num
@@ -66,14 +73,14 @@ def load_people(conn, csvfile):
 
 
 def main():
-    usage = 'Usage: %prog db_conn_str csv_filename'
+    usage = 'Usage: %prog db_conn_str appname csv_filename'
     parser = optparse.OptionParser(usage)
     options, args = parser.parse_args()
-    if len(args) != 2:
-        parser.error('database connection string and csv_filename required\n')
+    if len(args) != 3:
+        parser.error('database connection string, application name, and csv_filename required\n')
     
-    with psycopg2.connect(sys.argv[1]) as conn, open(sys.argv[2]) as csvfile:
-        load_people(conn,csvfile)
+    with psycopg2.connect(sys.argv[1]) as conn, open(sys.argv[3]) as csvfile:
+        load_people(conn,sys.argv[2],csvfile)
 
 if __name__ == '__main__':
     main()
