@@ -1,0 +1,3 @@
+#!/bin/bash
+cnx-upgrade --db-conn-str 'dbname=repositorydev user=rhaptos' to_html --id-select-query "select module_ident from latest_modules lm natural join module_files mf  where portal_type = 'Module' and filename = 'index_auto_generated.cnxml' order by module_ident desc" --force
+cnx-upgrade --db-conn-str 'dbname=repositorydev user=rhaptos' to_html --id-select-query "select module_ident from latest_modules natural join module_files as lmf where portal_type = 'Module' and filename = 'index.cnxml' and not exists (select module_ident from module_files where module_ident=lmf.module_ident and filename = 'index_auto_generated.cnxml') order by module_ident desc" --filename=index.cnxml --force
