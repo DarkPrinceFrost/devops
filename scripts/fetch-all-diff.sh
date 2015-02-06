@@ -1,6 +1,7 @@
 #!/bin/bash
 for d in cnx-archive cnx-authoring cnx-epub cnx-publishing \
-         cnx-query-grammar openstax-accounts plpydbapi webview
+         cnx-query-grammar openstax-accounts plpydbapi\
+         rhaptos.cnxmlutils webview
   do (
     cd $d
      branchname=$(git symbolic-ref --short -q HEAD)
