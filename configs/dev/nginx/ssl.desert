@@ -1,0 +1,54 @@
+
+# HTTPS server
+upstream alpha.cnx.org {
+server alpha.cnx.org weight=5;
+}
+
+ssl_certificate /etc/ssl/certs/cnx_org_2016.pem;
+ssl_certificate_key /etc/ssl/private/cnx_org_new.key;
+
+ssl_session_timeout 5m;
+
+ssl_protocols SSLv3 TLSv1;
+ssl_ciphers ALL:!ADH:!EXPORT56:RC4+RSA:+HIGH:+MEDIUM:+LOW:+SSLv3:+EXP;
+ssl_prefer_server_ciphers on;
+
+server {
+	listen 443;
+	server_name dev.cnx.org;
+
+	ssl on;
+
+	location / {
+        proxy_pass http://dev.cnx.org;
+        proxy_set_header host dev.cnx.org;
+	}
+
+}
+
+server {
+	listen 443;
+	server_name devarchive.cnx.org;
+
+	ssl on;
+
+	location / {
+        proxy_pass http://devarchive.cnx.org;
+        proxy_set_header host devarchive.cnx.org;
+	}
+
+}
+
+server {
+	listen 443;
+	server_name legacydev.cnx.org;
+
+	ssl on;
+
+	location / {
+        proxy_pass http://legacydev.cnx.org;
+        proxy_set_header host legacydev.cnx.org;
+	}
+
+}
+
