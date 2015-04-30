@@ -64,15 +64,27 @@ def main(argv=None):
                     print "     {}".format(fname)
                     fpath = os.path.join(docdir,fname)
                     fid = get_fileid(cursor,fpath)
+                    ident = None
                     mimeType = subprocess.check_output(['file', '--mime-type', '-Lb', fpath]).strip()
                     for ident in get_idents(cursor, uuid):
-                        print "     ",ident, fid, fname, mimeType
-                        cursor.execute(
-                            'insert into module_files (module_ident,fileid,filename,mimetype) values (%s,%s,%s,%s)', 
-                            [ident, fid, fname, mimeType])
-                    else:
+                        print "     ",ident, fid, fname, mimeType,
+                        try:
+                            cursor.execute('SAVEPOINT here')
+                            cursor.execute(
+                                'insert into module_files (module_ident,fileid,filename,mimetype) values (%s,%s,%s,%s)',
+                                [ident, fid, fname, mimeType])
+                            print "stored"
+                        except psycopg2.IntegrityError:
+                            cursor.execute('ROLLBACK TO SAVEPOINT here')
+                            cursor.execute(
+                                'update module_files set fileid = %s, mimetype= %s where module_ident = %s and filename = %s',
+                                [fid, mimeType, ident, fname])
+                            print "updated"
+                        else:
+                            cursor.execute('RELEASE SAVEPOINT here')
+                    if not ident:
                         print "doc not in archive"
-                    
+                db_connection.commit()
 
 if __name__ == '__main__':
     main()
