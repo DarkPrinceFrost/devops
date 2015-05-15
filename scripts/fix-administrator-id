@@ -1,0 +1,7 @@
+#!/bin/bash
+sed -i 's/1000/999/g' /etc/passwd /etc/group
+if ( ! grep -q 1000 /etc/group ) then 
+    echo 'reedstrm:x:1000:' >>/etc/group
+fi
+nscd -i passwd group
+chown -R administrator:administrator /homes/administrator

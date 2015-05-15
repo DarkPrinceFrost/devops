@@ -1,0 +1,13 @@
+db=app.devrep()
+print db.query('select print_style,count(*) from modules group by print_style')
+cols=[c for c in app.plone.content.objectValues() if c.id.startswith('col')]
+for c in cols:
+  ps = c.latest.parameters.getProperty('printstyle')
+  if ps:
+    db.query("update modules set print_style = %s where moduleid = %s", query_data=(ps,c.id))
+    print ps, c.id
+db.commit()
+from transaction import commit
+commit()
+print db.query('select print_style,count(*) from modules group by print_style')
+print db.query('select print_style,count(*) from latest_modules group by print_style')
