@@ -1,0 +1,7 @@
+from transaction import commit
+for wg in app.plone.Members.objectValues() + app.plone.GroupWorkspaces.objectValues('WorkgroupAT'):
+    for m in wg.objectValues(['Module Editor']):
+        if 'index.cnxml.hmtl' in m.objectIds():
+            m._delObject('index.cnxml.html')
+            print wg.id,m.id
+    commit()
