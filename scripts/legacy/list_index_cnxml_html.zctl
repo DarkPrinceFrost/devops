@@ -1,0 +1,8 @@
+for wg in app.plone.Members.objectValues():
+    for m in wg.objectValues(['Module Editor']):
+        if 'index.cnxml.html' in m.objectIds():
+            print 'http://qa.cnx.org/Members/%s/%s' % (wg.id,m.id)
+for wg in app.plone.GroupWorkspaces.objectValues('WorkgroupAT'):
+    for m in wg.objectValues(['Module Editor']):
+        if 'index.cnxml.html' in m.objectIds():
+            print 'http://qa.cnx.org/GroupWorkspaces/%s/%s' % (wg.id,m.id)
