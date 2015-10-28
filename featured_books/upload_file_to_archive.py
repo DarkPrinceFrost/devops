@@ -43,6 +43,19 @@ def get_fileid(cursor,fpath):
         res=cursor.fetchall()
         return res[0]
 
+def get_abstractid(cursor,fpath):
+    with open(fpath) as fp:
+        bits = fp.read()
+    sha1 = hashlib.new('sha1',bits).hexdigest()
+    cursor.execute('select abstractid from abstracts where sha1(abstract)=%s', [sha1])
+    res=cursor.fetchall()
+    if res:
+        return res[0]
+    else:
+        cursor.execute('insert into abstracts (abstract) values (%s) returning abstractid',[Binary(bits)])
+        res=cursor.fetchall()
+        return res[0]
+
 
 def main(argv=None):
     parser = argparse.ArgumentParser(description='upload files to archive '
@@ -66,22 +79,37 @@ def main(argv=None):
                     fid = get_fileid(cursor,fpath)
                     ident = None
                     mimeType = subprocess.check_output(['file', '--mime-type', '-Lb', fpath]).strip()
-                    for ident in get_idents(cursor, uuid):
-                        print "     ",ident, fid, fname, mimeType,
-                        try:
-                            cursor.execute('SAVEPOINT here')
-                            cursor.execute(
-                                'insert into module_files (module_ident,fileid,filename,mimetype) values (%s,%s,%s,%s)',
-                                [ident, fid, fname, mimeType])
-                            print "stored"
-                        except psycopg2.IntegrityError:
-                            cursor.execute('ROLLBACK TO SAVEPOINT here')
-                            cursor.execute(
-                                'update module_files set fileid = %s, mimetype= %s where module_ident = %s and filename = %s',
-                                [fid, mimeType, ident, fname])
-                            print "updated"
-                        else:
-                            cursor.execute('RELEASE SAVEPOINT here')
+                    if filename == 'abstract.cnxml':
+                        for ident in get_idents(cursor, uuid):
+                            print "     (abstract)",ident, fid, fname
+                            try:
+                                cursor.execute('SAVEPOINT here')
+                                abid = get_abstractid(cursor, fpath)
+                                cursor.execute(
+                                'update modules set abstractid = %s where module_ident = %s', [abid,ident])
+                                print "abstract updated"
+                            except psycopg2.IntegrityError:
+                                cursor.execute('ROLLBACK TO SAVEPOINT here')
+                                print "abstract skipped - something wrong"
+                            else:
+                                cursor.execute('RELEASE SAVEPOINT here')
+                    else:
+                        for ident in get_idents(cursor, uuid):
+                            print "     ",ident, fid, fname, mimeType,
+                            try:
+                                cursor.execute('SAVEPOINT here')
+                                cursor.execute(
+                                    'insert into module_files (module_ident,fileid,filename,mimetype) values (%s,%s,%s,%s)',
+                                    [ident, fid, fname, mimeType])
+                                print "stored"
+                            except psycopg2.IntegrityError:
+                                cursor.execute('ROLLBACK TO SAVEPOINT here')
+                                cursor.execute(
+                                    'update module_files set fileid = %s, mimetype= %s where module_ident = %s and filename = %s',
+                                    [fid, mimeType, ident, fname])
+                                print "updated"
+                            else:
+                                cursor.execute('RELEASE SAVEPOINT here')
                     if not ident:
                         print "doc not in archive"
                 db_connection.commit()
