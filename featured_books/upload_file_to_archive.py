@@ -52,7 +52,7 @@ def get_abstractid(cursor,fpath):
     if res:
         return res[0]
     else:
-        cursor.execute('insert into abstracts (abstract) values (%s) returning abstractid',[Binary(bits)])
+        cursor.execute('insert into abstracts (abstract, html) values (%s, html_abstract(%s)) returning abstractid',[bits, bits])
         res=cursor.fetchall()
         return res[0]
 
@@ -79,14 +79,14 @@ def main(argv=None):
                     fid = get_fileid(cursor,fpath)
                     ident = None
                     mimeType = subprocess.check_output(['file', '--mime-type', '-Lb', fpath]).strip()
-                    if filename == 'abstract.cnxml':
+                    if fname == 'abstract.cnxml':
+                        abid = get_abstractid(cursor, fpath)
                         for ident in get_idents(cursor, uuid):
-                            print "     (abstract)",ident, fid, fname
+                            print "     (abstract)",ident, abid, fname
                             try:
                                 cursor.execute('SAVEPOINT here')
-                                abid = get_abstractid(cursor, fpath)
                                 cursor.execute(
-                                'update modules set abstractid = %s where module_ident = %s', [abid,ident])
+                                'update modules set abstractid = %s where module_ident = %s', [abid, ident])
                                 print "abstract updated"
                             except psycopg2.IntegrityError:
                                 cursor.execute('ROLLBACK TO SAVEPOINT here')
