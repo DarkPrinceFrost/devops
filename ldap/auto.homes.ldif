@@ -1,6 +1,0 @@
-
-# auto.homes, connexions
-dn: ou=auto.homes,dc=connexions
-ou: auto.homes
-objectClass: top
-objectClass: automountMap

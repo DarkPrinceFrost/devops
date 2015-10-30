@@ -1,4 +1,0 @@
-dn: ou=auto.homes,dc=connexions
-changetype: modify
-add: objectClass
-objectClass: automountMap

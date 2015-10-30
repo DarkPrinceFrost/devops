@@ -1,9 +1,0 @@
-dn: uid=reedstrm,ou=People,dc=connexions
-changetype: modify
-add: objectClass
-objectClass: sambaSamAccount
-sambaAcctFlags: [U          ]
-sambaLMPassword: D85774CF671A9947AAD3B435B51404EE
-sambaNTPassword: BAAC3929FABC9E6DCD32421BA94A84D4
-sambaSID: S-1-5-21-3094334300-761729071-1355841744-3000
-

@@ -1,4 +1,0 @@
-dn: cn=admin,ou=Group,dc=connexions
-changetype: modify
-add: memberUid
-memberUid: therealmarv
