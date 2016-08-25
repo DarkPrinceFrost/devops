@@ -1,0 +1,6 @@
+American Government	american_gov.png	http://cnx.org/contents/W8wOWXNF:SjdU64Og
+Calculus Volume 1	calculus1.png	http://cnx.org/contents/i4nRcikn:H2TLb2-S
+Calculus Volume 2	calculus2.png	http://cnx.org/contents/HTmjSAcf:rrzms6rP   
+Calculus Volume 3	calculus3.png	http://cnx.org/contents/oxzXkyFi:72YaCFgv
+Chemistry: Atoms First	chemistry_atoms.png	http://cnx.org/contents/RTmuIxzM:uXg0kUa-
+Prealgebra	prealgebra.png	http://cnx.org/contents/yqV9q0HH:plLt9FYr

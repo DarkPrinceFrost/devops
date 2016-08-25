@@ -1,8 +1,9 @@
+import sys
 import csv
-f=open('users_2015_01_07.csv')
+f=open(sys.argv[1])
 reader=csv.reader(f)
 headers=reader.next()
-d=open('candidates_deletion_2015-01-07_14_43.txt')
+d=open(sys.argv[2])
 candidates=d.read().splitlines()
 candict={}.fromkeys(candidates)
 keep=[]
@@ -13,7 +14,7 @@ for row in reader:
     keep.append(row)
 len(keep)
 f.close()
-f=open('users_keep_2015_01_07.csv','w')
+f=open(sys.argv[3],'w')
 writer=csv.writer(f)
 writer.writerows(keep)
 f.close()

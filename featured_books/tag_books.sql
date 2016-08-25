@@ -1,4 +1,4 @@
-INSERT INTO moduletags (module_ident, tagid) select module_ident, 9 from modules where uuid in (
+INSERT INTO moduletags (module_ident, tagid) select module_ident, 9 from latest_modules where uuid in (
 '303800f3-07f3-44d5-a12c-49e93e8948c5',
 'e7b71f2c-a51e-4c9f-8db2-066a4c3643e4',
 '785408b0-910e-4856-aa0c-749a9bb16712',
@@ -13,7 +13,7 @@ INSERT INTO moduletags (module_ident, tagid) select module_ident, 9 from modules
 '1cb4ffaa-f24a-4b98-8e03-5dd217011f0c',
 '327a14ee-95f6-4c2d-b9a5-3943b4077d36');
 
-INSERT INTO moduletags (module_ident, tagid) select module_ident, 8 from modules where uuid in (
+INSERT INTO moduletags (module_ident, tagid) select module_ident, 8 from latest_modules where uuid in (
 '031da8d3-b525-429c-80cf-6c8ed997733a',
 '14fb4ad7-39a1-4eee-ab6e-3ef2482e3e22',
 '185cbf87-c72e-48f5-b51e-f14f21b5eabd',

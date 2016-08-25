@@ -30,16 +30,18 @@ def get_idents(cursor, uuid):
     for result in results:
         yield result
 
-def get_fileid(cursor,fpath):
+def get_fileid(cursor, fpath):
     with open(fpath) as fp:
         bits = fp.read()
-    sha1 = hashlib.new('sha1',bits).hexdigest()
-    cursor.execute('select fileid from files where sha1=%s', [sha1])
+    sha1 = hashlib.new('sha1', bits).hexdigest()
+    cursor.execute('select fileid, media_type from files where sha1=%s', [sha1])
     res=cursor.fetchall()
     if res:
         return res[0]
     else:
-        cursor.execute('insert into files (file) values (%s) returning fileid',[Binary(bits)])
+        mimeType = subprocess.check_output(['file', '--mime-type', '-Lb', fpath]).strip()
+        cursor.execute('insert into files (file, media_type) values (%s, %s) returning fileid, media_type',
+                       (Binary(bits), mimeType))
         res=cursor.fetchall()
         return res[0]
 
@@ -75,14 +77,13 @@ def main(argv=None):
                 files = os.listdir(docdir)
                 for fname in files:
                     print "     {}".format(fname)
-                    fpath = os.path.join(docdir,fname)
-                    fid = get_fileid(cursor,fpath)
+                    fpath = os.path.join(docdir, fname)
+                    fid, mimeType = get_fileid(cursor, fpath)
                     ident = None
-                    mimeType = subprocess.check_output(['file', '--mime-type', '-Lb', fpath]).strip()
                     if fname == 'abstract.cnxml':
                         abid = get_abstractid(cursor, fpath)
                         for ident in get_idents(cursor, uuid):
-                            print "     (abstract)",ident, abid, fname
+                            print "     (abstract)", ident, abid, fname
                             try:
                                 cursor.execute('SAVEPOINT here')
                                 cursor.execute(
@@ -99,14 +100,14 @@ def main(argv=None):
                             try:
                                 cursor.execute('SAVEPOINT here')
                                 cursor.execute(
-                                    'insert into module_files (module_ident,fileid,filename,mimetype) values (%s,%s,%s,%s)',
-                                    [ident, fid, fname, mimeType])
+                                    'insert into module_files (module_ident,fileid,filename) values (%s,%s,%s)',
+                                    [ident, fid, fname])
                                 print "stored"
                             except psycopg2.IntegrityError:
                                 cursor.execute('ROLLBACK TO SAVEPOINT here')
                                 cursor.execute(
-                                    'update module_files set fileid = %s, mimetype= %s where module_ident = %s and filename = %s',
-                                    [fid, mimeType, ident, fname])
+                                    'update module_files set fileid = %s where module_ident = %s and filename = %s',
+                                    [fid, ident, fname])
                                 print "updated"
                             else:
                                 cursor.execute('RELEASE SAVEPOINT here')

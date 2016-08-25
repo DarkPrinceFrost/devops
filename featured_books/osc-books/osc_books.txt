@@ -1,8 +1,13 @@
 Algebra and Trigonometry, http://cnx.org/contents/13ac107a-f15f-49d2-97e8-60ab2e3b519c
+Anatomy, http://cnx.org/contents/14fb4ad7-39a1-4eee-ab6e-3ef2482e3e22
+Biology, http://cnx.org/contents/185cbf87-c72e-48f5-b51e-f14f21b5eabd
 Chemistry, http://cnx.org/contents/85abf193-2bd2-4908-8563-90b8a7ac8df6
 College Algebra, http://cnx.org/contents/9b08c294-057f-4201-9f48-5d6ad992740d
+College Physics, http://cnx.org/contents/031da8d3-b525-429c-80cf-6c8ed997733a
 College Physics For AP® Courses, http://cnx.org/contents/8d04a686-d5e8-4798-a27d-c608e4d0e187
+Concepts of Biology, http://cnx.org/contents/b3c1e1d2-839c-42b0-a314-e119a8aafbdd
 Introduction to Sociology 2e, http://cnx.org/contents/02040312-72c8-441e-a685-20e9333f3e1d
+Introductory Statistics, http://cnx.org/contents/30189442-6998-4686-ac05-ed152b91b9de
 Macroeconomics, http://cnx.org/contents/4061c832-098e-4b3c-a1d9-7eb593a2cb31
 Microeconomics, http://cnx.org/contents/ea2f225e-6063-41ca-bcd8-36482e15ef65
 Precalculus, http://cnx.org/contents/fd53eae1-fa23-47c7-bb1b-972349835c3c

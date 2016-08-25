@@ -1,4 +1,4 @@
-INSERT INTO moduletags (module_ident, tagid) select module_ident, 8 from modules where uuid in (
+INSERT INTO moduletags (module_ident, tagid) select module_ident, 8 from latest_modules where uuid in (
 '02040312-72c8-441e-a685-20e9333f3e1d',
 '13ac107a-f15f-49d2-97e8-60ab2e3b519c',
 '33076054-ec1d-4417-8824-ce354efe42d0',
