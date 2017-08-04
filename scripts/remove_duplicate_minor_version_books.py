@@ -54,11 +54,11 @@ def main(argv=None):
                               'modules'):
                     cursor.execute('DELETE FROM {}'
                                    ' WHERE module_ident'
-                                   ' in %s'.format(table), to_del)
+                                   ' in %s'.format(table), (tuple(to_del),))
 
                 print('Triggering baking for {}'.format(keep))
                 cursor.execute('UPDATE modules set stateid=5'
-                               ' where module_ident = %s', keep)
+                               ' where module_ident = %s', (keep,))
 
 
 if __name__ == '__main__':
