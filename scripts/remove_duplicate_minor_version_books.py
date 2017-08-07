@@ -40,25 +40,35 @@ def main(argv=None):
     parser.add_argument('-d', '--db-conn-str',
                         default=DEFAULT_PSYCOPG_CONNECTION_STRING,
                         help='a psycopg2 db connection string')
+    parser.add_argument('--dry-run', action='store_true',
+                        help='Prints SQL statements but does not modify db')
     args = parser.parse_args(argv)
 
     with psycopg2.connect(args.db_conn_str) as db_connection:
         with db_connection.cursor() as cursor:
             for ident, keep, to_del in get_dup_idents(cursor):
-                print('Processing {}:'
+                print('\nProcessing {}:'
                       ' keeping {},'
                       ' deleting {}'.format(ident, keep, str(to_del)))
                 for table in ('document_baking_result_associations',
                               'moduletags',
                               'module_files',
                               'modules'):
-                    cursor.execute('DELETE FROM {}'
-                                   ' WHERE module_ident'
-                                   ' in %s'.format(table), (tuple(to_del),))
+                    stmt = ('DELETE FROM {}'
+                            ' WHERE module_ident'
+                            ' in %s'.format(table), (tuple(to_del),))
+                    if args.dry_run:
+                        print(stmt[0] % stmt[1])
+                    else:
+                        cursor.execute(*stmt)
 
                 print('Triggering baking for {}'.format(keep))
-                cursor.execute('UPDATE modules set stateid=5'
-                               ' where module_ident = %s', (keep,))
+                stmt = ('UPDATE modules set stateid=5'
+                        ' where module_ident = %s', (keep,))
+                if args.dry_run:
+                    print(stmt[0] % stmt[1])
+                else:
+                    cursor.execute(*stmt)
 
 
 if __name__ == '__main__':
