@@ -20,18 +20,34 @@ DEFAULT_PSYCOPG_CONNECTION_STRING = "dbname=cnxarchive user=cnxarchive " \
 
 
 def get_dup_idents(cursor):
-    cursor.execute("SELECT ident_hash(uuid,major_version,minor_version),"
-                   "   max(module_ident), array_agg(module_ident)"
-                   " FROM modules"
-                   "    WHERE portal_type = 'Collection'"
-                   " GROUP BY ident_hash(uuid,major_version,minor_version)"
-                   " HAVING count(*) > 1"
-                   )
+    cursor.execute("""\
+SELECT ident_hash(uuid,major_version,minor_version),
+   max(module_ident), array_agg(module_ident), max(portal_type)
+ FROM modules
+    WHERE portal_type IN
+        ('Collection', 'SubCollection', 'CompositeModule')
+ GROUP BY ident_hash(uuid,major_version,minor_version)
+ HAVING count(*) > 1
+""")
     results = cursor.fetchall()
     for result in results:
-        ident, keep, to_del = result
+        ident, keep, to_del, portal_type = result
         to_del.remove(keep)
-        yield ident, keep, to_del
+        yield ident, keep, to_del, portal_type
+
+    cursor.execute("""\
+SELECT ident_hash(uuid, major_version, minor_version), 0,
+       array_agg(module_ident), max(portal_type)
+FROM modules m
+WHERE portal_type IN ('SubCollection', 'CompositeModule')
+  AND NOT EXISTS (
+          SELECT 1 FROM trees t WHERE t.documentid = m.module_ident)
+GROUP BY ident_hash(uuid, major_version, minor_version)
+""")
+    results = cursor.fetchall()
+    for result in results:
+        ident, keep, to_del, portal_type = result
+        yield ident, keep, to_del, portal_type
 
 
 def merge_trees(cursor, dry_run, ident, keep, merge):
@@ -130,11 +146,20 @@ def main(argv=None):
 
     with psycopg2.connect(args.db_conn_str) as db_connection:
         with db_connection.cursor() as cursor:
-            for ident, keep, to_del in get_dup_idents(cursor):
-                print('\nProcessing {}:'
+            for ident, keep, to_del, portal_type in get_dup_idents(cursor):
+                print('\nProcessing {} ({}):'
                       ' keeping {},'
-                      ' deleting {}'.format(ident, keep, str(to_del)))
-                merge_trees(cursor, args.dry_run, ident, keep, to_del)
+                      ' deleting {}'
+                      .format(ident, portal_type, keep, str(to_del)))
+                if portal_type == 'Collection':
+                    merge_trees(cursor, args.dry_run, ident, keep, to_del)
+                if portal_type == 'CompositeModule':
+                    stmt = ('DELETE FROM collated_file_associations'
+                            ' WHERE item IN %s', (tuple(to_del),))
+                    if args.dry_run:
+                        print(stmt[0] % stmt[1])
+                    else:
+                        cursor.execute(*stmt)
                 for table in ('document_baking_result_associations',
                               'moduletags',
                               'module_files',
@@ -147,13 +172,14 @@ def main(argv=None):
                     else:
                         cursor.execute(*stmt)
 
-                print('Triggering baking for {}'.format(keep))
-                stmt = ('UPDATE modules set stateid=5'
-                        ' where module_ident = %s', (keep,))
-                if args.dry_run:
-                    print(stmt[0] % stmt[1])
-                else:
-                    cursor.execute(*stmt)
+                if portal_type == 'Collection':
+                    print('Triggering baking for {}'.format(keep))
+                    stmt = ('UPDATE modules set stateid=5'
+                            ' where module_ident = %s', (keep,))
+                    if args.dry_run:
+                        print(stmt[0] % stmt[1])
+                    else:
+                        cursor.execute(*stmt)
 
 
 if __name__ == '__main__':
